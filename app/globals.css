@@ -3,13 +3,397 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+
+  /* TK Colors */
+  --tk-black: #030920;
+  --tk-red: #fe333f;
+
+  /* Neutral Palette */
+  --neutral-light-lightest: #ffffff;
+  --neutral-light-lighter: #f3f3f5;
+  --neutral-light-light: #d9dbde;
+  --neutral-light-transparent: rgba(255, 255, 255, 0);
+  --neutral-dark-dark: #000000;
+  --neutral-dark-darker: #6e6f6f;
+  --neutral-dark-darkest: #434343;
+  --neutral-dark-dest-brown: #4d312f;
+
+  /* Pink Palette */
+  --pink-100: #f8dbdf;
+  --pink-200: #f8a3b3;
+  --pink-400: #ff7ca8;
+  --pink-450: #dc5d8c;
+
+  /* Green Palette */
+  --green-400: #74cfcb;
+  --green-500: #048153;
+
+  /* Blue Palette */
+  --blue-50: #91edf6;
+  --blue-200: #5e7eeb;
+  --blue-700: #22b9d2;
+
+  /* Orange Palette */
+  --orange-50: #fedfc6;
+  --orange-300: #ffbaa1;
+
+  /* Yellow Palette */
+  --yellow-50: #fffada;
+  --yellow-100: #ffefad;
+  --yellow-200: #fdf2ad;
+  --yellow-300: #ebcb8a;
+  --yellow-700: #c6a760;
+  --yellow-900: #a67802;
+
+  /* Red Palette */
+  --red-50: #ffebef;
+  --red-300: #ff8da3;
+  --red-800: #d85243;
+
+  /* Text-size styles */
+
+  /* Desktop */
+  --desktop---s1---e-n-400: 80px;
+  --desktop---s1---e-n-700: 80px;
+  --desktop---s1---t-h-400: 80px;
+  --desktop---s1---t-h-700: 80px;
+
+  --desktop---s2---e-n-400: 61px;
+  --desktop---s2---e-n-700: 61px;
+  --desktop---s2---t-h-400: 61px;
+  --desktop---s2---t-h-700: 61px;
+
+  --desktop---s3---e-n-400: 47px;
+  --desktop---s3---e-n-700: 47px;
+  --desktop---s3---t-h-400: 47px;
+  --desktop---s3---t-h-700: 47px;
+
+  --desktop---s4---e-n-400: 36px;
+  --desktop---s4---e-n-700: 36px;
+  --desktop---s4---t-h-300: 36px;
+  --desktop---s4---t-h-400: 36px;
+  --desktop---s4---t-h-700: 36px;
+
+  --desktop---s5---e-n-400: 21px;
+  --desktop---s5---e-n-700: 21px;
+  --desktop---s5---t-h-300: 21px;
+  --desktop---s5---t-h-400: 21px;
+  --desktop---s5---t-h-700: 21px;
+
+  --desktop---s6---e-n-400: 16px;
+  --desktop---s6---e-n-700: 16px;
+  --desktop---s6---t-h-400: 16px;
+  --desktop---s6---t-h-700: 16px;
+
+  --desktop---s7---e-n-400: 14px;
+  --desktop---s7---e-n-700: 14px;
+  --desktop---s7---t-h-400: 14px;
+  --desktop---s7---t-h-700: 14px;
+
+  --desktop---s8---e-n-400: 12px;
+  --desktop---s8---e-n-700: 12px;
+  --desktop---s8---t-h-400: 12px;
+  --desktop---s8---t-h-700: 9px;
+
+  /* Mobile */
+  --mobile---s1---e-n-400: 61px;
+  --mobile---s1---e-n-700: 61px;
+  --mobile---s1---t-h-300: 61px;
+  --mobile---s1---t-h-400: 61px;
+  --mobile---s1---t-h-700: 61px;
+
+  --mobile---s2---e-n-400: 47px;
+  --mobile---s2---e-n-700: 47px;
+  --mobile---s2---t-h-300: 47px;
+  --mobile---s2---t-h-400: 47px;
+  --mobile---s2---t-h-700: 47px;
+
+  --mobile---s3---e-n-400: 36px;
+  --mobile---s3---e-n-700: 36px;
+  --mobile---s3---t-h-300: 36px;
+  --mobile---s3---t-h-400: 36px;
+  --mobile---s3---t-h-700: 36px;
+
+  --mobile---s4---e-n-400: 21px;
+  --mobile---s4---e-n-700: 21px;
+  --mobile---s4---t-h-300: 21px;
+  --mobile---s4---t-h-400: 21px;
+  --mobile---s4---t-h-700: 21px;
+
+  --mobile---s5---e-n-400: 16px;
+  --mobile---s5---e-n-700: 16px;
+  --mobile---s5---t-h-300: 16px;
+  --mobile---s5---t-h-400: 16px;
+  --mobile---s5---t-h-700: 16px;
+
+  --mobile---s6---e-n-400: 12px;
+  --mobile---s6---e-n-700: 12px;
+  --mobile---s6---t-h-300: 16px;
+  --mobile---s6---t-h-400: 16px;
+  --mobile---s6---t-h-700: 16px;
+
+  --mobile---s7--s8---e-n-700: 12px;
+  --mobile---s7--s8---e-n-400: 9px;
+  --mobile---s7--s8---t-h-400: 9px;
+  --mobile---s7--s8---t-h-700: 9px;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
+  /* TK Colors */
+  --color-tk-black: var(--tk-black);
+  --color-tk-red: var(--tk-red);
+
+  /* Neutral Palette */
+  --color-neutral-light-lightest: var(--neutral-light-lightest);
+  --color-neutral-light-lighter: var(--neutral-light-lighter);
+  --color-neutral-light-light: var(--neutral-light-light);
+  --color-neutral-light-transparent: var(--neutral-light-transparent);
+  --color-neutral-dark-dark: var(--neutral-dark-dark);
+  --color-neutral-dark-darker: var(--neutral-dark-darker);
+  --color-neutral-dark-darkest: var(--neutral-dark-darkest);
+  --color-neutral-dark-dest-brown: var(--neutral-dark-dest-brown);
+
+  /* Pink Palette */
+  --color-pink-100: var(--pink-100);
+  --color-pink-200: var(--pink-200);
+  --color-pink-400: var(--pink-400);
+  --color-pink-450: var(--pink-450);
+
+  /* Green Palette */
+  --color-green-400: var(--green-400);
+  --color-green-500: var(--green-500);
+
+  /* Blue Palette */
+  --color-blue-50: var(--blue-50);
+  --color-blue-200: var(--blue-200);
+  --color-blue-700: var(--blue-700);
+
+  /* Orange Palette */
+  --color-orange-50: var(--orange-50);
+  --color-orange-300: var(--orange-300);
+
+  /* Yellow Palette */
+  --color-yellow-50: var(--yellow-50);
+  --color-yellow-100: var(--yellow-100);
+  --color-yellow-200: var(--yellow-200);
+  --color-yellow-300: var(--yellow-300);
+  --color-yellow-700: var(--yellow-700);
+  --color-yellow-900: var(--yellow-900);
+
+  /* Red Palette */
+  --color-red-50: var(--red-50);
+  --color-red-300: var(--red-300);
+  --color-red-800: var(--red-800);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Desktop EN — class: desktop-s1-400 */
+  --type-en-desktop-s1-400: var(--desktop---s1---e-n-400);
+  --type-en-desktop-s1-700: var(--desktop---s1---e-n-700);
+  --type-en-desktop-s2-400: var(--desktop---s2---e-n-400);
+  --type-en-desktop-s2-700: var(--desktop---s2---e-n-700);
+  --type-en-desktop-s3-400: var(--desktop---s3---e-n-400);
+  --type-en-desktop-s3-700: var(--desktop---s3---e-n-700);
+  --type-en-desktop-s4-400: var(--desktop---s4---e-n-400);
+  --type-en-desktop-s4-700: var(--desktop---s4---e-n-700);
+  --type-en-desktop-s5-400: var(--desktop---s5---e-n-400);
+  --type-en-desktop-s5-700: var(--desktop---s5---e-n-700);
+  --type-en-desktop-s6-400: var(--desktop---s6---e-n-400);
+  --type-en-desktop-s6-700: var(--desktop---s6---e-n-700);
+  --type-en-desktop-s7-400: var(--desktop---s7---e-n-400);
+  --type-en-desktop-s7-700: var(--desktop---s7---e-n-700);
+  --type-en-desktop-s8-400: var(--desktop---s8---e-n-400);
+  --type-en-desktop-s8-700: var(--desktop---s8---e-n-700);
+
+  /* Desktop TH — class: desktop-s1-th-400 */
+  --type-th-desktop-s1-400: var(--desktop---s1---t-h-400);
+  --type-th-desktop-s1-700: var(--desktop---s1---t-h-700);
+  --type-th-desktop-s2-400: var(--desktop---s2---t-h-400);
+  --type-th-desktop-s2-700: var(--desktop---s2---t-h-700);
+  --type-th-desktop-s3-400: var(--desktop---s3---t-h-400);
+  --type-th-desktop-s3-700: var(--desktop---s3---t-h-700);
+  --type-th-desktop-s4-300: var(--desktop---s4---t-h-300);
+  --type-th-desktop-s4-400: var(--desktop---s4---t-h-400);
+  --type-th-desktop-s4-700: var(--desktop---s4---t-h-700);
+  --type-th-desktop-s5-300: var(--desktop---s5---t-h-300);
+  --type-th-desktop-s5-400: var(--desktop---s5---t-h-400);
+  --type-th-desktop-s5-700: var(--desktop---s5---t-h-700);
+  --type-th-desktop-s6-400: var(--desktop---s6---t-h-400);
+  --type-th-desktop-s6-700: var(--desktop---s6---t-h-700);
+  --type-th-desktop-s7-400: var(--desktop---s7---t-h-400);
+  --type-th-desktop-s7-700: var(--desktop---s7---t-h-700);
+  --type-th-desktop-s8-400: var(--desktop---s8---t-h-400);
+  --type-th-desktop-s8-700: var(--desktop---s8---t-h-700);
+
+  /* Mobile EN — class: mobile-s1-400 */
+  --type-en-mobile-s1-400: var(--mobile---s1---e-n-400);
+  --type-en-mobile-s1-700: var(--mobile---s1---e-n-700);
+  --type-en-mobile-s2-400: var(--mobile---s2---e-n-400);
+  --type-en-mobile-s2-700: var(--mobile---s2---e-n-700);
+  --type-en-mobile-s3-400: var(--mobile---s3---e-n-400);
+  --type-en-mobile-s3-700: var(--mobile---s3---e-n-700);
+  --type-en-mobile-s4-400: var(--mobile---s4---e-n-400);
+  --type-en-mobile-s4-700: var(--mobile---s4---e-n-700);
+  --type-en-mobile-s5-400: var(--mobile---s5---e-n-400);
+  --type-en-mobile-s5-700: var(--mobile---s5---e-n-700);
+  --type-en-mobile-s6-400: var(--mobile---s6---e-n-400);
+  --type-en-mobile-s6-700: var(--mobile---s6---e-n-700);
+  --type-en-mobile-s7-s8-400: var(--mobile---s7--s8---e-n-400);
+  --type-en-mobile-s7-s8-700: var(--mobile---s7--s8---e-n-700);
+
+  /* Mobile TH — class: mobile-s1-th-400 */
+  --type-th-mobile-s1-300: var(--mobile---s1---t-h-300);
+  --type-th-mobile-s1-400: var(--mobile---s1---t-h-400);
+  --type-th-mobile-s1-700: var(--mobile---s1---t-h-700);
+  --type-th-mobile-s2-300: var(--mobile---s2---t-h-300);
+  --type-th-mobile-s2-400: var(--mobile---s2---t-h-400);
+  --type-th-mobile-s2-700: var(--mobile---s2---t-h-700);
+  --type-th-mobile-s3-300: var(--mobile---s3---t-h-300);
+  --type-th-mobile-s3-400: var(--mobile---s3---t-h-400);
+  --type-th-mobile-s3-700: var(--mobile---s3---t-h-700);
+  --type-th-mobile-s4-300: var(--mobile---s4---t-h-300);
+  --type-th-mobile-s4-400: var(--mobile---s4---t-h-400);
+  --type-th-mobile-s4-700: var(--mobile---s4---t-h-700);
+  --type-th-mobile-s5-300: var(--mobile---s5---t-h-300);
+  --type-th-mobile-s5-400: var(--mobile---s5---t-h-400);
+  --type-th-mobile-s5-700: var(--mobile---s5---t-h-700);
+  --type-th-mobile-s6-300: var(--mobile---s6---t-h-300);
+  --type-th-mobile-s6-400: var(--mobile---s6---t-h-400);
+  --type-th-mobile-s6-700: var(--mobile---s6---t-h-700);
+  --type-th-mobile-s7-s8-400: var(--mobile---s7--s8---t-h-400);
+  --type-th-mobile-s7-s8-700: var(--mobile---s7--s8---t-h-700);
+}
+
+/* Desktop EN — e.g. desktop-s1-400 → size + font-weight 400 */
+@utility desktop-s1-* {
+  font-size: --value(--type-en-desktop-s1-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s2-* {
+  font-size: --value(--type-en-desktop-s2-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s3-* {
+  font-size: --value(--type-en-desktop-s3-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s4-* {
+  font-size: --value(--type-en-desktop-s4-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s5-* {
+  font-size: --value(--type-en-desktop-s5-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s6-* {
+  font-size: --value(--type-en-desktop-s6-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s7-* {
+  font-size: --value(--type-en-desktop-s7-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s8-* {
+  font-size: --value(--type-en-desktop-s8-*);
+  font-weight: --value(integer);
+}
+
+/* Desktop TH — e.g. desktop-s1-th-400 */
+@utility desktop-s1-th-* {
+  font-size: --value(--type-th-desktop-s1-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s2-th-* {
+  font-size: --value(--type-th-desktop-s2-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s3-th-* {
+  font-size: --value(--type-th-desktop-s3-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s4-th-* {
+  font-size: --value(--type-th-desktop-s4-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s5-th-* {
+  font-size: --value(--type-th-desktop-s5-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s6-th-* {
+  font-size: --value(--type-th-desktop-s6-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s7-th-* {
+  font-size: --value(--type-th-desktop-s7-*);
+  font-weight: --value(integer);
+}
+@utility desktop-s8-th-* {
+  font-size: --value(--type-th-desktop-s8-*);
+  font-weight: --value(integer);
+}
+
+/* Mobile EN — e.g. mobile-s1-400 */
+@utility mobile-s1-* {
+  font-size: --value(--type-en-mobile-s1-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s2-* {
+  font-size: --value(--type-en-mobile-s2-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s3-* {
+  font-size: --value(--type-en-mobile-s3-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s4-* {
+  font-size: --value(--type-en-mobile-s4-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s5-* {
+  font-size: --value(--type-en-mobile-s5-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s6-* {
+  font-size: --value(--type-en-mobile-s6-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s7-s8-* {
+  font-size: --value(--type-en-mobile-s7-s8-*);
+  font-weight: --value(integer);
+}
+
+/* Mobile TH — e.g. mobile-s1-th-400 */
+@utility mobile-s1-th-* {
+  font-size: --value(--type-th-mobile-s1-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s2-th-* {
+  font-size: --value(--type-th-mobile-s2-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s3-th-* {
+  font-size: --value(--type-th-mobile-s3-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s4-th-* {
+  font-size: --value(--type-th-mobile-s4-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s5-th-* {
+  font-size: --value(--type-th-mobile-s5-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s6-th-* {
+  font-size: --value(--type-th-mobile-s6-*);
+  font-weight: --value(integer);
+}
+@utility mobile-s7-s8-th-* {
+  font-size: --value(--type-th-mobile-s7-s8-*);
+  font-weight: --value(integer);
 }
 
 @media (prefers-color-scheme: dark) {
