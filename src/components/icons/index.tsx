@@ -1,0 +1,13 @@
+export type { IconProps } from "./types";
+export { T01 } from "./T01";
+export { T02 } from "./T02";
+export { T04 } from "./T04";
+export { T05 } from "./T05";
+export { T06 } from "./T06";
+export { T07 } from "./T07";
+export { T08 } from "./T08";
+export { T09 } from "./T09";
+export { T10 } from "./T10";
+export { T11 } from "./T11";
+export { T12 } from "./T12";
+export { T13 } from "./T13";
