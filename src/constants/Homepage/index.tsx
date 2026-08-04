@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Homepage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-pink-450">
       <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
@@ -13,7 +13,7 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs desktop-s1-400 tracking-tight text-black dark:text-zinc-50">
+          <h1 className="max-w-xs desktop-s1-400 tracking-tight text-black dark:text-zinc-50 font-en">
             To get started, edit the page.tsx file.
           </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
