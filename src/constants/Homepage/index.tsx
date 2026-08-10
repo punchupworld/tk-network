@@ -1,65 +1,101 @@
-import Image from "next/image";
+"use client";
+
+import Background from "@/src/components/Background";
+import { useEffect, useState } from "react";
+
+const SECTION_IDS = ["section1", "section2", "section3"] as const;
+const SUBTOPIC_IDS = ["subtopic1", "subtopic2"] as const;
+type SectionId = (typeof SECTION_IDS)[number];
+type SubtopicId = (typeof SUBTOPIC_IDS)[number];
 
 export default function Homepage() {
+  const [activeSection, setActiveSection] = useState<SectionId>("section1");
+  const [activeSubtopic, setActiveSubtopic] = useState<SubtopicId | null>(null);
+
+  useEffect(() => {
+    const updateActiveSection = () => {
+      const viewportCenter = window.innerHeight / 2;
+
+      const visibleSubtopic = SUBTOPIC_IDS.find((id) => {
+        const subtopic = document.getElementById(id);
+        if (!subtopic) return false;
+
+        const { top, bottom } = subtopic.getBoundingClientRect();
+        return top <= viewportCenter && bottom >= viewportCenter;
+      });
+
+      setActiveSubtopic(visibleSubtopic ?? null);
+
+      const visibleSection = SECTION_IDS.find((id) => {
+        const section = document.getElementById(id);
+        if (!section) return false;
+
+        const { top, bottom } = section.getBoundingClientRect();
+        return top <= viewportCenter && bottom >= viewportCenter;
+      });
+
+      if (visibleSection) setActiveSection(visibleSection);
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+
+    return () => window.removeEventListener("scroll", updateActiveSection);
+  }, []);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans bg-pink-450">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs desktop-s1-400 tracking-tight text-black dark:text-zinc-50 font-en">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="relative min-h-screen bg-yellow-50">
+      <Background
+        className="fixed! h-screen"
+        section={activeSection}
+        subtopic={activeSection === "section1" ? activeSubtopic : null}
+      />
+      <section
+        className="relative z-10 max-w-[1200px] mx-auto w-full min-h-screen"
+        id="section1"
+      >
+        <div className="flex flex-col items-center justify-center h-screen">
+          <p className="text-2xl font-bold text-amber-950">
+            ... เนื้อหาจริงของหน้า 1...
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        <div
+          className="flex flex-col items-center justify-center h-screen"
+          id="subtopic1"
+        >
+          <p className="text-2xl font-bold text-amber-950">
+            ... subtopic 1 เนื้อหาจริงของหน้า 1...
+          </p>
         </div>
-      </main>
+        <div
+          className="flex flex-col items-center justify-center h-screen"
+          id="subtopic2"
+        >
+          <p className="text-2xl font-bold text-amber-950">
+            ... subtopic 2 เนื้อหาจริงของหน้า 1...
+          </p>
+        </div>
+      </section>
+      <section
+        className="relative z-10 max-w-[1200px] mx-auto w-full h-screen"
+        id="section2"
+      >
+        <div className="flex flex-col items-center justify-center h-full">
+          <p className="text-2xl font-bold text-amber-950">
+            ... เนื้อหาจริงของหน้า 2...
+          </p>
+        </div>
+      </section>
+      <section
+        className="relative z-10 max-w-[1200px] mx-auto w-full h-screen"
+        id="section3"
+      >
+        <div className="flex flex-col items-center justify-center h-full">
+          <p className="text-2xl font-bold text-amber-950">
+            ... เนื้อหาจริงของหน้า 3...
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
