@@ -2,6 +2,14 @@
 
 import Background from "@/src/components/Background";
 import { useEffect, useState } from "react";
+import SectionOne from "./components/sections/SectionOne";
+import IntroSection from "./components/sections/IntroSection";
+import SectionTwo from "./components/sections/SectionTwo";
+import SectionThree from "./components/sections/SectionThree";
+import SectionFour from "./components/sections/SectionFour";
+import SectionFive from "./components/sections/SectionFive";
+import SectionSix from "./components/sections/SectionSix";
+import OutroSection from "./components/sections/OutroSection";
 
 const SECTION_IDS = ["section1", "section2", "section3"] as const;
 const SUBTOPIC_IDS = ["subtopic1", "subtopic2"] as const;
@@ -44,58 +52,20 @@ export default function Homepage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-yellow-50">
+    <div className="relative min-h-screen bg-yellow-50 md:p-0 p-2.5">
       <Background
-        className="fixed! h-screen"
+        className="fixed! inset-0 w-full h-full"
         section={activeSection}
         subtopic={activeSection === "section1" ? activeSubtopic : null}
       />
-      <section
-        className="relative z-10 max-w-[1200px] mx-auto w-full min-h-screen"
-        id="section1"
-      >
-        <div className="flex flex-col items-center justify-center h-screen">
-          <p className="text-2xl font-bold text-amber-950">
-            ... เนื้อหาจริงของหน้า 1...
-          </p>
-        </div>
-        <div
-          className="flex flex-col items-center justify-center h-screen"
-          id="subtopic1"
-        >
-          <p className="text-2xl font-bold text-amber-950">
-            ... subtopic 1 เนื้อหาจริงของหน้า 1...
-          </p>
-        </div>
-        <div
-          className="flex flex-col items-center justify-center h-screen"
-          id="subtopic2"
-        >
-          <p className="text-2xl font-bold text-amber-950">
-            ... subtopic 2 เนื้อหาจริงของหน้า 1...
-          </p>
-        </div>
-      </section>
-      <section
-        className="relative z-10 max-w-[1200px] mx-auto w-full h-screen"
-        id="section2"
-      >
-        <div className="flex flex-col items-center justify-center h-full">
-          <p className="text-2xl font-bold text-amber-950">
-            ... เนื้อหาจริงของหน้า 2...
-          </p>
-        </div>
-      </section>
-      <section
-        className="relative z-10 max-w-[1200px] mx-auto w-full h-screen"
-        id="section3"
-      >
-        <div className="flex flex-col items-center justify-center h-full">
-          <p className="text-2xl font-bold text-amber-950">
-            ... เนื้อหาจริงของหน้า 3...
-          </p>
-        </div>
-      </section>
+      <IntroSection />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <SectionSix />
+      <OutroSection />
     </div>
   );
 }

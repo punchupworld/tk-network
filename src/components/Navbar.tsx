@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import StepsOverlay from "@/src/components/StepsOverlay";
-import StepIndicator from "@/src/components/StepIndicator";
 import Image from "next/image";
 
 type NavItem = {
@@ -35,12 +34,28 @@ const navItems: NavItem[] = [
 const Navbar = () => {
   const [active, setActive] = useState<string>(navItems[0].id);
   const [showStepsOverlay, setShowStepsOverlay] = useState(false);
+  const [overlayTop, setOverlayTop] = useState(0);
+  const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     document.body.style.overflow = showStepsOverlay ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
+  }, [showStepsOverlay]);
+
+  useLayoutEffect(() => {
+    if (!showStepsOverlay) return;
+
+    const updateOverlayTop = () => {
+      const nav = navRef.current;
+      if (!nav) return;
+      setOverlayTop(nav.getBoundingClientRect().bottom);
+    };
+
+    updateOverlayTop();
+    window.addEventListener("resize", updateOverlayTop);
+    return () => window.removeEventListener("resize", updateOverlayTop);
   }, [showStepsOverlay]);
 
   const handleNavClick = (itemId: string) => {
@@ -57,8 +72,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="sticky top-10 z-30 max-w-[1200px] mx-auto w-full">
-      <nav className="relative z-40 flex items-center font-th">
+    <div
+      data-site-navbar
+      className="sticky top-10 z-30 max-w-[1200px] mx-auto w-full lg:px-0 px-2.5"
+    >
+      <nav ref={navRef} className="relative z-40 flex items-center font-th">
         {navItems.map((item) => {
           const isActive = active === item.id;
           const isStepsOpen = item.id === "steps" && showStepsOverlay;
@@ -118,8 +136,19 @@ const Navbar = () => {
           );
         })}
       </nav>
-      <StepIndicator showStepsOverlay={showStepsOverlay} />
-      {showStepsOverlay ? <StepsOverlay /> : null}
+
+      {showStepsOverlay ? (
+        <div className="fixed inset-0 z-20 overflow-hidden bg-white">
+          <div className="h-full overflow-hidden" style={{ paddingTop: overlayTop }}>
+            <StepsOverlay
+              background="transparent"
+              className="h-full overflow-hidden"
+              onNavigate={closeStepsOverlay}
+              fit="scroll"
+            />
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };
