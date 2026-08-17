@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { T05, T06, T07 } from "@/src/components/icons/topics";
+import { asset } from "@/src/lib/asset";
 import CoverCap from "../CoverCap";
 import SubSectionOne from "../subsecyions/S03/SubSectionOne";
 import SubSectionTwo from "../subsecyions/S03/SubSectionTwo";
@@ -108,7 +109,7 @@ function KnowledgeBox() {
       </div>
       <div className="relative h-[457px] min-w-0 flex-1 overflow-clip border-2 border-white bg-[#fdf1bd]">
         <Image
-          src="/img/s03/folder-6.svg"
+          src={asset("/img/s03/folder-6.svg")}
           alt=""
           width={185}
           height={195}
@@ -116,7 +117,7 @@ function KnowledgeBox() {
           aria-hidden="true"
         />
         <Image
-          src="/img/s03/folder-1.svg"
+          src={asset("/img/s03/folder-1.svg")}
           alt=""
           width={177}
           height={187}
@@ -124,7 +125,7 @@ function KnowledgeBox() {
           aria-hidden="true"
         />
         <Image
-          src="/img/s03/folder-3.svg"
+          src={asset("/img/s03/folder-3.svg")}
           alt=""
           width={146}
           height={155}
@@ -132,7 +133,7 @@ function KnowledgeBox() {
           aria-hidden="true"
         />
         <Image
-          src="/img/s03/folder-5.svg"
+          src={asset("/img/s03/folder-5.svg")}
           alt=""
           width={2}
           height={169}
@@ -140,7 +141,7 @@ function KnowledgeBox() {
           aria-hidden="true"
         />
         <Image
-          src="/img/s03/folder-2.svg"
+          src={asset("/img/s03/folder-2.svg")}
           alt=""
           width={2}
           height={138}
@@ -191,7 +192,7 @@ function KnowledgeBox() {
           </p>
         </div>
         <Image
-          src="/img/s03/lamp.svg"
+          src={asset("/img/s03/lamp.svg")}
           alt=""
           width={95}
           height={98}

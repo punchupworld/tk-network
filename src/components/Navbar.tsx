@@ -3,6 +3,7 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import StepsOverlay from "@/src/components/StepsOverlay";
 import Image from "next/image";
+import { asset } from "@/src/lib/asset";
 
 type NavItem = {
   id: string;
@@ -16,7 +17,7 @@ const navItems: NavItem[] = [
     id: "community",
     icon: (
       <Image
-        src="/img/tkpark-logo.svg"
+        src={asset("/img/tkpark-logo.svg")}
         alt="TKPark"
         width={100}
         height={34}

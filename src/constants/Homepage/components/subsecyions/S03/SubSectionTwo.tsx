@@ -3,6 +3,7 @@ import type { CSSProperties } from "react";
 import { T06 } from "@/src/components/icons/topics";
 import SpaceTypeBlock, { TRAP_H } from "./SpaceTypeBlock";
 import HoverSpaceGrid, { SidePanel } from "./HoverSpaceGrid";
+import { asset } from "@/src/lib/asset";
 
 const IconBox = ({
   stroke,
@@ -254,7 +255,7 @@ const SubSectionTwo = () => {
               { label: "ฝึกดนตรี" },
             ]}
             image={{
-              src: "/img/s03/space/cover-1.png",
+              src: asset("/img/s03/space/cover-1.png"),
               alt: "พื้นที่สตูดิโอ",
               flip: "rotate",
             }}
@@ -285,7 +286,7 @@ const SubSectionTwo = () => {
               { label: "อินนิยายการ์ตูน" },
             ]}
             image={{
-              src: "/img/s03/space/cover-2.png",
+              src: asset("/img/s03/space/cover-2.png"),
               alt: "พื้นที่แบ่งปันนั่งทำงาน",
               flip: "scaleY",
             }}
@@ -319,7 +320,7 @@ const SubSectionTwo = () => {
               { label: "เด็กน้อยนั่งเล่น" },
             ]}
             image={{
-              src: "/img/s03/space/cover-3.png",
+              src: asset("/img/s03/space/cover-3.png"),
               alt: "พื้นที่ผ่อนคลายเป็นกันเอง",
               flip: "rotate",
             }}
@@ -355,7 +356,7 @@ const SubSectionTwo = () => {
               { label: "ร่วมกิจกรรมกับชุมชน" },
             ]}
             image={{
-              src: "/img/s03/space/cover-4.png",
+              src: asset("/img/s03/space/cover-4.png"),
               alt: "พื้นที่สะดวก กิจกรรมสบาย",
               flip: "scaleY",
             }}

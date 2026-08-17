@@ -19,6 +19,7 @@ import {
   T13,
 } from "@/src/components/icons/topics";
 import StepIndicator from "./StepIndicator";
+import { asset } from "@/src/lib/asset";
 
 type TopicIcon = React.ComponentType<
   React.SVGProps<SVGSVGElement> & { fill?: string; stroke?: string }
@@ -54,10 +55,10 @@ const MAP_HEIGHT = DESIGN_HEIGHT * DESIGN_SCALE;
 const TOPIC_RED = "#F5333F";
 const TOPIC_STROKE = "#F5333F";
 
-const fireAsset = "/img/steps-overlay/fire.svg";
-const groupAsset = "/img/steps-overlay/group.svg";
-const ellipseAsset = "/img/steps-overlay/ellipse.svg";
-const rotatedEllipseAsset = "/img/steps-overlay/ellipse-rotated.svg";
+const fireAsset = asset("/img/steps-overlay/fire.svg");
+const groupAsset = asset("/img/steps-overlay/group.svg");
+const ellipseAsset = asset("/img/steps-overlay/ellipse.svg");
+const rotatedEllipseAsset = asset("/img/steps-overlay/ellipse-rotated.svg");
 const MENU_BORDER = "#C6A760";
 
 const TOPIC_ITEMS = {

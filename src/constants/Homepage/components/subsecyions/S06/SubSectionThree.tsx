@@ -1,5 +1,6 @@
 import { T13 } from "@/src/components/icons/topics";
 import ParkCard from "./ParkCard";
+import { asset } from "@/src/lib/asset";
 
 const SubSectionThree = () => {
   return (
@@ -33,8 +34,8 @@ const SubSectionThree = () => {
         title="พื้นที่แห่งการเรียนรู้และความเข้าใจในสังคมพหุวัฒนธรรม"
         locationName="ยะลา"
         images={[
-          { src: "/img/tsix-one.png", alt: "ยะลา", height: 168 },
-          { src: "/img/tsix-two.png", alt: "ยะลา", height: 104 },
+          { src: asset("/img/tsix-one.png"), alt: "ยะลา", height: 168 },
+          { src: asset("/img/tsix-two.png"), alt: "ยะลา", height: 104 },
         ]}
         highlights={[
           "สามารถปรับตัวต่อการเปลี่ยนแปลง และทำงานร่วมกับภาคการศึกษา หน่วยงานภาครัฐ และภาคประชาสังคมอย่างใกล้ชิด",
@@ -59,8 +60,8 @@ const SubSectionThree = () => {
         title="เรียนรู้บนความแตกต่าง สร้างพลังจากความหลากหลาย"
         locationName="ปัตตานี"
         images={[
-          { src: "/img/tsix-three.png", alt: "ปัตตานี", height: 104 },
-          { src: "/img/tsix-four.png", alt: "ปัตตานี", height: 168 },
+          { src: asset("/img/tsix-three.png"), alt: "ปัตตานี", height: 104 },
+          { src: asset("/img/tsix-four.png"), alt: "ปัตตานี", height: 168 },
         ]}
         highlights={[
           "สะท้อนอัตลักษณ์ของเมืองพหุวัฒนธรรมที่ผู้คนต่างศาสนา ภาษา และวิถีชีวิตสามารถอยู่ร่วมกันได้อย่างสร้างสรรค์",
@@ -85,8 +86,8 @@ const SubSectionThree = () => {
         title="เชื่อมโยงภูมิปัญญาท้องถิ่นสู่เมืองแห่งการเรียนรู้"
         locationName="พะเยา"
         images={[
-          { src: "/img/tsix-five.png", alt: "ยะลา", height: 104 },
-          { src: "/img/tsix-six.png", alt: "ยะลา", height: 168 },
+          { src: asset("/img/tsix-five.png"), alt: "ยะลา", height: 104 },
+          { src: asset("/img/tsix-six.png"), alt: "ยะลา", height: 168 },
         ]}
         highlights={[
           "นำทุนทางวัฒนธรรมและองค์ความรู้ท้องถิ่นมาผสมผสานกับ แนวคิดการเรียนรู้สมัยใหม่",
@@ -111,8 +112,8 @@ const SubSectionThree = () => {
         title="ศูนย์กลางการเรียนรู้ของภาคตะวันออกเฉียงเหนือ"
         locationName="นครราชสีมา"
         images={[
-          { src: "/img/tsix-seven.png", alt: "ปัตตานี", height: 104 },
-          { src: "/img/tsix-eight.png", alt: "ปัตตานี", height: 168 },
+          { src: asset("/img/tsix-seven.png"), alt: "ปัตตานี", height: 104 },
+          { src: asset("/img/tsix-eight.png"), alt: "ปัตตานี", height: 168 },
         ]}
         highlights={[
           "ทำเลที่ตั้งรายล้อมไปด้วยสถาบันการศึกษา หน่วยงานสำคัญ และพื้นที่สาธารณะของเมือง ประชาชนจึงเข้าถึงได้ง่าย",

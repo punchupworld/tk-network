@@ -3,6 +3,7 @@
 import { useState, type ReactNode } from "react";
 import Image from "next/image";
 import { ImageModal } from "../S06/ParkCard";
+import { asset } from "@/src/lib/asset";
 
 type BoxImage = {
   src: string;
@@ -66,55 +67,55 @@ const ToolBox = ({ fill = "#D95243" }: { fill?: string }) => {
 };
 
 const BOX_IMAGE = {
-  src: "/img/s03/hover/box-1.png",
+  src: asset("/img/s03/hover/box-1.png"),
   alt: "ห้องสมุดมีชีวิต",
   height: 100,
 };
 
 const BOX_IMAGE_2 = {
-  src: "/img/s03/hover/box-2.png",
+  src: asset("/img/s03/hover/box-2.png"),
   alt: "ห้องสมุดมีชีวิต",
   height: 100,
 };
 
 const BOX_IMAGE_3 = {
-  src: "/img/s03/hover/box-3.png",
+  src: asset("/img/s03/hover/box-3.png"),
   alt: "ห้อฉบพิมพ์หนังสืออ้างอิง",
   height: 100,
 };
 
 const BOX_IMAGE_4 = {
-  src: "/img/s03/hover/box-4.png",
+  src: asset("/img/s03/hover/box-4.png"),
   alt: "Mind Room",
   height: 100,
 };
 
 const BOX_IMAGE_5 = {
-  src: "/img/s03/hover/box-5.png",
+  src: asset("/img/s03/hover/box-5.png"),
   alt: "ห้องสมุดไอที",
   height: 100,
 };
 
 const BOX_IMAGE_6 = {
-  src: "/img/s03/hover/box-6.png",
+  src: asset("/img/s03/hover/box-6.png"),
   alt: "ห้องสมุดไอที",
   height: 100,
 };
 
 const BOX_IMAGE_7 = {
-  src: "/img/s03/hover/box-7.png",
+  src: asset("/img/s03/hover/box-7.png"),
   alt: "ห้องสมุดดนตรี",
   height: 100,
 };
 
 const BOX_IMAGE_8 = {
-  src: "/img/s03/hover/box-8.png",
+  src: asset("/img/s03/hover/box-8.png"),
   alt: "ห้องสมุดดนตรี",
   height: 100,
 };
 
 const BOX_IMAGE_9 = {
-  src: "/img/s03/hover/box-9.png",
+  src: asset("/img/s03/hover/box-9.png"),
   alt: "ห้องสมุดดนตรี",
   height: 100,
 };

@@ -5,6 +5,7 @@ import CoverSub from "../../CoverSub";
 import Image from "next/image";
 import { ImageModal } from "../S06/ParkCard";
 import CoverCap from "../../CoverCap";
+import { asset } from "@/src/lib/asset";
 
 const IconBox = ({
   stroke,
@@ -241,7 +242,7 @@ const SubSectionOne = () => {
                 className="w-fit cursor-pointer border border-white text-left"
                 onClick={() =>
                   setOpenImage({
-                    src: "/img/tthree-one.png",
+                    src: asset("/img/tthree-one.png"),
                     alt: "tthree-one",
                     height: 138,
                   })
@@ -250,7 +251,7 @@ const SubSectionOne = () => {
               >
                 <div className="relative">
                   <Image
-                    src="/img/tthree-one.png"
+                    src={asset("/img/tthree-one.png")}
                     alt="tthree-one"
                     width={100}
                     height={138}
@@ -266,7 +267,7 @@ const SubSectionOne = () => {
                 className="w-fit cursor-pointer border border-white text-left"
                 onClick={() =>
                   setOpenImage({
-                    src: "/img/tthree-two.png",
+                    src: asset("/img/tthree-two.png"),
                     alt: "tthree-two",
                     height: 187,
                   })
@@ -275,7 +276,7 @@ const SubSectionOne = () => {
               >
                 <div className="relative">
                   <Image
-                    src="/img/tthree-two.png"
+                    src={asset("/img/tthree-two.png")}
                     alt="tthree-one"
                     width={137}
                     height={187}
@@ -305,7 +306,7 @@ const SubSectionOne = () => {
                 className="w-fit cursor-pointer border border-white text-left"
                 onClick={() =>
                   setOpenImage({
-                    src: "/img/tthree-three.png",
+                    src: asset("/img/tthree-three.png"),
                     alt: "tthree-three",
                     height: 138,
                   })
@@ -314,7 +315,7 @@ const SubSectionOne = () => {
               >
                 <div className="relative">
                   <Image
-                    src="/img/tthree-three.png"
+                    src={asset("/img/tthree-three.png")}
                     alt="tthree-three"
                     width={100}
                     height={138}
@@ -330,7 +331,7 @@ const SubSectionOne = () => {
                 className="w-fit cursor-pointer border border-white text-left"
                 onClick={() =>
                   setOpenImage({
-                    src: "/img/tthree-four.png",
+                    src: asset("/img/tthree-four.png"),
                     alt: "tthree-four",
                     height: 187,
                   })
@@ -339,7 +340,7 @@ const SubSectionOne = () => {
               >
                 <div className="relative">
                   <Image
-                    src="/img/tthree-four.png"
+                    src={asset("/img/tthree-four.png")}
                     alt="tthree-four"
                     width={137}
                     height={187}
