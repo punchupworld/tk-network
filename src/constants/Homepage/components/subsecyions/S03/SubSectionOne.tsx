@@ -100,7 +100,7 @@ const SubSectionOne = () => {
             </p>
           </div>
 
-          <div className="flex">
+          <div className="flex flex-wrap">
             <div className="relative flex items-center justify-center mr-[-19px]">
               <IconBox
                 stroke="#C0A765"
@@ -228,8 +228,8 @@ const SubSectionOne = () => {
               หรือเปล่า?
             </p>
           </div>
-          <div className="flex gap-2.5 p-10 bg-yellow-100 border-b-2 border-white">
-            <p className="font-th desktop-s6-th-400 text-tk-black text-balance w-1/2">
+          <div className="flex gap-2.5 p-10 bg-yellow-100 border-b-2 border-white md:flex-row flex-col">
+            <p className="font-th desktop-s6-th-400 text-tk-black text-balance md:w-1/2 w-full">
               เมืองอาร์ฮุส เดนมาร์ก มีห้องสมุดประชาชน Dokk1
               ซึ่งได้รับการออกแบบในฐานะศูนย์กลางขนาด ใหญ่ของชุมชนตรงใจกลางเมือง
               แถมยังตั้งอยู่ริมน้ำ มีขนาดกว้างขวางและสวยงาม เข้าถึงง่าย
@@ -289,8 +289,8 @@ const SubSectionOne = () => {
               </button>
             </div>
           </div>
-          <div className="flex gap-2.5 p-10 bg-orange-50 border-b-2 border-white">
-            <p className="font-th desktop-s6-th-400 text-tk-black text-balance w-1/2">
+          <div className="flex gap-2.5 p-10 bg-orange-50 border-b-2 border-white md:flex-row flex-col">
+            <p className="font-th desktop-s6-th-400 text-tk-black text-balance md:w-1/2 w-full">
               ห้องสมุด Oodi ของประเทศฟินแลนด์ก็เช่นกัน
               นี่คือพื้นที่สาธารณะที่มีบริการผสมผสานอย่างครอบคลุม
               คือมีทั้งห้องสมุดแบบดั้งเดิมพร้อมบริการใหม่ๆ

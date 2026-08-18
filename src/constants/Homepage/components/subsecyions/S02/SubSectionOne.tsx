@@ -60,7 +60,7 @@ const SubSectionOne = () => {
           <p className="font-th desktop-s6-th-700 text-tk-black px-2.5 py-1 bg-yellow-700">
             โดยมีทั้งหมด 3 รูปแบบ ดังนี้
           </p>
-          <div className="flex">
+          <div className="flex flex-wrap">
             <div className="relative flex items-center justify-center">
               <IconBox
                 stroke="#C0A765"
@@ -98,8 +98,8 @@ const SubSectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start" id="subsubtopic4">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row" id="subsubtopic4">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -353,8 +353,8 @@ const SubSectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start" id="subsubtopic5">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row" id="subsubtopic5">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -386,8 +386,8 @@ const SubSectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start" id="subsubtopic6">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row" id="subsubtopic6">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"

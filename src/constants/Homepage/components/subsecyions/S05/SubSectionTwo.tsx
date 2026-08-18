@@ -84,8 +84,11 @@ const SubSectionTwo = () => {
           พื้นที่การเรียนรู้คงจะไม่สามารถพัฒนาศักยภาพได้อย่างต่อเนื่องและยั่งยืน
         </p>
       </div>
-      <div className="flex items-start h-full" id="subsubtopic18">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div
+        className="flex items-start h-full md:flex-row flex-col"
+        id="subsubtopic18"
+      >
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -142,7 +145,7 @@ const SubSectionTwo = () => {
             </p>
           </div>
         </div>
-        <div className="p-10 border-2 border-white bg-orange-50 flex gap-5">
+        <div className="p-10 border-2 border-white bg-orange-50 flex gap-5 flex-col md:flex-row">
           <div className="flex flex-col gap-2.5">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
               เจ้าหน้าที่ของพื้นที่การเรียนรู้จะต้องเข้าใจการทำงานหน้าบ้านและหลังบ้าน

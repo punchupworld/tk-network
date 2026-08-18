@@ -169,8 +169,8 @@ const SubSectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -194,27 +194,29 @@ const SubSectionOne = () => {
       </div>
       <div className="flex w-full flex-col items-start" id="subsubtopic13">
         <CoverCap color="#5B73ED" />
-        <div className="flex w-full flex-col items-start gap-10 border-x-2 border-white bg-[#5B73ED] px-10 pt-5 pb-10 text-white">
+        <div className="flex w-full flex-col items-start gap-6 border-x-2 border-white bg-[#5B73ED] px-6 pt-5 pb-6 text-white md:gap-10 md:px-10 md:pb-10">
           <div className="border-t-2 border-blue-50 w-full" />
           <div className="w-full flex flex-col gap-2.5">
             <div className="px-5 py-1.5 border-2 border-white rounded-full w-fit">
-              <p className="font-th desktop-s6-th-700 text-white">งบก่อสร้าง</p>
+              <p className="font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
+                งบก่อสร้าง
+              </p>
             </div>
-            <div className="flex justify-between flex-wrap">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-4 md:flex md:justify-between md:gap-0">
               <div className="flex flex-col gap-3 justify-center items-center ">
                 <div className="relative flex items-center justify-center">
                   <Textbox
                     stroke="#91C5F4"
-                    className="w-[155px] h-[205px] "
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-white">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                     งบประมาณ <br />
                     ขึ้นอยู่กับ <br />
                     ประเภทที่ดิน
                   </p>
                 </div>
-                <p className="font-th desktop-s7-th-700 text-white">
+                <p className="text-center font-th desktop-s7-th-700 text-white">
                   การจัดซื้อ / เช่าที่ดิน
                 </p>
               </div>
@@ -222,16 +224,16 @@ const SubSectionOne = () => {
                 <div className="relative flex items-center justify-center">
                   <Textbox
                     stroke="#91C5F4"
-                    className="w-[155px] h-[205px] "
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-white">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                     เฉลี่ยประมาณ <br />
                     25,000 <br />
                     ต่อตารางเมตร
                   </p>
                 </div>
-                <p className="font-th desktop-s7-th-700 text-white">
+                <p className="text-center font-th desktop-s7-th-700 text-white">
                   การก่อสร้าง
                 </p>
               </div>
@@ -239,10 +241,10 @@ const SubSectionOne = () => {
                 <div className="relative flex items-center justify-center">
                   <Textbox
                     stroke="#91C5F4"
-                    className="w-[155px] h-[205px] "
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-white">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                     ขึ้นอยู่กับ <br />
                     การจัดซื้อ <br />
                     อุปกรณ์ <br />
@@ -252,7 +254,7 @@ const SubSectionOne = () => {
                     ที่จะนำมาใช้
                   </p>
                 </div>
-                <p className="font-th desktop-s7-th-700 text-white">
+                <p className="text-center font-th desktop-s7-th-700 text-white">
                   การตกแต่งภายใน
                 </p>
               </div>
@@ -260,57 +262,57 @@ const SubSectionOne = () => {
           </div>
           <div className="border-t-2 border-blue-50 w-full" />
           <div className="border-t-2 border-blue-50 w-full" />
-          <div className="w-full flex flex-col gap-10">
-            <div className="flex justify-between items-center">
+          <div className="w-full flex flex-col gap-6 md:gap-10">
+            <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-center md:gap-5">
               <div className="px-5 py-1.5 border-2 border-white rounded-full w-fit">
-                <p className="font-th desktop-s6-th-700 text-white">
+                <p className="font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                   งบเตรียมการ
                 </p>
               </div>
-              <p className="font-th desktop-s6-th-400 text-white">
+              <p className="font-th mobile-s6-th-400 text-white md:desktop-s6-th-400">
                 กรณีเลือกใช้ระบบการจัดการของ TK Park
               </p>
             </div>
             <div className="flex flex-col gap-6">
-              <div className="flex justify-between items-end">
+              <div className="grid grid-cols-3 items-end gap-3 md:flex md:justify-between md:gap-0">
                 <div className="flex flex-col gap-3 justify-center items-center">
-                  <p className="font-th desktop-s6-th-700 text-white">
+                  <p className="text-center font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                     เฉลี่ยประมาณ
                     <br />
                     140,000 บาท
                   </p>
-                  <BarOne />
+                  <BarOne className="h-auto w-full max-w-38.75" />
                 </div>
                 <div className="flex flex-col gap-3 justify-center items-center">
-                  <p className="font-th desktop-s6-th-700 text-white">
+                  <p className="text-center font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                     เฉลี่ยประมาณ
                     <br />
                     130,000 บาท
                   </p>
-                  <BarTwo />
+                  <BarTwo className="h-auto w-full max-w-38.75" />
                 </div>
                 <div className="flex flex-col gap-3 justify-center items-center">
-                  <p className="font-th desktop-s6-th-700 text-white">
+                  <p className="text-center font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                     เฉลี่ยประมาณ
                     <br />
                     230,000 บาท
                   </p>
-                  <BarThree />
+                  <BarThree className="h-auto w-full max-w-38.75" />
                 </div>
               </div>
-              <div className="flex justify-between">
-                <div className="text-center max-w-[155px] text-balance">
+              <div className="grid grid-cols-3 gap-3 md:flex md:justify-between md:gap-0">
+                <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
                     จัดหาอุปกรณ์ ประกอบการใช้งาน ระบบห้องสมุดอัตโนมัติ (Walai
                     Autolib)
                   </p>
                 </div>
-                <div className="text-center max-w-[155px] text-balance">
+                <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
                     จัดหาอุปกรณ์ ประกอบการการจัด แคตตาล็อก ทรัพยากรสารสนเทศ
                   </p>
                 </div>
-                <div className="text-center max-w-[155px] text-balance">
+                <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
                     จัดหาอุปกรณ์ประกอบ การใช้งานระบบสมาชิก (TK Member)
                   </p>
@@ -321,8 +323,8 @@ const SubSectionOne = () => {
           <div className="border-t-2 border-blue-50 w-full" />
         </div>
       </div>
-      <div className="flex items-start">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -349,24 +351,24 @@ const SubSectionOne = () => {
       <div className="relative flex w-full flex-col items-start">
         <CoverSub color="#FFBAA1" />
 
-        <div className="flex w-full flex-col items-center justify-center gap-10 border-x-2 border-b-2 border-white bg-[#FFBAA1] px-10 pb-10 text-white ">
+        <div className="flex w-full flex-col items-center justify-center gap-6 border-x-2 border-b-2 border-white bg-[#FFBAA1] px-6 pb-6 text-white md:gap-10 md:px-10 md:pb-10">
           <div className="border-t-2 border-white w-full" />
 
-          <div className="w-full flex flex-col gap-5">
+          <div className="w-full flex flex-col gap-3 md:gap-5">
             <div className="px-5 py-1.5 border-2 border-tk-black rounded-full w-fit">
-              <p className="font-th desktop-s6-th-700 text-tk-black">
+              <p className="font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                 งบก่อสร้าง
               </p>
             </div>
-            <div className="flex justify-between ">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-4 md:flex md:justify-between md:gap-0">
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
                   <IconBox
                     stroke="#FFFFFF"
-                    className="w-[155px] h-[155px]"
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบจ้าง <br />
                     บุคลากร
                   </p>
@@ -376,10 +378,10 @@ const SubSectionOne = () => {
                 <div className="relative flex items-center justify-center">
                   <IconBox
                     stroke="#FFFFFF"
-                    className="w-[155px] h-[155px]"
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบค่า <br />
                     สาธารณูปโภค
                   </p>
@@ -389,10 +391,10 @@ const SubSectionOne = () => {
                 <div className="relative flex items-center justify-center">
                   <IconBox
                     stroke="#FFFFFF"
-                    className="w-[155px] h-[155px]"
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบบำรุงรักษา <br />
                     พื้นที่
                   </p>
@@ -403,21 +405,21 @@ const SubSectionOne = () => {
 
           <div className="border-t-2 border-white w-full" />
           <div className="border-t-2 border-white w-full" />
-          <div className="w-full flex flex-col gap-5">
+          <div className="w-full flex flex-col gap-3 md:gap-5">
             <div className="px-5 py-1.5 border-2 border-tk-black rounded-full w-fit">
-              <p className="font-th desktop-s6-th-700 text-tk-black">
+              <p className="font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                 จัดสรรรายปี
               </p>
             </div>
-            <div className="flex justify-between ">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-4 md:flex md:justify-between md:gap-0">
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
                   <IconBox
                     stroke="#FFFFFF"
-                    className="w-[155px] h-[155px]"
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบจัดหา
                     <br />
                     ทรัพยากร
@@ -430,10 +432,10 @@ const SubSectionOne = () => {
                 <div className="relative flex items-center justify-center">
                   <IconBox
                     stroke="#FFFFFF"
-                    className="w-[155px] h-[155px]"
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบ
                     <br />
                     ประชาสัมพันธ์
@@ -446,10 +448,10 @@ const SubSectionOne = () => {
                 <div className="relative flex items-center justify-center">
                   <IconBox
                     stroke="#FFFFFF"
-                    className="w-[155px] h-[155px]"
+                    className="h-auto w-full max-w-38.75"
                     aria-hidden="true"
                   />
-                  <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+                  <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบจัดหา
                     <br />
                     อุปกรณ์และ

@@ -55,7 +55,7 @@ const CoverTrap = ({
               src={src}
               alt={alt}
               fill
-              sizes="600px"
+              sizes="(max-width: 600px) 100vw, 600px"
               className="object-cover rotate-180"
             />
           ) : null}

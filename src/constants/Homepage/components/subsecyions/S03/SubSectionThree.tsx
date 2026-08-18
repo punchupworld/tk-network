@@ -2,7 +2,7 @@
 import { T07 } from "@/src/components/icons/topics";
 import { asset } from "@/src/lib/asset";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const IconBox = ({
   stroke,
@@ -80,45 +80,143 @@ export const SidePanel = () => {
   );
 };
 
+const PLAYSPACE_FRAME = { w: 760, h: 434 };
+const PLAYSPACE_MAP_W = 600;
+
 const PlayspaceFrame = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <div className="relative mx-auto w-full max-w-190">
-      <div className="mx-auto aspect-600/434 w-full max-w-150" aria-hidden />
+    <div
+      className="relative mx-auto w-full max-w-190"
+      style={{ aspectRatio: `${PLAYSPACE_FRAME.w} / ${PLAYSPACE_FRAME.h}` }}
+    >
       {children}
     </div>
   );
 };
+
+type PlayZoneBox = { left: number; top: number; w: number; h: number };
+
+const playZoneStyle = ({
+  left,
+  top,
+  w,
+  h,
+}: PlayZoneBox): React.CSSProperties => ({
+  left: `${(left / PLAYSPACE_FRAME.w) * 100}%`,
+  top: `${(top / PLAYSPACE_FRAME.h) * 100}%`,
+  width: `${(w / PLAYSPACE_FRAME.w) * 100}%`,
+  height: `${(h / PLAYSPACE_FRAME.h) * 100}%`,
+});
 
 const PlayZoneCard = ({
   src,
   alt,
   title,
   className,
+  style,
   children,
 }: {
   src: string;
   alt: string;
   title: string;
   className: string;
+  style?: React.CSSProperties;
   children: React.ReactNode;
 }) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div
       className={`group pointer-events-auto overflow-hidden border-2 border-tk-black ${className}`}
+      style={style}
     >
       <Image src={src} alt={alt} fill className="object-cover" />
       <div className="absolute left-4 top-4 rounded-full bg-tk-red px-5 py-1.5">
         <p className="font-th desktop-s7-th-700 text-white">{title}</p>
       </div>
-      <div className="absolute bottom-3 right-3 rounded-[10px] bg-white p-2.5">
+      <button
+        type="button"
+        className="absolute bottom-3 right-3 z-20 rounded-[10px] bg-white p-2.5 md:pointer-events-none md:group-hover:hidden"
+        onClick={() => setOpen((prev) => !prev)}
+        aria-label={`${open ? "ปิด" : "เปิด"}รายละเอียด ${title}`}
+      >
         <SidePanel />
-      </div>
-      <div className="absolute inset-0 z-10 hidden items-center justify-center bg-white px-5 group-hover:flex">
+      </button>
+      <div
+        className={`absolute inset-0 z-10 items-center justify-center overflow-y-auto overscroll-contain bg-white px-5 py-4 md:group-hover:flex ${
+          open ? "flex" : "hidden"
+        }`}
+      >
         {children}
       </div>
     </div>
   );
 };
+
+const PLAY_ZONES: {
+  src: string;
+  title: string;
+  box: PlayZoneBox;
+  sticky: string;
+  body: React.ReactNode;
+}[] = [
+  {
+    src: "img/s03/playzone/playzone-1.png",
+    title: "โซนการ์ตูนและสื่อสร้างสรรค์",
+    box: { left: 40, top: 0, w: 268, h: 140 },
+    sticky: "-top-10 z-10",
+    body: (
+      <p className="text-center font-th desktop-s7-th-400 text-tk-black">
+        การ์ตูนและสื่อสร้างสรรค์
+        <br />
+        มาคู่กับที่นั่งนุ่มไว้กลิ้งอ่านมังงะ
+        <br />
+        หรือนอนสบายอ่านกราฟฟิกโนเวล
+        <br />
+        บนบีนแบ็ก
+      </p>
+    ),
+  },
+  {
+    src: "img/s03/playzone/playzone-2.png",
+    title: "โซนเกมคอนโซล",
+    box: { left: 353, top: 0, w: 282, h: 240 },
+    sticky: "top-0 z-20",
+    body: (
+      <p className="text-center font-th desktop-s7-th-400 text-tk-black text-balance">
+        โซนเกมคอนโซลบริการ เครื่องเพลย์สเตชัน 5 นินเทนโด สวิช (Nintendo Switch)
+        และเครื่องเล่น VR (Meta Quest) ให้เกมเมอร์เข้ามา สนุกสนานได้ฟรี
+        แค่เพียงจองคิวผ่านเว็บไซต์ หรือแอปพลิเคชัน My TK เป็นรายชั่วโมง
+      </p>
+    ),
+  },
+  {
+    src: "img/s03/playzone/playzone-3.png",
+    title: "โซนดนตรี",
+    box: { left: 0, top: 160, w: 273, h: 215 },
+    sticky: "top-0 z-30",
+    body: (
+      <p className="text-center font-th desktop-s7-th-400 text-tk-black">
+        ที่นี่ไม่ใช่พื้นที่ดนตรีธรรมดา เพราะมีบริการห้องเก็บเสียงส่วนตัว
+        (Soundbox) พร้อมอุปกรณ์ ใครอยากมาซ้อมดนตรี ร้องเพลง ทำเดโมก็ยังได้
+        และยังมีทรัพยากร เกี่ยวกับดนตรีหลายด้านให้ค้นคว้า อีกด้วย
+      </p>
+    ),
+  },
+  {
+    src: "img/s03/playzone/playzone-4.png",
+    title: "โซนพื้นที่ส่วนกลาง",
+    box: { left: 320, top: 280, w: 300, h: 165 },
+    sticky: "top-0 z-40",
+    body: (
+      <p className="text-center font-th desktop-s7-th-400 text-tk-black">
+        พื้นที่ส่วนกลางสำหรับ การพบปะพูดคุย ทำกิจกรรมร่วมกัน
+        และเล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือ ของนักออกแบบไทยไว้บริการ ถึง 100
+        กว่าเกม
+      </p>
+    ),
+  },
+];
 
 const SubSectionThree = () => {
   return (
@@ -271,7 +369,7 @@ const SubSectionThree = () => {
           />
         </div>
 
-        <div className="relative w-full">
+        <div className="relative hidden w-full md:block">
           <div className="sticky top-0 z-0 flex h-dvh w-full items-center justify-center">
             <PlayspaceFrame>
               <Image
@@ -279,88 +377,58 @@ const SubSectionThree = () => {
                 alt="เพลย์สเปซ"
                 width={600}
                 height={434}
-                className="absolute inset-x-0 top-0 mx-auto h-auto w-full max-w-150 object-contain"
+                className="absolute inset-y-0 left-1/2 h-full -translate-x-1/2 object-contain"
+                style={{
+                  width: `${(PLAYSPACE_MAP_W / PLAYSPACE_FRAME.w) * 100}%`,
+                }}
               />
             </PlayspaceFrame>
           </div>
 
           <div className="relative z-10">
-            <div className="pointer-events-none sticky -top-10 z-10 flex h-dvh w-full items-center justify-center">
-              <PlayspaceFrame>
-                <PlayZoneCard
-                  src={asset("img/s03/playzone/playzone-1.png")}
-                  alt="โซนการ์ตูนและสื่อสร้างสรรค์"
-                  title="โซนการ์ตูนและสื่อสร้างสรรค์"
-                  className="absolute left-10 top-0 h-35 w-67"
-                >
-                  <p className="text-center font-th desktop-s7-th-400 text-tk-black">
-                    การ์ตูนและสื่อสร้างสรรค์
-                    <br />
-                    มาคู่กับที่นั่งนุ่มไว้กลิ้งอ่านมังงะ
-                    <br />
-                    หรือนอนสบายอ่านกราฟฟิกโนเวล
-                    <br />
-                    บนบีนแบ็ก
-                  </p>
-                </PlayZoneCard>
-              </PlayspaceFrame>
-            </div>
-
-            <div className="pointer-events-none sticky top-0 z-20 flex h-dvh w-full items-center justify-center">
-              <PlayspaceFrame>
-                <PlayZoneCard
-                  src={asset("img/s03/playzone/playzone-2.png")}
-                  alt="โซนเกมคอนโซล"
-                  title="โซนเกมคอนโซล"
-                  className="absolute left-88.25 top-0 h-60 w-70.5"
-                >
-                  <p className="text-center font-th desktop-s7-th-400 text-tk-black text-balance">
-                    โซนเกมคอนโซลบริการ เครื่องเพลย์สเตชัน 5 นินเทนโด สวิช
-                    (Nintendo Switch) และเครื่องเล่น VR (Meta Quest)
-                    ให้เกมเมอร์เข้ามา สนุกสนานได้ฟรี แค่เพียงจองคิวผ่านเว็บไซต์
-                    หรือแอปพลิเคชัน My TK เป็นรายชั่วโมง
-                  </p>
-                </PlayZoneCard>
-              </PlayspaceFrame>
-            </div>
-
-            <div className="pointer-events-none sticky top-0 z-30 flex h-dvh w-full items-center justify-center">
-              <PlayspaceFrame>
-                <PlayZoneCard
-                  src={asset("img/s03/playzone/playzone-3.png")}
-                  alt="โซนดนตรี"
-                  title="โซนดนตรี"
-                  className="absolute left-0 top-40 h-53.75 w-68.25"
-                >
-                  <p className="text-center font-th desktop-s7-th-400 text-tk-black">
-                    ที่นี่ไม่ใช่พื้นที่ดนตรีธรรมดา
-                    เพราะมีบริการห้องเก็บเสียงส่วนตัว (Soundbox) พร้อมอุปกรณ์
-                    ใครอยากมาซ้อมดนตรี ร้องเพลง ทำเดโมก็ยังได้ และยังมีทรัพยากร
-                    เกี่ยวกับดนตรีหลายด้านให้ค้นคว้า อีกด้วย
-                  </p>
-                </PlayZoneCard>
-              </PlayspaceFrame>
-            </div>
-
-            <div className="pointer-events-none sticky top-0 z-40 flex h-dvh w-full items-center justify-center">
-              <PlayspaceFrame>
-                <PlayZoneCard
-                  src={asset("img/s03/playzone/playzone-4.png")}
-                  alt="โซนพื้นที่ส่วนกลาง"
-                  title="โซนพื้นที่ส่วนกลาง"
-                  className="absolute left-80 top-70 h-41.25 w-75"
-                >
-                  <p className="text-center font-th desktop-s7-th-400 text-tk-black">
-                    พื้นที่ส่วนกลางสำหรับ การพบปะพูดคุย ทำกิจกรรมร่วมกัน
-                    และเล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือ ของนักออกแบบไทยไว้บริการ
-                    ถึง 100 กว่าเกม
-                  </p>
-                </PlayZoneCard>
-              </PlayspaceFrame>
-            </div>
+            {PLAY_ZONES.map((zone) => (
+              <div
+                key={zone.title}
+                className={`pointer-events-none sticky flex h-dvh w-full items-center justify-center ${zone.sticky}`}
+              >
+                <PlayspaceFrame>
+                  <PlayZoneCard
+                    src={asset(zone.src)}
+                    alt={zone.title}
+                    title={zone.title}
+                    className="absolute"
+                    style={playZoneStyle(zone.box)}
+                  >
+                    {zone.body}
+                  </PlayZoneCard>
+                </PlayspaceFrame>
+              </div>
+            ))}
 
             <div className="h-dvh" aria-hidden="true" />
           </div>
+        </div>
+
+        <div className="flex w-full max-w-[600px] flex-col gap-10 md:hidden">
+          <Image
+            src={asset("img/s03/playspace.svg")}
+            alt="เพลย์สเปซ"
+            width={600}
+            height={434}
+            className="h-auto w-full object-contain"
+          />
+          {PLAY_ZONES.map((zone) => (
+            <PlayZoneCard
+              key={zone.title}
+              src={asset(zone.src)}
+              alt={zone.title}
+              title={zone.title}
+              className="relative w-full"
+              style={{ aspectRatio: `${zone.box.w} / ${zone.box.h}` }}
+            >
+              {zone.body}
+            </PlayZoneCard>
+          ))}
         </div>
 
         <div
@@ -369,7 +437,7 @@ const SubSectionThree = () => {
         >
           <div className="absolute left-0 top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
           <blockquote className="absolute left-[13.6%] top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
-            <span className="font-th desktop-s5-th-700 leading-normal text-balance">
+            <span className="font-th md:desktop-s5-th-700 leading-normal text-balance desktop-s7-th-400">
               การเปิดเพลย์สเปซในต้นปีพ.ศ. 2569 คือความตั้งใจมอบเป็นของขวัญปีใหม่
               แก่พี่น้องชาวไทย เราอยากเห็นพื้นที่นี้เป็นจุดเริ่มต้น
               ของชุมชนคนรุ่นใหม่ที่จะช่วยกันขับเคลื่อนกรุงเทพฯ

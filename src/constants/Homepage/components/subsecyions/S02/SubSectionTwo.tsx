@@ -56,8 +56,8 @@ const SubSectionTwo = () => {
           ที่ทาง TK Park สามารถให้คำแนะนำตามความเหมาะสมอย่างเต็มกำลัง
         </p>
       </div>
-      <div className="flex items-start h-full">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start h-full flex-col md:flex-row">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -80,8 +80,8 @@ const SubSectionTwo = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-start">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -107,8 +107,8 @@ const SubSectionTwo = () => {
           </p>
         </div>
       </div>
-      <div className="flex items-start">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -216,8 +216,8 @@ const SubSectionTwo = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start flex-col md:flex-row">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -242,7 +242,7 @@ const SubSectionTwo = () => {
       <div className="relative flex w-full flex-col items-start">
         <CoverSub color="#FEDFCA" />
         <div className="absolute right-[40px] top-[48px]">
-          <div className="px-5 py-1.5 bg-tk-black flex gap-5">
+          <div className="px-5 py-1.5 bg-tk-black flex md:flex-row flex-col md:gap-5 gap-0">
             <h2 className="font-th desktop-s6-th-400 text-white">
               On-the-Job Training
             </h2>

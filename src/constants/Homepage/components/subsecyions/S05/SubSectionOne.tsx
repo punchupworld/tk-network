@@ -50,7 +50,7 @@ const SubSectionOne = () => {
           พื้นที่การเรียนรู้ให้ยั่งยืนอย่างระยะยาว ก่อนเปิดบริการ
         </p>
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
-          <div className="flex gap-5 px-2.5 py-1 bg-yellow-700">
+          <div className="flex gap-5 px-2.5 py-1 bg-yellow-700 md:flex-row flex-col">
             <p className="font-th desktop-s6-th-400 text-tk-black ">
               โดยนโยบายและข้อตกลงที่ควรกำหนด
             </p>
@@ -59,7 +59,7 @@ const SubSectionOne = () => {
             </p>
           </div>
 
-          <div className="flex gap-2.5">
+          <div className="flex gap-2.5 flex-wrap">
             <div className="relative flex items-center justify-center">
               <IconBox
                 stroke="#C0A765"
@@ -115,8 +115,8 @@ const SubSectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start" id="subsubtopic14">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start md:flex-row flex-col" id="subsubtopic14">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -184,8 +184,8 @@ const SubSectionOne = () => {
         </div>
       </div>
 
-      <div className="flex items-start" id="subsubtopic15">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start md:flex-row flex-col" id="subsubtopic15">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -237,8 +237,8 @@ const SubSectionOne = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-start" id="subsubtopic16">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start md:flex-row flex-col" id="subsubtopic16">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"
@@ -268,8 +268,8 @@ const SubSectionOne = () => {
           </span>
         </div>
       </div>
-      <div className="flex items-start" id="subsubtopic17">
-        <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+      <div className="flex items-start md:flex-row flex-col" id="subsubtopic17">
+        <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox
               stroke="#FFFFFF"

@@ -1,8 +1,8 @@
 "use client";
-import type { CSSProperties } from "react";
+import { useState, type CSSProperties } from "react";
 import { T06 } from "@/src/components/icons/topics";
 import SpaceTypeBlock, { TRAP_H } from "./SpaceTypeBlock";
-import HoverSpaceGrid, { SidePanel } from "./HoverSpaceGrid";
+import HoverSpaceGrid, { ChevronDown, SidePanel } from "./HoverSpaceGrid";
 import { asset } from "@/src/lib/asset";
 import HoverSpaceGridY from "./HoverSpaceGridY";
 
@@ -101,6 +101,91 @@ const ShapeBoxThree = () => {
         fill="#D95243"
       />
     </svg>
+  );
+};
+
+const FACILITIES = [
+  {
+    title: "ชั้นวางรองเท้า",
+    tips: ["คำนึงถึงจุดถอดรองเท้าที่เพียงพอ ไม่เกะกะบริเวณทางเข้าหลัก"],
+  },
+  {
+    title: "จุดบริการฝากสัมภาระ",
+    tips: [
+      "คำนึงถึงจุดฝากของ หรือตู้ล็อกเกอร์ที่มีพื้นที่ เพียงพอสำหรับพื้นที่การ เรียนรู้ที่ตั้งกฎว่า ไม่อนุญาตให้นำสัมภาระ เข้าไปเพื่อปกป้อง ทรัพย์สินของพื้นที่",
+      "อาจจัดหาเจ้าหน้าที่ เพื่อช่วยอำนวยสะดวก",
+      "คำนึงถึงผู้ใช้บริการ ที่มีสัมภาระปริมาณมาก สำหรับพื้นที่การเรียนรู้ ที่อนุญาตให้นำสัมภาระเข้าพื้นที่ได้",
+    ],
+  },
+  {
+    title: "จุดวางคืนหนังสือ",
+    tips: [
+      "ควรมีจุดวางคืนหนังสืออย่างเป็นที่เป็นทางและเป็นระเบียบ เพื่อที่เจ้าหน้าที่จะได้นำหนังสือไปจัดเข้าชั้นวางได้ง่าย",
+    ],
+  },
+  {
+    title: "เครื่องยืม-คืนหนังสืออัตโนมัติ",
+    tips: [
+      "ลดการสัมผัสระหว่าง บุคคล",
+      "ผู้ใช้บริการไม่ต้องรอ เจ้าหน้าที่",
+      "แบ่งเบาภาระงานของ บรรณารักษ์หรือผู้ดูแล ห้องสมุด",
+    ],
+  },
+  {
+    title: "ตู้บริการน้ำดื่มอัตโนมัติ",
+    tips: ["ส่งเสริมให้ผู้บริการอยู่ในห้องสมุดในระยะเวลานานขึ้น"],
+  },
+  {
+    title: "เครื่องบริการอัตโนมัติ",
+    tips: [
+      "ให้บริการสมัครและต่ออายุสมาชิกผ่านแอปพลิเคชัน My TK",
+      "สามารถชำระ บริการหรือเติมเงินเข้าบัญชีสมาชิกได้",
+      "สามารถออกบัตร เข้าใช้บริการรายวันโดยไม่ต้องติดต่อ เจ้าหน้าที่",
+      "ลดภาระเจ้าหน้าที่ เคาน์เตอร์บริการ",
+    ],
+  },
+];
+
+const FacilityRow = ({ title, tips }: { title: string; tips: string[] }) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="group relative flex justify-between items-center border-b-2 border-white p-7 h-[116px] w-full bg-blue-200">
+      <div />
+      <p className="font-th desktop-s6-th-700 text-white">{title}</p>
+      {open ? null : (
+        <button
+          type="button"
+          className="absolute inset-0 z-20 md:hidden"
+          onClick={() => setOpen(true)}
+          aria-label={`เปิดรายละเอียด ${title}`}
+        />
+      )}
+      <div
+        className={`absolute inset-0 z-10 overflow-y-auto overscroll-contain bg-blue-700 p-7 md:hidden md:group-hover:block ${
+          open ? "block" : "hidden"
+        }`}
+      >
+        <div className="flex justify-between items-start gap-2.5">
+          {tips.map((tip) => (
+            <p
+              key={tip.slice(0, 24)}
+              className="font-th desktop-s6-th-400 text-tk-black flex-1"
+            >
+              {tip}
+            </p>
+          ))}
+        </div>
+      </div>
+      <button
+        type="button"
+        className="relative z-30 p-2.5 bg-blue-700 rounded-[10px] md:pointer-events-none md:group-hover:hidden"
+        onClick={() => setOpen(false)}
+        aria-label={`ปิดรายละเอียด ${title}`}
+      >
+        {open ? <ChevronDown /> : <SidePanel />}
+      </button>
+    </div>
   );
 };
 
@@ -208,7 +293,7 @@ const SubSectionTwo = () => {
 
       <div className="@container relative w-full" id="subsubtopic10">
         <div className="sticky top-0 z-0 flex h-dvh w-full items-center">
-          <div className="mx-auto relative flex w-[442px] h-[459px] items-center justify-center overflow-hidden border-2 border-[#f5333f] bg-white">
+          <div className="mx-auto relative flex h-[min(459px,calc(100dvh-6rem))] w-[min(442px,calc(100vw-2rem))] items-center justify-center overflow-hidden border-2 border-[#f5333f] bg-white">
             <div
               className="pointer-events-none absolute inset-0"
               style={{
@@ -233,11 +318,13 @@ const SubSectionTwo = () => {
           className="relative z-10 flex w-full flex-col items-center gap-50"
           style={
             {
-              "--card-h": "459px",
+              "--cover-w": "min(558px, calc(100vw - 2rem))",
+              "--card-w": "min(442px, calc(100vw - 2rem))",
+              "--card-h": "min(459px, calc(100dvh - 6rem))",
               "--trap-h": `${TRAP_H}px`,
-              "--img-h": "151px",
+              "--img-h": "calc(var(--cover-w) * 0.2706)",
               "--red-h": "max(180px, calc((var(--card-h) - 4px) / 2))",
-              "--stack-top": "calc((100dvh - var(--card-h)) / 2)",
+              "--stack-top": "max(1rem, calc((100dvh - var(--card-h)) / 2))",
             } as CSSProperties
           }
         >
@@ -372,7 +459,10 @@ const SubSectionTwo = () => {
           </SpaceTypeBlock>
 
           <div className="relative w-full" style={{ zIndex: 45 }}>
-            <div className="mx-auto sticky z-30 flex h-[459px] w-[442px] flex-col gap-5 overflow-y-auto border-2 border-white bg-[#5B73ED] p-7">
+            <div
+              className="mx-auto sticky z-30 flex w-[var(--card-w)] max-w-full flex-col gap-5 overflow-y-auto border-2 border-white bg-[#5B73ED] p-5 md:p-7"
+              // style={{ top: "var(--stack-top)", height: "var(--card-h)" }}
+            >
               <div className="flex items-center gap-2.5">
                 <div className="flex size-8 shrink-0 items-center justify-center rounded-[5px] border border-white">
                   <p className="font-th desktop-s5-th-700 text-white">5</p>
@@ -465,125 +555,13 @@ const SubSectionTwo = () => {
             </p>
           </div>
         </div>
-        <div className="group relative flex justify-between items-center border-b-2 border-white p-7 h-[116px] w-full bg-blue-200">
-          <div />
-          <p className="font-th desktop-s6-th-700 text-white">ชั้นวางรองเท้า</p>
-          <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-blue-700 p-7 group-hover:block">
-            <div className="flex justify-between items-center">
-              <p className="font-th desktop-s6-th-400 text-tk-black">
-                คำนึงถึงจุดถอดรองเท้าที่เพียงพอ ไม่เกะกะบริเวณทางเข้าหลัก
-              </p>
-            </div>
-          </div>
-          <div className="p-2.5 bg-blue-700 rounded-[10px] group-hover:hidden">
-            <SidePanel />
-          </div>
-        </div>
-        <div className="group relative flex justify-between items-center border-b-2 border-white p-7 h-[116px] w-full bg-blue-200">
-          <div />
-          <p className="font-th desktop-s6-th-700 text-white">
-            จุดบริการฝากสัมภาระ
-          </p>
-          <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-blue-700 p-7 group-hover:block">
-            <div className="flex justify-between items-start gap-2.5">
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                คำนึงถึงจุดฝากของ หรือตู้ล็อกเกอร์ที่มีพื้นที่
-                เพียงพอสำหรับพื้นที่การ เรียนรู้ที่ตั้งกฎว่า
-                ไม่อนุญาตให้นำสัมภาระ เข้าไปเพื่อปกป้อง ทรัพย์สินของพื้นที่
-              </p>
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                อาจจัดหาเจ้าหน้าที่ เพื่อช่วยอำนวยสะดวก
-              </p>
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                คำนึงถึงผู้ใช้บริการ ที่มีสัมภาระปริมาณมาก
-                สำหรับพื้นที่การเรียนรู้ ที่อนุญาตให้นำสัมภาระเข้าพื้นที่ได้
-              </p>
-            </div>
-          </div>
-          <div className="p-2.5 bg-blue-700 rounded-[10px] group-hover:hidden">
-            <SidePanel />
-          </div>
-        </div>
-        <div className="group relative flex justify-between items-center border-b-2 border-white p-7 h-[116px] w-full bg-blue-200">
-          <div />
-          <p className="font-th desktop-s6-th-700 text-white">
-            จุดวางคืนหนังสือ
-          </p>
-          <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-blue-700 p-7 group-hover:block">
-            <div className="flex justify-between items-start gap-2.5">
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                ควรมีจุดวางคืนหนังสืออย่างเป็นที่เป็นทางและเป็นระเบียบ
-                เพื่อที่เจ้าหน้าที่จะได้นำหนังสือไปจัดเข้าชั้นวางได้ง่าย
-              </p>
-            </div>
-          </div>
-          <div className="p-2.5 bg-blue-700 rounded-[10px] group-hover:hidden">
-            <SidePanel />
-          </div>
-        </div>
-        <div className="group relative flex justify-between items-center border-b-2 border-white p-7 h-[116px] w-full bg-blue-200">
-          <div />
-          <p className="font-th desktop-s6-th-700 text-white">
-            เครื่องยืม-คืนหนังสืออัตโนมัติ
-          </p>
-          <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-blue-700 p-7 group-hover:block">
-            <div className="flex justify-between items-start gap-2.5">
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                ลดการสัมผัสระหว่าง บุคคล
-              </p>
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                ผู้ใช้บริการไม่ต้องรอ เจ้าหน้าที่
-              </p>
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                แบ่งเบาภาระงานของ บรรณารักษ์หรือผู้ดูแล ห้องสมุด
-              </p>
-            </div>
-          </div>
-          <div className="p-2.5 bg-blue-700 rounded-[10px] group-hover:hidden">
-            <SidePanel />
-          </div>
-        </div>
-        <div className="group relative flex justify-between items-center border-b-2 border-white p-7 h-[116px] w-full bg-blue-200">
-          <div />
-          <p className="font-th desktop-s6-th-700 text-white">
-            ตู้บริการน้ำดื่มอัตโนมัติ
-          </p>
-          <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-blue-700 p-7 group-hover:block">
-            <div className="flex justify-between items-start gap-2.5">
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                ส่งเสริมให้ผู้บริการอยู่ในห้องสมุดในระยะเวลานานขึ้น
-              </p>
-            </div>
-          </div>
-          <div className="p-2.5 bg-blue-700 rounded-[10px] group-hover:hidden">
-            <SidePanel />
-          </div>
-        </div>
-        <div className="group relative flex justify-between items-center border-b-2 border-white p-7 h-[116px] w-full bg-blue-200">
-          <div />
-          <p className="font-th desktop-s6-th-700 text-white">
-            เครื่องบริการอัตโนมัติ
-          </p>
-          <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-blue-700 p-7 group-hover:block">
-            <div className="flex justify-between items-start gap-2.5">
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                ให้บริการสมัครและต่ออายุสมาชิกผ่านแอปพลิเคชัน My TK
-              </p>
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                สามารถชำระ บริการหรือเติมเงินเข้าบัญชีสมาชิกได้
-              </p>
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                สามารถออกบัตร เข้าใช้บริการรายวันโดยไม่ต้องติดต่อ เจ้าหน้าที่
-              </p>
-              <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
-                ลดภาระเจ้าหน้าที่ เคาน์เตอร์บริการ
-              </p>
-            </div>
-          </div>
-          <div className="p-2.5 bg-blue-700 rounded-[10px] group-hover:hidden">
-            <SidePanel />
-          </div>
-        </div>
+        {FACILITIES.map((facility) => (
+          <FacilityRow
+            key={facility.title}
+            title={facility.title}
+            tips={facility.tips}
+          />
+        ))}
       </div>
 
       <div className="flex items-start md:flex-row flex-col max-w-[600px]">

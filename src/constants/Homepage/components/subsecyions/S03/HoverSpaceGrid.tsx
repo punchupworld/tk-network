@@ -28,7 +28,7 @@ export const SidePanel = () => {
   );
 };
 
-const ChevronDown = () => {
+export const ChevronDown = () => {
   return (
     <svg
       width="16"
@@ -135,12 +135,26 @@ const HoverCell = ({
   className: string;
   onOpenImage: (image: BoxImage) => void;
 }) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div
-      className={`group relative flex items-center justify-center bg-blue-200 p-10 ${className}`}
+      className={`group relative flex items-center justify-center bg-blue-200 p-10 h-75 ${className}`}
     >
       <p className="font-th desktop-s5-th-700 text-white">{title}</p>
-      <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-blue-700 p-10 group-hover:block">
+      {open ? null : (
+        <button
+          type="button"
+          className="absolute inset-0 z-30 md:hidden"
+          onClick={() => setOpen(true)}
+          aria-label={`เปิดรายละเอียด ${title}`}
+        />
+      )}
+      <div
+        className={`absolute inset-0 z-10 overflow-y-auto overscroll-contain bg-blue-700 p-10 md:hidden md:group-hover:block ${
+          open ? "block" : "hidden"
+        }`}
+      >
         <div className="flex flex-col gap-5">
           <p className="font-th desktop-s6-th-700 text-tk-black">{title}</p>
           {description ? (
@@ -188,14 +202,21 @@ const HoverCell = ({
           </div>
         </div>
       </div>
-      <div className="absolute right-10 bottom-10 z-20 rounded-[10px] bg-blue-700 p-2.5 group-hover:bg-[#D9D9D9]">
-        <span className="group-hover:hidden">
+      <button
+        type="button"
+        className={`absolute right-10 bottom-10 z-20 rounded-[10px] p-2.5 md:pointer-events-none group-hover:bg-[#D9D9D9] ${
+          open ? "bg-[#D9D9D9]" : "bg-blue-700"
+        }`}
+        onClick={() => setOpen(false)}
+        aria-label={`ปิดรายละเอียด ${title}`}
+      >
+        <span className={`group-hover:hidden ${open ? "hidden" : "block"}`}>
           <SidePanel />
         </span>
-        <span className="hidden group-hover:block">
+        <span className={`group-hover:block ${open ? "block" : "hidden"}`}>
           <ChevronDown />
         </span>
-      </div>
+      </button>
     </div>
   );
 };
@@ -228,7 +249,7 @@ const SpaceRow = ({
 }) => {
   return (
     <div
-      className={`grid grid-cols-6 w-full h-[344px]${
+      className={`grid grid-cols-6 w-full h-auto md:h-[344px]${
         bordered ? " border-t-2 border-white" : ""
       }`}
     >
@@ -255,7 +276,7 @@ const HoverSpaceGrid = () => {
               "จัดหาสื่อเรียนรู้ใหม่ๆ อยู่เสมอ เช่น บรรณารักษ์คัดเลือกสื่อทุกไตรมาส เก็บข้อมูลจากความสนใจและข้อเสนอแนะของผู้ใช้งาน",
               "ควรปรับเปลี่ยนให้ตอบโจทย์การใช้งาน และสร้างประสบการณ์ใหม่ๆ",
             ]}
-            className="col-span-4 border-r-2 border-white"
+            className="col-span-6 md:col-span-4 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
           <HoverCell
@@ -267,7 +288,7 @@ const HoverSpaceGrid = () => {
               "จัดหาหนังสือและกิจกรรม ส่งเสริมการพัฒนาทักษะสำหรับ เด็กและผู้ปกครอง เด็กๆ สามารถเรียนรู้ได้ด้วยตัวเอง อย่างเพลิดเพลิน ส่วนผู้ปกครองก็สามารถค้นคว้าและทำกิจกรรมร่วมกันได้",
               "มีเจ้าหน้าที่ผู้เชี่ยวชาญด้านการดูแลเด็กปฐมวัย",
             ]}
-            className="col-span-2 border-r-2 border-white"
+            className="col-span-6 md:col-span-2 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>
@@ -279,7 +300,7 @@ const HoverSpaceGrid = () => {
             tips={[
               "ควรใช้วัสดุเก็บเสียงกั้นพื้นที่ และแยกโซนนี้ออกมาจากพื้นที่ ที่ต้องใช้เสียง",
             ]}
-            className="col-span-2 border-r-2 border-white"
+            className="col-span-6 md:col-span-2 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
           <HoverCell
@@ -291,7 +312,7 @@ const HoverSpaceGrid = () => {
               "ควรตั้งอยู่บริเวณด้านหน้า เพื่อแนะนำการบริการความรู้ แก่ผู้ใช้งาน",
               "มีบุคลากรที่คอยอัพเดท ข้อมูล คัดเลือกทรัพยากร การเรียนรู้ใหม่เป็นประจำ",
             ]}
-            className="col-span-4 border-r-2 border-white"
+            className="col-span-6 md:col-span-4 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>
@@ -306,7 +327,7 @@ const HoverSpaceGrid = () => {
               "เฟอร์นิเจอร์สำหรับการนั่งทำงานกับคอมพิวเตอร์",
               "เฟอร์นิเจอร์สำหรับการนั่งทำงานกับคอมพิวเตอร์",
             ]}
-            className="col-span-4 border-r-2 border-white"
+            className="col-span-6 md:col-span-4 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
           <HoverCell
@@ -318,7 +339,7 @@ const HoverSpaceGrid = () => {
               "จัดกิจกรรมด้านดนตรีอย่างสม่ำเสมอ",
               "มีเจ้าหน้าที่ผู้เชี่ยวชาญให้บริการปรึกษาด้านดนตรีทั้งในแง่ทฤษฎีและปฏิบัติ ผ่านการร้อง เล่น ฟัง",
             ]}
-            className="col-span-2 border-r-2 border-white"
+            className="col-span-6 md:col-span-2 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>
@@ -337,7 +358,7 @@ const HoverSpaceGrid = () => {
               "ฉายภาพยนตร์ใหม่ๆ เป็นประจำ โดยอาจเปิดรับความคิดเห็นของผู้ใช้งานต่อภาพยนตร์ที่ต้องการชม",
               "จัดหาภาพยนตร์ที่ถูกลิขสิทธิ์",
             ]}
-            className="col-span-3 border-r-2 border-white"
+            className="col-span-6 md:col-span-3 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
           <HoverCell
@@ -347,7 +368,7 @@ const HoverSpaceGrid = () => {
             tips={[
               "จัดกิจกรรมส่งเสริมการเรียนรู้เป็นประจำ โดยมีเจ้าหน้าที่เป็นวิทยากรนำกิจกรรม หรือเชิญวิทยากรจากภายนอก",
             ]}
-            className="col-span-3 border-r-2 border-white"
+            className="col-span-6 md:col-span-3 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>
@@ -360,7 +381,7 @@ const HoverSpaceGrid = () => {
               "ออกแบบพื้นที่ให้ยืดหยุ่นรองรับกิจกรรมหลายรูปแบบ เช่น ปรับเปลี่ยนให้ฉายภาพยนตร์ จัดงานสัมมนา จัดงานแถลงข่าวได้",
               "จัดทำระบบการจองล่วงหน้าสำหรับบุคคลภายนอก",
             ]}
-            className="col-span-6 border-r-2 border-white"
+            className="col-span-6 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>
@@ -378,7 +399,7 @@ const HoverSpaceGrid = () => {
               "ต้องคำนึงถึงปริมาณที่เพียงพอในการรองรับจำนวนผู้ใช้บริการ และประเภทของยานพาหนะ เช่น ในบางพื้นที่ไม่ควรมีพื้นที่จอดรถจักรยานยนตร์มากจนเกินไป",
               "มีจุดเชื่อมต่อจากจุดจอดรถกับตัวอาคาร",
             ]}
-            className="col-start-4 col-end-7"
+            className="col-span-6 md:col-auto md:col-start-4 md:col-end-7"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>
@@ -389,7 +410,7 @@ const HoverSpaceGrid = () => {
               "สามารถรองรับผู้ใช้บริการทุกกลุ่ม (Universal Design) โดยคำนึงถึงผู้ที่มีข้อจำกัดด้านการเคลื่อนไหวหรือการรับรู้ เช่น ผู้ใช้รถเข็น ผู้พิการทางสายตา ผู้พิการทางการได้ยิน ผู้สูงอายุ และครอบครัวที่มีเด็กเล็ก",
               "หากอาคารมีหลายชั้น ควรมีห้องน้ำทุกชั้น",
             ]}
-            className="col-span-3 border-r-2 border-white"
+            className="col-span-6 md:col-span-3 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
           <HoverCell
@@ -397,7 +418,7 @@ const HoverSpaceGrid = () => {
             tips={[
               "ออกแบบห้องที่มีฟังก์ชันที่ตอบโจทย์การใช้งานของคนในพื้นที่ เช่น พื้นที่การเรียนรู้ในสามจังหวัดชายแดนภาคใต้มีห้องละหมาดไว้บริการผู้ใช้บริการที่เป็นมุสลิม ซึ่งเป็นประชากรส่วนใหญ่ในพื้นที่",
             ]}
-            className="col-span-3"
+            className="col-span-6 md:col-span-3"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>
@@ -408,7 +429,7 @@ const HoverSpaceGrid = () => {
               "มีเจ้าหน้าที่ประจำเคาน์เตอร์",
               "สังเกตเห็นได้ชัด เข้าถึงสะดวก",
             ]}
-            className="col-span-3 border-r-2 border-white"
+            className="col-span-6 md:col-span-3 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
           />
           <HoverCell
@@ -419,7 +440,7 @@ const HoverSpaceGrid = () => {
               "เลือกใช้เฟอร์นิเจอร์ที่ทำความสะอาดง่าย ดูเรียบร้อย โดยพิจารณาวัสดุของเฟอร์นิเจอร์ให้เหมาะสม ไม่เลอะเป็นคราบหรือสกปรกง่าย",
               "แยกมุมอาหารและเครื่องดื่มออกมาจากโซนของพื้นที่การเรียนรู้ หรือใช้พื้นที่นอกอาคาร",
             ]}
-            className="col-span-3"
+            className="col-span-6 md:col-span-3"
             onOpenImage={setOpenImage}
           />
         </SpaceRow>

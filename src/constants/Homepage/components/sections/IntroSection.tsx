@@ -9,7 +9,7 @@ const IntroSection = () => {
       <section className="relative mx-auto w-full h-screen" id="intro-section">
         <div className="flex flex-col items-center justify-between h-full">
           <div className="h-40"></div>
-          <h1 className="desktop-s4-th-700 text-tk-black">
+          <h1 className="desktop-s4-th-700 text-tk-black text-center">
             ร่วมสร้างพื้นที่การเรียนรู้ที่ใช่...สำหรับทุกชุมชน
           </h1>
           <div className="flex flex-col items-center justify-center gap-5 mb-10">
@@ -71,22 +71,16 @@ const IntroSection = () => {
             </p>
           </blockquote>
         </div>
-        <div className="relative flex w-full flex-col items-start">
+        <div className="relative flex w-full min-w-0 flex-col items-start">
           <CoverSub color="#FEDFCA" />
-          <div className="absolute left-[107px] top-[107px] w-full h-full">
-            <p className="text-tk-red desktop-s6-th-700 font-th text-start">
+          <div className="flex w-full min-w-0 flex-col items-start gap-6 border-x-2 border-b-2 border-white bg-[#FEDFCA] px-6 pb-6 md:px-10 md:pb-10">
+            <p className="relative z-10 -mt-5 w-full text-balance text-start font-th mobile-s6-th-700 text-tk-red md:-mt-5.25 md:pl-16.75 md:desktop-s6-th-700">
               TK Park เป็นองค์กรที่ทำงานร่วมกับหน่วยงานท้องถิ่น ภาครัฐ
-              <br />
               ภาคการศึกษา และภาคเอกชน เพื่อพัฒนาแหล่งเรียนรู้ให้เป็นพื้นที่
-              <br />
               สร้างสรรค์ที่ตอบโจทย์คนทุกวัย พร้อมส่งเสริมการเรียนรู้ตลอดชีวิต
-              <br />
               ในแต่ละชุมชน
             </p>
-          </div>
-
-          <div className="flex w-full flex-col items-center justify-center gap-2.5 border-x-2 border-b-2 border-white bg-[#FEDFCA] p-10 text-white ">
-            <h2 className="font-th desktop-s6-th-400 text-tk-black text-start mt-[114px]">
+            <h2 className="text-start font-th mobile-s6-th-400 text-tk-black md:desktop-s6-th-400">
               เราเป็นหน่วยงานภายใต้สำนักงานบริหารและพัฒนาองค์ความรู้
               (องค์การมหาชน)
               ที่เชื่อมั่นในการสร้างพื้นที่แห่งการเรียนรู้ที่ทุกคนสามารถ
@@ -152,10 +146,7 @@ const IntroSection = () => {
         </div>
       </section>
 
-
       <StepsOverlay background="transparent" fit="scroll" stickyIndicator />
-
-      
     </div>
   );
 };

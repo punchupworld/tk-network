@@ -1,6 +1,6 @@
 "use client";
 
-import { type ReactNode } from "react";
+import { useState, type ReactNode } from "react";
 import CoverTri from "../../CoverTri";
 
 export const SidePanel = () => {
@@ -314,6 +314,8 @@ const HoverCell = ({
   icon?: ReactNode;
   iconClassName?: string;
 }) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div
       className={`group relative flex items-center justify-center h-[300px] overflow-hidden bg-[#FFE150] p-10 ${className}`}
@@ -329,7 +331,19 @@ const HoverCell = ({
       <p className="relative z-[1] font-th desktop-s5-th-700 text-tk-black text-center">
         {title}
       </p>
-      <div className="absolute inset-0 z-10 hidden overflow-y-auto overscroll-contain bg-yellow-300 p-10 group-hover:block">
+      {open ? null : (
+        <button
+          type="button"
+          className="absolute inset-0 z-30 md:hidden"
+          onClick={() => setOpen(true)}
+          aria-label={`เปิดรายละเอียด ${title}`}
+        />
+      )}
+      <div
+        className={`absolute inset-0 z-10 overflow-y-auto overscroll-contain bg-yellow-300 p-10 md:hidden md:group-hover:block ${
+          open ? "block" : "hidden"
+        }`}
+      >
         <div className="flex flex-col gap-5">
           <p className="font-th desktop-s6-th-700 text-tk-black">{title}</p>
           <div className="flex flex-col">
@@ -353,14 +367,21 @@ const HoverCell = ({
           </div>
         </div>
       </div>
-      <div className="absolute right-10 bottom-10 z-20 rounded-[10px] bg-[#FEE6A6] p-2.5 group-hover:bg-[#D9D9D9]">
-        <span className="group-hover:hidden">
+      <button
+        type="button"
+        className={`absolute right-10 bottom-10 z-20 rounded-[10px] p-2.5 md:pointer-events-none group-hover:bg-[#D9D9D9] ${
+          open ? "bg-[#D9D9D9]" : "bg-[#FEE6A6]"
+        }`}
+        onClick={() => setOpen(false)}
+        aria-label={`ปิดรายละเอียด ${title}`}
+      >
+        <span className={`group-hover:hidden ${open ? "hidden" : "block"}`}>
           <SidePanel />
         </span>
-        <span className="hidden group-hover:block">
+        <span className={`group-hover:block ${open ? "block" : "hidden"}`}>
           <ChevronDown />
         </span>
-      </div>
+      </button>
     </div>
   );
 };
@@ -397,7 +418,7 @@ const SpaceRow = ({
 }) => {
   return (
     <div
-      className={`grid grid-cols-6 w-full h-[344px]${
+      className={`grid grid-cols-6 w-full h-auto md:h-[344px]${
         bordered ? " border-t-2 border-white" : ""
       }`}
     >
@@ -424,7 +445,7 @@ const HoverSpaceGridY = () => {
               "พื้นที่ชุมชน 10%",
               "พื้นที่สนับสนุน 10%",
             ]}
-            className="col-span-3 border-r-2 border-white"
+            className="col-span-6 md:col-span-3 border-b-2 md:border-b-0 md:border-r-2 border-white"
           />
           <HoverCell
             title="มาตรฐานเฟอร์นิเจอร์"
@@ -434,7 +455,7 @@ const HoverSpaceGridY = () => {
               "ความสูงของชั้นหนังสือ: ผู้ใหญ่ 180-200 ซม. เด็ก 90-120 ซม.",
               "ที่นั่งอ่าน: ควรมีหลายรูปแบบ เช่น เก้าอี้ โซฟา บีนแบ็ก เก้าอี้เลาจน์",
             ]}
-            className="col-span-3"
+            className="col-span-6 md:col-span-3"
             icon={<ColTwoIcon />}
             iconClassName="flex items-end justify-start"
           />
@@ -446,7 +467,7 @@ const HoverSpaceGridY = () => {
               "ควรมีปลั๊กไฟทุกโต๊ะอ่านหนังสือ โดยเฉลี่ย 1 ปลั๊กต่อ 2 ที่นั่งในพื้นที่ทำงาน พื้นที่กิจกรรม",
               "จอและอุปกรณ์นำเสนอควรมีใน พื้นที่ทำกิจกรรมหรือทำงาน ร่วมกัน",
             ]}
-            className="col-span-3 border-r-2 border-white"
+            className="col-span-6 md:col-span-3 border-b-2 md:border-b-0 md:border-r-2 border-white"
           />
           <HoverCell
             title="มาตรฐาน ระบบแสงสว่าง"
@@ -456,7 +477,7 @@ const HoverSpaceGridY = () => {
               "พื้นที่กิจกรรม: 300-500 lux",
               "ควรใช้แสงธรรมชาติร่วมกับแสงไฟ",
             ]}
-            className="col-span-3"
+            className="col-span-6 md:col-span-3"
             icon={<ColFourIcon />}
             iconClassName="flex items-start justify-center"
           />
@@ -468,7 +489,7 @@ const HoverSpaceGridY = () => {
               "จัดระดับเสียงให้เหมาะสม กับพื้นที่ที่ต้องใช้สมาธิโดยเลือก ใช้วัสดุที่ลดเสียงสะท้อนและ ดูดซับเสียง เช่น การใช้พรม วัสดุซับเสียงห รือผนังที่ออกแบบ มาเพื่อลดเสียงโดยเฉพาะ",
               "ควรจัดผังพื้นที่ให้ชัดเจน ดูแยกโซนสำหรับการใช้งาน ที่ต้องการความเงียบออกจาก โซนกิจกรรมหรือพื้นที่ที่มีการ เคลื่อนไหวและพูดคุย",
             ]}
-            className="col-span-3 border-r-2 border-white"
+            className="col-span-6 md:col-span-3 border-b-2 md:border-b-0 md:border-r-2 border-white"
             icon={<ColFiveIcon />}
             iconClassName="flex items-start justify-center mt-12"
           />
@@ -481,7 +502,7 @@ const HoverSpaceGridY = () => {
               "มีโต๊ะหรือพื้นที่ใช้งานที่เหมาะ สำหรับผู้ใช้รถเข็น",
               "ใช้ป้ายสัญลักษณ์ที่ชัดเจน เข้าใจง่าย",
             ]}
-            className="col-span-3"
+            className="col-span-6 md:col-span-3"
           />
         </SpaceRow>
         <SpaceRow bordered>

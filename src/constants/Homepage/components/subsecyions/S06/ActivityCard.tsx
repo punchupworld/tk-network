@@ -69,10 +69,10 @@ const IconLabel = ({
 
   return (
     <div className="col-span-1">
-      <div className="relative flex items-center justify-center">
-        <Icon stroke="#ffffff" className="h-[110px] w-[110px]" />
+      <div className="relative mx-auto flex w-full max-w-27.5 items-center justify-center">
+        <Icon stroke="#ffffff" className="h-auto w-full" />
         <h2
-          className={`absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 ${textClassName}`}
+          className={`absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 md:desktop-s6-th-700 ${textClassName}`}
         >
           {children}
         </h2>
@@ -93,7 +93,9 @@ export const ActivityCell = ({
   return (
     <div className="col-span-1">
       <div className={boxClassName}>
-        <p className={`font-th desktop-s7-th-400 text-center ${textClassName}`}>
+        <p
+          className={`font-th mobile-s7-s8-th-400 md:desktop-s7-th-400 text-center ${textClassName}`}
+        >
           {children}
         </p>
       </div>
@@ -126,29 +128,29 @@ const ActivityCard = ({
     <div className="relative flex w-full flex-col items-start" id={id}>
       <CoverTri color={color}>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-          <div className="relative flex items-center justify-center">
+          <div className="relative flex w-20 items-center justify-center sm:w-27.5">
             <T12
               fill="#ffffff"
               stroke="#ffffff"
-              className="h-[110px] w-[110px]"
+              className="h-auto w-full"
               aria-hidden="true"
             />
-            <h2 className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-red">
+            <h2 className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s7-s8-th-700 md:desktop-s6-th-700 text-tk-red">
               {title}
             </h2>
           </div>
         </div>
       </CoverTri>
       <div
-        className="flex w-full flex-col items-center justify-center gap-10 border-x-2 border-b-2 border-white p-10 text-white"
+        className="flex w-full flex-col items-center justify-center gap-6 border-x-2 border-b-2 border-white p-5 text-white md:gap-10 md:p-10"
         style={{ backgroundColor: color }}
       >
-        <div className="flex flex-col items-center justify-center w-full gap-5">
+        <div className="flex flex-col items-center justify-center w-full gap-4 md:gap-5">
           <div className="w-full h-0.5 bg-white" />
           {descriptions.map((description, index) => (
             <div key={index} className="contents">
               <p
-                className={`font-th desktop-s6-th-700 text-center ${textClassName}`}
+                className={`font-th mobile-s6-th-700 md:desktop-s6-th-700 text-center ${textClassName}`}
               >
                 {description}
               </p>
@@ -156,7 +158,7 @@ const ActivityCard = ({
             </div>
           ))}
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="flex w-full flex-col gap-4 md:grid md:grid-cols-4 md:gap-5">
           <IconLabel icon="box" textClassName={textClassName}>
             กลุ่ม
             <br />
@@ -170,7 +172,7 @@ const ActivityCard = ({
             </ActivityCell>
           ))}
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="flex w-full flex-col gap-4 md:grid md:grid-cols-4 md:gap-5">
           <IconLabel icon="diamond" textClassName={textClassName}>
             ประเภท
             <br />
@@ -182,7 +184,7 @@ const ActivityCard = ({
             </ActivityCell>
           ))}
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="flex w-full flex-col gap-4 md:grid md:grid-cols-4 md:gap-5">
           <IconLabel icon="diamond" textClassName={textClassName}>
             หลักการ
             <br />

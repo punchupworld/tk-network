@@ -34,7 +34,7 @@ const SpaceTag = ({ label, highlight = false }: SpaceTagItem) => {
 
   return (
     <div
-      className={`flex items-center gap-2.5 border-b border-r px-2.5 py-1 ${
+      className={`flex max-w-full items-center gap-2.5 border-b border-r px-2.5 py-1 ${
         isHeading ? "w-[182px] justify-start" : "justify-center"
       } ${
         isHeading || highlight
@@ -79,7 +79,7 @@ const SpaceTypeBlock = ({
   tags: SpaceTagItem[];
   image: { src: string; alt: string; flip: "rotate" | "scaleY" };
 }) => {
-  const trapTop = "calc(var(--card-h) - 2px - var(--red-h) - var(--trap-h))";
+  const trapBottom = "calc(var(--red-h) + 2px)";
   const imgTop = "calc(var(--card-h) - 2px - var(--red-h))";
 
   return (
@@ -88,10 +88,10 @@ const SpaceTypeBlock = ({
       style={{ zIndex: 50 - layer }}
     >
       <div
-        className="mx-auto sticky z-30 flex w-[442px] h-[459px] flex-col border-2 border-white"
-        style={{ top: "var(--stack-top)" }}
+        className="mx-auto sticky z-30 flex w-[var(--card-w)] max-w-full flex-col border-2 border-white"
+        style={{ top: "var(--stack-top)", height: "var(--card-h)" }}
       >
-        <div className="flex min-h-0 flex-1 flex-col gap-5 overflow-hidden bg-[#40B9E8] p-7">
+        <div className="flex min-h-0 flex-1 flex-col gap-5 overflow-hidden bg-[#40B9E8] p-5 md:p-7">
           <div className="flex items-center gap-2.5">
             <div className="flex size-8 shrink-0 items-center justify-center rounded-[5px] border border-white">
               <p className="font-th desktop-s5-th-700 text-tk-black">
@@ -105,7 +105,7 @@ const SpaceTypeBlock = ({
           </div>
         </div>
         <div
-          className="flex min-h-[180px] flex-1 shrink-0 items-end p-7"
+          className="flex min-h-[180px] flex-1 shrink-0 items-end p-5 md:p-7"
           style={{ backgroundColor: accent }}
         >
           <div
@@ -128,10 +128,13 @@ const SpaceTypeBlock = ({
         className="pointer-events-none sticky z-40 mt-200 flex w-full justify-center"
         style={{ top: "var(--stack-top)", height: "var(--card-h)" }}
       >
-        <div className="relative h-full w-[558px]">
-          <div className="absolute left-0 right-0" style={{ top: trapTop }}>
-            <CoverTrap height={TRAP_H} width={558}>
-              <div className="absolute inset-0 flex flex-wrap content-center items-center justify-center gap-1 px-7 py-2.5">
+        <div className="relative h-full w-[var(--cover-w)] max-w-full">
+          <div className="absolute left-0 right-0" style={{ bottom: trapBottom }}>
+            <CoverTrap height="auto" width="100%">
+              <div
+                className="relative flex flex-wrap content-center items-center justify-center gap-1 px-5 py-2.5 md:px-7"
+                style={{ minHeight: "var(--trap-h)" }}
+              >
                 {tags.map((tag) => (
                   <SpaceTag key={tag.label} {...tag} />
                 ))}
@@ -145,14 +148,14 @@ const SpaceTypeBlock = ({
         className="pointer-events-none sticky z-[35] mt-200 flex w-full justify-center"
         style={{ top: "var(--stack-top)", height: "var(--card-h)" }}
       >
-        <div className="relative h-full w-[558px]">
+        <div className="relative h-full w-[var(--cover-w)] max-w-full">
           <div className="absolute left-0 right-0" style={{ top: imgTop }}>
             <CoverTrap
               height="var(--img-h)"
               src={image.src}
               alt={image.alt}
               flip={image.flip}
-              width={558}
+              width="100%"
             />
           </div>
         </div>

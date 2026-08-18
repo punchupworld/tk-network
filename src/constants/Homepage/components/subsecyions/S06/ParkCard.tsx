@@ -3,7 +3,7 @@
 import { T13 } from "@/src/components/icons/topics";
 import CoverSub from "../../CoverSub";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type CSSProperties } from "react";
 import { createPortal } from "react-dom";
 
 const ToolBox = () => {
@@ -48,17 +48,19 @@ type ParkCardProps = {
 
 const ListBlock = ({ label, items }: { label: string; items: string[] }) => {
   return (
-    <div className="flex items-start justify-start">
-      <p className="font-th desktop-s6-th-700 bg-tk-black text-white py-1 px-2.5 flex-1 text-nowrap">
+    <div className="flex flex-col items-stretch justify-start md:flex-row md:items-start">
+      <p className="font-th mobile-s6-th-700 md:desktop-s6-th-700 bg-tk-black text-white py-1 px-2.5 md:flex-1 md:text-nowrap">
         {label}
       </p>
       <div className="flex flex-col border border-tk-black">
         {items.map((item, index) => (
           <div
             key={index}
-            className={`px-3.5 py-2.5${index > 0 ? " border-t border-tk-black" : ""}`}
+            className={`px-2.5 py-2 md:px-3.5 md:py-2.5${index > 0 ? " border-t border-tk-black" : ""}`}
           >
-            <p className="font-th desktop-s6-th-400 text-tk-black">{item}</p>
+            <p className="font-th mobile-s6-th-400 md:desktop-s6-th-400 text-tk-black">
+              {item}
+            </p>
           </div>
         ))}
       </div>
@@ -68,12 +70,16 @@ const ListBlock = ({ label, items }: { label: string; items: string[] }) => {
 
 const MetaPair = ({ label, value }: { label: string; value: string }) => {
   return (
-    <div className="flex items-center justify-center gap-1">
+    <div className="flex flex-wrap items-center justify-start gap-1 md:justify-center">
       <div className="py-1 px-2.5 border-r border-tk-black border-b">
-        <p className="font-th desktop-s7-th-700 text-tk-black">{label}</p>
+        <p className="font-th mobile-s7-s8-th-700 md:desktop-s7-th-700 text-tk-black">
+          {label}
+        </p>
       </div>
       <div className="py-1 px-2.5 border-r border-tk-red border-b">
-        <p className="font-th desktop-s7-th-400 text-tk-black">{value}</p>
+        <p className="font-th mobile-s7-s8-th-400 md:desktop-s7-th-400 text-tk-black">
+          {value}
+        </p>
       </div>
     </div>
   );
@@ -104,21 +110,21 @@ export const ImageModal = ({
 
   return createPortal(
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-white/50 p-10"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-white/50 p-6 md:p-10"
       role="dialog"
       aria-modal="true"
       aria-label={image.alt}
       onClick={onClose}
     >
       <div
-        className="relative max-h-[85vh] max-w-[min(90vw,720px)] border border-tk-red bg-white shadow-[0_8px_24px_rgba(0,0,0,0.18)]"
+        className="relative max-h-[80vh] w-full max-w-[min(88vw,720px)] border border-tk-red bg-white shadow-[0_8px_24px_rgba(0,0,0,0.18)] md:max-h-[85vh] md:w-auto"
         onClick={(event) => event.stopPropagation()}
       >
         <button
           type="button"
           onClick={onClose}
           aria-label="ปิด"
-          className="absolute -top-4 -right-4 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-tk-red"
+          className="absolute -top-3 -right-3 z-10 flex size-8 cursor-pointer items-center justify-center rounded-full bg-tk-red md:-top-4 md:-right-4"
         >
           <svg
             width="12"
@@ -141,7 +147,7 @@ export const ImageModal = ({
           alt={image.alt}
           width={720}
           height={960}
-          className="max-h-[85vh] w-full object-contain"
+          className="max-h-[80vh] w-full object-contain md:max-h-[85vh]"
         />
       </div>
     </div>,
@@ -166,29 +172,31 @@ const ParkCard = ({
   return (
     <div className="relative flex w-full flex-col items-start" id={id}>
       <CoverSub color={color} />
-      <div className="absolute right-[40px] top-[40px]">
+      <div className="absolute right-5 top-5 left-5 md:right-10 md:top-10 md:left-auto md:max-w-[70%]">
         <div className="flex flex-col justify-end w-full items-end">
           <div className="px-2.5 py-1.5 bg-tk-black w-fit">
-            <h2 className="font-th desktop-s6-th-700 text-white ">{title}</h2>
+            <h2 className="font-th mobile-s6-th-700 md:desktop-s6-th-700 text-white">
+              {title}
+            </h2>
           </div>
         </div>
       </div>
 
       <div
-        className="flex w-full flex-col items-center justify-center gap-10 border-x-2 border-b-2 border-white px-10 pb-10 text-white"
+        className="flex w-full flex-col items-center justify-center gap-6 border-x-2 border-b-2 border-white px-5 pb-5 text-white md:gap-10 md:px-10 md:pb-10"
         style={{ backgroundColor: color }}
       >
         <div className="w-full h-0.5 bg-white" />
-        <div className="flex flex-col gap-5 w-full">
-          <div className="flex items-end justify-end">
-            <div className="relative flex items-center justify-center">
+        <div className="flex flex-col gap-4 w-full md:gap-5">
+          <div className="flex flex-wrap items-end justify-end gap-y-2">
+            <div className="relative flex w-20 shrink-0 items-center justify-center md:w-27.5">
               <T13
                 fill="#000000"
                 stroke="#000000"
-                className="h-[110px] w-[110px]"
+                className="h-auto w-full"
                 aria-hidden="true"
               />
-              <h2 className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-white">
+              <h2 className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s7-s8-th-700 md:desktop-s6-th-700 text-white">
                 {locationName}
               </h2>
             </div>
@@ -196,7 +204,7 @@ const ParkCard = ({
               <button
                 key={image.src}
                 type="button"
-                className="w-full cursor-pointer border border-tk-black text-left"
+                className="min-w-0 flex-1 cursor-pointer border border-tk-black text-left"
                 onClick={() => setOpenImage(image)}
                 aria-label={`ดูรูป ${image.alt}`}
               >
@@ -206,8 +214,12 @@ const ParkCard = ({
                     alt={image.alt}
                     width={100}
                     height={image.height}
-                    className="w-full object-cover"
-                    style={{ height: image.height }}
+                    className="h-[calc(var(--park-image-height)*0.7)] w-full object-cover md:h-(--park-image-height)"
+                    style={
+                      {
+                        "--park-image-height": `${image.height}px`,
+                      } as CSSProperties
+                    }
                   />
                   <div className="absolute bottom-2 right-2">
                     <ToolBox />
@@ -221,12 +233,12 @@ const ParkCard = ({
           {descriptions.map((description) => (
             <p
               key={description}
-              className="font-th desktop-s6-th-400 text-tk-black"
+              className="font-th mobile-s6-th-400 md:desktop-s6-th-400 text-tk-black"
             >
               {description}
             </p>
           ))}
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between md:gap-0">
             <MetaPair label="หน่วยงานเจ้าภาพ" value={host} />
             <MetaPair label="ทำเลที่ตั้ง" value={location} />
           </div>

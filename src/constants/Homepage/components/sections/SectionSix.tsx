@@ -14,44 +14,44 @@ function SectionCover() {
         <p className="w-[124px] font-en desktop-s5-400 leading-normal">
           The Opening
         </p>
-        <div className="flex items-end">
-          <div className="flex flex-col ">
-            <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
+        <div className="flex w-full flex-col items-stretch md:flex-row md:items-end">
+          <div className="flex w-full flex-col md:w-auto">
+            <div className="border-x border-t border-white px-[14px] py-[10px] md:border-b md:border-r-0">
               <p className="font-th desktop-s6-th-400 text-white">
                 ทดลองเปิดบริการ
-                <br />
+                <br className="hidden md:inline" />
                 เพื่อทดสอบระบบ
               </p>
             </div>
           </div>
-          <div className="flex flex-col ">
-            <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
+          <div className="flex w-full flex-col md:w-auto">
+            <div className="border-x border-t border-white px-[14px] py-[10px] md:border-b md:border-r-0">
               <p className="font-th desktop-s6-th-400 text-white">
                 นำข้อเสนอแนะ
-                <br />
+                <br className="hidden md:inline" />
                 จากผู้ใช้บริการ
-                <br />
+                <br className="hidden md:inline" />
                 และเจ้าหน้าที่
-                <br />
+                <br className="hidden md:inline" />
                 มาปรับปรุง
               </p>
             </div>
           </div>
-          <div className="flex flex-col ">
-            <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
+          <div className="flex w-full flex-col md:w-auto">
+            <div className="border-x border-t border-white px-[14px] py-[10px] md:border-b md:border-r-0">
               <p className="font-th desktop-s6-th-400 text-white">
                 เปิด
-                <br />
+                <br className="hidden md:inline" />
                 ให้บริการ
-                <br />
+                <br className="hidden md:inline" />
                 อย่าง
-                <br />
+                <br className="hidden md:inline" />
                 เป็นทางการ
               </p>
             </div>
           </div>
-          <div className="flex flex-col flex-1">
-            <div className="border-l border-white border-t border-r border-b px-[14px] py-[10px]">
+          <div className="flex w-full flex-col md:w-auto md:flex-1">
+            <div className="border border-white px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 ประชาสัมพันธ์และจัด กิจกรรม เปิดตัว
               </p>
@@ -89,15 +89,15 @@ function QuoteSection() {
 
 function KnowledgeBox() {
   return (
-    <div className="relative flex h-[484px] w-full max-w-[602px] items-end">
-      <div className="flex h-[382px] w-[39.535%] shrink-0 items-center justify-center border-t-2 border-l-2 border-b-2 border-white bg-[#c0a765] px-10 text-center text-[#1d252c]">
+    <div className="relative flex h-auto w-full max-w-[602px] flex-col items-stretch md:h-[484px] md:flex-row md:items-end">
+      <div className="flex h-auto w-fit shrink-0 items-center justify-center border-t-2 border-x-2 border-white bg-[#c0a765] px-10 py-10 text-center text-[#1d252c] md:h-[382px] md:w-[39.535%] md:border-r-0 md:border-b-2 md:py-0">
         <p className="font-th desktop-s5-th-700 leading-normal">
           ขั้นตอนนี้
           <br />
           ต้องรู้อะไรบ้าง
         </p>
       </div>
-      <div className="relative h-[484px] min-w-0 flex-1 overflow-clip border-2 border-white bg-[#fdf1bd]">
+      <div className="relative h-[484px] w-full min-w-0 overflow-clip border-2 border-white bg-[#fdf1bd] md:flex-1">
         <div className="absolute bottom-[259px] right-0 flex size-[168px] items-center justify-center">
           <T12
             fill="#f5333f"

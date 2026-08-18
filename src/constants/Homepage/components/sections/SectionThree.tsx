@@ -18,16 +18,16 @@ function SectionCover() {
         <p className="w-[124px] font-en desktop-s5-400 leading-normal">
           Design your space
         </p>
-        <div className="flex items-end">
-          <div className="flex flex-col ">
-            <div className="border-l border-white border-t px-[14px] py-[10px]">
+        <div className="flex items-end flex-col md:flex-row">
+          <div className="flex flex-col border-white md:border-r-0 border-r">
+            <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 จัดการสนทนากลุ่ม (Focus group) ของผู้มีส่วนได้ส่วนเสีย เช่น
                 ชุมชน หน่วยงานรัฐและเอกชน เพื่อทำความเข้าใจลักษณะของพื้นที่
                 และสร้างความรู้สึกเป็นเจ้าของในพื้นที่ การเรียนรู้
               </p>
             </div>
-            <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
+            <div className="border-l border-white border-t md:border-b px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 จัดทำแผนภูมิเพื่อระบุผู้มีส่วนได้ส่วนเสีย (Stakeholders Map)
                 เพื่อเชิญชวนให้เข้ามามีส่วนร่วมตั้งแต่แรก
@@ -100,15 +100,15 @@ function QuoteSection() {
 
 function KnowledgeBox() {
   return (
-    <div className="relative flex w-full max-w-[602px] items-end">
-      <div className="flex h-[382px] w-[39.535%] shrink-0 items-center justify-center border-t-2 border-l-2 border-b-2 border-white bg-[#c0a765] px-10 text-center text-[#1d252c]">
+    <div className="relative flex h-auto w-full max-w-[602px] flex-col items-stretch md:h-[457px] md:flex-row md:items-end">
+      <div className="flex h-auto w-fit shrink-0 items-center justify-center border-t-2 border-x-2 border-white bg-[#c0a765] px-10 py-10 text-center text-[#1d252c] md:h-[382px] md:w-[39.535%] md:border-r-0 md:border-b-2 md:py-0">
         <p className="font-th desktop-s5-th-700 leading-normal">
           ขั้นตอนนี้
           <br />
           ต้องรู้อะไรบ้าง
         </p>
       </div>
-      <div className="relative h-[457px] min-w-0 flex-1 overflow-clip border-2 border-white bg-[#fdf1bd]">
+      <div className="relative h-[457px] w-full min-w-0 overflow-clip border-2 border-white bg-[#fdf1bd] md:flex-1">
         <Image
           src={asset("/img/s03/folder-6.svg")}
           alt=""

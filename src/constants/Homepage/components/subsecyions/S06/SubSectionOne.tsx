@@ -92,7 +92,7 @@ const SubSectionOne = () => {
             </p>
           </div>
           <div className="flex flex-col items-start justify-start w-full">
-            <div className="flex">
+            <div className="flex flex-wrap">
               <div className="relative flex items-center justify-center">
                 <IconBox
                   stroke="#C0A765"
@@ -165,8 +165,8 @@ const SubSectionOne = () => {
         className="flex flex-col items-start justify-start w-full gap-8"
         id="subsubtopic22"
       >
-        <div className="flex items-start">
-          <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+        <div className="flex items-start md:flex-row flex-col ">
+          <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
             <div className="relative flex items-center justify-center">
               <IconBox
                 stroke="#FFFFFF"
@@ -226,8 +226,8 @@ const SubSectionOne = () => {
         className="flex flex-col items-start justify-start w-full gap-8"
         id="subsubtopic23"
       >
-        <div className="flex items-start">
-          <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+        <div className="flex items-start md:flex-row flex-col">
+          <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
             <div className="relative flex items-center justify-center">
               <IconBox
                 stroke="#FFFFFF"
@@ -293,8 +293,8 @@ const SubSectionOne = () => {
         className="flex flex-col items-start justify-start w-full gap-8"
         id="subsubtopic24"
       >
-        <div className="flex items-start">
-          <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+        <div className="flex items-start md:flex-row flex-col">
+          <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
             <div className="relative flex items-center justify-center">
               <IconBox
                 stroke="#FFFFFF"
@@ -330,7 +330,7 @@ const SubSectionOne = () => {
             </p>
           </div>
           <div className="flex w-full flex-col border-2 border-white bg-yellow-100 px-10 py-5">
-            <div className="flex">
+            <div className="flex md:flex-row flex-col">
               <div>
                 <p className="font-th desktop-s6-th-700 text-white py-1 px-2.5 bg-tk-red w-fit">
                   TK Park อุทยานการเรียนรู้
@@ -363,8 +363,8 @@ const SubSectionOne = () => {
         className="flex flex-col items-start justify-start w-full gap-8"
         id="subsubtopic25"
       >
-        <div className="flex items-start">
-          <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+        <div className="flex items-start md:flex-row flex-col">
+          <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
             <div className="relative flex items-center justify-center">
               <IconBox
                 stroke="#FFFFFF"
@@ -398,7 +398,7 @@ const SubSectionOne = () => {
             </p>
           </div>
           <div className="flex w-full flex-col border-2 border-white bg-yellow-100 px-10 py-5">
-            <div className="flex">
+            <div className="flex md:flex-row flex-col">
               <div className="flex-1">
                 <p className="font-th desktop-s6-th-700 text-white py-1 px-2.5 bg-tk-red w-fit">
                   TK Park อุทยานการเรียนรู้
@@ -438,8 +438,8 @@ const SubSectionOne = () => {
         className="flex flex-col items-start justify-start w-full gap-8"
         id="subsubtopic26"
       >
-        <div className="flex items-start">
-          <div className="p-5 border-y-2 border-l-2 border-white bg-yellow-700">
+        <div className="flex items-start md:flex-row flex-col">
+          <div className="p-5 border-t-2 border-x-2 md:border-y-2 md:border-l-2 md:border-r-0 border-white bg-yellow-700">
             <div className="relative flex items-center justify-center">
               <IconBox
                 stroke="#FFFFFF"
@@ -480,7 +480,7 @@ const SubSectionOne = () => {
             </p>
           </div>
           <div className="flex w-full flex-col border-2 border-white bg-yellow-100 px-10 py-5">
-            <div className="flex">
+            <div className="flex md:flex-row flex-col">
               <div className="flex-1">
                 <p className="font-th desktop-s6-th-700 text-white py-1 px-2.5 bg-tk-red w-fit">
                   TK Park อุทยานการเรียนรู้

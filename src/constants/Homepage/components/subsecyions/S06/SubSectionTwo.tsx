@@ -110,21 +110,21 @@ const SubSectionTwo = () => {
         areas={["พื้นที่สะดวกกิจกรรมสบาย", "พื้นที่สตูดิโอ"]}
         principles={
           <div className="col-span-3">
-            <div className="grid grid-cols-3 gap-5">
+            <div className="flex flex-col gap-4 md:grid md:grid-cols-3 md:gap-5">
               <ActivityCell
                 textClassName="text-tk-black"
-                boxClassName="border-y border-white flex flex-col items-center h-[110px] justify-center py-2"
+                boxClassName="border-y border-white flex flex-col items-center md:h-[110px] justify-center py-2"
               >
                 เตรียมปลั๊กไฟ ให้เพียงพอ
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
-                boxClassName="border-y border-white flex flex-col items-center h-[110px] justify-center py-2"
+                boxClassName="border-y border-white flex flex-col items-center md:h-[110px] justify-center py-2"
               >
                 เตรียมสัญญาณ อินเตอร์เน็ต ที่มีความเร็ว และเสถียร
               </ActivityCell>
             </div>
-            <div className="grid grid-cols-3 gap-5 mt-5">
+            <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
@@ -147,7 +147,7 @@ const SubSectionTwo = () => {
                 บริเวณประตู หรือรอยต่อ ผนัง
               </ActivityCell>
             </div>
-            <div className="grid grid-cols-3 gap-5 mt-5">
+            <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
@@ -192,7 +192,7 @@ const SubSectionTwo = () => {
         areas={["พื้นที่สะดวกกิจกรรมสบาย", "พื้นที่สตูดิโอ"]}
         principles={
           <div className="col-span-3">
-            <div className="grid grid-cols-3 gap-5 mt-5">
+            <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
               <ActivityCell
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
@@ -213,7 +213,7 @@ const SubSectionTwo = () => {
                 ควรกำหนด เวลาในการใช้ งานต่อรอบ อย่างเหมาะสม
               </ActivityCell>
             </div>
-            <div className="grid grid-cols-3 gap-5 mt-5">
+            <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
               <ActivityCell
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
