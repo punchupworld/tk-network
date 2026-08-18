@@ -4,6 +4,7 @@ import { asset } from "@/src/lib/asset";
 import CoverCap from "../CoverCap";
 import SubSectionOne from "../subsecyions/S03/SubSectionOne";
 import SubSectionTwo from "../subsecyions/S03/SubSectionTwo";
+import SubSectionThree from "../subsecyions/S03/SubSectionThree";
 
 function SectionCover() {
   return (
@@ -235,6 +236,7 @@ const SectionThree = () => {
         id="subtopic7"
       >
         <div className="h-screen" />
+        <SubSectionThree />
       </div>
     </section>
   );

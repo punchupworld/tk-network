@@ -4,6 +4,7 @@ import { T06 } from "@/src/components/icons/topics";
 import SpaceTypeBlock, { TRAP_H } from "./SpaceTypeBlock";
 import HoverSpaceGrid, { SidePanel } from "./HoverSpaceGrid";
 import { asset } from "@/src/lib/asset";
+import HoverSpaceGridY from "./HoverSpaceGridY";
 
 const IconBox = ({
   stroke,
@@ -619,6 +620,8 @@ const SubSectionTwo = () => {
           </div>
         </div>
       </div>
+
+      <HoverSpaceGridY />
     </div>
   );
 };
