@@ -52,11 +52,12 @@ export default function Homepage() {
   }, []);
 
   return (
-    <div className="relative min-h-screen bg-yellow-50 md:p-0 p-2.5">
+    <div className="relative min-h-screen md:bg-yellow-50 md:p-0 p-2.5 bg-white">
       <Background
         className="fixed! inset-0 w-full h-full"
         section={activeSection}
         subtopic={activeSection === "section1" ? activeSubtopic : null}
+        mobileZoom={2}
       />
       <IntroSection />
       <SectionOne />

@@ -7,11 +7,31 @@ import {
   type BackgroundSubtopic,
 } from "@/src/components/icons/background";
 
+const MOBILE_QUERY = "(max-width: 767px)";
+
+function useIsMobile() {
+  const [isMobile, setIsMobile] = React.useState(false);
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia(MOBILE_QUERY);
+    const update = () => setIsMobile(mediaQuery.matches);
+
+    update();
+    mediaQuery.addEventListener("change", update);
+
+    return () => mediaQuery.removeEventListener("change", update);
+  }, []);
+
+  return isMobile;
+}
+
 interface BackgroundProps {
   /** ความเข้มของพื้นหลัง 0-1 */
   opacity?: number;
   /** ขยายภาพพื้นหลัง 1 = ปกติ */
   zoom?: number;
+  /** ขยายภาพพื้นหลังบนจอมือถือ (< 768px) ค่าเริ่มต้น = zoom */
+  mobileZoom?: number;
   fill?: string;
   stroke?: string;
   /** section ที่กำลังแสดง */
@@ -24,12 +44,16 @@ interface BackgroundProps {
 export default function Background({
   opacity = 1,
   zoom = 1,
+  mobileZoom = zoom,
   fill,
   stroke,
   section = "section1",
   subtopic = null,
   className = "",
 }: BackgroundProps) {
+  const isMobile = useIsMobile();
+  const activeZoom = isMobile ? mobileZoom : zoom;
+
   return (
     <div
       className={`absolute inset-0 z-0 overflow-hidden pointer-events-none ${className}`}
@@ -38,15 +62,19 @@ export default function Background({
       aria-hidden="true"
     >
       <BackgroundIllustration
-        className="h-full w-full"
-        preserveAspectRatio="xMidYMid slice"
+        className={
+          isMobile
+            ? "absolute -top-30 left-0 w-full h-[calc(100%-120px)]"
+            : "h-full w-full"
+        }
+        preserveAspectRatio={isMobile ? "xMidYMid meet" : "xMidYMid slice"}
         fill={fill}
         stroke={stroke}
         section={section}
         subtopic={subtopic}
         style={{
           opacity,
-          transform: `scale(${zoom})`,
+          transform: `scale(${activeZoom})`,
           transformOrigin: "center center",
         }}
       />
