@@ -8,7 +8,7 @@ function SectionCover() {
   return (
     <div className="flex w-full max-w-[602px] flex-col items-start">
       <CoverCap />
-      <div className="flex w-full flex-col items-start gap-2.5 border-x-2 border-white bg-[#4d2f2f] p-10 text-white">
+      <div className=" flex w-full flex-col items-start gap-2.5 border-x-2 border-white bg-[#4d2f2f] p-10 text-white">
         <h2 className="font-th desktop-s3-th-700 leading-[1.35]">
           ตกลงแนวทาง
           <br />
@@ -17,16 +17,16 @@ function SectionCover() {
         <p className="w-[124px] font-en desktop-s5-400 leading-normal">
           Make a deal
         </p>
-        <div className="flex items-end">
+        <div className="flex items-end md:flex-row flex-col">
           <div className="flex flex-col ">
-            <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
+            <div className="border-l border-white border-t border-b md:border-r-0 border-r px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 หารือก่อนลงพื้นที่
               </p>
             </div>
           </div>
           <div className="flex flex-col ">
-            <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
+            <div className="border-l border-white md:border-t md:border-b md:border-r-0 border-r px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 สำรวจ
                 <br />
