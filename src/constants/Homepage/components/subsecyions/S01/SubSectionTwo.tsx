@@ -75,8 +75,8 @@ const SubSectionTwo = () => {
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-center gap-2.5 border-x-2 border-b-2 border-white bg-[#FFBAA1] px-10 pb-10 text-white ">
-          <div className="flex items-end">
+        <div className=" flex w-full flex-col items-center justify-center gap-2.5 border-x-2 border-b-2 border-white bg-[#FFBAA1] px-10 pb-10 text-white ">
+          <div className="flex items-end mt-0.5">
             <div className="flex flex-col flex-1">
               <div className="border-l border-tk-black border-t px-[14px] py-[10px]">
                 <p className="font-th desktop-s6-th-400 text-tk-black">

@@ -57,7 +57,7 @@ export default function Homepage() {
         className="fixed! inset-0 w-full h-full"
         section={activeSection}
         subtopic={activeSection === "section1" ? activeSubtopic : null}
-        mobileZoom={2}
+        mobileZoom={1.6}
       />
       <IntroSection />
       <SectionOne />
