@@ -1,14 +1,14 @@
 import type { FillMuteIllustrationProps } from "./fillMuteIllustrationTypes";
 
-export function T06({ fill, stroke }: FillMuteIllustrationProps) {
+export function T06({ fill, t06Stroke, shapeFill }: FillMuteIllustrationProps) {
   return (
     <g id="T06">
       <g id="T06_2">
         <path
           id="Vector_394"
           d="M1063.15 514.777H1109.7C1110.25 514.777 1110.7 515.225 1110.7 515.777V576.83C1110.7 577.382 1110.25 577.83 1109.7 577.83H1057.79C1057.24 577.83 1056.79 577.382 1056.79 576.83V521.138C1056.79 517.623 1059.64 514.777 1063.15 514.777Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t06Stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -16,8 +16,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_395"
           d="M1110.7 514.777C1114.01 514.777 1116.69 517.463 1116.69 520.772V576.839C1116.69 577.391 1116.24 577.839 1115.69 577.839H1105.71C1105.16 577.839 1104.71 577.391 1104.71 576.839V520.772C1104.71 517.463 1107.4 514.777 1110.71 514.777H1110.7Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -25,8 +25,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_396"
           d="M1041.96 512.057H1090.64C1091.2 512.057 1091.64 512.504 1091.64 513.057V576.83C1091.64 577.383 1091.2 577.83 1090.64 577.83H1036.31C1035.76 577.83 1035.31 577.383 1035.31 576.83V518.712C1035.31 515.036 1038.29 512.057 1041.96 512.057Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Blue")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -34,8 +34,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_397"
           d="M1097.92 577.84C1097.92 577.835 1097.91 577.831 1097.91 577.831H1086.39C1085.84 577.831 1085.39 577.383 1085.39 576.831V518.32C1085.39 516.125 1086.52 514.19 1088.24 513.074C1089.22 512.432 1090.39 512.066 1091.65 512.066C1095.11 512.066 1097.92 514.868 1097.92 518.329V577.84Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -43,8 +43,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_398"
           d="M1029.08 525.452C1029.08 525.449 1029.08 525.447 1029.08 525.447H1067.23C1067.78 525.447 1068.23 525.895 1068.23 526.447V576.831C1068.23 577.383 1067.78 577.831 1067.23 577.831H1024.84C1024.29 577.831 1023.84 577.383 1023.84 576.831V530.693C1023.84 527.804 1026.19 525.459 1029.08 525.456C1029.08 525.456 1029.08 525.454 1029.08 525.452Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Skin")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -52,8 +52,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_399"
           d="M1068.23 525.447C1070.95 525.447 1073.16 527.66 1073.16 530.381V576.831C1073.16 577.383 1072.71 577.831 1072.16 577.831H1064.29C1063.74 577.831 1063.29 577.383 1063.29 576.831V530.381C1063.29 527.66 1065.51 525.447 1068.23 525.447Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -61,7 +61,7 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_400"
           d="M1094.55 576.984V519.828"
-          stroke={stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -69,7 +69,7 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_401"
           d="M1108.89 576.984V530.533"
-          stroke={stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -77,7 +77,7 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_402"
           d="M1112.03 576.982V531.316"
-          stroke={stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -85,7 +85,7 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_403"
           d="M1066.66 576.982V531.316"
-          stroke={stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -93,8 +93,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_404"
           d="M1076.63 512.229C1077.49 512.229 1077.95 511.228 1077.39 510.579L1066.13 497.419C1065.79 497.022 1065.81 496.431 1066.18 496.062L1077.26 484.987C1077.65 484.597 1077.65 483.963 1077.26 483.573L1062.34 468.656C1062.01 468.32 1061.95 467.795 1062.21 467.399L1071.2 453.723C1071.64 453.058 1071.16 452.174 1070.37 452.174H1049.75C1048.95 452.174 1048.47 453.058 1048.91 453.723L1057.9 467.399C1058.16 467.795 1058.11 468.32 1057.77 468.656L1042.86 483.573C1042.46 483.964 1042.46 484.597 1042.85 484.987L1053.92 496.062C1054.29 496.431 1054.31 497.022 1053.97 497.419L1042.71 510.579C1042.16 511.228 1042.62 512.229 1043.47 512.229H1076.63Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Red")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -102,8 +102,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_405"
           d="M1077.26 483.574L1060.77 467.08C1060.38 466.69 1059.74 466.69 1059.35 467.08L1042.86 483.574C1042.47 483.965 1042.47 484.598 1042.86 484.989L1059.35 501.483C1059.74 501.873 1060.38 501.873 1060.77 501.483L1077.26 484.989C1077.65 484.598 1077.65 483.965 1077.26 483.574Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Red")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -111,8 +111,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_406"
           d="M1057.88 452.173C1057.89 452.173 1057.89 452.169 1057.89 452.164V433.189C1057.89 431.432 1057.05 429.781 1055.63 428.746C1051.53 425.767 1043.9 422.93 1042.85 415.704C1042.16 410.851 1044.84 403.429 1045.51 399.04C1045.71 397.703 1045.83 396.379 1045.9 395.117C1045.96 393.925 1048.2 393.474 1048.57 394.609C1049.78 398.308 1050.93 402.378 1051.12 404.963C1051.57 410.717 1048.39 413.875 1050.34 418.47C1052.29 423.073 1056.56 423.804 1058.33 427.89C1059.19 429.891 1059 446.904 1058.93 451.194C1058.93 451.739 1058.48 452.173 1057.94 452.173H1057.88Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t06Stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -120,8 +120,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_407"
           d="M1060.19 452.173C1059.86 452.173 1059.6 451.931 1059.6 451.606C1059.59 447.198 1059.52 418.583 1059.6 417.908C1059.94 414.652 1058.42 406.659 1070.66 396.507C1077.05 391.208 1080.95 386.825 1083.21 383.846C1083.88 382.972 1085.57 383.557 1085.39 384.639C1084.28 391.171 1081.18 402.528 1072.69 409.648C1060.2 420.121 1060.78 421.869 1060.78 427.347V451.584C1060.78 451.91 1060.51 452.173 1060.19 452.173Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t06Stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -129,8 +129,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_408"
           d="M1062.63 452.172V438.978C1062.63 437.515 1063.63 436.248 1065.05 435.909C1067.26 435.374 1070.48 434.598 1072.4 434.134C1083.52 431.429 1086.44 423.951 1087.21 420.169C1087.38 419.316 1086.41 418.828 1085.68 419.295C1081.28 422.095 1074.5 423.303 1069.27 425.427C1066.17 426.694 1065 428.621 1063.82 430.869C1062.31 433.733 1061.61 436.953 1061.61 440.191V451.668C1061.61 451.951 1061.84 452.181 1062.12 452.181H1062.62C1062.63 452.181 1062.63 452.177 1062.63 452.172Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t06Stroke}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -138,8 +138,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_409"
           d="M1031.97 557.412C1031.01 557.412 1030.22 556.627 1030.22 555.663V545.44C1030.22 544.476 1031.01 543.691 1031.97 543.691C1032.93 543.691 1033.72 544.476 1033.72 545.44V555.663C1033.72 556.627 1032.93 557.412 1031.97 557.412Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -147,8 +147,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_410"
           d="M1038.37 562.06C1037.54 562.06 1036.81 561.471 1036.65 560.623L1034.83 550.57C1034.66 549.615 1035.28 548.714 1036.24 548.536C1037.19 548.366 1038.09 548.99 1038.27 549.945L1040.09 559.999C1040.26 560.953 1039.64 561.854 1038.68 562.033C1038.58 562.051 1038.47 562.06 1038.37 562.06Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -156,8 +156,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_411"
           d="M1042.26 557.412C1041.29 557.412 1040.51 556.627 1040.51 555.663V545.44C1040.51 544.476 1041.29 543.691 1042.26 543.691C1043.22 543.691 1044 544.476 1044 545.44V555.663C1044 556.627 1043.22 557.412 1042.26 557.412Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -165,8 +165,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_412"
           d="M1047.39 557.412C1046.43 557.412 1045.64 556.627 1045.64 555.663V545.44C1045.64 544.476 1046.43 543.691 1047.39 543.691C1048.36 543.691 1049.14 544.476 1049.14 545.44V555.663C1049.14 556.627 1048.36 557.412 1047.39 557.412Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -174,8 +174,8 @@ export function T06({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_413"
           d="M1052.53 557.412C1051.57 557.412 1050.79 556.627 1050.79 555.663V545.44C1050.79 544.476 1051.57 543.691 1052.53 543.691C1053.5 543.691 1054.28 544.476 1054.28 545.44V555.663C1054.28 556.627 1053.5 557.412 1052.53 557.412Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T06Highlight")}
+          stroke={t06Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"

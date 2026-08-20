@@ -40,9 +40,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col bg-white">
+      <body className="font-th min-h-full flex flex-col bg-white">
         <Navbar />
-        <div className="mt-[-92px]">{children}</div>
+        <div className="mt-[-92px] font-th">{children}</div>
       </body>
     </html>
   );

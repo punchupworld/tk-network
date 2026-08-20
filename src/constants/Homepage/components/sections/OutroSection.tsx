@@ -1,7 +1,5 @@
 import React from "react";
-import CoverCap from "../CoverCap";
 import CoverSub from "../CoverSub";
-import StepsOverlay from "@/src/components/StepsOverlay";
 import { T03 } from "@/src/components/icons/topics";
 
 const OutroSection = () => {

@@ -1,14 +1,14 @@
 import type { FillMuteIllustrationProps } from "./fillMuteIllustrationTypes";
 
-export function T11({ fill, stroke }: FillMuteIllustrationProps) {
+export function T11({ shapeFill, t11Stroke }: FillMuteIllustrationProps) {
   return (
     <g id="T11">
       <g id="T11_2">
         <path
           id="Vector_354"
           d="M1393.54 477.107H1386.03C1380.92 477.107 1376.62 480.961 1376.07 486.046L1370.81 527.857C1370.73 528.455 1371.2 528.982 1371.8 528.982H1395.38C1400.58 528.982 1404.73 524.691 1404.57 519.499L1403.55 486.858C1403.4 481.434 1398.96 477.107 1393.53 477.107H1393.54Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Highlight")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -16,8 +16,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_355"
           d="M1366.4 558.949C1366.66 559.605 1366.18 560.312 1365.47 560.312H1285.5C1284.83 560.312 1284.35 559.657 1284.55 559.013L1305.29 492.947C1305.42 492.53 1305.8 492.246 1306.24 492.246H1339.73C1340.14 492.246 1340.51 492.499 1340.66 492.883L1366.4 558.949Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Base")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -25,8 +25,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_356"
           d="M1313.06 421.29C1313.06 421.29 1313.06 421.29 1313.06 421.29C1312.46 421.173 1311.88 421.111 1311.29 421.089C1311.22 421.086 1311.15 421.039 1311.13 420.97C1310.05 417.902 1307.44 415.456 1304.02 414.769C1298.86 413.725 1293.84 417.062 1292.79 422.227C1291.86 426.864 1294.46 431.395 1298.73 433.021C1299.12 433.17 1299.41 433.523 1299.46 433.938C1300.05 438.666 1303.59 442.704 1308.52 443.7C1314.71 444.949 1320.73 440.952 1321.99 434.761C1323.25 428.571 1319.24 422.551 1313.06 421.291C1313.05 421.291 1313.05 421.29 1313.06 421.29Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t11Stroke}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -34,8 +34,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_357"
           d="M1320.23 448.938C1325.36 448.938 1329.51 444.784 1329.51 439.661C1329.51 434.537 1325.36 430.383 1320.23 430.383C1315.11 430.383 1310.96 434.537 1310.96 439.661C1310.96 444.784 1315.11 448.938 1320.23 448.938Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Skin")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -43,8 +43,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_358"
           d="M1326.86 433.611C1326.86 433.613 1326.86 433.611 1326.86 433.609C1326.85 433.566 1326.81 433.387 1326.76 433.095C1326.75 433.064 1326.73 433.035 1326.71 433.013C1325.04 431.383 1322.75 430.371 1320.23 430.371C1315.11 430.371 1310.96 434.528 1310.96 439.649C1310.96 442.17 1311.96 444.448 1313.59 446.121C1314.01 446.555 1314.71 446.43 1315.03 445.91L1315.47 445.173C1315.5 445.124 1315.53 445.078 1315.57 445.035L1320.23 439.649L1326.85 433.611C1326.85 433.61 1326.85 433.61 1326.86 433.611Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t11Stroke}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -52,11 +52,11 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <g id="Vector_359">
           <path
             d="M1317.73 445.608C1316.58 445.608 1315.44 445.046 1314.75 444.02C1313.64 442.379 1314.08 440.149 1315.73 439.042C1317.38 437.936 1319.6 438.373 1320.71 440.024"
-            fill={fill}
+            fill={shapeFill("T11Skin")}
           />
           <path
             d="M1317.73 445.608C1316.58 445.608 1315.44 445.046 1314.75 444.02C1313.64 442.379 1314.08 440.149 1315.73 439.042C1317.38 437.936 1319.6 438.373 1320.71 440.024"
-            stroke={stroke}
+            stroke={t11Stroke}
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -65,8 +65,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_360"
           d="M1389.52 474.591C1394.47 474.591 1398.48 470.581 1398.48 465.634C1398.48 460.688 1394.47 456.678 1389.52 456.678C1384.58 456.678 1380.57 460.688 1380.57 465.634C1380.57 470.581 1384.58 474.591 1389.52 474.591Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Skin")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -74,8 +74,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_361"
           d="M1383.13 459.802C1383.13 459.801 1383.13 459.799 1383.13 459.797C1383.14 459.78 1383.15 459.681 1383.19 459.52C1383.22 459.348 1383.31 459.189 1383.44 459.069C1385.03 457.583 1387.17 456.678 1389.52 456.678C1394.46 456.678 1398.48 460.683 1398.48 465.634C1398.48 468.052 1397.52 470.242 1395.96 471.852C1395.54 472.286 1394.84 472.159 1394.53 471.642L1394.12 470.962C1394.09 470.913 1394.05 470.867 1394.01 470.824L1389.52 465.634L1383.13 459.816C1383.13 459.812 1383.13 459.806 1383.13 459.802Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t11Stroke}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -83,11 +83,11 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <g id="Vector_362">
           <path
             d="M1391.94 471.372C1393.06 471.372 1394.14 470.837 1394.81 469.838C1395.88 468.25 1395.45 466.1 1393.87 465.029C1392.28 463.959 1390.13 464.387 1389.06 465.975"
-            fill={fill}
+            fill={shapeFill("T11Skin")}
           />
           <path
             d="M1391.94 471.372C1393.06 471.372 1394.14 470.837 1394.81 469.838C1395.88 468.25 1395.45 466.1 1393.87 465.029C1392.28 463.959 1390.13 464.387 1389.06 465.975"
-            stroke={stroke}
+            stroke={t11Stroke}
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -96,8 +96,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_363"
           d="M1312.14 455.569C1312.14 455.566 1312.14 455.564 1312.14 455.563C1312.55 455.39 1311.84 450.266 1312.43 450.266H1326.42C1326.93 450.266 1327.36 450.643 1327.42 451.145L1327.81 454.418C1327.86 454.842 1328.17 455.186 1328.58 455.291C1332.26 456.222 1349.56 461.313 1350.88 474.869C1352.53 491.89 1336.11 497.823 1315.23 495.789C1287.98 493.139 1286.06 464.417 1312.13 455.575C1312.13 455.574 1312.14 455.572 1312.14 455.569Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Highlight")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -105,8 +105,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_364"
           d="M1352.49 453.446C1352.93 452.781 1352.45 451.889 1351.65 451.889H1335.65C1335.32 451.889 1335.01 452.055 1334.82 452.331L1319.66 474.926C1319.21 475.591 1319.69 476.484 1320.49 476.484H1336.5C1336.83 476.484 1337.15 476.317 1337.33 476.041L1352.49 453.446Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Base")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -114,8 +114,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_365"
           d="M1319.64 482.817C1322.25 482.817 1324.35 480.708 1324.35 478.107C1324.35 475.505 1322.25 473.396 1319.64 473.396C1317.04 473.396 1314.93 475.505 1314.93 478.107C1314.93 480.708 1317.04 482.817 1319.64 482.817Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Skin")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -123,8 +123,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_366"
           d="M1340.41 482.077C1343.01 482.077 1345.12 479.968 1345.12 477.366C1345.12 474.765 1343.01 472.656 1340.41 472.656C1337.81 472.656 1335.7 474.765 1335.7 477.366C1335.7 479.968 1337.81 482.077 1340.41 482.077Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Skin")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -132,8 +132,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_367"
           d="M1344.49 488.664C1344.31 488.414 1344.01 488.268 1343.7 488.268H1320.81C1319.98 488.268 1319.51 489.212 1320.01 489.871L1330.64 503.928C1330.83 504.178 1331.12 504.325 1331.44 504.325H1354.33C1355.16 504.325 1355.63 503.38 1355.13 502.722L1344.49 488.664Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Highlight")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -141,8 +141,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_368"
           d="M1374.19 504.326H1331.94C1331.39 504.326 1330.94 504.774 1330.94 505.326V505.387C1330.94 505.939 1331.39 506.387 1331.94 506.387H1374.19C1374.74 506.387 1375.19 505.939 1375.19 505.387V505.326C1375.19 504.774 1374.74 504.326 1374.19 504.326Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Base")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -150,8 +150,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_369"
           d="M1321.12 516.708V559.304C1321.12 559.857 1321.56 560.304 1322.12 560.304H1326.07C1326.62 560.304 1327.07 559.857 1327.07 559.304V519.135C1327.07 516.753 1329 514.817 1331.39 514.817H1369.28C1371.66 514.817 1373.6 516.753 1373.6 519.135V559.304C1373.6 559.857 1374.05 560.304 1374.6 560.304H1390.39C1390.94 560.304 1391.39 559.857 1391.39 559.304V516.708C1391.39 511.008 1386.77 506.387 1381.07 506.387H1331.44C1325.74 506.387 1321.12 511.008 1321.12 516.708Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Red")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -159,8 +159,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_370"
           d="M1327.07 519.146V559.316C1327.07 559.868 1327.51 560.316 1328.07 560.316H1338.24C1338.8 560.316 1339.24 559.868 1339.24 559.316V519.726C1339.24 517.023 1341.44 514.828 1344.14 514.828H1331.38C1329 514.828 1327.07 516.764 1327.07 519.146Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Highlight")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -168,8 +168,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_371"
           d="M1354.43 517.606C1354.43 517.608 1354.43 517.61 1354.43 517.61H1367.38C1367.93 517.61 1368.38 518.058 1368.38 518.61V550.581C1368.38 551.133 1367.93 551.581 1367.38 551.581H1344.97C1344.42 551.581 1343.97 551.133 1343.97 550.581V528.066C1343.97 522.296 1348.66 517.605 1354.43 517.602C1354.43 517.602 1354.43 517.604 1354.43 517.606Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Grey")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -177,8 +177,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_372"
           d="M1344.26 551.58H1359.51C1360.07 551.58 1360.51 552.028 1360.51 552.58V559.331C1360.51 559.884 1360.07 560.331 1359.51 560.331H1336.5C1335.95 560.331 1335.49 559.882 1335.56 559.333C1336.05 554.969 1339.76 551.58 1344.25 551.58H1344.26Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Grey")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -186,8 +186,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_373"
           d="M1367.46 517.606C1367.46 517.608 1367.46 517.61 1367.46 517.61H1372.54C1373.1 517.61 1373.54 518.058 1373.54 518.61V550.581C1373.54 551.133 1373.1 551.581 1372.54 551.581H1358C1357.44 551.581 1357 551.133 1357 550.581V528.066C1357 522.295 1361.69 517.604 1367.46 517.602C1367.46 517.602 1367.46 517.604 1367.46 517.606Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Grey")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -195,8 +195,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_374"
           d="M1357.28 551.58H1372.54C1373.09 551.58 1373.54 552.028 1373.54 552.58V559.331C1373.54 559.884 1373.09 560.331 1372.54 560.331H1349.52C1348.97 560.331 1348.52 559.882 1348.58 559.333C1349.08 554.969 1352.79 551.58 1357.27 551.58H1357.28Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Grey")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -204,8 +204,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_375"
           d="M1371.24 500.537C1371.23 500.535 1371.23 500.533 1371.23 500.532L1366.29 498.473C1365.78 498.259 1365.19 498.375 1364.8 498.768L1360.93 502.64C1360.29 503.277 1360.75 504.372 1361.66 504.366C1361.82 504.364 1362 504.363 1362.17 504.362C1362.33 504.361 1362.49 504.289 1362.59 504.165L1364.55 502.033C1365.05 501.488 1365.9 501.444 1366.45 501.935L1368.57 503.799C1368.99 504.174 1369.55 504.388 1370.12 504.388C1371.79 504.398 1373.26 504.409 1374.18 504.416C1374.73 504.42 1375.18 503.971 1375.18 503.415V501.543C1375.18 500.991 1374.74 500.543 1374.18 500.543H1371.25C1371.24 500.543 1371.24 500.541 1371.24 500.537Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Skin")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -213,11 +213,11 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <g id="Vector_376">
           <path
             d="M1364.62 499.955L1361.53 503.062C1361.05 503.542 1361.4 504.361 1362.07 504.356L1362.18 504.355C1362.34 504.354 1362.49 504.281 1362.59 504.157L1364.55 502.025C1364.78 501.775 1365.07 501.632 1365.38 501.597"
-            fill={fill}
+            fill={shapeFill("T11Skin")}
           />
           <path
             d="M1364.62 499.955L1361.53 503.062C1361.05 503.542 1361.4 504.361 1362.07 504.356L1362.18 504.355C1362.34 504.354 1362.49 504.281 1362.59 504.157L1364.55 502.025C1364.78 501.775 1365.07 501.632 1365.38 501.597"
-            stroke={stroke}
+            stroke={t11Stroke}
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -226,8 +226,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_377"
           d="M1370.11 504.384C1370.11 504.381 1370.11 504.379 1370.1 504.379C1369.53 504.378 1368.98 504.164 1368.56 503.79L1367.92 503.229C1367.74 503.068 1367.5 502.979 1367.26 502.979H1365.41C1365.02 502.979 1364.7 503.291 1364.7 503.683C1364.7 504.076 1365.02 504.388 1365.41 504.388H1370.39C1370.3 504.388 1370.22 504.388 1370.12 504.388C1370.12 504.388 1370.12 504.386 1370.11 504.384Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Base")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -235,11 +235,11 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <g id="Vector_378">
           <path
             d="M1390.42 496.965C1390.42 497.331 1390.42 497.687 1390.42 498.026C1390.42 499.249 1389.43 500.248 1388.2 500.248H1376.13C1375.57 500.248 1375.12 500.695 1375.12 501.248V504.405C1375.12 504.878 1375.46 505.286 1375.92 505.384L1392.61 508.901C1393.06 508.999 1393.52 509.044 1393.98 509.053C1397.82 509.079 1400.95 505.975 1400.95 502.139V492.799"
-            fill={fill}
+            fill={shapeFill("T11Highlight")}
           />
           <path
             d="M1390.42 496.965C1390.42 497.331 1390.42 497.687 1390.42 498.026C1390.42 499.249 1389.43 500.248 1388.2 500.248H1376.13C1375.57 500.248 1375.12 500.695 1375.12 501.248V504.405C1375.12 504.878 1375.46 505.286 1375.92 505.384L1392.61 508.901C1393.06 508.999 1393.52 509.044 1393.98 509.053C1397.82 509.079 1400.95 505.975 1400.95 502.139V492.799"
-            stroke={stroke}
+            stroke={t11Stroke}
             strokeWidth={2}
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -248,8 +248,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_379"
           d="M1402.03 528.785H1392.25C1391.69 528.785 1391.25 529.233 1391.25 529.785V531.318C1391.25 531.87 1391.69 532.318 1392.25 532.318H1402.03C1402.58 532.318 1403.03 531.87 1403.03 531.318V529.785C1403.03 529.233 1402.58 528.785 1402.03 528.785Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T11Grey")}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -257,8 +257,8 @@ export function T11({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_380"
           d="M1400.41 532.318H1398.58C1398.03 532.318 1397.58 532.766 1397.58 533.318V559.018C1397.58 559.57 1398.03 560.018 1398.58 560.018H1400.41C1400.96 560.018 1401.41 559.57 1401.41 559.018V533.318C1401.41 532.766 1400.96 532.318 1400.41 532.318Z"
-          fill={stroke}
-          stroke={stroke}
+          fill={t11Stroke}
+          stroke={t11Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"

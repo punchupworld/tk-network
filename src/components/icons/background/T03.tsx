@@ -1,14 +1,14 @@
 import type { FillMuteIllustrationProps } from "./fillMuteIllustrationTypes";
 
-export function T03({ fill, stroke }: FillMuteIllustrationProps) {
+export function T03({ shapeFill, t03Stroke }: FillMuteIllustrationProps) {
   return (
     <g id="T03">
       <g id="T03_2">
         <path
           id="Vector_245"
           d="M784.669 444.5C784.117 444.5 783.669 444.052 783.669 443.5V434.241C783.669 433.689 783.221 433.241 782.669 433.241H764.329C763.777 433.241 763.329 432.794 763.329 432.241V422.332C763.329 421.78 762.882 421.332 762.329 421.332H723.133C722.581 421.332 722.133 421.78 722.133 422.332V501.637C722.133 502.189 722.581 502.637 723.133 502.637H802.794C803.347 502.637 803.794 502.189 803.794 501.637V445.5C803.794 444.947 803.347 444.5 802.794 444.5H784.669Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T03Base")}
+          stroke={t03Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -16,8 +16,8 @@ export function T03({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_246"
           d="M813.009 444.5C812.457 444.5 812.009 444.052 812.009 443.5V434.241C812.009 433.689 811.562 433.241 811.009 433.241H792.67C792.117 433.241 791.67 432.794 791.67 432.241V422.332C791.67 421.78 791.222 421.332 790.67 421.332H764.328C763.776 421.332 763.328 421.78 763.328 422.332V432.241C763.328 432.794 763.776 433.241 764.328 433.241H782.668C783.22 433.241 783.668 433.689 783.668 434.241V443.5C783.668 444.052 784.115 444.5 784.668 444.5H802.793C803.345 444.5 803.793 444.947 803.793 445.5V501.637C803.793 502.189 804.241 502.637 804.793 502.637H831.135C831.687 502.637 832.135 502.189 832.135 501.637V445.5C832.135 444.947 831.687 444.5 831.135 444.5H813.009Z"
-          fill={fill}
-          stroke={stroke}
+          fill={shapeFill("T03Highlight")}
+          stroke={t03Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -25,7 +25,7 @@ export function T03({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_247"
           d="M783.668 433.242H812.01"
-          stroke={stroke}
+          stroke={t03Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -33,7 +33,7 @@ export function T03({ fill, stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_248"
           d="M803.793 444.502H832.135"
-          stroke={stroke}
+          stroke={t03Stroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
