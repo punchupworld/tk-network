@@ -28,7 +28,7 @@ const SubSectionOne = () => {
           เมื่อหน่วยงานสนใจที่จะสร้างพื้นที่การเรียนรู้ร่วมกันกับ TK Park
           นี่คือภาพคร่าวๆ ของกระบวนการเบื้องต้น
         </p>
-        <p className="text-tk-black desktop-s6-th-400">
+        <p className="text-tk-black desktop-s6-th-400 text-balance">
           เครือข่ายอาจเริ่มทำงานโดยการศึกษาเป้าหมายก่อนเป็นอันดับแรก
           เมื่อเราเข้าใจกลุ่มเป้าหมายและพื้นที่
           ก็จะเข้าสู่กระบวนการคิดเชิงออกแบบ เช่น การบริการต้องเป็นแบบไหน
@@ -48,7 +48,7 @@ const SubSectionOne = () => {
       </div>
       <div className="flex w-full max-w-[600px] flex-col items-start">
         <CoverCap color="#FFBAA1" colorStroke="white" strokeWidth={2} />
-        <div className="flex w-full flex-col items-start gap-10 border-x-2 border-white bg-orange-300 pt-5 pb-10 px-10 text-white">
+        <div className="flex w-full flex-col items-start gap-10 border-x-2 border-b-2 border-white bg-orange-300 pt-5 pb-10 px-10 text-white">
           <div className="px-5 py-1.5 border-2 border-tk-black rounded-full">
             <h2 className="font-th desktop-s6-th-700 text-tk-black">
               ประโยชน์ของการเข้าร่วม
@@ -75,7 +75,8 @@ const SubSectionOne = () => {
                 ชุมชนมีชีวิตชีวาเพราะมีพื้นที่การเรียนรู้เชิงสร้างสรรค์ของตัวเอง
               </p>
               <p className="border-b border-tk-black p-5 font-th desktop-s6-th-400 leading-normal">
-                พัฒนาจากห้องสมุดในความหมายเดิม สู่ศูนย์กลางการเรียนรู้ของชุมชน
+                พัฒนาจากห้องสมุด <br />
+                ในความหมายเดิม สู่ศูนย์กลางการเรียนรู้ของชุมชน
               </p>
               <p className="p-5 font-th desktop-s6-th-400 leading-normal">
                 เชื่อมโยงความรู้ เทคโนโลยี และวิถีชีวิตเข้าด้วยกัน

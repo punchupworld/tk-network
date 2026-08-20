@@ -27,13 +27,13 @@ const ToolBox = () => {
   );
 };
 
-type ParkImage = {
+export type ParkImage = {
   src: string;
   alt: string;
   height: number;
 };
 
-type ParkCardProps = {
+export type ParkCardProps = {
   color: string;
   title: string;
   locationName: string;
@@ -186,7 +186,7 @@ const ParkCard = ({
         className="flex w-full flex-col items-center justify-center gap-6 border-x-2 border-b-2 border-white px-5 pb-5 text-white md:gap-10 md:px-10 md:pb-10"
         style={{ backgroundColor: color }}
       >
-        <div className="w-full h-0.5 bg-white" />
+        <div className="mt-px w-full h-0.5 bg-white" />
         <div className="flex flex-col gap-4 w-full md:gap-5">
           <div className="flex flex-wrap items-end justify-end gap-y-2">
             <div className="relative flex w-20 shrink-0 items-center justify-center md:w-27.5">

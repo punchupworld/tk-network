@@ -92,7 +92,7 @@ function KnowledgeBox() {
         <div className="absolute bottom-[259px] left-[148px] flex size-[168px] items-center justify-center">
           <T10
             fill="#f5333f"
-            stroke="white"
+            stroke="none"
             className="absolute inset-0 size-full"
             aria-hidden="true"
           />
@@ -105,7 +105,7 @@ function KnowledgeBox() {
         <div className="absolute left-[56px] top-[calc(50%+78px)] flex size-[168px] -translate-y-1/2 items-center justify-center">
           <T09
             fill="#f5333f"
-            stroke="white"
+            stroke="none"
             className="absolute inset-0 size-full"
             aria-hidden="true"
           />
@@ -131,7 +131,7 @@ const SectionFour = () => {
       className="relative z-10 mx-auto min-h-screen w-full max-w-300"
       id="section5"
     >
-      <div className="h-screen" />
+      <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
       <div className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25">
         <SectionCover />
         <QuoteSection />
@@ -141,14 +141,14 @@ const SectionFour = () => {
         className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25"
         id="subtopic9"
       >
-        <div className="h-screen" />
+        <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
         <SubSectionOne />
       </div>
       <div
         className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25"
         id="subtopic10"
       >
-        <div className="h-screen" />
+        <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
         <SubSectionTwo />
       </div>
     </section>

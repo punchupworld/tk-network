@@ -101,7 +101,7 @@ function KnowledgeBox() {
         <div className="absolute bottom-[259px] right-0 flex size-[168px] items-center justify-center">
           <T12
             fill="#f5333f"
-            stroke="white"
+            stroke="none"
             className="absolute inset-0 size-full"
             aria-hidden="true"
           />
@@ -114,7 +114,7 @@ function KnowledgeBox() {
         <div className="absolute top-[145px] left-0 flex size-[168px] items-center justify-center">
           <T13
             fill="#f5333f"
-            stroke="white"
+            stroke="none"
             className="absolute inset-0 size-full"
             aria-hidden="true"
           />
@@ -127,7 +127,7 @@ function KnowledgeBox() {
         <div className="absolute left-1/2 bottom-0 flex size-[168px] -translate-x-1/2 items-center justify-center">
           <T11
             fill="#f5333f"
-            stroke="white"
+            stroke="none"
             className="absolute inset-0 size-full"
             aria-hidden="true"
           />
@@ -148,7 +148,7 @@ const SectionSix = () => {
       className="relative z-10 mx-auto min-h-screen w-full max-w-300"
       id="section6"
     >
-      <div className="h-screen" />
+      <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
       <div className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25">
         <SectionCover />
         <QuoteSection />
@@ -158,21 +158,21 @@ const SectionSix = () => {
         className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25"
         id="subtopic11"
       >
-        <div className="h-screen" />
+        <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
         <SubSectionOne />
       </div>
       <div
         className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25"
         id="subtopic12"
       >
-        <div className="h-screen" />
+        <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
         <SubSectionTwo />
       </div>
       <div
         className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25"
         id="subtopic13"
       >
-        <div className="h-screen" />
+        <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
         <SubSectionThree />
       </div>
     </section>

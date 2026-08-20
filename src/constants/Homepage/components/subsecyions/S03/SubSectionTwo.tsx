@@ -1,5 +1,5 @@
 "use client";
-import { useState, type CSSProperties } from "react";
+import { useState, type CSSProperties, type ReactNode } from "react";
 import { T06 } from "@/src/components/icons/topics";
 import SpaceTypeBlock, { TRAP_H } from "./SpaceTypeBlock";
 import HoverSpaceGrid, { ChevronDown, SidePanel } from "./HoverSpaceGrid";
@@ -26,6 +26,7 @@ const IconBox = ({
         d="M164.626 74.4416L95.5579 5.37336C89.7271 -0.457785 80.273 -0.457785 74.4415 5.37336L5.37336 74.4416C-0.457786 80.273 -0.457786 89.7272 5.37336 95.5579L74.4415 164.626C80.273 170.458 89.7271 170.458 95.5579 164.626L164.626 95.5579C170.458 89.7272 170.458 80.273 164.626 74.4416Z"
         stroke={stroke}
         strokeWidth="2"
+        vectorEffect="non-scaling-stroke"
       />
     </svg>
   );
@@ -146,6 +147,47 @@ const FACILITIES = [
   },
 ];
 
+const HoverTipRow = ({
+  children,
+  detail,
+  label,
+}: {
+  children: ReactNode;
+  detail: string;
+  label: string;
+}) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div className="group relative z-0 flex cursor-pointer items-center justify-center gap-2.5 hover:z-20">
+      {children}
+      {open ? null : (
+        <button
+          type="button"
+          className="absolute inset-0 z-20 md:hidden"
+          onClick={() => setOpen(true)}
+          aria-label={`เปิดรายละเอียด ${label}`}
+        />
+      )}
+      <div
+        className={`absolute top-full left-0 z-10 w-full rounded-[10px] bg-red-300 p-5 md:hidden md:group-hover:block ${
+          open ? "block" : "hidden"
+        }`}
+      >
+        <p className="font-th desktop-s6-th-400 text-tk-black">{detail}</p>
+      </div>
+      {open ? (
+        <button
+          type="button"
+          className="absolute inset-0 z-30 md:hidden"
+          onClick={() => setOpen(false)}
+          aria-label={`ปิดรายละเอียด ${label}`}
+        />
+      ) : null}
+    </div>
+  );
+};
+
 const FacilityRow = ({ title, tips }: { title: string; tips: string[] }) => {
   const [open, setOpen] = useState(false);
 
@@ -227,7 +269,10 @@ const SubSectionTwo = () => {
           </div>
         </div>
         <div className="p-10 border-2 border-white bg-orange-50 flex flex-col items-start justify-start gap-2.5 md:w-100 shrink-0 w-full">
-          <div className="flex gap-2.5 items-center justify-center">
+          <HoverTipRow
+            label="ยึดผู้ใช้เป็นศูนย์กลาง"
+            detail="รองรับความต้องการผู้ใช้หลายกลุ่มที่มีพฤติกรรมและความต้องการแตกต่างกัน"
+          >
             <div className="p-3 rounded-[10px] bg-white">
               <ShapeBoxOne />
             </div>
@@ -239,8 +284,11 @@ const SubSectionTwo = () => {
               </p>
             </div>
             <ToolBox />
-          </div>
-          <div className="flex gap-2.5 items-center justify-center">
+          </HoverTipRow>
+          <HoverTipRow
+            label="รองรับการเรียนรู้ที่หลากหลาย"
+            detail="ไม่ว่าผู้ใช้จะอยากทำงานเดี่ยว งานกลุ่ม เล่นและเรียนรู้ผ่านประสบการณ์ หรือทำกิจกรรมทดลองแบบใด"
+          >
             <div className="p-3 rounded-[10px] bg-white">
               <ShapeBoxTwo />
             </div>
@@ -252,8 +300,12 @@ const SubSectionTwo = () => {
               </p>
             </div>
             <ToolBox />
-          </div>
-          <div className="flex gap-2.5 items-center justify-center">
+          </HoverTipRow>
+
+          <HoverTipRow
+            label="ปรับเปลี่ยนอย่างยืดหยุ่น"
+            detail="พื้นที่ต้องใช้งานได้หลายรูปแบบ รองรับการเปลี่ยนแปลงในอนาคต เช่น สามารถเคลื่อนย้ายเฟอร์นิเจอร์ได้ จัดเวิร์กช็อปได้หลายรูปแบบและวัตถุประสงค์ตามพฤติกรรมของผู้ใช้งาน กิจกรรมจะขนาดเล็กหรือใหญ่ก็ไม่ใช่ปัญหา"
+          >
             <div className="p-3 rounded-[10px] bg-white">
               <ShapeBoxThree />
             </div>
@@ -265,7 +317,7 @@ const SubSectionTwo = () => {
               </p>
             </div>
             <ToolBox />
-          </div>
+          </HoverTipRow>
         </div>
       </div>
 
@@ -291,7 +343,7 @@ const SubSectionTwo = () => {
         </div>
       </div>
 
-      <div className="@container relative w-full" id="subsubtopic10">
+      <div className="@container relative w-full">
         <div className="sticky top-0 z-0 flex h-dvh w-full items-center">
           <div className="mx-auto relative flex h-[min(459px,calc(100dvh-6rem))] w-[min(442px,calc(100vw-2rem))] items-center justify-center overflow-hidden border-2 border-[#f5333f] bg-white">
             <div
@@ -512,7 +564,7 @@ const SubSectionTwo = () => {
 
       <div
         className="flex items-start md:flex-row flex-col max-w-[600px]"
-        id="subsubtopic11"
+        id="subsubtopic10"
       >
         <div className="p-5 md:border-y-2 border-l-2 border-t-2 md:border-r-0 border-r-2 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
@@ -564,7 +616,10 @@ const SubSectionTwo = () => {
         ))}
       </div>
 
-      <div className="flex items-start md:flex-row flex-col max-w-[600px]">
+      <div
+        className="flex items-start md:flex-row flex-col max-w-[600px]"
+        id="subsubtopic11"
+      >
         <div className="p-5 md:border-y-2 border-l-2 border-t-2 md:border-r-0 border-r-2 border-white bg-yellow-700">
           <div className="relative flex items-center justify-center">
             <IconBox

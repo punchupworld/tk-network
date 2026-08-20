@@ -434,3 +434,30 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Scroll stays functional; only the scrollbar UI is hidden */
+html,
+body,
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Opt back in where a visible scrollbar is wanted */
+@utility scrollbar-show {
+  scrollbar-width: auto;
+  -ms-overflow-style: auto;
+  &::-webkit-scrollbar {
+    width: initial;
+    height: initial;
+    display: block;
+  }
+}

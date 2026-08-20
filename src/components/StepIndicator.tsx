@@ -1,6 +1,8 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
+import { SUBSUBTOPIC_LABELS } from "@/src/constants/topicItems";
 import {
   T01,
   T02,
@@ -43,6 +45,22 @@ const STEP_LABELS = [
   "ก่อสร้างพื้นที่",
   "เตรียมความพร้อม",
   "เปิดบริการ",
+] as const;
+
+const SHAPE_STEP_LABELS = [
+  "ก้าวแรกสู่ ห้องสมุดมีชีวิต",
+  "แนวคิด ห้องสมุดมีชีวิต",
+  "รูปแบบของ การเข้าร่วม",
+  "สิทธิประโยชน์ ของเครือข่าย",
+  "แนวทางการบริหารจัดการพื้นที่เรียนรู้",
+  "หลักการ ออกแบบพื้นที่",
+  "ตัวอย่าง สร้างแรงบันดาลใจ",
+  "แนวทาง การจัดสรร งบประมาณ",
+  "นโยบายและ ข้อตกลง การใช้พื้นที่",
+  "หลักการบริหาร บุคลากร",
+  "รูปแบบบริการ ตามกลุ่มเป้าหมาย",
+  "แนะนำ กิจกรรม",
+  "ตัวอย่าง พื้นที่การเรียนรู้",
 ] as const;
 
 const stepIndicators: Topic[][] = [
@@ -98,7 +116,125 @@ const SUBSUBTOPIC_IDS = Array.from(
 );
 
 function scrollToId(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth",
+    block: id.startsWith("subsubtopic") ? "center" : "start",
+  });
+}
+
+function dashTooltipItems(dashId: string) {
+  const label = SUBSUBTOPIC_LABELS[dashId];
+  return label ? [{ id: dashId, label }] : [];
+}
+
+function topicTooltipItems(topicId: string) {
+  const label = SHAPE_STEP_LABELS[Number(topicId.replace("subtopic", "")) - 1];
+  return label ? [{ id: topicId, label }] : [];
+}
+
+function HoverArrow() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="15"
+      height="8"
+      viewBox="0 0 15 8"
+      fill="none"
+      aria-hidden="true"
+    >
+      <path
+        d="M14.3536 4.03519C14.5488 3.83993 14.5488 3.52335 14.3536 3.32809L11.1716 0.146106C10.9763 -0.049156 10.6597 -0.0491559 10.4645 0.146106C10.2692 0.341368 10.2692 0.657951 10.4645 0.853213L13.2929 3.68164L10.4645 6.51007C10.2692 6.70533 10.2692 7.02191 10.4645 7.21717C10.6597 7.41244 10.9763 7.41244 11.1716 7.21717L14.3536 4.03519ZM0 3.68164L2.18557e-08 4.18164L14 4.18164L14 3.68164L14 3.18164L-2.18557e-08 3.18164L0 3.68164Z"
+        fill="#C0A765"
+      />
+    </svg>
+  );
+}
+
+type TooltipItem = { id: string; label: string };
+
+type IndicatorTooltipProps = {
+  anchor: Element;
+  items: TooltipItem[];
+  onSelect: (id: string) => void;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
+};
+
+function IndicatorTooltip({
+  anchor,
+  items,
+  onSelect,
+  onMouseEnter,
+  onMouseLeave,
+}: IndicatorTooltipProps) {
+  const tipRef = useRef<HTMLDivElement>(null);
+  const [coords, setCoords] = useState<{ left: number; top: number } | null>(
+    null,
+  );
+
+  useLayoutEffect(() => {
+    const place = () => {
+      const tip = tipRef.current;
+      if (!tip) return;
+
+      const rect = anchor.getBoundingClientRect();
+      const width = tip.offsetWidth;
+      const height = tip.offsetHeight;
+      const gap = 8;
+      const pad = 12;
+
+      const left = Math.max(
+        pad,
+        Math.min(
+          rect.left + rect.width / 2 - width / 2,
+          window.innerWidth - width - pad,
+        ),
+      );
+      const top = Math.max(
+        pad,
+        Math.min(rect.bottom + gap, window.innerHeight - height - pad),
+      );
+
+      setCoords({ left, top });
+    };
+
+    place();
+    window.addEventListener("resize", place);
+    window.addEventListener("scroll", place, true);
+
+    return () => {
+      window.removeEventListener("resize", place);
+      window.removeEventListener("scroll", place, true);
+    };
+  }, [anchor]);
+
+  return createPortal(
+    <div
+      ref={tipRef}
+      role="tooltip"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      className="fixed z-[80] inline-flex flex-col items-start justify-center gap-2.5 rounded-[10px] bg-[#D9D9D9] p-5"
+      style={{
+        left: coords?.left ?? 0,
+        top: coords?.top ?? 0,
+        visibility: coords ? "visible" : "hidden",
+      }}
+    >
+      {items.map((item) => (
+        <button
+          key={item.id}
+          type="button"
+          onClick={() => onSelect(item.id)}
+          className="flex items-center gap-1.5 whitespace-nowrap rounded-[5px] border border-yellow-700 px-3 py-1 font-th desktop-s7-th-400 text-neutral-dark-darker hover:bg-yellow-700 hover:text-white"
+        >
+          {item.label}
+          <HoverArrow />
+        </button>
+      ))}
+    </div>,
+    document.body,
+  );
 }
 
 function StepIndicator({
@@ -111,7 +247,25 @@ function StepIndicator({
   const [activeSubsubtopic, setActiveSubsubtopic] = useState<string | null>(
     null,
   );
+  const [hovered, setHovered] = useState<{
+    el: Element;
+    items: TooltipItem[];
+  } | null>(null);
   const scrollerRef = useRef<HTMLDivElement>(null);
+  const hideTimer = useRef<number>(0);
+
+  const showTooltip = (items: TooltipItem[], el: Element) => {
+    if (!items.length) return;
+    window.clearTimeout(hideTimer.current);
+    setHovered({ el, items });
+  };
+
+  const hideTooltip = () => {
+    window.clearTimeout(hideTimer.current);
+    hideTimer.current = window.setTimeout(() => setHovered(null), 140);
+  };
+
+  useEffect(() => () => window.clearTimeout(hideTimer.current), []);
 
   useEffect(() => {
     const isInView = (id: string) => {
@@ -186,15 +340,15 @@ function StepIndicator({
     <div className="relative z-40 mt-2 w-full min-w-0">
       <div
         ref={scrollerRef}
-        className="flex h-10.5 items-center overflow-x-auto overscroll-x-contain rounded-full bg-red-50 px-3 scrollbar-none"
+        className="flex h-9.5 items-center overflow-x-auto overscroll-x-contain rounded-full bg-red-50 px-3 scrollbar-none"
       >
         <ol
           className="flex w-max min-w-full items-center justify-between gap-2 text-[#FFCBCE]"
           aria-label="ลำดับ 6 ขั้นตอนในการเข้าร่วมเครือข่าย"
         >
           {STEPS.map((topics, index) => {
-            const isActive = activeStep === index && !activeSubtopic;
-            const highlightNumber = showStepsOverlay || isActive;
+            const isInSection = activeStep === index;
+            const highlightNumber = showStepsOverlay || isInSection;
 
             return (
               <li key={index} role="listitem" className="contents">
@@ -203,6 +357,20 @@ function StepIndicator({
                   tabIndex={0}
                   data-indicator={SECTION_IDS[index]}
                   onClick={() => scrollToId(SECTION_IDS[index])}
+                  onMouseEnter={(event) =>
+                    showTooltip(
+                      [{ id: SECTION_IDS[index], label: STEP_LABELS[index] }],
+                      event.currentTarget,
+                    )
+                  }
+                  onMouseLeave={hideTooltip}
+                  onFocus={(event) =>
+                    showTooltip(
+                      [{ id: SECTION_IDS[index], label: STEP_LABELS[index] }],
+                      event.currentTarget,
+                    )
+                  }
+                  onBlur={hideTooltip}
                   onKeyDown={(event) => {
                     if (event.key === "Enter" || event.key === " ") {
                       event.preventDefault();
@@ -218,11 +386,11 @@ function StepIndicator({
                   <span
                     className={[
                       "grid transition-[grid-template-columns,opacity] duration-300",
-                      isActive
+                      isInSection
                         ? "grid-cols-[1fr] opacity-100"
                         : "grid-cols-[0fr] opacity-0",
                     ].join(" ")}
-                    aria-hidden={!isActive}
+                    aria-hidden={!isInSection}
                   >
                     <span className="overflow-hidden whitespace-nowrap">
                       {STEP_LABELS[index]}
@@ -250,6 +418,20 @@ function StepIndicator({
                           data-indicator={id}
                           className="shrink-0 cursor-pointer overflow-visible **:stroke-1 **:[vector-effect:non-scaling-stroke] hover:**:fill-tk-red"
                           onClick={() => scrollToId(id)}
+                          onMouseEnter={(event) =>
+                            showTooltip(
+                              topicTooltipItems(id),
+                              event.currentTarget,
+                            )
+                          }
+                          onMouseLeave={hideTooltip}
+                          onFocus={(event) =>
+                            showTooltip(
+                              topicTooltipItems(id),
+                              event.currentTarget,
+                            )
+                          }
+                          onBlur={hideTooltip}
                           onKeyDown={(event) => {
                             if (event.key === "Enter" || event.key === " ") {
                               event.preventDefault();
@@ -268,6 +450,20 @@ function StepIndicator({
                               tabIndex={0}
                               data-indicator={dashId}
                               onClick={() => scrollToId(dashId)}
+                              onMouseEnter={(event) =>
+                                showTooltip(
+                                  dashTooltipItems(dashId),
+                                  event.currentTarget,
+                                )
+                              }
+                              onMouseLeave={hideTooltip}
+                              onFocus={(event) =>
+                                showTooltip(
+                                  dashTooltipItems(dashId),
+                                  event.currentTarget,
+                                )
+                              }
+                              onBlur={hideTooltip}
                               onKeyDown={(event) => {
                                 if (
                                   event.key === "Enter" ||
@@ -278,7 +474,8 @@ function StepIndicator({
                                 }
                               }}
                               className={[
-                                "cursor-pointer w-0.5 shrink-0 rounded-full hover:bg-tk-red hover:h-4",
+                                "relative cursor-pointer w-0.5 shrink-0 rounded-full hover:bg-tk-red hover:h-4",
+                                "before:absolute before:-inset-x-1 before:-inset-y-2 before:content-['']",
                                 isDashActive
                                   ? "h-4 bg-tk-red"
                                   : "h-2 bg-[#FFCBCE]",
@@ -295,6 +492,18 @@ function StepIndicator({
           })}
         </ol>
       </div>
+      {hovered ? (
+        <IndicatorTooltip
+          anchor={hovered.el}
+          items={hovered.items}
+          onSelect={(id) => {
+            scrollToId(id);
+            setHovered(null);
+          }}
+          onMouseEnter={() => showTooltip(hovered.items, hovered.el)}
+          onMouseLeave={hideTooltip}
+        />
+      ) : null}
     </div>
   );
 }

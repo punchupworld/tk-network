@@ -404,7 +404,7 @@ const SpaceGroup = ({
           </h2>
         </div>
       </CoverTri>
-      <div className="border-2 border-white w-full">{children}</div>
+      <div className="mt-px border-2 border-white w-full">{children}</div>
     </div>
   );
 };

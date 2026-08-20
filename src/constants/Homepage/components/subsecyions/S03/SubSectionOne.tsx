@@ -27,6 +27,7 @@ const IconBox = ({
         d="M17.6236 1H111.16L94.6967 111H1.16016L17.6236 1Z"
         stroke={stroke}
         strokeWidth="2"
+        vectorEffect="non-scaling-stroke"
       />
     </svg>
   );
@@ -365,7 +366,7 @@ const SubSectionOne = () => {
 
       <div className="flex w-full flex-col items-start">
         <CoverCap color="#91C5F4" />
-        <div className="flex w-full flex-col items-start gap-10 border-x-2 border-white bg-[#91C5F4] px-10 pt-5 pb-10 text-white">
+        <div className="flex w-full flex-col items-start gap-10 border-x-2 border-b-2 border-white bg-[#91C5F4] px-10 pt-5 pb-10 text-white">
           <div>
             <h2 className="font-th desktop-s6-th-700 px-2.5 py-1.5 text-tk-black border-2 border-tk-black rounded-full">
               เกณฑ์การพิจารณาทำเลที่ตั้งที่เหมาะสม สอดคล้องกับการพัฒนาเมือง

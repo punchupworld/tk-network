@@ -25,6 +25,7 @@ const IconBox = ({
         rx="28.878"
         stroke={stroke}
         strokeWidth="2"
+        vectorEffect="non-scaling-stroke"
       />
     </svg>
   );

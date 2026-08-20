@@ -74,7 +74,7 @@ function KnowledgeBox() {
         <div className="absolute right-0 bottom-0 flex size-[168px] items-center justify-center">
           <T08
             fill="#f5333f"
-            stroke="white"
+            stroke="none"
             className="absolute inset-0 size-full"
             aria-hidden="true"
           />
@@ -95,7 +95,7 @@ const SectionFour = () => {
       className="relative z-10 mx-auto min-h-screen w-full max-w-300"
       id="section4"
     >
-      <div className="h-screen" />
+      <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
       <div className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25">
         <SectionCover />
         <QuoteSection />
@@ -117,7 +117,7 @@ const SectionFour = () => {
         className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25"
         id="subtopic8"
       >
-        <div className="h-screen" />
+        <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
         <SubSectionOne />
       </div>
     </section>

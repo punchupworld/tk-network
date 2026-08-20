@@ -2,6 +2,7 @@
 
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import StepsOverlay from "@/src/components/StepsOverlay";
+import HoverPanel from "@/src/components/HoverPanel";
 import Image from "next/image";
 import { asset } from "@/src/lib/asset";
 
@@ -10,11 +11,13 @@ type NavItem = {
   label?: string;
   icon?: React.ReactNode;
   grow?: boolean;
+  href?: string;
 };
 
 const navItems: NavItem[] = [
   {
     id: "community",
+    href: "#intro-section",
     icon: (
       <Image
         src={asset("/img/tkpark-logo.svg")}
@@ -59,6 +62,18 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", updateOverlayTop);
   }, [showStepsOverlay]);
 
+  const navClassName = (item: NavItem, isActive: boolean) =>
+    [
+      "flex items-center gap-2 rounded-full px-4 py-px self-stretch",
+      item.grow ? "flex-1 w-full" : "w-auto",
+      "text-sm leading-5 whitespace-nowrap",
+      "group transition-colors duration-200",
+      "border hover:text-white",
+      isActive
+        ? "bg-tk-red  text-white border-transparent"
+        : "bg-tk-red text-red-100 border-transparent",
+    ].join(" ");
+
   const handleNavClick = (itemId: string) => {
     setActive(itemId);
     if (itemId === "steps") {
@@ -81,25 +96,8 @@ const Navbar = () => {
         {navItems.map((item) => {
           const isActive = active === item.id;
           const isStepsOpen = item.id === "steps" && showStepsOverlay;
-
-          return (
-            <button
-              key={item.id}
-              type="button"
-              onClick={() => handleNavClick(item.id)}
-              aria-pressed={isActive}
-              aria-expanded={item.id === "steps" ? showStepsOverlay : undefined}
-              className={[
-                "flex items-center gap-2 rounded-full px-4 py-[3px] self-stretch",
-                item.grow ? "flex-1 w-full" : "w-auto",
-                "text-sm leading-5 whitespace-nowrap",
-                "group transition-colors duration-200",
-                "border hover:text-white",
-                isActive
-                  ? "bg-tk-red  text-white border-transparent"
-                  : "bg-tk-red text-red-100 border-transparent",
-              ].join(" ")}
-            >
+          const content = (
+            <>
               {item.icon ? <span className="shrink-0">{item.icon}</span> : null}
               <span className="desktop-s6-700">{item.label}</span>
               {isStepsOpen ? (
@@ -133,14 +131,65 @@ const Navbar = () => {
                   </svg>
                 </span>
               ) : null}
-            </button>
+            </>
+          );
+
+          if (item.href) {
+            return (
+              <div
+                key={item.id}
+                className="group/nav relative flex self-stretch"
+              >
+                <a
+                  href={item.href}
+                  onClick={() => handleNavClick(item.id)}
+                  className={navClassName(item, isActive)}
+                >
+                  {content}
+                </a>
+                {item.id === "community" ? (
+                  <HoverPanel
+                    description="รู้จัก TK Park และการเข้าร่วมเป็นเครือข่าย"
+                    ctaLabel="กลับหน้าแรก"
+                    ctaHref="#intro-section"
+                  />
+                ) : null}
+              </div>
+            );
+          }
+
+          return (
+            <div
+              key={item.id}
+              className="group/nav relative flex flex-1 self-stretch"
+            >
+              <button
+                type="button"
+                onClick={() => handleNavClick(item.id)}
+                aria-pressed={isActive}
+                aria-expanded={item.id === "steps" ? showStepsOverlay : undefined}
+                className={navClassName(item, isActive)}
+              >
+                {content}
+              </button>
+              {item.id === "steps" && !showStepsOverlay ? (
+                <HoverPanel
+                  description="หลักการ ตัวอย่าง และประสบการณ์จริงที่จำเป็นในการสร้างห้องสมุดมีชีวิต"
+                  ctaLabel="ไปที่องค์ความรู้ทั้งหมด"
+                  onCtaClick={() => handleNavClick(item.id)}
+                />
+              ) : null}
+            </div>
           );
         })}
       </nav>
 
       {showStepsOverlay ? (
         <div className="fixed inset-0 z-20 overflow-hidden bg-white">
-          <div className="h-full overflow-hidden" style={{ paddingTop: overlayTop }}>
+          <div
+            className="h-full overflow-hidden"
+            style={{ paddingTop: overlayTop }}
+          >
             <StepsOverlay
               background="transparent"
               className="h-full overflow-hidden"

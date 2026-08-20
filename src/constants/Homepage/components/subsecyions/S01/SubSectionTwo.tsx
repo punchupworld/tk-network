@@ -102,7 +102,8 @@ const SubSectionTwo = () => {
               </div>
               <div className="border-l border-tk-black border-b  border-r px-[14px] py-[10px]">
                 <p className="font-th desktop-s6-th-400 text-tk-black">
-                  พร้อมพัฒนาเป็นศูนย์กลาง การเรียนรู้ของชุมชน
+                  พร้อมพัฒนาเป็นศูนย์กลาง <br />
+                  การเรียนรู้ของชุมชน
                 </p>
               </div>
             </div>

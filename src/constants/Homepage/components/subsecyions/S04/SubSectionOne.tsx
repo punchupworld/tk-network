@@ -23,6 +23,7 @@ const IconBox = ({
         d="M111 5.29268C104.777 5.29268 99.7317 10.3377 99.7317 16.561V95.9756C99.7317 102.199 104.777 107.244 111 107.244V111H1V107.244C7.22332 107.244 12.2683 102.199 12.2683 95.9756V16.561C12.2683 10.3377 7.22332 5.29268 1 5.29268V1H111V5.29268Z"
         stroke={stroke}
         strokeWidth="2"
+        vectorEffect="non-scaling-stroke"
       />
     </svg>
   );
@@ -351,8 +352,8 @@ const SubSectionOne = () => {
       <div className="relative flex w-full flex-col items-start">
         <CoverSub color="#FFBAA1" />
 
-        <div className="flex w-full flex-col items-center justify-center gap-6 border-x-2 border-b-2 border-white bg-[#FFBAA1] px-6 pb-6 text-white md:gap-10 md:px-10 md:pb-10">
-          <div className="border-t-2 border-white w-full" />
+        <div className=" flex w-full flex-col items-center justify-center gap-6 border-x-2 border-b-2 border-white bg-[#FFBAA1] px-6 pb-6 text-white md:gap-10 md:px-10 md:pb-10">
+          <div className="mt-0.5 border-t-2 border-white w-full" />
 
           <div className="w-full flex flex-col gap-3 md:gap-5">
             <div className="px-5 py-1.5 border-2 border-tk-black rounded-full w-fit">
