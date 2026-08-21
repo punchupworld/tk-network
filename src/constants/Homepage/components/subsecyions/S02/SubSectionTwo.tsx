@@ -139,7 +139,7 @@ const SubSectionTwo = () => {
               มี 4 ระบบ ดังนี้
             </h2>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-2.5 py-1 bg-yellow-700">
               <p className="font-th desktop-s6-th-700 text-white">
                 ระบบห้องสมุด
@@ -168,7 +168,7 @@ const SubSectionTwo = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-2.5 py-1 bg-yellow-700">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 My TK
@@ -186,7 +186,7 @@ const SubSectionTwo = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-2.5 py-1 bg-yellow-700">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 บริการ
@@ -257,7 +257,7 @@ const SubSectionTwo = () => {
         </div>
 
         <div className="flex w-full flex-col items-center justify-center gap-10 border-x-2 border-b-2 border-white bg-[#FEDFCA] px-10 pb-10">
-          <div className="mt-px flex items-start">
+          <div className="mt-px flex items-start md:flex-row flex-col">
             <div className=" px-5 py-1.5 bg-tk-black">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 ขั้นตอนที่ 1
@@ -274,7 +274,7 @@ const SubSectionTwo = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-5 py-1.5 bg-tk-black">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 ขั้นตอนที่ 2
@@ -288,7 +288,7 @@ const SubSectionTwo = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-5 py-1.5 bg-tk-black">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 ขั้นตอนที่ 3
@@ -304,7 +304,7 @@ const SubSectionTwo = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-5 py-1.5 bg-tk-black">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 ขั้นตอนที่ 4
@@ -321,7 +321,7 @@ const SubSectionTwo = () => {
               </p>
             </div>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-5 py-1.5 bg-tk-black">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 ขั้นตอนที่ 5

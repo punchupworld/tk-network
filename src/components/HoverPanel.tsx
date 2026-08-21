@@ -55,7 +55,7 @@ function HoverPanel({
   return (
     <div
       className={[
-        "pointer-events-none invisible absolute z-50 opacity-0 transition-opacity duration-200",
+        "pointer-events-none invisible absolute z-50 opacity-0 transition-opacity duration-200 md:block hidden",
         "group-hover/nav:pointer-events-auto group-hover/nav:visible group-hover/nav:opacity-100",
         "group-focus-within/nav:pointer-events-auto group-focus-within/nav:visible group-focus-within/nav:opacity-100",
         placement === "top" ? "bottom-full pb-2" : "top-full pt-2",

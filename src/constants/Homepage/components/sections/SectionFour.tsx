@@ -1,7 +1,27 @@
-import Image from "next/image";
 import { T08 } from "@/src/components/icons/topics";
 import CoverCap from "../CoverCap";
 import SubSectionOne from "../subsecyions/S04/SubSectionOne";
+
+const IconOne = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="109"
+      height="124"
+      viewBox="0 0 109 124"
+      fill="none"
+    >
+      <path
+        d="M67.8514 18.2826V7.43825C67.8514 5.38712 71.5738 1 71.5738 1H36.4768C36.4768 1 40.1993 5.38712 40.1993 7.43825V18.2826C17.6179 24.36 1 44.9852 1 69.4848C1 98.7702 24.7398 122.529 54.0443 122.529C83.3488 122.529 107.089 98.7892 107.089 69.4848C107.089 44.9852 90.4708 24.36 67.8894 18.2826H67.8514ZM54.0254 87.8309C43.9217 87.8309 35.6981 79.6074 35.6981 69.5037C35.6981 59.4001 43.9217 51.1766 54.0254 51.1766C64.129 51.1766 72.3525 59.4001 72.3525 69.5037C72.3525 79.6074 64.129 87.8309 54.0254 87.8309Z"
+        fill="#FDF1BD"
+        stroke="white"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 
 function SectionCover() {
   return (
@@ -12,7 +32,7 @@ function SectionCover() {
           ก่อสร้างพื้นที่
         </h2>
         <p className=" font-en desktop-s5-400 leading-normal">
-          Construction process
+          Construction Process
         </p>
         <div className="flex items-end w-full flex-col md:flex-row">
           <div className="flex flex-col flex-1">
@@ -71,7 +91,10 @@ function KnowledgeBox() {
         </p>
       </div>
       <div className="relative h-[484px] w-full min-w-0 overflow-clip border-2 border-white bg-[#fdf1bd] md:flex-1">
-        <div className="absolute right-0 bottom-0 flex size-[168px] items-center justify-center">
+        <div className="absolute right-[10px] bottom-[184px]">
+          <IconOne />
+        </div>
+        <div className="absolute right-[-20px] bottom-0 flex size-[168px] items-center justify-center">
           <T08
             fill="#f5333f"
             stroke="none"
@@ -79,9 +102,11 @@ function KnowledgeBox() {
             aria-hidden="true"
           />
           <p className="relative w-[129px] text-center font-th desktop-s6-th-700 leading-normal text-white">
-            รูปแบบของ
+            แนวทาง
             <br />
-            การเข้าร่วม
+            การจัดสรร
+            <br />
+            งบประมาณ
           </p>
         </div>
       </div>
@@ -104,8 +129,7 @@ const SectionFour = () => {
             ส่วนนี้จะเป็นบทบาทหน้าที่ของหน่วยงานเจ้าภาพในการดำเนินการก่อสร้างพื้นที่การเรียนรู้
             โดยหลังจากที่ได้หารือและทำความเข้าใจพื้นที่
             ศักยภาพและเงื่อนไขของตนเองอย่างละเอียด
-            หน่วยงานจะเริ่มประสานงานกับสถาปนิกและผู้รับเหมาเพื่อก่อสร้างพื้นที่
-            การเรียนรู้หรือห้องสมุดมีชีวิตให้เป็นรูปเป็นร่างขึ้นมา
+            หน่วยงานจะเริ่มประสานงานกับสถาปนิกและผู้รับเหมาเพื่อก่อสร้างพื้นที่การเรียนรู้หรือห้องสมุดมีชีวิตให้เป็นรูปเป็นร่างขึ้นมา
           </p>
           <p className="font-th desktop-s7-th-400 text-neutral-dark-darkest">
             *ระยะเวลาและรายละเอียดในการก่อสร้างขึ้นอยู่กับบริบทของพื้นที่นั้นๆ

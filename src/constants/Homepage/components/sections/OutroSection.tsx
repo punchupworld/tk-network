@@ -11,7 +11,7 @@ const OutroSection = () => {
         <div className="mx-auto w-full max-w-[600px]">
           <div className="relative flex w-full flex-col items-start">
             <CoverSub color="#5B73ED" />
-            <div className="absolute right-[40px] top-[40px] w-full h-full">
+            <div className="absolute md:right-[40px] md:top-[40px] right-1 top-14 w-full h-full">
               <div className="flex flex-col justify-end items-end">
                 <p className="font-th desktop-s6-th-400 text-white px-2.5 py-1.5 bg-tk-black w-fit">
                   หากหน่วยงานของคุณพร้อมเปลี่ยนพื้นที่ในชุมชน

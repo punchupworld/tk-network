@@ -29,6 +29,24 @@ const IconBox = ({
   );
 };
 
+const IconTextbox = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="157"
+      height="157"
+      viewBox="0 0 157 157"
+      fill="none"
+    >
+      <path
+        d="M156 7.04878C147.231 7.04878 140.122 14.1576 140.122 22.9268V134.829C140.122 143.598 147.231 150.707 156 150.707V156H1V150.707C9.76922 150.707 16.878 143.598 16.878 134.829V22.9268C16.878 14.1576 9.76922 7.04878 1 7.04878V1H156V7.04878Z"
+        stroke="#FEDFCA"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+};
+
 const Textbox = ({
   stroke,
   className,
@@ -304,13 +322,13 @@ const SubSectionOne = () => {
               <div className="grid grid-cols-3 gap-3 md:flex md:justify-between md:gap-0">
                 <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
-                    จัดหาอุปกรณ์ ประกอบการใช้งาน ระบบห้องสมุดอัตโนมัติ (Walai
+                    จัดหาอุปกรณ์ประกอบการใช้งาน ระบบห้องสมุดอัตโนมัติ (Walai
                     Autolib)
                   </p>
                 </div>
                 <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
-                    จัดหาอุปกรณ์ ประกอบการการจัด แคตตาล็อก ทรัพยากรสารสนเทศ
+                    จัดหาอุปกรณ์ประกอบการการจัด แคตตาล็อก ทรัพยากรสารสนเทศ
                   </p>
                 </div>
                 <div className="text-center max-w-full text-balance md:max-w-38.75">
@@ -341,8 +359,7 @@ const SubSectionOne = () => {
         </div>
         <div className="p-10 border-2 border-white bg-pink-100 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            งบประมาณที่ต้องจัดสรรและบริหารจัดการ
-            ประจำปีตลอดระยะเวลาการเปิดให้บริการ
+            งบประมาณที่ต้องจัดสรรและบริหารจัดการประจำปีตลอดระยะเวลาการเปิดให้บริการ
             จำแนกได้เป็นงบสำหรับการจ้างบุคลากร การจัดกิจกรรม
             การจัดซื้อทรัพยากรสารสนเทศเพิ่มเติม รวมทั้งค่าสาธารณูปโภคต่างๆ เช่น
             ค่าน้ำประปา ค่าไฟฟ้า
@@ -364,11 +381,7 @@ const SubSectionOne = () => {
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-4 md:flex md:justify-between md:gap-0">
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
-                  <IconBox
-                    stroke="#FFFFFF"
-                    className="h-auto w-full max-w-38.75"
-                    aria-hidden="true"
-                  />
+                  <IconTextbox />
                   <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบจ้าง <br />
                     บุคลากร
@@ -377,11 +390,7 @@ const SubSectionOne = () => {
               </div>
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
-                  <IconBox
-                    stroke="#FFFFFF"
-                    className="h-auto w-full max-w-38.75"
-                    aria-hidden="true"
-                  />
+                  <IconTextbox />
                   <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบค่า <br />
                     สาธารณูปโภค
@@ -390,11 +399,7 @@ const SubSectionOne = () => {
               </div>
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
-                  <IconBox
-                    stroke="#FFFFFF"
-                    className="h-auto w-full max-w-38.75"
-                    aria-hidden="true"
-                  />
+                  <IconTextbox />
                   <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบบำรุงรักษา <br />
                     พื้นที่
@@ -415,11 +420,7 @@ const SubSectionOne = () => {
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-4 md:flex md:justify-between md:gap-0">
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
-                  <IconBox
-                    stroke="#FFFFFF"
-                    className="h-auto w-full max-w-38.75"
-                    aria-hidden="true"
-                  />
+                  <IconTextbox />
                   <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบจัดหา
                     <br />
@@ -431,11 +432,7 @@ const SubSectionOne = () => {
               </div>
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
-                  <IconBox
-                    stroke="#FFFFFF"
-                    className="h-auto w-full max-w-38.75"
-                    aria-hidden="true"
-                  />
+                  <IconTextbox />
                   <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบ
                     <br />
@@ -447,11 +444,7 @@ const SubSectionOne = () => {
               </div>
               <div className="flex flex-col gap-3 justify-center items-center">
                 <div className="relative flex items-center justify-center">
-                  <IconBox
-                    stroke="#FFFFFF"
-                    className="h-auto w-full max-w-38.75"
-                    aria-hidden="true"
-                  />
+                  <IconTextbox />
                   <p className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s6-th-700 text-tk-black md:desktop-s6-th-700">
                     งบจัดหา
                     <br />

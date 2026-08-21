@@ -56,7 +56,7 @@ const ListBlock = ({ label, items }: { label: string; items: string[] }) => {
         {items.map((item, index) => (
           <div
             key={index}
-            className={`px-2.5 py-2 md:px-3.5 md:py-2.5${index > 0 ? " border-t border-tk-black" : ""}`}
+            className={`text-balance px-2.5 py-2 md:px-3.5 md:py-2.5${index > 0 ? " border-t border-tk-black" : ""}`}
           >
             <p className="font-th mobile-s6-th-400 md:desktop-s6-th-400 text-tk-black">
               {item}

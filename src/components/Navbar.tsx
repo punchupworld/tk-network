@@ -167,7 +167,9 @@ const Navbar = () => {
                 type="button"
                 onClick={() => handleNavClick(item.id)}
                 aria-pressed={isActive}
-                aria-expanded={item.id === "steps" ? showStepsOverlay : undefined}
+                aria-expanded={
+                  item.id === "steps" ? showStepsOverlay : undefined
+                }
                 className={navClassName(item, isActive)}
               >
                 {content}

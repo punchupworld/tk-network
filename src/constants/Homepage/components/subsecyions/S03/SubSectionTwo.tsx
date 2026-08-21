@@ -105,6 +105,23 @@ const ShapeBoxThree = () => {
   );
 };
 
+const IconOne = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
+      fill="none"
+    >
+      <path
+        d="M21.0006 30.3606H11.0006C8.59663 30.3606 6.64062 28.4046 6.64062 26.0006V10.0006C6.64062 7.59662 8.59663 5.64062 11.0006 5.64062H11.6556C11.8396 3.40462 13.7176 1.64062 16.0006 1.64062C18.2836 1.64062 20.1626 3.40462 20.3466 5.64062H21.0006C23.4046 5.64062 25.3606 7.59662 25.3606 10.0006V26.0006C25.3606 28.4046 23.4046 30.3606 21.0006 30.3606ZM11.0006 6.36063C8.99363 6.36063 7.36063 7.99362 7.36063 10.0006V26.0006C7.36063 28.0076 8.99363 29.6406 11.0006 29.6406H21.0006C23.0076 29.6406 24.6406 28.0076 24.6406 26.0006V10.0006C24.6406 7.99362 23.0076 6.36063 21.0006 6.36063H11.0006ZM12.3776 5.64062H19.6226C19.4406 3.80163 17.8866 2.36062 16.0006 2.36062C14.1146 2.36062 12.5596 3.80163 12.3776 5.64062ZM9.36062 23.0006H8.64063V21.0006C8.64063 20.8016 8.80163 20.6406 9.00063 20.6406H23.0006V21.3616H9.36062V23.0006ZM9.36062 16.0006H8.64063V14.0006H9.36062V16.0006ZM23.3606 15.0006H22.6406V10.0006C22.6406 9.09662 21.9056 8.36062 21.0006 8.36062H11.0006C10.0966 8.36062 9.36062 9.09662 9.36062 10.0006V13.0006H8.64063V10.0006C8.64063 8.69962 9.69963 7.64062 11.0006 7.64062H21.0006C22.3026 7.64062 23.3606 8.69962 23.3606 10.0006V15.0006Z"
+        fill="#1D252C"
+      />
+    </svg>
+  );
+};
+
 const FACILITIES = [
   {
     title: "ชั้นวางรองเท้า",
@@ -113,9 +130,27 @@ const FACILITIES = [
   {
     title: "จุดบริการฝากสัมภาระ",
     tips: [
-      "คำนึงถึงจุดฝากของ หรือตู้ล็อกเกอร์ที่มีพื้นที่ เพียงพอสำหรับพื้นที่การ เรียนรู้ที่ตั้งกฎว่า ไม่อนุญาตให้นำสัมภาระ เข้าไปเพื่อปกป้อง ทรัพย์สินของพื้นที่",
-      "อาจจัดหาเจ้าหน้าที่ เพื่อช่วยอำนวยสะดวก",
-      "คำนึงถึงผู้ใช้บริการ ที่มีสัมภาระปริมาณมาก สำหรับพื้นที่การเรียนรู้ ที่อนุญาตให้นำสัมภาระเข้าพื้นที่ได้",
+      <>
+        คำนึงถึงจุดฝากของ <br />
+        หรือตู้ล็อกเกอร์ที่มีพื้นที่ เพียงพอสำหรับพื้นที่การ
+        เรียนรู้ที่ตั้งกฎว่า
+        <br />
+        ไม่อนุญาตให้นำสัมภาระ เข้าไปเพื่อปกป้อง
+        <br />
+        ทรัพย์สินของพื้นที่
+      </>,
+      <>
+        อาจจัดหาเจ้าหน้าที่
+        <br />
+        เพื่อช่วยอำนวยสะดวก
+      </>,
+      <>
+        คำนึงถึงผู้ใช้บริการที่มีสัมภาระปริมาณมาก
+        <br />
+        สำหรับพื้นที่การเรียนรู้
+        <br />
+        ที่อนุญาตให้นำสัมภาระเข้าพื้นที่ได้
+      </>,
     ],
   },
   {
@@ -128,7 +163,11 @@ const FACILITIES = [
     title: "เครื่องยืม-คืนหนังสืออัตโนมัติ",
     tips: [
       "ลดการสัมผัสระหว่าง บุคคล",
-      "ผู้ใช้บริการไม่ต้องรอ เจ้าหน้าที่",
+      <>
+        ผู้ใช้บริการไม่ต้องรอ
+        <br />
+        เจ้าหน้าที่
+      </>,
       "แบ่งเบาภาระงานของ บรรณารักษ์หรือผู้ดูแล ห้องสมุด",
     ],
   },
@@ -142,7 +181,7 @@ const FACILITIES = [
       "ให้บริการสมัครและต่ออายุสมาชิกผ่านแอปพลิเคชัน My TK",
       "สามารถชำระ บริการหรือเติมเงินเข้าบัญชีสมาชิกได้",
       "สามารถออกบัตร เข้าใช้บริการรายวันโดยไม่ต้องติดต่อ เจ้าหน้าที่",
-      "ลดภาระเจ้าหน้าที่ เคาน์เตอร์บริการ",
+      "ลดภาระเจ้าหน้าที่เคาน์เตอร์บริการ",
     ],
   },
 ];
@@ -159,7 +198,11 @@ const HoverTipRow = ({
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="group relative z-0 flex cursor-pointer items-center justify-center gap-2.5 hover:z-20">
+    <div
+      className={`group relative flex cursor-pointer items-center justify-center gap-2.5 hover:z-20 ${
+        open ? "z-30" : "z-0"
+      }`}
+    >
       {children}
       {open ? null : (
         <button
@@ -170,7 +213,7 @@ const HoverTipRow = ({
         />
       )}
       <div
-        className={`absolute top-full left-0 z-10 w-full rounded-[10px] bg-red-300 p-5 md:hidden md:group-hover:block ${
+        className={`absolute top-full left-0 z-40 w-full rounded-[10px] bg-red-300 p-5 md:hidden md:group-hover:block ${
           open ? "block" : "hidden"
         }`}
       >
@@ -188,7 +231,7 @@ const HoverTipRow = ({
   );
 };
 
-const FacilityRow = ({ title, tips }: { title: string; tips: string[] }) => {
+const FacilityRow = ({ title, tips }: { title: string; tips: ReactNode[] }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -209,9 +252,9 @@ const FacilityRow = ({ title, tips }: { title: string; tips: string[] }) => {
         }`}
       >
         <div className="flex justify-between items-start gap-2.5">
-          {tips.map((tip) => (
+          {tips.map((tip, index) => (
             <p
-              key={tip.slice(0, 24)}
+              key={index}
               className="font-th desktop-s6-th-400 text-tk-black flex-1"
             >
               {tip}
@@ -242,13 +285,7 @@ const SubSectionTwo = () => {
           aria-hidden="true"
         />
         <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s4-th-700 leading-normal text-white">
-          แนวทาง
-          <br />
-          การบริหาร
-          <br />
-          จัดการ
-          <br />
-          พื้นที่เรียนรู้
+          หลักการออกแบบพื้นที่
         </p>
       </div>
 
@@ -260,11 +297,12 @@ const SubSectionTwo = () => {
           <div className="flex items-center justify-center">
             <p className="font-th desktop-s6-th-400 text-tk-black">
               <b>
-                พื้นที่การเรียนรู้ ที่มีผู้ใช้งานหลากหลาย ไม่ว่าจะเป็นเด็ก
-                เยาวชน นักเรียน นักศึกษา ผู้สูงอายุ
+                พื้นที่การเรียนรู้ที่มีผู้ใช้งานหลากหลาย ไม่ว่าจะเป็นเด็ก เยาวชน
+                นักเรียน นักศึกษา
+                <br />
+                ผู้สูงอายุ
               </b>
-              <br />
-              ควรคำนึงถึง 3 องค์ประกอบหลัก ในการออกแบบ ดังนี้
+              ควรคำนึงถึง 3 องค์ประกอบหลักในการออกแบบ ดังนี้
             </p>
           </div>
         </div>
@@ -294,7 +332,11 @@ const SubSectionTwo = () => {
             </div>
             <div className="px-3.5 py-0.5 rounded-[5px] bg-white">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                <b>รองรับการเรียนรู้ที่หลากหลาย</b>
+                <b>
+                  รองรับการเรียนรู้
+                  <br />
+                  ที่หลากหลาย
+                </b>
                 <br />
                 (Learning Diversity)
               </p>
@@ -330,8 +372,9 @@ const SubSectionTwo = () => {
               aria-hidden="true"
             />
             <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s5-th-700 text-tk-black">
-              หน่วยงาน <br />
-              เจ้าภาพ
+              ประเภท
+              <br />
+              ของพื้นที่
             </p>
           </div>
         </div>
@@ -401,10 +444,8 @@ const SubSectionTwo = () => {
             }}
           >
             <p>
-              หน่วยงานสามารถออกแบบให้พื้นที่เป็นห้องปิดสำหรับทำกิจกรรม
-              กลุ่มส่วนตัว และเป็นสัดส่วนอย่างชัดเจน
-            </p>
-            <p>
+              หน่วยงานสามารถออกแบบให้พื้นที่เป็นห้องปิดสำหรับทำกิจกรรมกลุ่มส่วนตัว
+              และเป็นสัดส่วนอย่างชัดเจน
               ผู้ใช้บริการจึงสามารถใช้งานได้โดยไม่รบกวนคนที่อยู่ในบริเวณใกล้เคียง
               (เนื่องจากมีการใช้งานร่วมกับพื้นที่อื่นค่อนข้างน้อย)
               และออกแบบให้มีความยืดหยุ่นต่อการใช้งานสำหรับกิจกรรมต่างๆ
@@ -431,12 +472,10 @@ const SubSectionTwo = () => {
               flip: "scaleY",
             }}
           >
-            <p className="font-th desktop-s7-th-700">
+            <p>
               หัวใจสำคัญคือการใช้งานพื้นที่ร่วมกันของผู้ใช้บริการ
               ส่วนใหญ่แล้วกิจกรรมในพื้นที่นี้เป็นกิจกรรมที่ต้องใช้สมาธิ
               มีระยะเวลานานและต่อเนื่อง
-            </p>
-            <p>
               หน่วยงานสามารถออกแบบให้พื้นที่อยู่ห่างจากเส้นทางสัญจรหลัก
               หรือพื้นที่กิจกรรมที่ส่งเสียงรบกวน ควรใช้ผังแบบเปิด (opened plan)
               ซึ่งเป็นพื้นที่ในลักษณะเปิดโล่ง ไม่มีผนังทั่วทั้งพื้นที่
@@ -513,31 +552,35 @@ const SubSectionTwo = () => {
           <div className="relative w-full" style={{ zIndex: 45 }}>
             <div
               className="mx-auto sticky z-30 flex w-[var(--card-w)] max-w-full flex-col gap-5 overflow-y-auto border-2 border-white bg-[#5B73ED] p-5 md:p-7"
-              // style={{ top: "var(--stack-top)", height: "var(--card-h)" }}
+              style={{ top: "0", height: "var(--card-h)" }}
             >
               <div className="flex items-center gap-2.5">
                 <div className="flex size-8 shrink-0 items-center justify-center rounded-[5px] border border-white">
-                  <p className="font-th desktop-s5-th-700 text-white">5</p>
+                  <p className="font-th desktop-s5-th-400 text-white">5</p>
                 </div>
-                <p className="font-th desktop-s5-th-700 text-white">
+                <p className="font-th desktop-s5-th-400 text-white">
                   พื้นที่สำนักงาน
                 </p>
               </div>
               <div className="flex min-h-0 flex-1 flex-col gap-2.5 overflow-y-auto font-th desktop-s7-th-400 text-white">
-                <p className="font-th desktop-s7-th-700">
+                <p className="font-th desktop-s7-th-400">
                   หน่วยงานสามารถออกแบบพื้นที่สำนักงานให้มีเพียงพื้นที่เดียว
                   หรือกระจายเป็น 2-3 พื้นที่ย่อย โดยสามารถแบ่งประเภทหลักๆ
                   ได้เป็น พื้นที่สำนักงานต้อนรับและพื้นที่บริหาร
                 </p>
                 <p>
-                  <b>การออกแบบพื้นที่สำนักงานต้อนรับ</b>
+                  <b className="font-th desktop-s7-th-400">
+                    การออกแบบพื้นที่สำนักงานต้อนรับ
+                  </b>
                   ควรให้ความสำคัญกับตำแหน่งและความครอบคลุมของพื้นที่บริการให้ข้อมูลประชาสัมพันธ์
                   การสมัครและบริหารงานสมาชิก การติดต่อกับพันธมิตรและผู้สนใจ
                   ทำกิจกรรมในพื้นที่
                   โดยรวมคือให้เน้นบริการอำนวยความสะดวกให้พื้นที่ในรูปแบบต่างๆ
                 </p>
                 <p>
-                  <b>การออกแบบพื้นที่สำนักงานบริหาร</b>
+                  <b className="font-th desktop-s7-th-400">
+                    การออกแบบพื้นที่สำนักงานบริหาร
+                  </b>
                   ควรให้ความสำคัญกับสภาพแวดล้อม
                   ที่ส่งเสริมประสิทธิภาพของการทำงานของเจ้าหน้าที่ฝ่ายสนับสนุน
                   เช่น ฝ่ายบริหาร ฝ่ายธุรการ โดยอาจแยกเส้นทางออกมา
@@ -584,7 +627,7 @@ const SubSectionTwo = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             พื้นที่การเรียนรู้สามารถออกแบบให้มีฟังก์ชัน
             และบริการที่หลากหลายตามความต้องการของผู้ใช้งานและบริบทของแต่ละพื้นที่
-            โดยหน่วยงานสามารถเลือกประยุกต์ใช้หรือเพิ่มเติมองค์ประกอบต่าง ๆ
+            โดยหน่วยงานสามารถเลือกประยุกต์ใช้หรือเพิ่มเติมองค์ประกอบต่างๆ
             ให้เหมาะสมกับขนาดพื้นที่ งบประมาณ และเป้าหมายการให้บริการของตนเอง
           </p>
         </div>
@@ -594,9 +637,13 @@ const SubSectionTwo = () => {
 
       <div className="flex w-full flex-col items-start max-w-[600px] border-2 border-white bg-blue-700">
         <div className="py-3.5 px-5 bg-blue-700 flex flex-col gap-2.5 border-b-2 border-white">
-          <p className="font-th desktop-s5-th-700 text-tk-black">
-            สิ่งอำนวยความสะดวก
-          </p>
+          <div className="flex items-center gap-2.5">
+            <IconOne />
+            <p className="font-th desktop-s5-th-700 text-tk-black">
+              สิ่งอำนวยความสะดวก
+            </p>
+          </div>
+
           <div className="flex items-start">
             <p className="text-nowrap font-th desktop-s7-th-700 text-white py-1 px-2.5 border border-white bg-tk-black">
               คำแนะนำ
@@ -643,8 +690,7 @@ const SubSectionTwo = () => {
             นอกจากการกำหนดประเภทของพื้นที่แล้ว
             รายละเอียดด้านการออกแบบและมาตรฐานการใช้งานยังเป็นองค์ประกอบสำคัญที่ช่วยให้พื้นที่การเรียนรู้ใช้งานได้อย่างมีประสิทธิภาพ
             ปลอดภัย และรองรับผู้ใช้บริการทุกกลุ่ม
-            โดยหน่วยงานสามารถนำแนวทางต่อไปนี้ไป
-            ปรับใช้ให้เหมาะสมกับบริบทของพื้นที่
+            โดยหน่วยงานสามารถนำแนวทางต่อไปนี้ไปปรับใช้ให้เหมาะสมกับบริบทของพื้นที่
           </p>
           <div className="flex justify-end items-end gap-2.5">
             <ShapeBoxOne />

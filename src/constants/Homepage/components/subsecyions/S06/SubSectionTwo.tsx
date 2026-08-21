@@ -1,5 +1,6 @@
 import { T12 } from "@/src/components/icons/topics";
 import ActivityCard, { ActivityCell } from "./ActivityCard";
+import ReadNapActivityCard from "./ReadNapActivityCard";
 
 const SubSectionTwo = () => {
   return (
@@ -18,6 +19,7 @@ const SubSectionTwo = () => {
       <div className="flex w-full flex-col items-center justify-center gap-2.5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
           ลองสำรวจกิจกรรมต้นแบบและกลุ่มเป้าหมายที่เหมาะกับผู้ใช้งานแต่ละกลุ่ม
+          <br />
           ที่สามารถสร้างการเรียนรู้ทั้งแบบรู้ตัวและไม่รู้ตัว
           เพราะแม้แต่กิจกรรมที่ดูเรียบง่ายที่สุดก็ต้องการการจัดการอย่างละเอียด
         </p>
@@ -29,66 +31,7 @@ const SubSectionTwo = () => {
           แต่ที่สำคัญที่สุดคือความรู้สึกเป็นอิสระที่จะเรียนรู้อะไรก็ได้ด้วยตนเอง
         </p>
       </div>
-      <ActivityCard
-        id="subsubtopic27"
-        color="#5B73ED"
-        title={
-          <>
-            กิจกรรม
-            <br />
-            อ่านไป
-            <br />
-            งีบไป
-          </>
-        }
-        textClassName="text-white"
-        descriptions={[
-          <>
-            ผู้ใช้งานไม่เกรงกลัวที่จะเข้ามาเรียนรู้สื่อต่างๆ ในระยะเวลานาน
-            <br />
-            จึงออกแบบให้บรรยากาศมีความเป็นกันเอง
-          </>,
-          <>
-            ผู้ใช้งานสามารถพักเปลี่ยนอิริยาบถ <br />
-            เพื่อบรรเทาความเหนื่อยล้า และกลับมาเรียนรู้สื่อต่างๆ อย่างสดใส
-          </>,
-        ]}
-        targets={[
-          "กลุ่มผู้สูงอายุ",
-          <>
-            กลุ่มผู้ใหญ่ <br />
-            วัยทำงานที่มี <br />
-            ความเหนื่อยล้า
-          </>,
-        ]}
-        areas={["พื้นที่สะดวกกิจกรรมสบาย", "พื้นที่ผ่อนคลายเป็นกันเอง"]}
-        principles={
-          <>
-            <ActivityCell
-              textClassName="text-white"
-              boxClassName="border-y border-white flex flex-col items-center h-full py-2"
-            >
-              จำกัดจำนวน ที่นั่งในบริเวณ โต๊ะเดียวกัน เพื่อเปิดโอกาส
-              ให้ผู้ใช้งานจัด ท่าทางที่ตนเองรู้สึกสบาย
-            </ActivityCell>
-            <ActivityCell
-              textClassName="text-white"
-              boxClassName="border-y border-white flex flex-col items-center h-full py-2"
-            >
-              หลีกเลี่ยงใช้ เฟอร์นิเจอร์ ประเภทโต๊ะเก้าอี้ที่มีขนาดเกิน 4
-              ที่นั่งขึ้นไปหรือ โซฟา เพื่อไม่ให้การงีบหลับรบกวนกิจกรรมของผู้อื่น
-              ในโต๊ะเดียวกัน
-            </ActivityCell>
-            <ActivityCell
-              textClassName="text-white"
-              boxClassName="border-y border-white flex flex-col items-center h-full py-2"
-            >
-              กำหนดสัญญาณเสียงตาม เวลาที่เหมาะสมเพื่อป้องกันการงีบหลับจนนาน
-              เกินไป
-            </ActivityCell>
-          </>
-        }
-      />
+      <ReadNapActivityCard />
       <ActivityCard
         id="subsubtopic28"
         color="#74CFC8"
@@ -115,13 +58,13 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center md:h-[110px] justify-center py-2"
               >
-                เตรียมปลั๊กไฟ ให้เพียงพอ
+                เตรียมปลั๊กไฟให้เพียงพอ
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center md:h-[110px] justify-center py-2"
               >
-                เตรียมสัญญาณ อินเตอร์เน็ต ที่มีความเร็ว และเสถียร
+                เตรียมสัญญาณ อินเตอร์เน็ตที่มีความเร็วและเสถียร
               </ActivityCell>
             </div>
             <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
@@ -129,22 +72,22 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                บริหารจัดการ พื้นที่กึ่งภาย นอกอาคาร ติดตั้งสิ่ง อำนวย ความสะดวก
-                เพิ่มเติมเพื่อ เป็นพื้นที่ฝึกฝน
+                บริหารจัดการพื้นที่กึ่งภายนอกอาคาร ติดตั้งสิ่งอำนวยความสะดวก
+                เพิ่มเติมเพื่อเป็นพื้นที่ฝึกฝน
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                ควรเป็นพื้นที่ ที่คนนอก สามารถมอง เห็นกิจกรรม
-                ที่เกิดขึ้นด้านในเพื่อกระตุ้น ความสนใจใน การเรียนรู้การ แสดงออก
+                ควรเป็นพื้นที่ที่คนนอกสามารถมองเห็นกิจกรรมที่เกิดขึ้นด้านในเพื่อกระตุ้นความสนใจในการเรียนรู้การ
+                แสดงออก
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                ใช้วัสดุพื้นที่ไม่ ก่อให้เกิดเสียงดัง และวัสดุ ป้องกันเสียง
-                บริเวณประตู หรือรอยต่อ ผนัง
+                ใช้วัสดุพื้นที่ไม่ก่อให้เกิดเสียงดังและวัสดุป้องกันเสียง
+                บริเวณประตู หรือรอยต่อผนัง
               </ActivityCell>
             </div>
             <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
@@ -152,14 +95,13 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                พิจารณาติดตั้งผนังกระจกเงา บานใหญ่เพื่อ
-                ตรวจสอบความถูกต้องของท่าทาง
+                พิจารณาติดตั้งผนังกระจกเงาบานใหญ่เพื่อตรวจสอบความถูกต้องของท่าทาง
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                ให้บริการ อุปกรณ์อิเล็ก-ทรอนิกส์เคลื่อนที่ เช่น ลำโพง ขนาดเล็ก
+                ให้บริการอุปกรณ์อิเล็ก-ทรอนิกส์เคลื่อนที่ เช่น ลำโพงขนาดเล็ก
               </ActivityCell>
             </div>
           </div>
@@ -186,8 +128,8 @@ const SubSectionTwo = () => {
           "กระตุ้นให้ผู้ใช้งานได้ทดลองฝึกฝนทักษะใหม่ๆ",
         ]}
         targets={[
-          "เหมาะสำหรับ ผู้ที่ต้องการฝึกฝนทักษะเกม ออนไลน์แบบ อีสปอร์ตอย่าง เป็นทางการ",
-          "กลุ่มเป้าหมาย โดยมากคือกลุ่มนักเรียนที่สนใจรวมกลุ่มฝึกฝน",
+          "เหมาะสำหรับผู้ที่ต้องการฝึกฝนทักษะเกมออนไลน์แบบอีสปอร์ตอย่างเป็นทางการ",
+          "กลุ่มเป้าหมายโดยมากคือกลุ่มนักเรียนที่สนใจรวมกลุ่มฝึกฝน",
         ]}
         areas={["พื้นที่สะดวกกิจกรรมสบาย", "พื้นที่สตูดิโอ"]}
         principles={
@@ -197,20 +139,20 @@ const SubSectionTwo = () => {
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                ควรจัดพื้นที่ ไม่ให้เสียงไปรบกวนพื้นที่อื่น
+                ควรจัดพื้นที่ไม่ให้เสียงไปรบกวนพื้นที่อื่น
               </ActivityCell>
               <ActivityCell
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                อาจสนับสนุน จอภาพแสดง ผลขนาดใหญ่ หรือชุดเฟอร์นิ-เจอร์สำหรับ
-                อีสปอร์ต โดยเฉพาะ
+                อาจสนับสนุน จอภาพแสดงผลขนาดใหญ่ หรือชุดเฟอร์นิเจอร์สำหรับ
+                อีสปอร์ตโดยเฉพาะ
               </ActivityCell>
               <ActivityCell
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                ควรกำหนด เวลาในการใช้ งานต่อรอบ อย่างเหมาะสม
+                ควรกำหนดเวลาในการใช้งานต่อรอบ อย่างเหมาะสม
               </ActivityCell>
             </div>
             <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
@@ -218,13 +160,13 @@ const SubSectionTwo = () => {
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                เตรียมปลั๊กไฟ ให้เพียงพอ
+                เตรียมปลั๊กไฟให้เพียงพอ
               </ActivityCell>
               <ActivityCell
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                เตรียมสัญญาณ อินเตอร์เน็ต ที่มีความเร็ว และเสถียร
+                เตรียมสัญญาณ อินเตอร์เน็ตที่มีความเร็วและเสถียร
               </ActivityCell>
             </div>
           </div>

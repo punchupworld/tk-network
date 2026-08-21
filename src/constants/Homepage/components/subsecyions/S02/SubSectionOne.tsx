@@ -53,6 +53,54 @@ const ToolBoxIcon = () => {
   );
 };
 
+const AGENCY_ITEMS = [
+  "ที่ดิน อาคาร",
+  "การก่อสร้าง ตกแต่ง",
+  "ครุภัณฑ์สำนักงาน ครุภัณฑ์เกี่ยวกับระบบ ห้องสมุดอัตโนมัติ",
+  "บุคลากรเพื่อบริหารจัดการ",
+  "หนังสือและสื่อรายปี",
+  "ทรัพยากรสำหรับการบริการ",
+  "งบประมาณในด้านต่างๆ",
+];
+
+const TK_PARK_ITEMS = [
+  "กิจกรรมสำรวจความต้องการและระดมความเห็น",
+  "ถ่ายทอดองค์ความรู้ให้ บุคลากร",
+  "ครุภัณฑ์สำนักงาน ครุภัณฑ์เกี่ยวกับระบบ ห้องสมุดอัตโนมัติ",
+  "หนังสือและสื่อการเรียนรู้ตามงบประมาณรายปี",
+  "ระบบบริหารห้องสมุด อัตโนมัติและระบบสมาชิก",
+  "กิจกรรมส่งเสริมการอ่าน กิจกรรมร่วมกับ TK Park ที่กรุงเทพฯ และเครือข่าย",
+  "ประชาสัมพันธ์กิจกรรมทั้ง ทางช่องทางออนไลน์และ ออฟไลน์",
+  "ติดตามประเมินผลเครือข่าย",
+];
+
+const ChecklistRow = ({
+  index,
+  label,
+  className = "",
+}: {
+  index: number;
+  label: string;
+  className?: string;
+}) => {
+  return (
+    <div
+      className={`border-t border-[#D9D9D9] bg-white px-2.5 py-2 md:px-3.5 md:py-2.5 ${className}`}
+    >
+      <div className="flex gap-2.5">
+        <div className="flex size-5 shrink-0 items-center justify-center rounded-full border border-[#D9D9D9] md:size-6.25">
+          <p className="font-th mobile-s6-th-400 text-tk-black md:desktop-s6-th-400">
+            {index}
+          </p>
+        </div>
+        <p className="font-th mobile-s6-th-400 text-tk-black md:desktop-s6-th-400">
+          {label}
+        </p>
+      </div>
+    </div>
+  );
+};
+
 const SubSectionOne = () => {
   const [openParkId, setOpenParkId] = useState<string | null>(null);
   const openPark = PARK_CARDS.find((park) => park.id === openParkId) ?? null;
@@ -161,206 +209,63 @@ const SubSectionOne = () => {
       </div>
       <div className="relative flex w-full flex-col items-start">
         <CoverSub color="#91C5F4" />
-        <div className="absolute right-[40px] top-[33px]">
+        <div className="absolute top-8.25 right-1 left-5 md:top-8.25 md:right-10 md:left-auto md:max-w-[70%]">
           <div className="flex flex-col justify-end w-full items-end">
             <div className="px-2.5 py-1.5 bg-tk-black w-fit">
-              <h2 className="font-th desktop-s6-th-400 text-white ">
+              <h2 className="font-th mobile-s6-th-400 text-white md:desktop-s6-th-400">
                 เพื่อให้เห็นภาพของรูปแบบนี้ชัดเจนยิ่งขึ้น
               </h2>
             </div>
-            <div className="px-2.5 py-1.5 bg-tk-black">
-              <h2 className="font-th desktop-s6-th-700 text-white">
+            <div className="px-2.5 py-1.5 bg-tk-black w-fit">
+              <h2 className="font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                 สิ่งที่หน่วยงานและ TK Park ต้องเตรียมมีดังนี้
               </h2>
             </div>
           </div>
         </div>
 
-        <div className="flex w-full flex-col items-center justify-center gap-10 border-x-2 border-b-2 border-white bg-[#91C5F4] px-10 pb-10 text-white ">
-          <div className="flex items-start">
-            <div className="flex flex-col flex-1">
+        <div className="flex w-full flex-col items-center justify-center gap-6 border-x-2 border-b-2 border-white bg-[#91C5F4] px-5 pb-5 text-white md:gap-10 md:px-10 md:pb-10">
+          <div className="flex w-full flex-col items-stretch gap-5 md:flex-row md:items-start md:gap-0">
+            <div className="flex min-w-0 flex-1 flex-col">
               <div className="px-2.5 py-1.5 bg-tk-black w-fit">
-                <h2 className="font-th desktop-s6-th-700 text-white ">
+                <h2 className="font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                   หน่วยงาน
                 </h2>
               </div>
-              <div className="border-l border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">1</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ที่ดิน อาคาร
-                  </p>
-                </div>
-              </div>
-              <div className="border-l border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">2</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    การก่อสร้าง ตกแต่ง
-                  </p>
-                </div>
-              </div>
-              <div className="border-l border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">3</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ครุภัณฑ์สำนักงาน ครุภัณฑ์เกี่ยวกับระบบ ห้องสมุดอัตโนมัติ
-                  </p>
-                </div>
-              </div>
-              <div className="border-l border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">4</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    บุคลากรเพื่อบริหารจัดการ
-                  </p>
-                </div>
-              </div>
-              <div className="border-l border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">5</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    หนังสือและสื่อรายปี
-                  </p>
-                </div>
-              </div>
-              <div className="border-l border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">6</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ทรัพยากรสำหรับการบริการ
-                  </p>
-                </div>
-              </div>
-              <div className="border-l border-[#D9D9D9] border-b border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">7</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    งบประมาณในด้านต่างๆ
-                  </p>
-                </div>
-              </div>
+              {AGENCY_ITEMS.map((label, index) => (
+                <ChecklistRow
+                  key={label}
+                  index={index + 1}
+                  label={label}
+                  className={`border-x md:border-r-0 ${
+                    index === AGENCY_ITEMS.length - 1 ? "border-b" : ""
+                  }`}
+                />
+              ))}
             </div>
-            <div className="flex flex-col flex-1">
+            <div className="flex min-w-0 flex-1 flex-col">
               <div className="px-2.5 py-1.5 bg-tk-red w-fit">
-                <h2 className="font-th desktop-s6-th-700 text-white ">
+                <h2 className="font-th mobile-s6-th-700 text-white md:desktop-s6-th-700">
                   TK Park
                 </h2>
               </div>
-              <div className="border-x  border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-tk-black">1</p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    กิจกรรมสำรวจความต้องการและระดมความเห็น
-                  </p>
-                </div>
-              </div>
-              <div className="border-x border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-neutral-dark-darker">
-                      2
-                    </p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ถ่ายทอดองค์ความรู้ให้ บุคลากร
-                  </p>
-                </div>
-              </div>
-              <div className="border-x border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-neutral-dark-darker">
-                      3
-                    </p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ครุภัณฑ์สำนักงาน ครุภัณฑ์เกี่ยวกับระบบ ห้องสมุดอัตโนมัติ
-                  </p>
-                </div>
-              </div>
-              <div className="border-x border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-neutral-dark-darker">
-                      4
-                    </p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    หนังสือและสื่อการเรียนรู้ตามงบประมาณรายปี
-                  </p>
-                </div>
-              </div>
-              <div className="border-x border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-neutral-dark-darker">
-                      5
-                    </p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ระบบบริหารห้องสมุด อัตโนมัติและระบบสมาชิก
-                  </p>
-                </div>
-              </div>
-              <div className="border-x border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-neutral-dark-darker">
-                      6
-                    </p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    กิจกรรมส่งเสริมการอ่าน กิจกรรมร่วมกับ TK Park ที่กรุงเทพฯ
-                    และเครือข่าย
-                  </p>
-                </div>
-              </div>
-              <div className="border-x border-[#D9D9D9] border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-neutral-dark-darker">
-                      7
-                    </p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ประชาสัมพันธ์กิจกรรมทั้ง ทางช่องทางออนไลน์และ ออฟไลน์
-                  </p>
-                </div>
-              </div>
-              <div className="border-x border-[#D9D9D9] border-b border-t px-[14px] py-[10px] bg-white">
-                <div className="flex gap-2.5">
-                  <div className="w-6.25 h-6.25 shrink-0 border border-[#D9D9D9] rounded-full flex items-center justify-center">
-                    <p className="font-th desktop-s6-th-400 text-neutral-dark-darker">
-                      8
-                    </p>
-                  </div>
-                  <p className="font-th desktop-s6-th-400 text-tk-black">
-                    ติดตามประเมินผลเครือข่าย
-                  </p>
-                </div>
-              </div>
+              {TK_PARK_ITEMS.map((label, index) => (
+                <ChecklistRow
+                  key={label}
+                  index={index + 1}
+                  label={label}
+                  className={`border-x ${
+                    index === TK_PARK_ITEMS.length - 1 ? "border-b" : ""
+                  }`}
+                />
+              ))}
             </div>
           </div>
-          <div className="flex gap-1.5 flex-wrap justify-end">
+          <div className="flex w-full gap-1.5 flex-wrap justify-start md:justify-end">
             <div className="px-2.5 py-1 bg-tk-red w-fit border-b border-r border-tk-black">
-              <p className="font-th desktop-s7-th-700 text-white">ตัวอย่าง</p>
+              <p className="font-th mobile-s7-s8-th-700 text-white md:desktop-s7-th-700">
+                ตัวอย่าง
+              </p>
             </div>
             {PARK_CARDS.map((park) => (
               <button
@@ -369,7 +274,7 @@ const SubSectionOne = () => {
                 onClick={() => setOpenParkId(park.id)}
                 className="flex gap-2.5 justify-center items-center px-2.5 py-1 hover:bg-tk-red w-fit border-b border-r border-tk-black group cursor-pointer"
               >
-                <p className="font-th desktop-s7-th-400 group-hover:text-white text-tk-black">
+                <p className="font-th mobile-s7-s8-th-400 group-hover:text-white text-tk-black md:desktop-s7-th-400">
                   {park.host}
                 </p>
                 <ToolBoxIcon />

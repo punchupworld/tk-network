@@ -16,7 +16,7 @@ function SectionCover() {
           และบริการ
         </h2>
         <p className="w-[124px] font-en desktop-s5-400 leading-normal">
-          Design your space
+          Design Your Space
         </p>
         <div className="flex items-end flex-col md:flex-row">
           <div className="flex flex-col border-white md:border-r-0 border-r">
@@ -73,23 +73,29 @@ function SectionCover() {
 function QuoteSection() {
   return (
     <div
-      className="relative aspect-[602/420] w-full max-w-[602px]"
+      className="relative w-full max-w-[602px] pt-10 md:pt-0 md:aspect-[602/420]"
       aria-label="คำกล่าวเกี่ยวกับการพัฒนาพื้นที่การเรียนรู้ท้องถิ่น"
     >
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
-      <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
-        <span className="font-th desktop-s5-th-700 leading-normal">
+      <blockquote className="relative flex w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-4 text-center text-white md:absolute md:left-0 md:top-[18.0952%] md:h-[81.9048%] md:p-2.5">
+        <span className="font-th mobile-s5-th-700 md:desktop-s5-th-700 leading-normal">
           หัวใจของการออกแบบพื้นที่การเรียนรู้ คือ <br />
           พื้นที่(Space){" "}
-          <b className="font-th desktop-s5-th-700 text-tk-black">ที่ยืดหยุ่น</b>
+          <b className="font-th mobile-s5-th-700 md:desktop-s5-th-700 text-tk-black">
+            ที่ยืดหยุ่น
+          </b>
           <br />
           บริการ (Service) ที่
-          <b className="font-th desktop-s5-th-700 text-tk-black">ตอบโจทย์</b>
+          <b className="font-th mobile-s5-th-700 md:desktop-s5-th-700 text-tk-black">
+            ตอบโจทย์
+          </b>
           ผู้ใช้
           <br />
           และการบริหาร(Management) <br />
           และบุคลากรที่พร้อม
-          <b className="font-th desktop-s5-th-700 text-tk-black">ขับเคลื่อน</b>
+          <b className="font-th mobile-s5-th-700 md:desktop-s5-th-700 text-tk-black">
+            ขับเคลื่อน
+          </b>
           <br />
           ซึ่งเป็นหัวใจของห้องสมุดมีชีวิต
         </span>

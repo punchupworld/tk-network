@@ -48,6 +48,212 @@ const ToolBox = () => {
   );
 };
 
+type JobColumn = {
+  title: string;
+  items: string[];
+};
+
+type JobRole = {
+  label: string;
+  bullets: string[];
+  columns: JobColumn[];
+};
+
+const jobRoles: JobRole[] = [
+  {
+    label: "งานบรรณารักษ์",
+    bullets: [
+      "ดูแลงานที่เกี่ยวข้องกับทรัพยากรสารสนเทศทั้งหมด",
+      "นักจัดการความรู้ที่คอยคัดสรรข้อมูลที่น่าสนใจ ทันสมัย และเป็นประโยชน์สูงสุด",
+      "ใกล้ชิดกับผู้ใช้บริการมากที่สุด",
+    ],
+    columns: [
+      {
+        title: "งานหน้าบ้าน",
+        items: [
+          "รับสมัครสมาชิก",
+          "ให้บริการข้อมูลพื้นฐาน ตั้งแต่ตำแหน่งชั้นวางหนังสือที่ผู้ใช้บริการต้องการค้นหา",
+          "ให้บริการยืมคืนหนังสือและสื่อทั้งหมด",
+        ],
+      },
+      {
+        title: "งานหลังบ้าน",
+        items: [
+          "วางแผนคัดเลือกและจัดซื้อหนังสือและสื่อต่างๆ",
+          "จัดทำระบบจัดเก็บหนังสือและสื่อ ตั้งแต่การทำแคตตาล็อกหนังสือ ติดแถบสัญลักษณ์ และนำหนังสือจัดขึ้นชั้นวาง",
+          "ดูแลรักษาทรัพยากรที่ชำรุด",
+          "ดูแลข้อมูลสารสนเทศของห้องสมุด เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับความต้องการของผู้ใช้บริการ",
+        ],
+      },
+    ],
+  },
+  {
+    label: "งานกิจกรรม",
+    bullets: [
+      "ดูแลงานที่เกี่ยวข้องกับการจัดกิจกรรมการเรียนรู้",
+      "ควรจัดกิจกรรมสัปดาห์ละครั้งหรือเดือนละครั้ง เพื่อให้เกิดการแลกเปลี่ยนและแสดงผลงานอย่างสร้างสรรค์",
+      "ผลงานเกิดจากการผสมผสานด้านศิลปวัฒนธรรม ค่านิยมและวิถีชีวิตจากคนในท้องถิ่น",
+    ],
+    columns: [
+      {
+        title: "งานหน้าบ้าน",
+        items: [
+          "จัดกิจกรรมการเรียนรู้ให้กับผู้ใช้บริการทั้งในและนอกสถานที่",
+          "ดูแลการรับสมัครลงทะเบียนเข้าร่วมกิจกรรมของผู้ใช้บริการ",
+        ],
+      },
+      {
+        title: "งานหลังบ้าน",
+        items: [
+          "วางแผนกิจกรรมที่จะเกิดขึ้นตลอดทั้งปี",
+          "คิดค้นวิธีนำเสนอกิจกรรมให้เหมาะสมกับผู้ใช้ที่หลากหลายตั้งแต่เด็กปฐมวัยไปจนถึงวัยเกษียณ",
+          "หาพาร์ทเนอร์เข้ามาจัดกิจกรรมการเรียนรู้ร่วมกัน",
+          "ดูแลข้อมูลสารสนเทศของห้องสมุด เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับความต้องการของผู้ใช้บริการ",
+        ],
+      },
+    ],
+  },
+  {
+    label: "งานเทคโนโลยีสารสนเทศ",
+    bullets: [
+      "ดูแลงานด้านเทคโนโลยีสารสนเทศทั้งหมดของพื้นที่การเรียนรู้เพื่อขับเคลื่อนระบบหน้าบ้านและหลังบ้าน",
+      "สนับสนุนการทำงานระบบไอทีให้กับเจ้าหน้าที่ภายในศูนย์",
+    ],
+    columns: [
+      {
+        title: "งานหน้าบ้าน",
+        items: [
+          "บริการอุปกรณ์อิเล็กทรอนิกส์และอินเตอร์เน็ตให้กับผู้ใช้บริการ",
+          "ดูแลอุปกรณ์อิเล็กทรอนิกส์",
+        ],
+      },
+      {
+        title: "งานหลังบ้าน",
+        items: [
+          "ดูแลระบบการจัดการและฐานข้อมูล",
+          "ดูแลการให้บริการระบบต่างๆ เช่น E-library",
+          "ดูแลข้อมูลสารสนเทศของห้องสมุด เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับความต้องการของผู้ใช้บริการ",
+          "แก้ปัญหาระบบการจัดการเบื้องต้นก่อนติดต่อประสานงานกับผู้ดูแลระบบ",
+        ],
+      },
+    ],
+  },
+  {
+    label: "งานวิชาการ",
+    bullets: [
+      "ดูแลเนื้อหาสาระทุกหมวดที่สอดคล้องกับเป้าหมายของห้องสมุด",
+      "แปลงสารจากองค์ความรู้ทางวิชาการ และสร้างกระบวนการเรียนรู้ให้ผู้ใช้บริการเข้าถึงได้ง่าย",
+    ],
+    columns: [
+      {
+        title: "งานหน้าบ้าน",
+        items: ["จัดงานสัมมนาอบรมในหัวข้อที่น่าสนใจให้กับคนในท้องถิ่น"],
+      },
+      {
+        title: "งานหลังบ้าน",
+        items: [
+          "รวบรวมองค์ความรู้เพื่อใช้สร้างกระบวนการเรียนรู้ให้ผู้มาใช้บริการ",
+          "พัฒนาเนื้อหาสาระสร้างองค์ความรู้",
+          "ทำงานแบบบูรณาการ จนสามารถนำความรู้ไปนำเสนอในรูปแบบต่างๆ ได้ เช่น การทำกิจกรรม",
+        ],
+      },
+    ],
+  },
+  {
+    label: "งานประชาสัมพันธ์",
+    bullets: ["ดูแลการสื่อสารและการประชาสัมพันธ์"],
+    columns: [
+      {
+        title: "งานหน้าบ้าน",
+        items: [
+          "ให้บริการข้อมูลข่าวสารและกิจกรรมกับผู้ใช้บริการ",
+          "สื่อสารและตอบคำถามผู้ใช้ออนไลน์ในช่องทางต่างๆ เช่น Facebook LINE เว็บไซต์",
+          "ให้บริการลงทะเบียนเข้าใช้งานและการบริการสมาชิก",
+        ],
+      },
+      {
+        title: "งานหลังบ้าน",
+        items: [
+          "จัดทำเนื้อหาเพื่อสื่อสารและประชาสัมพันธ์ โดยหาช่องทางการสื่อสารที่เหมาะสมกับท้องถิ่น",
+          "วางแผนการประชาสัมพันธ์ประจำเดือนและประจำปี",
+        ],
+      },
+    ],
+  },
+  {
+    label: "งานธุรการ",
+    bullets: ["ดูแลสำนักงานเอกสารสนับสนุนต่างๆ เพื่อการดำเนินงานอย่างราบรื่น"],
+    columns: [
+      {
+        title: "งานหลังบ้าน",
+        items: [
+          "ประสานงานทั้งภายในและภายนอก",
+          "ดูแลงานพัสดุและครุภัณฑ์",
+          "ดูแลการเงินและงานเบิกจ่าย",
+          "ดูแลงานทรัพยากรบุคคล",
+        ],
+      },
+    ],
+  },
+  {
+    label: "งานบริหาร",
+    bullets: [
+      "บริหารพื้นที่การเรียนรู้ให้เป็นไปตามนโยบายและเป้าหมายของห้องสมุด",
+    ],
+    columns: [
+      {
+        title: "งานบริหาร",
+        items: [
+          "นโยบายและดูแลบริหารจัดการพื้นที่การเรียนรู้ตามทิศทางที่กำหนด",
+          "ประเมินผลการปฏิบัติงานต่างๆ",
+          "ติดต่อประสานงานกับ TK Park เพื่อเตรียมแผนงานในแต่ละปีร่วมกัน",
+        ],
+      },
+    ],
+  },
+];
+
+const JobRoleTooltip = ({ role }: { role: JobRole }) => {
+  return (
+    <div className="pointer-events-none invisible absolute md:right-0 left-0 top-full z-50 mt-2.5 w-[calc(100vw-6rem)] max-w-[540px] opacity-0 transition-opacity duration-200 group-hover/job:visible group-hover/job:opacity-100 group-focus-within/job:visible group-focus-within/job:opacity-100">
+      <div className="flex flex-col gap-2.5 bg-green-500 p-4 shadow-lg">
+        <p className="w-fit rounded-[5px] border border-white px-2.5 py-1 font-th desktop-s7-th-700 text-white text-nowrap">
+          {role.label}
+        </p>
+        <ul className="flex list-disc flex-col gap-1 pl-5">
+          {role.bullets.map((bullet) => (
+            <li
+              key={bullet}
+              className="font-th desktop-s7-th-400 text-left text-white"
+            >
+              {bullet}
+            </li>
+          ))}
+        </ul>
+        <div className="flex flex-col items-stretch gap-2.5 sm:flex-row sm:items-start">
+          {role.columns.map((column) => (
+            <div key={column.title} className="flex flex-1 flex-col">
+              <p className="w-fit bg-tk-black px-2.5 py-1 font-th desktop-s7-th-700 text-white text-nowrap">
+                {column.title}
+              </p>
+              <div className="flex flex-col bg-white">
+                {column.items.map((item) => (
+                  <p
+                    key={item}
+                    className="border-b border-neutral-light-light px-2.5 py-2 font-th desktop-s7-th-400 text-left text-tk-black last:border-b-0"
+                  >
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const SubSectionTwo = () => {
   return (
     <div className="flex w-full max-w-[600px] flex-col items-center justify-center gap-50">
@@ -106,21 +312,21 @@ const SubSectionTwo = () => {
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">นักคิด:</b>{" "}
-            กล้าคิดริเริ่มสร้างสรรค์การเรียนรู้ รูปแบบใหม่
+            กล้าคิดริเริ่มสร้างสรรค์การเรียนรู้รูปแบบใหม่
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">
               นักทดลอง:
             </b>{" "}
-            กล้าทดลอง ปรับเปลี่ยนสิ่ง ต่างๆ เพื่อผลกระทบที่ดีของสังคม
+            กล้าทดลอง ปรับเปลี่ยนสิ่งต่างๆ เพื่อผลกระทบที่ดีของสังคม
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">
               นักพัฒนา:
             </b>{" "}
-            กล้าเชื่อ ว่าทุกอย่างต่อยอดและปรับปรุงให้ดีขึ้นได้ เสมอ
-            มุ่งมั่นพัฒนาตนเองและเรียนรู้ ศาสตร์ใหม่ๆ เพื่อตอบสนองความต้องการ
-            ของคนในพื้นที่อย่างต่อเนื่อง
+            กล้าเชื่อว่าทุกอย่างต่อยอดและปรับปรุงให้ดีขึ้นได้เสมอ
+            มุ่งมั่นพัฒนาตนเองและเรียนรู้ศาสตร์ใหม่ๆ
+            เพื่อตอบสนองความต้องการของคนในพื้นที่อย่างต่อเนื่อง
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">
@@ -150,65 +356,35 @@ const SubSectionTwo = () => {
           <div className="flex flex-col gap-2.5">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
               เจ้าหน้าที่ของพื้นที่การเรียนรู้จะต้องเข้าใจการทำงานหน้าบ้านและหลังบ้าน
-              โดยงานหน้าบ้านคือการรู้ขอบเขตงาน ประจำวันและต้องเตรียมวางแผนงาน
-              ประจำปี ซึ่งเป็นการวางแผนภาพรวม
-              ของงานด้านบริการทั้งหมดที่จะเกิดขึ้น
-              เจ้าหน้าที่ต้องวางแผนจัดหาสื่อเรียนรู้
-              จำพวกทรัพยากรสารสนเทศและอุปกรณ ์ต่างๆ เพื่อหมุนเวียนใช้ในห้องสมุด
-              เช่น 3 ครั้ง/ปี รวมถึงวางแผนการจัด กิจกรรมทั้งปี เช่น การเรียนเชิญ
-              วิทยากรจากข้างนอก จัดกิจกรรมโดย กำหนดตีมรายสัปดาห์ เป็นต้น
+              โดยงานหน้าบ้านคือการรู้ขอบเขตงานประจำวันและต้องเตรียมวางแผนงานประจำปี
+              ซึ่งเป็นการวางแผนภาพรวมของงานด้านบริการทั้งหมดที่จะเกิดขึ้น
+              เจ้าหน้าที่ต้องวางแผนจัดหาสื่อเรียนรู้จำพวกทรัพยากรสารสนเทศและอุปกรณ
+              ์ต่างๆ เพื่อหมุนเวียนใช้ในห้องสมุด เช่น 3 ครั้ง/ปี
+              รวมถึงวางแผนการจัดกิจกรรมทั้งปี เช่น การเรียนเชิญวิทยากรจากข้างนอก
+              จัดกิจกรรมโดยกำหนดตีมรายสัปดาห์ เป็นต้น
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
               ส่วนระบบจัดการหลังบ้าน
               เจ้าหน้าที่ต้องเข้าใจระบบห้องสมุดอัตโนมัติของ TK Park
-              โดยต้องนำหนังสือทั้งหมด มาบันทึกข้อมูลลงในระบบและติดแถบ
-              สัญลักษณ์ตามฐานข้อมูล
+              โดยต้องนำหนังสือทั้งหมด
+              มาบันทึกข้อมูลลงในระบบและติดแถบสัญลักษณ์ตามฐานข้อมูล
             </p>
           </div>
 
           <div className="flex flex-col gap-5 flex-1 items-start justify-start">
-            <div className="flex gap-2.5 items-center justify-center">
-              <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
-                งานบรรณารักษ์
-              </p>
-              <ToolBox />
-            </div>
-            <div className="flex gap-2.5 items-center justify-center">
-              <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
-                งานกิจกรรม
-              </p>
-              <ToolBox />
-            </div>
-            <div className="flex gap-2.5 items-center justify-center">
-              <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
-                งานเทคโนโลยีสารสนเทศ
-              </p>
-              <ToolBox />
-            </div>
-            <div className="flex gap-2.5 items-center justify-center">
-              <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
-                งานวิชาการ
-              </p>
-              <ToolBox />
-            </div>
-            <div className="flex gap-2.5 items-center justify-center">
-              <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
-                งานประชาสัมพันธ์
-              </p>
-              <ToolBox />
-            </div>
-            <div className="flex gap-2.5 items-center justify-center">
-              <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
-                งานธุรการ
-              </p>
-              <ToolBox />
-            </div>
-            <div className="flex gap-2.5 items-center justify-center">
-              <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
-                งานบริหาร
-              </p>
-              <ToolBox />
-            </div>
+            {jobRoles.map((role) => (
+              <div
+                key={role.label}
+                className="group/job relative flex gap-2.5 items-center justify-center"
+                tabIndex={0}
+              >
+                <p className="font-th desktop-s6-th-700 text-tk-red border border-tk-red px-2.5 py-1 w-fit rounded-[5px] text-nowrap">
+                  {role.label}
+                </p>
+                <ToolBox />
+                <JobRoleTooltip role={role} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -230,8 +406,7 @@ const SubSectionTwo = () => {
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-5">
           <p className="font-th desktop-s6-th-700 text-tk-black text-balance">
             เครือข่ายของ TK Park มีจำนวนเจ้าหน้าที่ตั้งแต่ 3-30 คน
-            โดยหน่วยงานต้องคำนวณตามความพร้อมและความเหมาะสมของศูนย์ตาม
-            ปัจจัยเหล่านี้
+            โดยหน่วยงานต้องคำนวณตามความพร้อมและความเหมาะสมของศูนย์ตามปัจจัยเหล่านี้
           </p>
           <div className="flex flex-col gap-2.5">
             <span className="font-th desktop-s6-th-400 text-tk-black">
@@ -266,8 +441,7 @@ const SubSectionTwo = () => {
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 ลักษณะของกิจกรรม (Activity Character):
               </b>{" "}
-              หากมีการจัดกิจกรรมนอกพื้นที่หรือจัดตามโรงเรียนจำนวนของเจ้าหน้าที่
-              ก็ต้องมากขึ้นตามไปด้วย
+              หากมีการจัดกิจกรรมนอกพื้นที่หรือจัดตามโรงเรียนจำนวนของเจ้าหน้าที่ก็ต้องมากขึ้นตามไปด้วย
             </span>
           </div>
         </div>
@@ -303,8 +477,7 @@ const SubSectionTwo = () => {
               เคาน์เตอร์บริการควรจะเป็นตำแหน่งแรกๆ
               ที่ผู้ใช้บริการมองหาเมื่อต้องการสอบถามข้อมูล ยืม-คืนหนังสือ
               ขอใช้บริการอินเตอร์เน็ต
-              และหากมีเคาน์เตอร์บริการอยู่หลายชั้นควรติดกล้องวงจรปิด
-              เพื่อเป็นตัวช่วย
+              และหากมีเคาน์เตอร์บริการอยู่หลายชั้นควรติดกล้องวงจรปิดเพื่อเป็นตัวช่วย
             </span>
           </div>
           <div className="flex gap-2.5 px-[14px] py-2.5">
@@ -314,7 +487,7 @@ const SubSectionTwo = () => {
             <span className="font-th desktop-s6-th-400 text-tk-black">
               เจ้าหน้าที่ต้องช่วยกันหา{" "}
               <b className="font-th desktop-s6-th-700 text-tk-red ">
-                วิธีการแก้ไขปัญหาเพื่อยกระดับบริการให้ ดียิ่งขึ้น
+                วิธีการแก้ไขปัญหาเพื่อยกระดับบริการให้ดียิ่งขึ้น
               </b>{" "}
               เช่น หากพบว่าชั้นหนังสือสูงเกินไปสำหรับผู้ใช้บริการที่เป็น เด็ก
               ต้องจัดหาเก้าอี้บันไดมาเพิ่มเติมไว้ เพื่อให้ปีนขึ้นไปหยิบหนังสือ
@@ -331,8 +504,8 @@ const SubSectionTwo = () => {
               </b>
               อยู่ตลอด
               เพื่อตอบสนองต่อความต้องการต่อผู้ใช้บริการหรือตัวเจ้าหน้าที่เอง
-              ทั้งยังเป็นการเปลี่ยนบรรยากาศให้ผู้ที่ใช้บริการได้พบเจอกับ
-              ประสบการณ์ใหม่ๆ โดยสามารถทดสอบและทำตามง่ายๆ ใน 4 ขั้นตอนดังนี้
+              ทั้งยังเป็นการเปลี่ยนบรรยากาศให้ผู้ที่ใช้บริการได้พบเจอกับประสบการณ์ใหม่ๆ
+              โดยสามารถทดสอบและทำตามง่ายๆ ใน 4 ขั้นตอนดังนี้
             </span>
           </div>
           <div className="w-full flex flex-col items-end justify-end">

@@ -38,15 +38,19 @@ const MapBox = ({
   children,
   width = MAP_BOX_VIEWBOX.w,
   height = MAP_BOX_VIEWBOX.h,
+  className,
 }: {
   children?: React.ReactNode;
   width?: number;
   height?: number;
+  className?: string;
 }) => {
   return (
     <div
-      className="relative flex items-center justify-center"
-      style={{ width, height }}
+      className={`relative flex w-full items-center justify-center ${
+        className ?? ""
+      }`}
+      style={{ maxWidth: width, aspectRatio: `${width} / ${height}` }}
     >
       <svg
         className="absolute inset-0 size-full"
@@ -131,8 +135,10 @@ const PlayZoneCard = ({
       style={style}
     >
       <Image src={src} alt={alt} fill className="object-cover" />
-      <div className="absolute left-4 top-4 rounded-full bg-tk-red px-5 py-1.5">
-        <p className="font-th desktop-s7-th-700 text-white">{title}</p>
+      <div className="absolute left-1.5 top-1.5 rounded-full bg-tk-red px-3.5 py-1.5">
+        <p className="font-th desktop-s7-th-700 text-white text-nowrap">
+          {title}
+        </p>
       </div>
       <button
         type="button"
@@ -143,11 +149,11 @@ const PlayZoneCard = ({
         <SidePanel />
       </button>
       <div
-        className={`absolute inset-0 z-10 items-center justify-center overflow-y-auto overscroll-contain bg-white px-5 py-4 md:group-hover:flex ${
+        className={`absolute inset-0 z-10 overflow-y-auto overscroll-contain bg-white px-2 py-4 md:group-hover:flex ${
           open ? "flex" : "hidden"
         }`}
       >
-        {children}
+        <div className="m-auto w-full">{children}</div>
       </div>
     </div>
   );
@@ -166,14 +172,13 @@ const PLAY_ZONES: {
     box: { left: 40, top: 0, w: 268, h: 140 },
     sticky: "-top-10 z-10",
     body: (
-      <p className="text-center font-th desktop-s7-th-400 text-tk-black">
+      <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black">
         การ์ตูนและสื่อสร้างสรรค์
         <br />
-        มาคู่กับที่นั่งนุ่มไว้กลิ้งอ่านมังงะ
+        มาคู่กับที่นั่งนุ่มไว้กลิ้ง <br />
+        อ่านมังงะ หรือนอนสบาย
         <br />
-        หรือนอนสบายอ่านกราฟฟิกโนเวล
-        <br />
-        บนบีนแบ็ก
+        อ่านกราฟฟิกโนเวล บนบีนแบ็ก
       </p>
     ),
   },
@@ -183,10 +188,11 @@ const PLAY_ZONES: {
     box: { left: 353, top: 0, w: 282, h: 240 },
     sticky: "top-0 z-20",
     body: (
-      <p className="text-center font-th desktop-s7-th-400 text-tk-black text-balance">
-        โซนเกมคอนโซลบริการ เครื่องเพลย์สเตชัน 5 นินเทนโด สวิช (Nintendo Switch)
-        และเครื่องเล่น VR (Meta Quest) ให้เกมเมอร์เข้ามา สนุกสนานได้ฟรี
-        แค่เพียงจองคิวผ่านเว็บไซต์ หรือแอปพลิเคชัน My TK เป็นรายชั่วโมง
+      <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black text-balance">
+        โซนเกมคอนโซลบริการ เครื่องเพลย์สเตชัน 5 <br />
+        นินเทนโด สวิช (Nintendo Switch) และเครื่องเล่น VR (Meta Quest)
+        ให้เกมเมอร์เข้ามา สนุกสนานได้ฟรี แค่เพียงจองคิวผ่านเว็บไซต์
+        หรือแอปพลิเคชัน My TK เป็นรายชั่วโมง
       </p>
     ),
   },
@@ -196,7 +202,7 @@ const PLAY_ZONES: {
     box: { left: 0, top: 160, w: 273, h: 215 },
     sticky: "top-0 z-30",
     body: (
-      <p className="text-center font-th desktop-s7-th-400 text-tk-black">
+      <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black">
         ที่นี่ไม่ใช่พื้นที่ดนตรีธรรมดา เพราะมีบริการห้องเก็บเสียงส่วนตัว
         (Soundbox) พร้อมอุปกรณ์ ใครอยากมาซ้อมดนตรี ร้องเพลง ทำเดโมก็ยังได้
         และยังมีทรัพยากร เกี่ยวกับดนตรีหลายด้านให้ค้นคว้า อีกด้วย
@@ -209,9 +215,9 @@ const PLAY_ZONES: {
     box: { left: 320, top: 280, w: 300, h: 165 },
     sticky: "top-0 z-40",
     body: (
-      <p className="text-center font-th desktop-s7-th-400 text-tk-black">
-        พื้นที่ส่วนกลางสำหรับ การพบปะพูดคุย ทำกิจกรรมร่วมกัน
-        และเล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือ ของนักออกแบบไทยไว้บริการ ถึง 100
+      <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black">
+        พื้นที่ส่วนกลางสำหรับการพบปะพูดคุย ทำกิจกรรมร่วมกัน
+        และเล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือของนักออกแบบไทยไว้บริการ ถึง 100
         กว่าเกม
       </p>
     ),
@@ -271,10 +277,10 @@ const SubSectionThree = () => {
             </div>
           </div>
 
-          <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center gap-80">
-            <div className="ml-12 mt-4">
+          <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center md:gap-80 gap-50">
+            <div className="ml-[8%] md:mt-[3%] mt-[15%] w-[28.333%]">
               <MapBox width={170} height={110}>
-                <p className="font-th desktop-s7-th-700 text-center text-white">
+                <p className="font-th desktop-s8-th-700 md:desktop-s7-th-700 text-center text-white text-balance">
                   เพลย์สเปซ
                   <br />
                   (Play Space)
@@ -342,13 +348,12 @@ const SubSectionThree = () => {
           </div>
 
           <div className="p-10 border-2 border-white bg-orange-300">
-            <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              <b className="font-th desktop-s6-th-700 text-tk-red text-balance">
+            <p className="font-th desktop-s6-th-400 text-tk-black ">
+              <b className="font-th desktop-s6-th-700 text-tk-red">
                 {" "}
                 หากจะบอกว่าเพลย์สเปซเป็นสนามเด็กเล่นของชุมชน (Community
                 Playground) ก็คงจะไม่ผิดนัก
-              </b>
-              <br />
+              </b>{" "}
               เพราะที่นี่มีโซนการใช้งานที่ถูกออกแบบให้รองรับกิจกรรมหลากหลาย
               จนลืมเวลา
               <br />
@@ -438,11 +443,11 @@ const SubSectionThree = () => {
           <div className="absolute left-0 top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
           <blockquote className="absolute left-[13.6%] top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
             <span className="font-th md:desktop-s5-th-700 leading-normal text-balance desktop-s7-th-400">
-              การเปิดเพลย์สเปซในต้นปีพ.ศ. 2569 คือความตั้งใจมอบเป็นของขวัญปีใหม่
-              แก่พี่น้องชาวไทย เราอยากเห็นพื้นที่นี้เป็นจุดเริ่มต้น
-              ของชุมชนคนรุ่นใหม่ที่จะช่วยกันขับเคลื่อนกรุงเทพฯ
+              "การเปิดเพลย์สเปซในต้นปีพ.ศ. 2569
+              คือความตั้งใจมอบเป็นของขวัญปีใหม่แก่พี่น้องชาวไทย
+              เราอยากเห็นพื้นที่นี้เป็นจุดเริ่มต้นของชุมชนคนรุ่นใหม่ที่จะช่วยกันขับเคลื่อนกรุงเทพฯ
               ให้เป็นเมืองแห่งการเรียนรู้ที่สนุกสนาน
-              และเข้าถึงได้สำหรับทุกคนอย่างแท้จริง
+              และเข้าถึงได้สำหรับทุกคนอย่างแท้จริง"
               <br />
               <br />
               <b className="font-th desktop-s7-th-400 ">

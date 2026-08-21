@@ -1,5 +1,14 @@
-import type { ReactNode } from "react";
+"use client";
+
+import {
+  useCallback,
+  useState,
+  type ElementType,
+  type ReactNode,
+} from "react";
 import CoverTrap from "../../CoverTrap";
+import ActivityCardModal from "../S06/ActivityCardModal";
+import ReadNapActivityCard from "../S06/ReadNapActivityCard";
 
 export const TRAP_H = 151;
 
@@ -29,18 +38,27 @@ type SpaceTagItem = {
   highlight?: boolean;
 };
 
-const SpaceTag = ({ label, highlight = false }: SpaceTagItem) => {
+const SpaceTag = ({
+  label,
+  highlight = false,
+  onOpen,
+}: SpaceTagItem & { onOpen?: () => void }) => {
   const isHeading = label === "กิจกรรม";
+  const clickable = highlight && Boolean(onOpen);
+
+  const Tag: ElementType = clickable ? "button" : "div";
 
   return (
-    <div
+    <Tag
+      type={clickable ? "button" : undefined}
+      onClick={clickable ? onOpen : undefined}
       className={`flex max-w-full items-center gap-2.5 border-b border-r px-2.5 py-1 ${
         isHeading ? "w-[182px] justify-start" : "justify-center"
       } ${
         isHeading || highlight
-          ? "border-[#ffe150]"
+          ? "border-[#ffe150] hover:bg-[#ffe150]"
           : "border-neutral-dark-darker"
-      }`}
+      } ${clickable ? "pointer-events-auto cursor-pointer" : ""}`}
     >
       <p
         className={`font-th ${
@@ -54,7 +72,7 @@ const SpaceTag = ({ label, highlight = false }: SpaceTagItem) => {
         {label}
       </p>
       {highlight ? <ToolBox fill="#FFE150" /> : null}
-    </div>
+    </Tag>
   );
 };
 
@@ -81,6 +99,8 @@ const SpaceTypeBlock = ({
 }) => {
   const trapBottom = "calc(var(--red-h) + 2px)";
   const imgTop = "calc(var(--card-h) - 2px - var(--red-h))";
+  const [activityLabel, setActivityLabel] = useState<string | null>(null);
+  const closeActivity = useCallback(() => setActivityLabel(null), []);
 
   return (
     <div
@@ -129,14 +149,21 @@ const SpaceTypeBlock = ({
         style={{ top: "var(--stack-top)", height: "var(--card-h)" }}
       >
         <div className="relative h-full w-[var(--cover-w)] max-w-full">
-          <div className="absolute left-0 right-0" style={{ bottom: trapBottom }}>
+          <div
+            className="absolute left-0 right-0"
+            style={{ bottom: trapBottom }}
+          >
             <CoverTrap height="auto" width="100%">
               <div
-                className="relative flex flex-wrap content-center items-center justify-center gap-1 px-5 py-2.5 md:px-7"
+                className="relative flex flex-wrap content-center items-center justify-center gap-1 px-5 py-2.5 mx-2 md:px-7"
                 style={{ minHeight: "var(--trap-h)" }}
               >
                 {tags.map((tag) => (
-                  <SpaceTag key={tag.label} {...tag} />
+                  <SpaceTag
+                    key={tag.label}
+                    {...tag}
+                    onOpen={() => setActivityLabel(tag.label)}
+                  />
                 ))}
               </div>
             </CoverTrap>
@@ -168,6 +195,12 @@ const SpaceTypeBlock = ({
         }}
         aria-hidden="true"
       />
+
+      {activityLabel ? (
+        <ActivityCardModal label={activityLabel} onClose={closeActivity}>
+          <ReadNapActivityCard id={`${number}-activity-modal`} />
+        </ActivityCardModal>
+      ) : null}
     </div>
   );
 };

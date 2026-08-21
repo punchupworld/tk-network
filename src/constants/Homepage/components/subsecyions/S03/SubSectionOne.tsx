@@ -168,8 +168,9 @@ const SubSectionOne = () => {
           </p>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             ไม่ว่าหน่วยงานลักษณะไหนก็สามารถเข้าร่วม เครือข่าย TK Park ได้
-            ตราบใดที่สนใจและต้องการสร้างพื้นที่การเรียนรู้ในชุมชนของตัวเอง
-            และอยากให้คนในพื้นที่ได้เข้าถึงความรู้ ทรัพยากร
+            ตราบใดที่สนใจและต้องการสร้างพื้นที่การเรียนรู้ในชุมชนของ
+            <br />
+            ตัวเอง และอยากให้คนในพื้นที่ได้เข้าถึงความรู้ ทรัพยากร
             เพื่อพัฒนาตัวเองอย่างไม่มีที่สิ้นสุด
           </p>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
@@ -181,8 +182,8 @@ const SubSectionOne = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             หน่วยงานเอกชน มักจะร่วมงานกับ TK Park ในหลายรูปแบบ เช่น
             สร้างพื้นที่การเรียนรู้ซึ่งเป็นเป้าหมายหลัก
-            สนับสนุนการเรียนรู้นอกห้องเรียนในรูปแบบ ต่างๆ
-            หรือนำข้อมูลของพื้นที่การเรียนรู้ไปเป็นส่วน หนึ่งของแผนการทำ CSR
+            สนับสนุนการเรียนรู้นอกห้องเรียนในรูปแบบต่างๆ
+            หรือนำข้อมูลของพื้นที่การเรียนรู้ไปเป็นส่วนหนึ่งของแผนการทำ CSR
             ของบริษัท
           </p>
         </div>
@@ -206,9 +207,10 @@ const SubSectionOne = () => {
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
               หากจะสร้างพื้นที่การเรียนรู้สักที่
               ทำเลที่ตั้งต้องมีคุณสมบัติพื้นฐานที่เหมาะกับ จุดประสงค์ของการสร้าง
-              ไม่ว่าจะเป็นการเป็นพื้นที่สาธารณะ (Public Space)
-              ที่สร้างการมีส่วนร่วมของคนในชุมชน จุดนัดพบปะสังสรรค์
-              พื้นที่อบรมพัฒนาทักษะ หรือเมกเกอร์สเปซ (Makerspace)
+              ไม่ว่าจะเป็นการเป็นพื้นที่สาธารณะ (Public Space) ที่สร้างการมี
+              <br />
+              ส่วนร่วมของคนในชุมชน จุดนัดพบปะสังสรรค์ พื้นที่อบรมพัฒนาทักษะ
+              หรือเมกเกอร์สเปซ (Makerspace)
               ดังนั้นพื้นที่การเรียนรู้ควรคิดถึงกลุ่มเป้าหมายก่อน
               และควรตั้งอยู่บริเวณใจกลางเมือง และอยู่ใกล้กับชุมชน
               ผู้ใช้บริการจะได้เข้าถึงง่ายและเดินทางสะดวก
@@ -222,17 +224,16 @@ const SubSectionOne = () => {
               <br />
               คำตอบอาจอยู่ที่เป้าหมายและวิสัยทัศน์ของผู้สร้าง
               พื้นที่การเรียนรู้สามารถสร้างอนาคตของผู้ประกอบการหน้าใหม่ นวัตกร
-              หรือครีเอทีฟได้ไหม บริการของภาครัฐ
-              สามารถมัดรวมกันไว้ในนี้จนกลายเป็นการให้บริการแบบเบ็ดเสร็จ
+              หรือครีเอทีฟได้ไหม
+              บริการของภาครัฐสามารถมัดรวมกันไว้ในนี้จนกลายเป็นการให้บริการแบบเบ็ดเสร็จ
               (One-stop Service)
-              แบบที่ประชาชนได้รับความสะดวกสบายในการเข้าถึงบริการพื้นฐาน
-              หรือเปล่า?
+              แบบที่ประชาชนได้รับความสะดวกสบายในการเข้าถึงบริการพื้นฐานหรือเปล่า?
             </p>
           </div>
           <div className="flex gap-2.5 p-10 bg-yellow-100 border-b-2 border-white md:flex-row flex-col">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance md:w-1/2 w-full">
-              เมืองอาร์ฮุส เดนมาร์ก มีห้องสมุดประชาชน Dokk1
-              ซึ่งได้รับการออกแบบในฐานะศูนย์กลางขนาด ใหญ่ของชุมชนตรงใจกลางเมือง
+              <b>เมืองอาร์ฮุส เดนมาร์ก</b> มีห้องสมุดประชาชน <b>Dokk1</b>{" "}
+              ซึ่งได้รับการออกแบบในฐานะศูนย์กลางขนาดใหญ่ของชุมชนตรงใจกลางเมือง
               แถมยังตั้งอยู่ริมน้ำ มีขนาดกว้างขวางและสวยงาม เข้าถึงง่าย
               เหมาะกับการจัดกิจกรรมหลากหลายรูปแบบ
               เพราะอาร์ฮุสให้ความสำคัญกับความรู้ วัฒนธรรม และการรวมกลุ่มชุมชน
@@ -292,14 +293,14 @@ const SubSectionOne = () => {
           </div>
           <div className="flex gap-2.5 p-10 bg-orange-50 border-b-2 border-white md:flex-row flex-col">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance md:w-1/2 w-full">
-              ห้องสมุด Oodi ของประเทศฟินแลนด์ก็เช่นกัน
+              ห้องสมุด <b>Oodi</b> ของประเทศ<b>ฟินแลนด์</b>ก็เช่นกัน
               นี่คือพื้นที่สาธารณะที่มีบริการผสมผสานอย่างครอบคลุม
               คือมีทั้งห้องสมุดแบบดั้งเดิมพร้อมบริการใหม่ๆ
               ที่ก้าวไปพร้อมกับยุคสมัย เช่น ห้องนิทาน (Children&apos;s story
               room) หรือสนามเด็กเล่น สาธารณะบนระเบียงชั้น 3 ของห้องสมุด
-              พื้นที่สำหรับเด็กและครอบครัว ซึ่งตอบโจทย์ความต้องการของชุมชนที่
-              ต้องการพื้นที่ สาธารณะสำหรับเด็กและครอบครัว (Services for
-              Families) ที่เข้าถึงได้
+              พื้นที่สำหรับเด็กและครอบครัว
+              ซึ่งตอบโจทย์ความต้องการของชุมชนที่ต้องการพื้นที่
+              สาธารณะสำหรับเด็กและครอบครัว (Services for Families) ที่เข้าถึงได้
             </p>
             <div className="flex justify-end items-end ">
               <button
@@ -357,7 +358,7 @@ const SubSectionOne = () => {
           <div className="p-10 bg-yellow-700">
             <p className="font-th desktop-s6-th-700 text-tk-black text-balance">
               ห้องสมุดกลายเป็นสิ่งที่เราเรียกว่า Third Place
-              หรือพื้นที่ที่เป็นส่วนหนึ่งของ วิถีชีวิตคนในเมือง
+              หรือพื้นที่ที่เป็นส่วนหนึ่งของวิถีชีวิตคนในเมือง
               สองโครงการนี้จึงเกิดขึ้นโดยมีทำเลที่ตั้งเป็นหัวใจ
             </p>
           </div>
@@ -366,9 +367,9 @@ const SubSectionOne = () => {
 
       <div className="flex w-full flex-col items-start">
         <CoverCap color="#91C5F4" />
-        <div className="flex w-full flex-col items-start gap-10 border-x-2 border-b-2 border-white bg-[#91C5F4] px-10 pt-5 pb-10 text-white">
+        <div className="flex w-full flex-col items-start gap-10 border-x-2 border-b-2 border-white bg-[#91C5F4] md:px-10 px-5 pt-5 pb-10 text-white">
           <div>
-            <h2 className="font-th desktop-s6-th-700 px-2.5 py-1.5 text-tk-black border-2 border-tk-black rounded-full">
+            <h2 className="text-center md:text-left font-th desktop-s6-th-700 px-2.5 py-1.5 text-tk-black border-2 border-tk-black rounded-full">
               เกณฑ์การพิจารณาทำเลที่ตั้งที่เหมาะสม สอดคล้องกับการพัฒนาเมือง
             </h2>
           </div>
@@ -493,11 +494,12 @@ const SubSectionOne = () => {
           </div>
 
           <div className="flex w-full flex-col items-center justify-center gap-10 border-x-2 border-b-2 border-white bg-[#91C5F4] px-10 pb-10 text-white ">
-            <div className="grid w-full grid-cols-1 md:grid-cols-2">
+            <div className="mt-px grid w-full grid-cols-1 md:grid-cols-2">
               <div className="flex flex-col justify-end">
                 <p className="md:border-l md:border-r-0 border-x border-t border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
-                  จัดหาหนังสือตามแนวทางการคัดเลือก หนังสือสำหรับเด็ก
-                  แต่ละช่วงวัย
+                  จัดหาหนังสือตามแนวทางการ
+                  <br />
+                  คัดเลือก หนังสือสำหรับเด็ก แต่ละช่วงวัย
                 </p>
                 <p className="md:border-l md:border-r-0 border-x md:border-y border-t border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   จัดหาประเภทของหนังสือให้มีความหลากหลาย ทันสมัย และเพียงพอ เช่น
@@ -510,12 +512,12 @@ const SubSectionOne = () => {
                 </p>
                 <p className="border-x border-t  border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   จัดชั้นหนังสือให้ดึงดูดความสนใจเด็ก เช่น
-                  วางหนังสือหันหน้าปกออก หมั่นเปลี่ยนหนังสือ
-                  เป็นหนังสือออกใหม่หรือหนังสือแนะนำ
+                  วางหนังสือหันหน้าปกออก
+                  หมั่นเปลี่ยนหนังสือเป็นหนังสือออกใหม่หรือหนังสือแนะนำ
                 </p>
                 <p className="border-x border-t border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   จัดเก็บหนังสือ สื่อการเรียนรู้ และวัสดุอุปกรณ์ต่างๆ
-                  ในสถานที่เหมาะสม
+                  ในสถานที่ที่เหมาะสม
                 </p>
                 <p className="border-x border-t border-b border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   ดูแลบำรุงรักษาทรัพยากรให้ดี พร้อมใช้งานอยู่เสมอ
