@@ -259,8 +259,10 @@ function IndicatorTooltip({
 
 function StepIndicator({
   showStepsOverlay = false,
+  onNavigate,
 }: {
   showStepsOverlay?: boolean;
+  onNavigate?: () => void;
 }) {
   const [activeStep, setActiveStep] = useState<number | null>(null);
   const [activeSubtopic, setActiveSubtopic] = useState<string | null>(null);
@@ -273,6 +275,11 @@ function StepIndicator({
   } | null>(null);
   const scrollerRef = useRef<HTMLDivElement>(null);
   const hideTimer = useRef<number>(0);
+
+  const goTo = (id: string) => {
+    onNavigate?.();
+    window.setTimeout(() => scrollToId(id), onNavigate ? 50 : 0);
+  };
 
   const showTooltip = (items: TooltipItem[], el: Element) => {
     if (!items.length) return;
@@ -376,7 +383,7 @@ function StepIndicator({
                   role="button"
                   tabIndex={0}
                   data-indicator={SECTION_IDS[index]}
-                  onClick={() => scrollToId(SECTION_IDS[index])}
+                  onClick={() => goTo(SECTION_IDS[index])}
                   onMouseEnter={(event) =>
                     showTooltip(
                       [{ id: SECTION_IDS[index], label: STEP_LABELS[index] }],
@@ -394,7 +401,7 @@ function StepIndicator({
                   onKeyDown={(event) => {
                     if (event.key === "Enter" || event.key === " ") {
                       event.preventDefault();
-                      scrollToId(SECTION_IDS[index]);
+                      goTo(SECTION_IDS[index]);
                     }
                   }}
                   className={[
@@ -437,7 +444,7 @@ function StepIndicator({
                           tabIndex={0}
                           data-indicator={id}
                           className="shrink-0 cursor-pointer overflow-visible **:stroke-1 **:[vector-effect:non-scaling-stroke] hover:**:fill-tk-red"
-                          onClick={() => scrollToId(id)}
+                          onClick={() => goTo(id)}
                           onMouseEnter={(event) =>
                             showTooltip(
                               topicTooltipItems(id),
@@ -455,7 +462,7 @@ function StepIndicator({
                           onKeyDown={(event) => {
                             if (event.key === "Enter" || event.key === " ") {
                               event.preventDefault();
-                              scrollToId(id);
+                              goTo(id);
                             }
                           }}
                         />
@@ -469,7 +476,7 @@ function StepIndicator({
                               role="button"
                               tabIndex={0}
                               data-indicator={dashId}
-                              onClick={() => scrollToId(dashId)}
+                              onClick={() => goTo(dashId)}
                               onMouseEnter={(event) =>
                                 showTooltip(
                                   dashTooltipItems(dashId),
@@ -490,7 +497,7 @@ function StepIndicator({
                                   event.key === " "
                                 ) {
                                   event.preventDefault();
-                                  scrollToId(dashId);
+                                  goTo(dashId);
                                 }
                               }}
                               className={[
@@ -517,7 +524,7 @@ function StepIndicator({
           anchor={hovered.el}
           items={hovered.items}
           onSelect={(id) => {
-            scrollToId(id);
+            goTo(id);
             setHovered(null);
           }}
           onMouseEnter={() => showTooltip(hovered.items, hovered.el)}

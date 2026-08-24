@@ -42,6 +42,8 @@ export function Background({
 
   //section 1
   const section1Stroke =
+    isSection1Palette && !subtopic ? SECTION_1_COLORS.newStroke : stroke;
+  const section1OldStroke =
     isSection1Palette && !subtopic ? SECTION_1_COLORS.stroke : stroke;
   const t01Stroke =
     isSection1Palette && subtopic !== "subtopic2"
@@ -54,6 +56,8 @@ export function Background({
 
   //section 2
   const section2Stroke =
+    isSection2Palette && !subtopic ? SECTION_1_COLORS.newStroke : stroke;
+  const section2OldStroke =
     isSection2Palette && !subtopic ? SECTION_1_COLORS.stroke : stroke;
   const t03Stroke =
     isSection2Palette && subtopic !== "subtopic4"
@@ -66,6 +70,8 @@ export function Background({
 
   //section 3
   const section3Stroke =
+    isSection3Palette && !subtopic ? SECTION_1_COLORS.newStroke : stroke;
+  const section3OldStroke =
     isSection3Palette && !subtopic ? SECTION_1_COLORS.stroke : stroke;
   const t05Stroke =
     isSection3Palette && subtopic !== "subtopic7" && subtopic !== "subtopic6"
@@ -82,6 +88,8 @@ export function Background({
 
   //section 4
   const section4Stroke =
+    isSection4Palette && !subtopic ? SECTION_1_COLORS.newStroke : stroke;
+  const section4OldStroke =
     isSection4Palette && !subtopic ? SECTION_1_COLORS.stroke : stroke;
   const t08Stroke =
     isSection4Palette && subtopic !== "subtopic9"
@@ -90,6 +98,8 @@ export function Background({
 
   //section 5
   const section5Stroke =
+    isSection5Palette && !subtopic ? SECTION_1_COLORS.newStroke : stroke;
+  const section5OldStroke =
     isSection5Palette && !subtopic ? SECTION_1_COLORS.stroke : stroke;
   const t09Stroke =
     isSection5Palette && subtopic !== "subtopic10"
@@ -102,6 +112,8 @@ export function Background({
 
   //section 6
   const section6Stroke =
+    isSection6Palette && !subtopic ? SECTION_1_COLORS.newStroke : stroke;
+  const section6OldStroke =
     isSection6Palette && !subtopic ? SECTION_1_COLORS.stroke : stroke;
   const t11Stroke =
     isSection6Palette && subtopic !== "subtopic12" && subtopic !== "subtopic13"
@@ -161,6 +173,12 @@ export function Background({
         section4Stroke={section4Stroke}
         section5Stroke={section5Stroke}
         shapeFill={shapeFill}
+        section1OldStroke={section1OldStroke}
+        section2OldStroke={section2OldStroke}
+        section3OldStroke={section3OldStroke}
+        section4OldStroke={section4OldStroke}
+        section5OldStroke={section5OldStroke}
+        section6OldStroke={section6OldStroke}
       />
     </svg>
   );

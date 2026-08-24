@@ -576,9 +576,10 @@ const StepsOverlay = ({
   const indicator = (
     <div
       ref={stickyIndicator ? indicatorAnchorRef : undefined}
-      className={`w-full max-w-[1200px] ${stuck ? "invisible" : ""}`}
+      className={`w-full max-w-[1200px] ${stuck ? "invisible" : ""} ${onNavigate ? "cursor-pointer" : ""}`}
+      onClick={onNavigate}
     >
-      <StepIndicator showStepsOverlay={true} />
+      <StepIndicator showStepsOverlay={true} onNavigate={onNavigate} />
     </div>
   );
 

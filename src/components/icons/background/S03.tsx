@@ -4,6 +4,7 @@ export function S03({
   fill,
   section3Stroke,
   shapeFill,
+  section3OldStroke,
 }: FillMuteIllustrationProps) {
   return (
     <g id="S03">
@@ -30,7 +31,7 @@ export function S03({
           id="Vector_51"
           d="M1001.01 176.285C1009.07 176.285 1015.6 173.713 1015.6 170.54C1015.6 167.367 1009.07 164.795 1001.01 164.795C992.956 164.795 986.426 167.367 986.426 170.54C986.426 173.713 992.956 176.285 1001.01 176.285Z"
           fill={shapeFill("section3Base")}
-          stroke={section3Stroke}
+          stroke={section3OldStroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -38,7 +39,7 @@ export function S03({
         <path
           id="Vector_52"
           d="M1001.01 170.541V228.438"
-          stroke={section3Stroke}
+          stroke={section3OldStroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -46,8 +47,8 @@ export function S03({
         <path
           id="Vector_53"
           d="M1002.33 220.078C1015.08 220.078 1025.42 217.33 1025.42 213.94C1025.42 210.551 1015.08 207.803 1002.33 207.803C989.579 207.803 979.242 210.551 979.242 213.94C979.242 217.33 989.579 220.078 1002.33 220.078Z"
-          fill={section3Stroke}
-          stroke={section3Stroke}
+          fill={section3OldStroke}
+          stroke={section3OldStroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -56,7 +57,7 @@ export function S03({
           id="Vector_54"
           d="M1002.33 232.396C1021.67 232.396 1037.35 228.23 1037.35 223.092C1037.35 217.953 1021.67 213.787 1002.33 213.787C982.993 213.787 967.316 217.953 967.316 223.092C967.316 228.23 982.993 232.396 1002.33 232.396Z"
           fill={shapeFill("section3Base")}
-          stroke={section3Stroke}
+          stroke={section3OldStroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -65,7 +66,7 @@ export function S03({
           id="Vector_55"
           d="M1043.92 238.881C1043.92 247.579 1025.3 237.276 1002.34 237.276C979.38 237.276 960.762 247.588 960.762 238.881C960.762 230.175 979.38 217.828 1002.34 217.828C1025.3 217.828 1043.92 230.184 1043.92 238.881Z"
           fill={shapeFill("section3Base")}
-          stroke={section3Stroke}
+          stroke={section3OldStroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -74,7 +75,7 @@ export function S03({
           id="Vector_56"
           d="M1002.33 250.061C1025.18 250.061 1043.71 245.137 1043.71 239.062C1043.71 232.987 1025.18 228.062 1002.33 228.062C979.481 228.062 960.957 232.987 960.957 239.062C960.957 245.137 979.481 250.061 1002.33 250.061Z"
           fill={shapeFill("section3Highlight")}
-          stroke={section3Stroke}
+          stroke={section3OldStroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -83,7 +84,7 @@ export function S03({
           id="Vector_57"
           d="M1001.89 242.131C1005.07 242.131 1007.64 239.559 1007.64 236.386C1007.64 233.213 1005.07 230.641 1001.89 230.641C998.721 230.641 996.148 233.213 996.148 236.386C996.148 239.559 998.721 242.131 1001.89 242.131Z"
           fill={shapeFill("section3Yellow")}
-          stroke={section3Stroke}
+          stroke={section3OldStroke}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"

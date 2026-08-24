@@ -287,7 +287,7 @@ const SubSectionOne = () => {
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black text-balance py-2.5 px-[14px]">
             ปัจจัยภายนอกที่ส่งผลต่อการเปิด-ปิดทำการ เช่น
-            พื้นที่บริการเพื่อการเรียนรู้อยู่ในอาคารของสถานที่อื่น
+            พื้นที่บริการเมื่อการเรียนรู้อยู่ในอาคารของสถานที่อื่น
             จึงต้องอิงเวลาปิดตามอาคารนั้นๆ
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black text-balance py-2.5 px-[14px]">

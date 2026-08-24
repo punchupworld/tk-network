@@ -161,6 +161,7 @@ export const SECTION_1_COLORS = {
   dark: "#1D252C",
   highlight: "#FCFFF5",
   stroke: "#1D252C",
+  newStroke: "#FFBAA1",
 } as const;
 
 /** Per-section fill overrides for background illustration shapes. */

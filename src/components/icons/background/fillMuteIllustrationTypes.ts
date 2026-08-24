@@ -22,5 +22,11 @@ export type FillMuteIllustrationProps = {
   section4Stroke: string;
   section5Stroke: string;
   section6Stroke: string;
+  section1OldStroke: string;
+  section2OldStroke: string;
+  section3OldStroke: string;
+  section4OldStroke: string;
+  section5OldStroke: string;
+  section6OldStroke: string;
   shapeFill: (shapeId: BackgroundShapeId) => string;
 };

@@ -75,12 +75,17 @@ const Navbar = () => {
     ].join(" ");
 
   const handleNavClick = (itemId: string) => {
-    setActive(itemId);
     if (itemId === "steps") {
+      if (showStepsOverlay) {
+        setShowStepsOverlay(false);
+        return;
+      }
+      setActive(itemId);
       setShowStepsOverlay(true);
-    } else {
-      setShowStepsOverlay(false);
+      return;
     }
+    setActive(itemId);
+    setShowStepsOverlay(false);
   };
 
   const closeStepsOverlay = () => {
@@ -102,21 +107,8 @@ const Navbar = () => {
               <span className="desktop-s6-700">{item.label}</span>
               {isStepsOpen ? (
                 <span
-                  role="button"
-                  tabIndex={0}
-                  aria-label="ปิดเมนู 6 ขั้นตอน"
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    closeStepsOverlay();
-                  }}
-                  onKeyDown={(event) => {
-                    if (event.key === "Enter" || event.key === " ") {
-                      event.preventDefault();
-                      event.stopPropagation();
-                      closeStepsOverlay();
-                    }
-                  }}
-                  className="ml-auto flex shrink-0 items-center justify-center rounded-full p-0.5 hover:bg-white/20"
+                  className="ml-auto flex shrink-0 items-center justify-center rounded-full p-0.5"
+                  aria-hidden="true"
                 >
                   <svg
                     viewBox="0 0 24 24"
@@ -125,7 +117,6 @@ const Navbar = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     className="h-4 w-4"
-                    aria-hidden="true"
                   >
                     <path d="M18 6 6 18M6 6l12 12" />
                   </svg>

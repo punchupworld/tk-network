@@ -1,6 +1,9 @@
 import React from "react";
 import CoverSub from "../CoverSub";
 import { T03 } from "@/src/components/icons/topics";
+import Image from "next/image";
+import { asset } from "@/src/lib/asset";
+import outroSectionImage from "@/public/images/homepage/outro-section-image.png";
 
 const OutroSection = () => {
   return (
@@ -106,7 +109,15 @@ const OutroSection = () => {
           </div>
         </div>
 
-        <div className="h-screen" />
+        <div className="mx-auto w-full max-w-[600px] mt-[calc(100vh-200px)] pb-10">
+          <Image
+            src={asset("/img/footer.svg")}
+            alt="Outro Section Image"
+            width={600}
+            height={600}
+            className="w-full h-full object-cover"
+          />
+        </div>
       </section>
     </div>
   );
