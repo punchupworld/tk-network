@@ -115,10 +115,30 @@ const SUBSUBTOPIC_IDS = Array.from(
   (_, i) => `subsubtopic${i + 1}`,
 );
 
+const SUBSUBTOPIC_START_SCROLL = new Set([
+  2, 7, 12, 13, 14, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33,
+]);
+
+const SCROLL_START_OFFSET = 120;
+
+function scrollBlock(id: string): ScrollLogicalPosition {
+  if (!id.startsWith("subsubtopic")) return "start";
+  const n = Number(id.replace("subsubtopic", ""));
+  return SUBSUBTOPIC_START_SCROLL.has(n) ? "start" : "center";
+}
+
 function scrollToId(id: string) {
-  document.getElementById(id)?.scrollIntoView({
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  if (scrollBlock(id) === "center") {
+    el.scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+
+  window.scrollTo({
+    top: el.getBoundingClientRect().top + window.scrollY - SCROLL_START_OFFSET,
     behavior: "smooth",
-    block: id.startsWith("subsubtopic") ? "center" : "start",
   });
 }
 

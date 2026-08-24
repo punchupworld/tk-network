@@ -278,7 +278,7 @@ const SubSectionThree = () => {
           </div>
 
           <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center md:gap-80 gap-50">
-            <div className="ml-[8%] md:mt-[3%] mt-[15%] w-[28.333%]">
+            <div className="ml-[8%] mt-[15%] max-[400px]:mt-[30%] md:mt-[3%] w-[28.333%]">
               <MapBox width={170} height={110}>
                 <p className="font-th desktop-s8-th-700 md:desktop-s7-th-700 text-center text-white text-balance">
                   เพลย์สเปซ
