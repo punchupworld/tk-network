@@ -112,10 +112,10 @@ function SectionCover() {
           <br />
           ความร่วมมือ
         </h2>
-        <p className="w-[124px] font-en desktop-s5-400 leading-normal">
+        <p className="w-[144px] font-en desktop-s5-400 leading-normal">
           Make a Deal
         </p>
-        <div className="flex items-end md:flex-row flex-col">
+        <div className="flex items-end md:flex-row flex-col w-full">
           <div className="flex flex-col ">
             <div className="border-l border-white border-t border-b md:border-r-0 border-r px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
@@ -135,7 +135,8 @@ function SectionCover() {
           <div className="flex flex-col flex-1">
             <div className="border-l border-white border-t border-r border-b px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                เลือกรูปแบบที่เครือข่าย อยากเข้าร่วมก่อนทำ MOU
+                เลือกรูปแบบที่เครือข่าย <br />
+                อยากเข้าร่วมก่อนทำ MOU
               </p>
             </div>
           </div>
@@ -159,9 +160,10 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
         <p className="font-th desktop-s5-th-700 leading-normal">
-          เครือข่าย TK Park <br /> พัฒนาพื้นที่การเรียนรู้ทั่วประเทศเพื่อสร้าง{" "}
+          เครือข่าย TK Park <br /> พัฒนาพื้นที่การเรียนรู้ทั่วประเทศ
+          <br /> เพื่อสร้างพื้นที่แห่งโอกาส และ
           <br />
-          พื้นที่แห่งโอกาสและการเรียนรู้ตลอดชีวิต
+          การเรียนรู้ตลอดชีวิต
         </p>
       </blockquote>
     </div>

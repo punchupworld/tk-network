@@ -3,7 +3,7 @@
 import { T13 } from "@/src/components/icons/topics";
 import CoverSub from "../../CoverSub";
 import Image from "next/image";
-import { useEffect, useState, type CSSProperties } from "react";
+import { useEffect, useState, type CSSProperties, ReactNode } from "react";
 import { createPortal } from "react-dom";
 
 const ToolBox = () => {
@@ -38,15 +38,15 @@ export type ParkCardProps = {
   title: string;
   locationName: string;
   images: ParkImage[];
-  highlights: string[];
-  challenges: string[];
-  descriptions: string[];
+  highlights: ReactNode[];
+  challenges: ReactNode[];
+  descriptions: ReactNode[];
   host: string;
   location: string;
   id: string;
 };
 
-const ListBlock = ({ label, items }: { label: string; items: string[] }) => {
+const ListBlock = ({ label, items }: { label: string; items: ReactNode[] }) => {
   return (
     <div className="flex flex-col items-stretch justify-start md:flex-row md:items-start">
       <p className="font-th mobile-s6-th-700 md:desktop-s6-th-700 bg-tk-black text-white py-1 px-2.5 md:flex-1 md:text-nowrap">
@@ -230,9 +230,9 @@ const ParkCard = ({
           </div>
           <ListBlock label="จุดเด่น" items={highlights} />
           <ListBlock label="ความท้าทาย" items={challenges} />
-          {descriptions.map((description) => (
+          {descriptions.map((description, index) => (
             <p
-              key={description}
+              key={index}
               className="font-th mobile-s6-th-400 md:desktop-s6-th-400 text-tk-black"
             >
               {description}

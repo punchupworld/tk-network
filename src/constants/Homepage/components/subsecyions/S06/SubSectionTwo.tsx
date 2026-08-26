@@ -16,12 +16,13 @@ const SubSectionTwo = () => {
           แนะนำกิจกรรม
         </p>
       </div>
-      <div className="flex w-full flex-col items-center justify-center gap-2.5 p-10 border-2 border-white bg-[#FEE6A6]">
+      <div className="flex w-full flex-col justify-center gap-2.5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
           ลองสำรวจกิจกรรมต้นแบบและกลุ่มเป้าหมายที่เหมาะกับผู้ใช้งานแต่ละกลุ่ม
           <br />
           ที่สามารถสร้างการเรียนรู้ทั้งแบบรู้ตัวและไม่รู้ตัว
-          เพราะแม้แต่กิจกรรมที่ดูเรียบง่ายที่สุดก็ต้องการการจัดการอย่างละเอียด
+          เพราะแม้แต่กิจกรรมที่ดู <br />
+          เรียบง่ายที่สุดก็ต้องการการจัดการอย่างละเอียด
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
           บรรยากาศที่ดีสามารถกระตุ้นให้ผู้ใช้บริการอยากแบ่งปันและสร้างสรรค์งาน
@@ -47,7 +48,10 @@ const SubSectionTwo = () => {
         }
         textClassName="text-tk-black"
         descriptions={[
-          "พื้นที่สำหรับการฝึกฝนการแสดงออก เช่น การเต้นคัฟเวอร์ การซ้อมเชียร์ลีดเดอร์ การเต้นลีลาศ การออกกำลังกาย",
+          <>
+            พื้นที่สำหรับการฝึกฝนการแสดงออก เช่น การเต้นคัฟเวอร์ <br />
+            การซ้อมเชียร์ลีดเดอร์ การเต้นลีลาศ การออกกำลังกาย
+          </>,
         ]}
         targets={["กลุ่มนักเรียนนักศึกษา", "กลุ่มผู้สูงอายุ"]}
         areas={["พื้นที่สะดวกกิจกรรมสบาย", "พื้นที่สตูดิโอ"]}
@@ -72,14 +76,16 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                บริหารจัดการพื้นที่กึ่งภายนอกอาคาร ติดตั้งสิ่งอำนวยความสะดวก
+                บริหารจัดการพื้นที่กึ่งภายนอกอาคาร ติดตั้งสิ่งอำนวยความสะดวก{" "}
+                <br />
                 เพิ่มเติมเพื่อเป็นพื้นที่ฝึกฝน
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                ควรเป็นพื้นที่ที่คนนอกสามารถมองเห็นกิจกรรมที่เกิดขึ้นด้านในเพื่อกระตุ้นความสนใจในการเรียนรู้การ
+                ควรเป็นพื้นที่ <br />
+                ที่คนนอกสามารถมองเห็นกิจกรรมที่เกิดขึ้นด้านในเพื่อกระตุ้นความสนใจในการเรียนรู้การ
                 แสดงออก
               </ActivityCell>
               <ActivityCell
@@ -101,7 +107,8 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                ให้บริการอุปกรณ์อิเล็ก-ทรอนิกส์เคลื่อนที่ เช่น ลำโพงขนาดเล็ก
+                ให้บริการอุปกรณ์ <br />
+                อิเล็กทรอนิกส์เคลื่อนที่ เช่น ลำโพงขนาดเล็ก
               </ActivityCell>
             </div>
           </div>
@@ -111,7 +118,7 @@ const SubSectionTwo = () => {
         id="subsubtopic29"
         color="#5B73ED"
         title={
-          <>
+          <b className="font-th desktop-s7-th-700">
             กิจกรรม
             <br />
             จริงจังอนาคต
@@ -119,7 +126,7 @@ const SubSectionTwo = () => {
             E-Sport
             <br />
             Player
-          </>
+          </b>
         }
         textClassName="text-white"
         descriptions={[
@@ -129,7 +136,11 @@ const SubSectionTwo = () => {
         ]}
         targets={[
           "เหมาะสำหรับผู้ที่ต้องการฝึกฝนทักษะเกมออนไลน์แบบอีสปอร์ตอย่างเป็นทางการ",
-          "กลุ่มเป้าหมายโดยมากคือกลุ่มนักเรียนที่สนใจรวมกลุ่มฝึกฝน",
+          <>
+            กลุ่มเป้าหมาย <br />
+            โดยมากคือกลุ่มนักเรียนที่สนใจ <br />
+            รวมกลุ่มฝึกฝน
+          </>,
         ]}
         areas={["พื้นที่สะดวกกิจกรรมสบาย", "พื้นที่สตูดิโอ"]}
         principles={
@@ -160,7 +171,8 @@ const SubSectionTwo = () => {
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                เตรียมปลั๊กไฟให้เพียงพอ
+                เตรียมปลั๊กไฟ <br />
+                ให้เพียงพอ
               </ActivityCell>
               <ActivityCell
                 textClassName="text-white"

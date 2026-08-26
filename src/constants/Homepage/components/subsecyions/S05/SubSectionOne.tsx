@@ -48,10 +48,10 @@ const SubSectionOne = () => {
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
           การวางนโยบายและการบริการอย่างชัดเจนคือกระดูกสันหลังของการพัฒนา
-          พื้นที่การเรียนรู้ให้ยั่งยืนอย่างระยะยาว ก่อนเปิดบริการ
+          พื้นที่การเรียนรู้ให้ยั่งยืนอย่างระยะยาวก่อนเปิดบริการ
         </p>
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
-          <div className="flex gap-5 px-2.5 py-1 bg-yellow-700 md:flex-row flex-col">
+          <div className="flex px-2.5 py-1 bg-yellow-700 md:flex-row flex-col">
             <p className="font-th desktop-s6-th-400 text-tk-black ">
               โดยนโยบายและข้อตกลงที่ควรกำหนด
             </p>
@@ -146,8 +146,7 @@ const SubSectionOne = () => {
           </span>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             ออกแบบให้เหมาะสมกับบริบทของพื้นที่ และกลุ่มเป้าหมาย เช่น
-            พื้นที่การเรียนรู้ที่อยู่ในค่ายทหาร
-            กำหนดประเภทสมาชิกเป็นกำลังพลและครอบครัวและบุคคลทั่วไป
+            พื้นที่การเรียนรู้ที่อยู่ในค่ายทหารกำหนดประเภทสมาชิกเป็นกำลังพลและครอบครัวและบุคคลทั่วไป
             หรือพื้นที่การเรียนรู้ในจังหวัดระยองกำหนดประเภทสมาชิกที่เป็นองค์กรขึ้นมาใหม่
             เนื่องจากจังหวัดระยองมีโรงงานเป็นจำนวนมาก
           </p>
@@ -162,12 +161,12 @@ const SubSectionOne = () => {
             </div>
             <div className="py-2.5 px-[14px] border-x border-t border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                กำหนดกลุ่มที่จะได้รับ การยกเว้นค่าสมาชิก
+                กำหนดกลุ่มที่จะได้รับการยกเว้นค่าสมาชิก
               </p>
             </div>
             <div className="py-2.5 px-[14px] border-x border-t border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                คำนึงถึงค่าเฉลี่ยรายได้ ของคนท้องถิ่น
+                คำนึงถึงค่าเฉลี่ยรายได้ของคนท้องถิ่น
               </p>
             </div>
             <div className="py-2.5 px-[14px] border border-tk-black">
@@ -200,8 +199,9 @@ const SubSectionOne = () => {
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 ค่าประกัน:
               </b>{" "}
-              เงินประกันความเสียหายสำหรับ
-              การยืมหนังสือและสื่อการเรียนรู้ออกไปข้างนอก
+              เงินประกันความเสียหายสำหรับ การยืมหนังสือและสื่อการเรียนรู้ออกไป{" "}
+              <br />
+              ข้างนอก
             </span>
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-black ">
@@ -282,8 +282,9 @@ const SubSectionOne = () => {
         </div>
         <div className="p-10 border-2 border-white bg-orange-50 flex flex-col gap-2.5">
           <span className="font-th desktop-s6-th-400 text-tk-black text-balance py-2.5 px-[14px]">
-            คำนึงถึงกลุ่มเป้าหมาย
-            และคาดการณ์ช่วงเวลาในการใช้บริการของกลุ่มเป้าหมาย
+            คำนึงถึงกลุ่มเป้าหมาย และคาดการณ์ <br />
+            ช่วงเวลาในการใช้บริการของ <br />
+            กลุ่มเป้าหมาย
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black text-balance py-2.5 px-[14px]">
             ปัจจัยภายนอกที่ส่งผลต่อการเปิด-ปิดทำการ เช่น

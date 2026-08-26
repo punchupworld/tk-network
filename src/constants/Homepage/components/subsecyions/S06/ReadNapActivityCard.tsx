@@ -49,8 +49,8 @@ const ReadNapActivityCard = ({ id = "subsubtopic27" }: { id?: string }) => {
             boxClassName="border-y border-white flex flex-col items-center h-full py-2"
           >
             หลีกเลี่ยงใช้ เฟอร์นิเจอร์ ประเภทโต๊ะเก้าอี้ที่มีขนาดเกิน 4
-            ที่นั่งขึ้นไปหรือโซฟา เพื่อไม่ให้การงีบหลับรบกวนกิจกรรมของผู้อื่น
-            ในโต๊ะเดียวกัน
+            ที่นั่งขึ้นไปหรือโซฟา เพื่อไม่ให้การ <br />
+            งีบหลับรบกวนกิจกรรมของผู้อื่น ในโต๊ะเดียวกัน
           </ActivityCell>
           <ActivityCell
             textClassName="text-white"

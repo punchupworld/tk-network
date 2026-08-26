@@ -28,9 +28,11 @@ const OutroSection = () => {
               </div>
             </div>
 
-            <div className="flex w-full flex-col items-center justify-center gap-10 border-x-2 border-b-2 border-white bg-[#5B73ED] p-10 text-white ">
+            <div className="flex w-full flex-col  justify-center gap-10 border-x-2 border-b-2 border-white bg-[#5B73ED] p-10 text-white ">
               <p className="font-th desktop-s6-th-700 text-white">
-                หน่วยงานสามารถใช้คู่มือนี้เป็นแนวทางในการออกแบบและพัฒนาพื้นที่การเรียนรู้ที่มีชีวิต
+                หน่วยงานสามารถใช้คู่มือนี้เป็นแนวทางในการออกแบบและพัฒนาพื้นที่
+                <br />
+                การเรียนรู้ที่มีชีวิต
                 โดยเริ่มต้นจากศักยภาพและบริบทของพื้นที่ที่มีอยู่
               </p>
               <p className="font-th desktop-s6-th-400 text-white">
@@ -46,7 +48,7 @@ const OutroSection = () => {
                     className="h-[110px] w-[110px]"
                     aria-hidden="true"
                   />
-                  <h2 className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-white">
+                  <h2 className="mt-2 absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-white">
                     สนใจ
                     <br />
                     เข้าร่วม

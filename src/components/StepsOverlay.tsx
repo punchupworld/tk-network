@@ -623,13 +623,7 @@ const StepsOverlay = ({
                 width={162}
                 href="#section1"
                 onNavigate={onNavigate}
-                title={
-                  <>
-                    ทำความ
-                    <br />
-                    รู้จัก
-                  </>
-                }
+                title={<>ทำความรู้จัก</>}
                 className="bg-[#FDF1BD] hover:after:border-white"
               >
                 <BudgetTabShape className="pointer-events-none absolute left-[26px] top-[64px]" />
@@ -734,9 +728,9 @@ const StepsOverlay = ({
                     items={TOPIC_ITEMS.t07}
                     onNavigate={onNavigate}
                   >
-                    ตัวอย่าง
+                    ตัวอย่างสร้าง
                     <br />
-                    สร้างแรงบันดาลใจ
+                    แรงบันดาลใจ
                   </TopicBubble>
                 </div>
               </StepColumn>
@@ -777,13 +771,7 @@ const StepsOverlay = ({
                 width={235}
                 href="#section5"
                 onNavigate={onNavigate}
-                title={
-                  <>
-                    เตรียม
-                    <br />
-                    ความพร้อม
-                  </>
-                }
+                title={<>เตรียมความพร้อม</>}
                 className="bg-[#FDF1BD] hover:after:border-white"
               >
                 <TreeShape className="pointer-events-none absolute left-[15px] top-[106px]" />
@@ -817,13 +805,7 @@ const StepsOverlay = ({
                 width={346}
                 href="#section6"
                 onNavigate={onNavigate}
-                title={
-                  <>
-                    เปิด
-                    <br />
-                    บริการ
-                  </>
-                }
+                title={<>เปิดบริการ</>}
                 className="bg-[#FEE6A6] hover:after:border-white"
               >
                 <div className="absolute inset-x-0 top-[125px] h-[421px]">

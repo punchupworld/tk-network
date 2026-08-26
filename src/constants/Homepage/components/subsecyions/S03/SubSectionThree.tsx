@@ -86,6 +86,41 @@ export const SidePanel = () => {
 
 const PLAYSPACE_FRAME = { w: 760, h: 434 };
 const PLAYSPACE_MAP_W = 600;
+const PLAYSPACE_MAP_OVERLAY =
+  "flex h-dvh flex-col items-center justify-center md:gap-80 gap-50";
+
+const PlayspaceMapLabel = ({ hidden = false }: { hidden?: boolean }) => (
+  <div
+    className={`ml-[8%] mt-[15%] w-[28.333%] max-[400px]:mt-[30%] md:mt-[3%] ${
+      hidden ? "invisible" : ""
+    }`}
+    aria-hidden={hidden}
+  >
+    <MapBox width={170} height={110}>
+      <p className="text-balance text-center font-th desktop-s8-th-700 text-white md:desktop-s7-th-700">
+        เพลย์สเปซ
+        <br />
+        (Play Space)
+      </p>
+    </MapBox>
+  </div>
+);
+
+const PlayspaceMapBlurb = ({ hidden = false }: { hidden?: boolean }) => (
+  <div
+    className={`border-2 border-white bg-tk-red px-10 py-5 ${
+      hidden ? "invisible" : ""
+    }`}
+    aria-hidden={hidden}
+  >
+    <p className="text-balance font-th desktop-s7-th-400 text-white">
+      TK Park ไม่ได้เป็นเพียงอาคารที่แบ่งเป็นหลายห้อง
+      แต่เป็นพื้นที่การเรียนรู้ที่ออกแบบให้รองรับประสบการณ์การเรียนรู้หลายรูปแบบ
+      โดยแต่ละโซนมีบทบาทต่างกันและเชื่อมต่อกัน เพื่อให้ผู้ใช้สามารถเลือกเรียนรู้
+      เล่น สร้างสรรค์ และพบปะผู้คนได้ตามความสนใจ
+    </p>
+  </div>
+);
 
 const PlayspaceFrame = ({ children }: { children?: React.ReactNode }) => {
   return (
@@ -178,7 +213,7 @@ const PLAY_ZONES: {
         มาคู่กับที่นั่งนุ่มไว้กลิ้ง <br />
         อ่านมังงะ หรือนอนสบาย
         <br />
-        อ่านกราฟฟิกโนเวล บนบีนแบ็ก
+        อ่านกราฟฟิกโนเวลบนบีนแบ็ก
       </p>
     ),
   },
@@ -192,7 +227,8 @@ const PLAY_ZONES: {
         โซนเกมคอนโซลบริการ เครื่องเพลย์สเตชัน 5 <br />
         นินเทนโด สวิช (Nintendo Switch) และเครื่องเล่น VR (Meta Quest)
         ให้เกมเมอร์เข้ามา สนุกสนานได้ฟรี แค่เพียงจองคิวผ่านเว็บไซต์
-        หรือแอปพลิเคชัน My TK เป็นรายชั่วโมง
+        หรือแอปพลิเคชัน <br />
+        My TK เป็นรายชั่วโมง
       </p>
     ),
   },
@@ -203,9 +239,12 @@ const PLAY_ZONES: {
     sticky: "top-0 z-30",
     body: (
       <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black">
-        ที่นี่ไม่ใช่พื้นที่ดนตรีธรรมดา เพราะมีบริการห้องเก็บเสียงส่วนตัว
-        (Soundbox) พร้อมอุปกรณ์ ใครอยากมาซ้อมดนตรี ร้องเพลง ทำเดโมก็ยังได้
-        และยังมีทรัพยากร เกี่ยวกับดนตรีหลายด้านให้ค้นคว้า อีกด้วย
+        ที่นี่ไม่ใช่พื้นที่ดนตรีธรรมดา เพราะมีบริการห้องเก็บเสียง
+        <br />
+        ส่วนตัว (Soundbox) พร้อมอุปกรณ์ ใครอยากมาซ้อมดนตรี ร้องเพลง
+        ทำเดโมก็ยังได้ และยังมีทรัพยากร เกี่ยวกับดนตรีหลายด้าน
+        <br />
+        ให้ค้นคว้าอีกด้วย
       </p>
     ),
   },
@@ -216,9 +255,12 @@ const PLAY_ZONES: {
     sticky: "top-0 z-40",
     body: (
       <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black">
-        พื้นที่ส่วนกลางสำหรับการพบปะพูดคุย ทำกิจกรรมร่วมกัน
-        และเล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือของนักออกแบบไทยไว้บริการ ถึง 100
-        กว่าเกม
+        พื้นที่ส่วนกลางสำหรับการพบปะ
+        <br />
+        พูดคุย ทำกิจกรรมร่วมกัน และ
+        <br />
+        เล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือของนักออกแบบไทยไว้บริการ ถึง
+        <br /> 100 กว่าเกม
       </p>
     ),
   },
@@ -253,13 +295,14 @@ const SubSectionThree = () => {
             ทำให้เราเข้าใจว่าการเรียนรู้ในยุคปัจจุบันเปลี่ยนแปลงไปมาก
             <br />
             <br />
-            การอ่านหนังสือหรือเรียนรู้ในห้องสมุดแบบดั้งเดิมอาจไม่เพียงพออีกต่อไป
-            TK Park จึงสร้างสรรค์เพลย์สเปซ (Play Space) พื้นที่การเรียนรู้ ขนาด
+            การอ่านหนังสือหรือเรียนรู้ในห้องสมุดแบบดั้งเดิมอาจไม่เพียงพออีกต่อไป{" "}
+            <br />
+            TK Park จึงสร้างสรรค์เพลย์สเปซ (Play Space) พื้นที่การเรียนรู้ขนาด
             330 ตารางเมตร ณ ชั้น 8 ศูนย์การค้าเซ็นทรัลเวิลด์ขึ้นมา
             เพื่อตอบโจทย์การเรียนรู้สมัยใหม่
             ที่อยู่ภายใต้แนวคิดพื้นที่สนุกเชื่อมผู้คน (Your Community
-            Playground) และเป็นตัวอย่างในการสร้างแรงบันดาลใจ
-            ให้หน่วยงานทั่วไทยที่ต้องการสร้างพื้นที่การเรียนรู้ในรูปแบบของตนเอง
+            Playground)
+            และเป็นตัวอย่างในการสร้างแรงบันดาลใจให้หน่วยงานทั่วไทยที่ต้องการสร้างพื้นที่การเรียนรู้ในรูปแบบของตนเอง
           </p>
         </div>
 
@@ -277,25 +320,18 @@ const SubSectionThree = () => {
             </div>
           </div>
 
-          <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center md:gap-80 gap-50">
-            <div className="ml-[8%] mt-[15%] max-[400px]:mt-[30%] md:mt-[3%] w-[28.333%]">
-              <MapBox width={170} height={110}>
-                <p className="font-th desktop-s8-th-700 md:desktop-s7-th-700 text-center text-white text-balance">
-                  เพลย์สเปซ
-                  <br />
-                  (Play Space)
-                </p>
-              </MapBox>
+          <div className="relative z-10">
+            <div className="sticky top-10 z-10">
+              <div className={PLAYSPACE_MAP_OVERLAY}>
+                <PlayspaceMapLabel />
+                <PlayspaceMapBlurb hidden />
+              </div>
             </div>
-
-            <div className="border-2 border-white bg-tk-red px-10 py-5">
-              <p className="text-balance font-th desktop-s7-th-400 text-white">
-                TK Park ไม่ได้เป็นเพียงอาคารที่แบ่งเป็นหลายห้อง
-                แต่เป็นพื้นที่การเรียนรู้ที่ออกแบบให้รองรับประสบการณ์การเรียนรู้หลายรูปแบบ
-                โดยแต่ละโซนมีบทบาทต่างกันและเชื่อมต่อกัน
-                เพื่อให้ผู้ใช้สามารถเลือกเรียนรู้ เล่น สร้างสรรค์
-                และพบปะผู้คนได้ตามความสนใจ
-              </p>
+            <div className="sticky top-10 z-20">
+              <div className={PLAYSPACE_MAP_OVERLAY}>
+                <PlayspaceMapLabel hidden />
+                <PlayspaceMapBlurb />
+              </div>
             </div>
           </div>
         </div>
@@ -307,9 +343,9 @@ const SubSectionThree = () => {
           <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
           <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
             <span className="font-th desktop-s5-th-700 leading-normal">
-              ความสนุก
+              "ความสนุก
               <br />
-              คือจุดเริ่มต้นของการเรียนรู้ที่มีความหมาย
+              คือจุดเริ่มต้นของการเรียนรู้ที่มีความหมาย"
             </span>
           </blockquote>
         </div>
@@ -333,8 +369,9 @@ const SubSectionThree = () => {
             <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
               <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
                 พื้นที่การเรียนรู้รูปแบบใหม่ที่ออกแบบ โดยยึดผู้ใช้เป็นศูนย์กลาง
-                และเปิดโอกาสให้ผู้คนได้เรียนรู้ผ่านการเล่น พบปะแลกเปลี่ยน
-                และต่อยอดความสนใจร่วมกัน <br />
+                และเปิดโอกาสให้ผู้คนได้เรียนรู้ผ่านการเล่น พบปะ
+                <br />
+                แลกเปลี่ยน และต่อยอดความสนใจร่วมกัน <br />
                 <b className="font-th desktop-s6-th-700 text-tk-red text-balance">
                   ภายใต้แนวคิดที่ว่า “ความสนุกคือจุดเริ่มต้น
                   ของการเรียนรู้ที่มีความหมาย”
@@ -342,7 +379,9 @@ const SubSectionThree = () => {
                 <br /> <br />
                 โดยทำหน้าที่เป็นพื้นที่ทดลองเชื่อมโยงผู้คน
                 หลากหลายกลุ่มให้มาพบกัน จนกลายเป็น ชุมชนการเรียนรู้ที่มีชีวิต
-                และเป็นต้นแบบของ การพัฒนาพื้นที่เรียนรู้ในอนาคต
+                และเป็นต้นแบบ
+                <br />
+                ของการพัฒนาพื้นที่เรียนรู้ในอนาคต
               </p>
             </div>
           </div>
@@ -354,14 +393,13 @@ const SubSectionThree = () => {
                 หากจะบอกว่าเพลย์สเปซเป็นสนามเด็กเล่นของชุมชน (Community
                 Playground) ก็คงจะไม่ผิดนัก
               </b>{" "}
-              เพราะที่นี่มีโซนการใช้งานที่ถูกออกแบบให้รองรับกิจกรรมหลากหลาย
-              จนลืมเวลา
+              เพราะที่นี่มีโซนการใช้งานที่ถูกออกแบบให้รองรับกิจกรรมหลากหลายจนลืมเวลา
               <br />
               <br />
               หน่วยงานสามารถศึกษาพื้นที่การทดลองรูปแบบใหม่
               และนำไปปรับใช้ในการออกแบบพื้นที่การเรียนรู้ของตนเอง
               โดยพื้นที่ที่ดีจะต้องทำหน้าที่เป็นตัวกลางเชื่อมโยงผู้คนให้เข้ามาใช้งาน
-              และมีโซนต่างๆ ที่ตอบโจทย์กับกลุ่มเป้าหมายอย่างแท้จริง
+              และมีโซนต่างๆ ที่ตอบโจทย์กลุ่มเป้าหมายอย่างแท้จริง
             </p>
           </div>
 

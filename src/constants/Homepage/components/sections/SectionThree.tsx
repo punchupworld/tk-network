@@ -15,15 +15,17 @@ function SectionCover() {
           ออกแบบพื้นที่ <br />
           และบริการ
         </h2>
-        <p className="w-[124px] font-en desktop-s5-400 leading-normal">
+        <p className="font-en desktop-s5-400 leading-normal">
           Design Your Space
         </p>
         <div className="flex items-end flex-col md:flex-row">
-          <div className="flex flex-col border-white md:border-r-0 border-r">
+          <div className="flex flex-col border-white md:border-r-0 border-r flex-1">
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                จัดการสนทนากลุ่ม (Focus group) ของผู้มีส่วนได้ส่วนเสีย เช่น
-                ชุมชน หน่วยงานรัฐและเอกชน เพื่อทำความเข้าใจลักษณะของพื้นที่
+                จัดการสนทนากลุ่ม
+                <br />
+                (Focus group) ของผู้มีส่วนได้ส่วนเสีย เช่น ชุมชน
+                หน่วยงานรัฐและเอกชน เพื่อทำความเข้าใจลักษณะของพื้นที่
                 และสร้างความรู้สึกเป็นเจ้าของในพื้นที่ การเรียนรู้
               </p>
             </div>
@@ -34,11 +36,15 @@ function SectionCover() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col border-r border-white">
+          <div className="flex flex-col border-r border-white flex-1">
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                วิเคราะห์ข้อมูลพื้นฐานชุมชนเป็นสารตั้งต้นเพื่อ
-                แตกย่อยรายละเอียดที่ ต้องพัฒนา เช่น ปัญหาสิ่งแวดล้อมใน พื้นที่
+                วิเคราะห์ข้อมูลพื้นฐานชุมชน
+                <br />
+                เป็นสารตั้งต้นเพื่อ แตกย่อย
+                <br />
+                รายละเอียดที่ต้องพัฒนา เช่น ปัญหาสิ่งแวดล้อมใน พื้นที่
+                <br />
                 แหล่งทรัพยากร สัดส่วนของครัวเรือน ที่มีเด็กอายุ 0-6 ปี
               </p>
             </div>
@@ -50,7 +56,9 @@ function SectionCover() {
             </div>
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                ออกไปศึกษาดูงานพื้นที่ การเรียนรู้ที่เกี่ยวข้อง
+                ออกไปศึกษาดูงานพื้นที่
+                <br />
+                การเรียนรู้ที่เกี่ยวข้อง
               </p>
             </div>
             <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
@@ -80,7 +88,7 @@ function QuoteSection() {
       <blockquote className="relative flex w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-4 text-center text-white md:absolute md:left-0 md:top-[18.0952%] md:h-[81.9048%] md:p-2.5">
         <span className="font-th mobile-s5-th-700 md:desktop-s5-th-700 leading-normal">
           หัวใจของการออกแบบพื้นที่การเรียนรู้ คือ <br />
-          พื้นที่(Space){" "}
+          พื้นที่ (Space){" "}
           <b className="font-th mobile-s5-th-700 md:desktop-s5-th-700 text-tk-black">
             ที่ยืดหยุ่น
           </b>
@@ -91,7 +99,7 @@ function QuoteSection() {
           </b>
           ผู้ใช้
           <br />
-          และการบริหาร(Management) <br />
+          และการบริหาร (Management) <br />
           และบุคลากรที่พร้อม
           <b className="font-th mobile-s5-th-700 md:desktop-s5-th-700 text-tk-black">
             ขับเคลื่อน

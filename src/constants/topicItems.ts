@@ -8,7 +8,7 @@ export const TOPIC_ITEMS = {
     { id: "subsubtopic2", label: "นิยาม" },
     { id: "subsubtopic3", label: "หัวใจสำคัญ" },
   ],
-  t02: [{ id: "subsubtopic1", label: "ทำความรู้จัก เครือข่าย TK Park" }],
+  t02: [{ id: "subsubtopic1", label: "ทำความรู้จักเครือข่าย TK Park" }],
   t03: [
     { id: "subsubtopic4", label: "เต็มรูปแบบ" },
     { id: "subsubtopic5", label: "พัฒนาและต่อยอด" },

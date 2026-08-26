@@ -64,13 +64,34 @@ const AGENCY_ITEMS = [
 ];
 
 const TK_PARK_ITEMS = [
-  "กิจกรรมสำรวจความต้องการและระดมความเห็น",
-  "ถ่ายทอดองค์ความรู้ให้ บุคลากร",
-  "ครุภัณฑ์สำนักงาน ครุภัณฑ์เกี่ยวกับระบบ ห้องสมุดอัตโนมัติ",
-  "หนังสือและสื่อการเรียนรู้ตามงบประมาณรายปี",
+  <>
+    กิจกรรมสำรวจ
+    <br />
+    ความต้องการ
+    <br />
+    และระดมความเห็น
+  </>,
+  <>
+    ถ่ายทอดองค์ความรู้
+    <br />
+    ให้บุคลากร
+  </>,
+  <>
+    ครุภัณฑ์สำนักงาน <br />
+    ครุภัณฑ์เกี่ยวกับ <br />
+    ระบบห้องสมุดอัตโนมัติ
+  </>,
+  <>
+    หนังสือและสื่อการเรียนรู้ <br />
+    ตามงบประมาณรายปี
+  </>,
   "ระบบบริหารห้องสมุด อัตโนมัติและระบบสมาชิก",
   "กิจกรรมส่งเสริมการอ่าน กิจกรรมร่วมกับ TK Park ที่กรุงเทพฯ และเครือข่าย",
-  "ประชาสัมพันธ์กิจกรรมทั้ง ทางช่องทางออนไลน์และ ออฟไลน์",
+  <>
+    ประชาสัมพันธ์กิจกรรม
+    <br />
+    ทั้งทางช่องทางออนไลน์และ ออฟไลน์
+  </>,
   "ติดตามประเมินผลเครือข่าย",
 ];
 
@@ -80,7 +101,7 @@ const ChecklistRow = ({
   className = "",
 }: {
   index: number;
-  label: string;
+  label: React.ReactNode;
   className?: string;
 }) => {
   return (
@@ -131,8 +152,9 @@ const SubSectionOne = () => {
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
           เครือข่ายสามารถเลือกรูปแบบของการเข้าร่วมได้ตามความเหมาะสม
-          เพื่อความสอดคล้องกับความพร้อมและศักยภาพของพื้นที่การเรียนรู้ในจังหวัดของตน
-          โดย TK Park
+          <br />
+          เพื่อความสอดคล้องกับความพร้อมและศักยภาพของพื้นที่การเรียนรู้ <br />
+          ในจังหวัดของตน โดย TK Park
           มีรูปแบบการเข้าร่วมที่สามารถยืดหยุ่นได้ตามลักษณะเฉพาะของหน่วยงาน
         </p>
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
@@ -146,7 +168,7 @@ const SubSectionOne = () => {
                 className="w-[110px] h-[110px] "
                 aria-hidden="true"
               />
-              <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+              <p className=" absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
                 เต็มรูปแบบ
               </p>
             </div>
@@ -156,7 +178,7 @@ const SubSectionOne = () => {
                 className="w-[110px] h-[110px] "
                 aria-hidden="true"
               />
-              <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+              <p className="mt-2 absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
                 พัฒนา
                 <br />
                 และต่อยอด
@@ -168,7 +190,7 @@ const SubSectionOne = () => {
                 className="w-[110px] h-[110px] "
                 aria-hidden="true"
               />
-              <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
+              <p className="mt-2 absolute inset-0 flex items-center justify-center text-center font-th desktop-s6-th-700 text-tk-black">
                 พันธมิตร
                 <br />
                 การเรียนรู้
@@ -191,13 +213,15 @@ const SubSectionOne = () => {
           </div>
         </div>
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
-          <p className="font-th desktop-s6-th-400 text-tk-black text-balance pb-20">
-            สำหรับหน่วยงานที่ต้องการเดินตามรอย TK Park ทั้งในด้านพื้นที่ บริการ
+          <p className="font-th desktop-s6-th-400 text-tk-black pb-20">
+            สำหรับหน่วยงานที่ต้องการเดินตามรอย
+            <br /> TK Park ทั้งในด้านพื้นที่ บริการ
             การบริหารจัดการแบบครบจบทุกองค์ประกอบ
-            แผนนี้เหมาะกับเครือข่ายที่ต้องการนำระบบเต็ม
             <br />
-            รูปแบบของ TK Park ไปใช้ และใช้คำว่า TK Park
-            นำหน้าชื่อจังหวัดของตนเอง เช่น TK Park ยะลา
+            แผนนี้เหมาะกับเครือข่ายที่ต้องการนำ <br />
+            ระบบเต็มรูปแบบของ TK Park ไปใช้ <br />
+            และใช้คำว่า TK Park นำหน้าชื่อจังหวัด <br />
+            ของตนเอง เช่น TK Park ยะลา
           </p>
           <div className="flex items-center justify-end">
             <div className="rounded-[5px] border border-[#6F6F6F] px-2.5 py-1 w-fit">
@@ -252,7 +276,7 @@ const SubSectionOne = () => {
               </div>
               {TK_PARK_ITEMS.map((label, index) => (
                 <ChecklistRow
-                  key={label}
+                  key={index}
                   index={index + 1}
                   label={label}
                   className={`border-x ${
@@ -301,7 +325,10 @@ const SubSectionOne = () => {
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             สำหรับหน่วยงานที่ต้องการนำองค์ประกอบของ TK Park
-            ไปใช้กับพื้นที่การเรียนรู้เดิมให้หลากหลายและทันสมัยมากขึ้น
+            ไปใช้กับพื้นที่การเรียนรู้เดิม
+            <br />
+            ให้หลากหลายและทันสมัยมากขึ้น
+            <br />
             อาจนำจุดเด่นบางด้านไปใช้ร่วมกับการบริหารจัดการเดิม
             หรือเติมฟังก์ชันให้พื้นที่การเรียนรู้สนุกขึ้น
             แผนนี้เหมาะกับเครือข่ายที่ต้องการยกระดับ
@@ -336,9 +363,13 @@ const SubSectionOne = () => {
             สำหรับหน่วยงานที่ต้องการนำแนวคิด
             <br />
             ห้องสมุดมีชีวิตไปใช้ เน้นกิจกรรมสร้างสรรค์ แลกเปลี่ยนองค์ความรู้
-            แผนนี้เหมาะกับเครือข่ายที่อาจจะมีพื้นที่การเรียนรู้เดิม
+            แผนนี้เหมาะกับ
+            <br />
+            เครือข่ายที่อาจจะมีพื้นที่การเรียนรู้เดิม
+            <br />
             (หรืออยู่ภายใต้หน่วยงานอื่น) ไม่ได้ใช้ระบบของ TK Park
-            แต่ต้องการนำกิจกรรมรายปี หรือนวัตกรรมบางอย่างของ TK Park ไปปรับใช้
+            แต่ต้องการนำกิจกรรมรายปี หรือนวัตกรรมบางอย่างของ TK Park
+            <br /> ไปปรับใช้
           </p>
           <div className="flex items-center justify-end">
             <div className="rounded-[5px] border border-[#6F6F6F] px-2.5 py-1 w-fit">

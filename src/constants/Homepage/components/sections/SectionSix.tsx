@@ -115,9 +115,7 @@ function SectionCover() {
       <CoverCap />
       <div className="flex w-full flex-col items-start gap-2.5 border-x-2 border-white bg-[#4d2f2f] p-10 text-white">
         <h2 className="font-th desktop-s3-th-700 leading-[1.35]">เปิดบริการ</h2>
-        <p className="w-[124px] font-en desktop-s5-400 leading-normal">
-          The Opening
-        </p>
+        <p className=" font-en desktop-s5-400 leading-normal">The Opening</p>
         <div className="flex w-full flex-col items-stretch md:flex-row md:items-end">
           <div className="flex w-full flex-col md:w-auto">
             <div className="border-x border-t border-white px-[14px] py-[10px] md:border-b md:border-r-0">
@@ -157,7 +155,7 @@ function SectionCover() {
           <div className="flex w-full flex-col md:w-auto md:flex-1">
             <div className="border border-white px-[14px] py-[10px] md:border-l-0">
               <p className="font-th desktop-s6-th-400 text-white">
-                ประชาสัมพันธ์และจัด กิจกรรม <br className="hidden md:inline" />
+                ประชาสัมพันธ์และจัดกิจกรรม <br className="hidden md:inline" />
                 เปิดตัว
               </p>
             </div>
@@ -182,10 +180,10 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
         <p className="font-th desktop-s5-th-700 leading-normal">
-          การเปิดบริการ
+          "การเปิดบริการ
           <br />
           คือการส่งมอบพื้นที่แห่งการเรียนรู้ให้ชุมชน <br />
-          และเปิดโอกาสให้การเรียนรู้เติบโตไปพร้อมกับผู้คน
+          และเปิดโอกาสให้การเรียนรู้เติบโตไปพร้อมกับผู้คน"
         </p>
       </blockquote>
     </div>

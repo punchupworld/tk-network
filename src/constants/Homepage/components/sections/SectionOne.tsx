@@ -35,7 +35,7 @@ function SectionCover() {
         <h2 className="font-th desktop-s3-th-700 leading-[1.35]">
           ทำความรู้จัก
         </h2>
-        <p className="w-[124px] font-en desktop-s5-400 leading-normal">
+        <p className="w-[150px] font-en desktop-s5-400 leading-normal">
           Get to Know
         </p>
         <div className="flex w-full items-end">

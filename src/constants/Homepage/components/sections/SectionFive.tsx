@@ -114,11 +114,7 @@ function SectionCover() {
         <h2 className="font-th desktop-s3-th-700 leading-[1.35]">
           เตรียมความพร้อม
         </h2>
-        <p className="font-en desktop-s5-400 leading-normal">
-          Get
-          <br />
-          Ready
-        </p>
+        <p className="font-en desktop-s5-400 leading-normal">Get Ready</p>
         <div className="flex flex-col justify-end items-end w-full">
           <div className="flex flex-col">
             <div className="border-x border-white border-t px-[14px] py-[6px]">
@@ -169,11 +165,11 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
         <p className="font-th desktop-s5-th-700 leading-normal">
-          นโยบายที่ชัดเจนคือก้าวแรก
+          "นโยบายที่ชัดเจนคือก้าวแรก
           <br />
           สู่การสร้างพื้นที่การเรียนรู้ที่ตอบโจทย์ชุมชน
           <br />
-          อย่างแท้จริง
+          อย่างแท้จริง"
         </p>
       </blockquote>
     </div>
