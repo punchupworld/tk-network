@@ -45,9 +45,9 @@ const SubSectionOne = () => {
           เช่น <br className="sm:hidden block" /> การบริการต้องเป็นแบบไหน{" "}
           <br className="sm:hidden block" />
           พื้นที่มีขนาดเท่าไหร่
-          <br className="hidden sm:block" />
+          {/* <br className="hidden sm:block" /> */}
           ลักษณะใด
-          <br className="sm:hidden block" />
+          <br />
           จึงจะตอบโจทย์ แล้วโปรแกรม
           <br className="sm:hidden block" />
           กิจกรรมล่ะ จะออกแบบอย่างไรดี

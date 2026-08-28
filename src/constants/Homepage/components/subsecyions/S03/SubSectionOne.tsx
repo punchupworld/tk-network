@@ -226,9 +226,9 @@ const SubSectionOne = () => {
             <br className="hidden sm:block" />
             หรือนำข้อมูล
             <br className="sm:hidden block" />
-            ของพื้นที่การเรียนรู้ไปเป็น
-            <br className="sm:hidden block" />
-            ส่วนหนึ่งของแผนการทำ CSR
+            ของพื้นที่การเรียนรู้ไป
+            <br />
+            เป็นส่วนหนึ่งของแผนการทำ CSR
             <br className="sm:hidden block" /> ของบริษัท
           </p>
         </div>
@@ -401,8 +401,8 @@ const SubSectionOne = () => {
               แบบดั้งเดิมพร้อม <br className="hidden sm:block" />
               บริการใหม่ๆ <br className="sm:hidden block" />
               ที่ก้าวไปพร้อมกับยุคสมัย เช่น <br className="sm:hidden block" />
-              ห้องนิทาน <br className="hidden sm:block" />
-              (Children&apos;s story <br className="sm:hidden block" />
+              ห้องนิทาน (Children&apos;s story{" "}
+              <br className="sm:hidden block" />
               room) หรือสนามเด็กเล่น <br className="sm:hidden block" />
               สาธารณะบนระเบียงชั้น 3 <br className="sm:hidden block" />
               ของห้องสมุด พื้นที่สำหรับเด็ก
