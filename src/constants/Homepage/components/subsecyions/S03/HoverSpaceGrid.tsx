@@ -369,12 +369,13 @@ const HoverSpaceGrid = () => {
                 <br className="sm:hidden block" />
                 เด็กๆรู้สึกสนุกสนาน และเหมาะ
                 <br className="sm:hidden block" />
-                กับช่วงวัย ผ่านการเล่น สระน้ำ
+                กับช่วงวัยผ่านการเล่น สระน้ำ
                 <br className="sm:hidden block" />
                 ความรู้ (Reading Pool)
                 <br />
                 บ้านต้นไม้ และบันไดรักการอ่าน <br className="sm:hidden block" />
-                พร้อมกิจกรรมฝึกทักษะพัฒนา <br className="sm:hidden block" />
+                พร้อมกิจกรรมฝึกทักษะพัฒนา
+                <br className="sm:hidden block" />
                 สมองแบบบูรณาการ <br className="sm:hidden block" />
                 (Brain-based Learning)
               </>
@@ -382,9 +383,11 @@ const HoverSpaceGrid = () => {
             image={BOX_IMAGE_2}
             tips={[
               <>
-                ออกแบบสภาพแวดล้อมโดย <br className="sm:hidden block" />
-                เน้นที่ความปลอดภัยของเด็ก <br className="sm:hidden block" />
-                เป็นสำคัญ และจัดหาเฟอร์นิเจอร์{" "}
+                ออกแบบสภาพแวดล้อมโดย
+                <br className="sm:hidden block" />
+                เน้นที่ความปลอดภัยของเด็ก
+                <br className="sm:hidden block" />
+                เป็นสำคัญ และจัดหาเฟอร์นิเจอร์
                 <br className="sm:hidden block" />
                 ที่เหมาะสมกับการใช้งาน
               </>,
@@ -483,7 +486,7 @@ const HoverSpaceGrid = () => {
                 มีเจ้าหน้าที่เทคนิคคอยดูแล
               </>,
               <>
-                เฟอร์นิเจอร์สำหรับการนั่งทำงาน{" "}
+                เฟอร์นิเจอร์สำหรับการนั่งทำงาน
                 <br className="sm:hidden block" />
                 กับคอมพิวเตอร์
               </>,
@@ -495,14 +498,16 @@ const HoverSpaceGrid = () => {
             title="ห้องสมุดดนตรี"
             description={
               <>
-                พื้นที่ที่มีทั้งหนังสือ แท็ปเล็ต <br />
+                พื้นที่ที่มีทั้งหนังสือ แท็ปเล็ต 
+                {/* <br /> */}
                 ห้องสมุดดนตรี TK และ
-                <br />
+                {/* <br /> */}
                 เครื่องดนตรีให้ลองสัมผัส
-                <br />
+                {/* <br /> */}
                 ผู้ใช้งาน สามารถค้นคว้าข้อมูลเกี่ยวกับดนตรีจากทุกมุมโลก และ
-                <br />
-                ที่สำคัญคือสามารถ ร้อง เล่น ฟัง <br />
+                {/* <br /> */}
+                ที่สำคัญคือสามารถ ร้อง เล่น ฟัง 
+                {/* <br /> */}
                 ในพื้นที่นี้ได้
               </>
             }
