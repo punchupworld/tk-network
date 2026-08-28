@@ -48,7 +48,7 @@ const SubSectionTwo = () => {
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
           ทุกอย่างต้องเริ่มจาก
-          <br className="sm:hidden block" /> “ความพร้อมของเครือข่าย”
+          <br className="sm:hidden block" /> “ความพร้อมของเครือข่าย”{" "}
           <br className="sm:hidden block" />
           เนื่องจากความแตกต่าง
           <br className="hidden sm:block" />
@@ -70,12 +70,12 @@ const SubSectionTwo = () => {
           <br className="sm:hidden block" />
           หัวใจของชุมชนต้องการอะไร
           <br className="sm:hidden block" />
-          ต้องดำเนินการอย่างไรบ้าง
-          <br className="sm:hidden block" />
+          ต้องดำเนินการอย่างไรบ้าง <br className="sm:hidden block" />
           โดยตัวอย่างด้านล่างเหล่านี้
           <br className="sm:hidden block" />
-          คือเครื่องมือที่ทาง TK Park
-          <br className="sm:hidden block" />
+          คือ
+          <br className="hidden sm:block" />
+          เครื่องมือที่ทาง TK Park <br className="sm:hidden block" />
           สามารถให้คำแนะนำตามความ
           <br className="sm:hidden block" />
           เหมาะสม
@@ -136,22 +136,21 @@ const SubSectionTwo = () => {
             <br className="sm:hidden block" />
             และทดลองใช้งานจากพื้นที่
             <br className="sm:hidden block" />
-            การเรียนรู้ ทั่วประเทศ เพื่อให้
+            การเรียนรู้ทั่วประเทศ เพื่อให้
             <br className="sm:hidden block" />
             หน่วยงานสามารถนำไปประยุกต์
             <br className="sm:hidden block" />
-            ใช้ได้ อย่างเหมาะสม
+            ใช้ได้อย่างเหมาะสม
             <br className="hidden sm:block" />
             กับบริบท
             <br className="sm:hidden block" />
             ของตนเอง ทั้งกิจกรรมส่งเสริม
             <br className="sm:hidden block" />
             การอ่าน การเรียนรู้เชิงสร้างสรรค์ <br className="sm:hidden block" />
-            เวิร์กช็อป การเรียนรู้ผ่านการเล่น
-            <br className="sm:hidden block" />
+            เวิร์กช็อป การเรียนรู้ผ่านการเล่น <br className="sm:hidden block" />
             ตลอดจนกิจกรรมที่ช่วยสร้าง
             <br className="sm:hidden block" />
-            การมีส่วนร่วม ของคนในชุมชน
+            การมีส่วนร่วมของคนในชุมชน
             <br /> โดยสามารถเลือกปรับรูปแบบ
             <br className="sm:hidden block" /> ระยะเวลา และกลุ่มเป้าหมาย
             <br className="sm:hidden block" />
@@ -179,7 +178,8 @@ const SubSectionTwo = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             ระบบและเครื่องมือ
             <br />
-            เพื่อช่วยให้การทำงาน <br className="sm:hidden block" />
+            เพื่อช่วยให้การทำงาน
+            <br className="sm:hidden block" />
             สะดวกสบายขึ้น
           </p>
         </div>
@@ -187,7 +187,7 @@ const SubSectionTwo = () => {
       <div className="flex w-full flex-col items-start" id="subsubtopic7">
         <CoverCap color="#F5333F" />
         <div className="flex w-full flex-col items-start gap-10 border-x-2 border-white bg-[#F5333F] px-10 pt-5 pb-10 text-white">
-          <div className="flex flex-col sm:flex-row">
+          <div className="flex flex-col">
             <h2 className="font-th desktop-s6-th-400 px-2.5 py-1 bg-tk-black text-white">
               ระบบและเครื่องมือที่จะได้รับ
             </h2>
@@ -210,7 +210,7 @@ const SubSectionTwo = () => {
                 <br className="sm:hidden block" />
                 บรรณารักษ์จัดการทรัพยากร
                 <br />
-                อัตโนมัติ ภายในพื้นที่
+                อัตโนมัติภายในพื้นที่
                 <br className="sm:hidden block" />
                 การเรียนรู้อย่างครอบคลุม
               </div>
@@ -256,10 +256,13 @@ const SubSectionTwo = () => {
                 ใช้บัตรสมาชิกดิจิทัล <br className="sm:hidden block" />
                 (QR Code) ตรวจสอบข้อมูล
                 <br className="sm:hidden block" />
-                สมาชิก และเชื่อมต่อบริการ
+                สมาชิก <br className="hidden sm:block" />
+                และเชื่อมต่อบริการ
                 <br className="sm:hidden block" />
                 อ่านหนังสือออนไลน์ <br className="sm:hidden block" />
-                (TK Read) ได้ทุกที่ทุกเวลา
+                (TK Read) ได้ทุกที่
+                <br className="hidden sm:block" />
+                ทุกเวลา
               </div>
             </div>
           </div>
@@ -324,15 +327,17 @@ const SubSectionTwo = () => {
             ก่อนเปิดบริการเกี่ยวกับ
             <br className="sm:hidden block" />
             การทำงานหลังบ้าน
-            <br />
-            ที่ครอบคลุมทุกด้าน
+            <br className="sm:hidden block" />
+            ที่ครอบคลุม
+            <br className="hidden sm:block" />
+            ทุกด้าน
           </p>
         </div>
       </div>
       <div className="relative flex w-full flex-col items-start">
         <CoverSub color="#FEDFCA" />
         <div className="absolute right-[40px] top-[48px]">
-          <div className=" px-5 py-1.5 bg-tk-black flex md:flex-row flex-col md:gap-5 gap-0">
+          <div className=" px-5 py-1.5 bg-tk-black flex md:flex-row flex-col md:gap-2 gap-0">
             <h2 className="font-th desktop-s6-th-400 text-white">
               On-the-Job Training
             </h2>
@@ -415,8 +420,7 @@ const SubSectionTwo = () => {
                 <br className="sm:hidden block" />
                 ให้สอดคล้องกับบริบทของ
                 <br className="sm:hidden block" />
-                พื้นที่และกลุ่มเป้าหมาย
-                <br className="sm:hidden block" />
+                พื้นที่และกลุ่มเป้าหมาย <br className="sm:hidden block" />
                 และสร้างการมีส่วนร่วม
                 <br className="sm:hidden block" />
                 กับทุกภาคส่วนในพื้นที่ <br className="sm:hidden block" />
@@ -439,8 +443,7 @@ const SubSectionTwo = () => {
                 และการใช้อัตลักษณ์ของ
                 <br className="sm:hidden block" /> องค์กร (Corporate{" "}
                 <br className="sm:hidden block" />
-                Identity: CI) ของ TK Park
-                <br className="sm:hidden block" />
+                Identity: CI) ของ TK Park <br className="sm:hidden block" />
                 พัฒนาความรู้ความเข้าใจ
                 <br className="sm:hidden block" />
                 เกี่ยวกับการสื่อสาร
@@ -456,7 +459,9 @@ const SubSectionTwo = () => {
                 <br className="sm:hidden block" />
                 ตราสัญลักษณ์ สี รูปแบบ
                 <br className="sm:hidden block" />
-                ตัวอักษร และองค์ประกอบ
+                ตัวอักษร และ
+                <br className="hidden sm:block" />
+                องค์ประกอบ
                 <br className="sm:hidden block" />
                 การสื่อสารต่างๆ
               </p>
@@ -472,27 +477,26 @@ const SubSectionTwo = () => {
               <p className="font-th desktop-s6-th-400 text-tk-black">
                 เรียนรู้งานบริการจากพื้นที่
                 <br className="sm:hidden block" />
-                ต้นแบบต่างๆ ของ TK Park
-                <br className="sm:hidden block" />
+                ต้นแบบต่างๆ ของ <br className="hidden sm:block" />
+                TK Park <br className="sm:hidden block" />
                 เรียนรู้การปฏิบัติงานจริง
                 <br className="sm:hidden block" />
-                จากอุทยานการเรียนรู้ <br />
-                TK Park ชั้น 8 ศูนย์การค้า
+                จากอุทยาน
+                <br className="hidden sm:block" />
+                การเรียนรู้ TK Park ชั้น 8 ศูนย์การค้า
                 <br className="sm:hidden block" />
-                เซ็นทรัลเวิลด์ ซึ่งเป็นพื้นที่
+                เซ็นทรัลเวิลด์ <br className="hidden sm:block" />
+                ซึ่งเป็นพื้นที่
                 <br className="sm:hidden block" />
                 ต้นแบบ โดยสังเกตการณ์และ
                 <br className="sm:hidden block" />
-                ฝึกปฏิบัติงานภายใต้ <br className="hidden sm:block" />
-                การดูแล
+                ฝึกปฏิบัติงานภายใต้การดูแล
                 <br className="sm:hidden block" />
                 ของเจ้าหน้าที่ผู้มี
                 <br className="sm:hidden block" />
-                ประสบการณ์เพื่อให้บริการ
+                ประสบการณ์ เพื่อให้บริการผู้ใช้งานได้อย่างตรงจุด{" "}
                 <br className="sm:hidden block" />
-                ผู้ใช้งานได้อย่างตรงจุด <br className="sm:hidden block" />
-                รวมถึงการบริหารจัดการ <br />
-                พื้นที่การเรียนรู้ และปัญหา
+                รวมถึงการบริหารจัดการ พื้นที่การเรียนรู้ และปัญหา
                 <br className="sm:hidden block" />
                 เฉพาะหน้าต่างๆ
               </p>

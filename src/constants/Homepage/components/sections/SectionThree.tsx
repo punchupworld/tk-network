@@ -24,16 +24,16 @@ function SectionCover() {
               <p className="font-th desktop-s6-th-400 text-white">
                 จัดการสนทนากลุ่ม
                 <br />
-                (Focus group) ของผู้มี
+                (Focus Group) ของผู้มี
                 <br className="sm:hidden block" />
-                ส่วนได้ส่วนเสีย เช่น ชุมชน
-                <br className="sm:hidden block" />
+                ส่วนได้ส่วนเสีย เช่น ชุมชน <br className="sm:hidden block" />
                 หน่วยงานรัฐและเอกชน <br className="sm:hidden block" />
                 เพื่อทำความเข้าใจลักษณะ
                 <br className="sm:hidden block" />
                 ของพื้นที่ และสร้างความรู้สึก
                 <br className="sm:hidden block" />
-                เป็นเจ้าของในพื้นที่ <br className="sm:hidden block" />
+                เป็นเจ้าของในพื้นที่
+                <br className="sm:hidden block" />
                 การเรียนรู้
               </p>
             </div>
@@ -54,24 +54,30 @@ function SectionCover() {
               <p className="font-th desktop-s6-th-400 text-white">
                 วิเคราะห์ข้อมูลพื้นฐานชุมชน
                 <br />
-                เป็นสารตั้งต้นเพื่อ แตกย่อย
+                เป็นสารตั้งต้นเพื่อแตกย่อย
                 <br />
                 รายละเอียดที่ต้องพัฒนา <br className="sm:hidden block" />
-                เช่น ปัญหาสิ่งแวดล้อมใน <br className="sm:hidden block" />
+                เช่น ปัญหาสิ่งแวดล้อมใน
+                <br className="sm:hidden block" />
                 พื้นที่
                 <br className="hidden sm:block" />
                 แหล่งทรัพยากร <br className="sm:hidden block" />
-                สัดส่วนของครัวเรือน <br className="sm:hidden block" />
+                สัดส่วนของ
+                <br className="hidden sm:block" />
+                ครัวเรือน
+                <br className="sm:hidden block" />
                 ที่มีเด็กอายุ 0-6 ปี
               </p>
             </div>
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                ศึกษาข้อมูลรอบด้าน <br className="sm:hidden block" />
+                ศึกษาข้อมูลรอบด้าน
+                <br className="sm:hidden block" />
                 เกี่ยวกับพื้นที่ เช่น <br className="sm:hidden block" />
                 ยุทธศาสตร์จังหวัด <br className="sm:hidden block" />
                 แผนพัฒนาภาค <br className="sm:hidden block" />
-                หรือแผนพัฒนาท้องถิ่น <br className="sm:hidden block" />
+                หรือแผนพัฒนาท้องถิ่น
+                <br className="sm:hidden block" />
                 ในระยะ 3-5 ปี
               </p>
             </div>
@@ -85,7 +91,8 @@ function SectionCover() {
             <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 สรุปรูปแบบของพื้นที่ <br className="sm:hidden block" />
-                บริการและแนวทางการ <br className="sm:hidden block" />
+                บริการ และแนวทางการ
+                <br className="sm:hidden block" />
                 ออกแบบ
               </p>
             </div>

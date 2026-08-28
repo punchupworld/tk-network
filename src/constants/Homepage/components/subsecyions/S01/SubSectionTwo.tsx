@@ -72,7 +72,8 @@ const SubSectionTwo = () => {
           <br className="sm:hidden block" />
           ห้องสมุดที่มีแต่หนังสือให้เป็น
           <br className="sm:hidden block" />
-          พื้นที่ของการแลกเปลี่ยน <br className="sm:hidden block" />
+          พื้นที่ของการแลกเปลี่ยน
+          <br className="sm:hidden block" />
           เรียนรู้ รวมผู้คนมาร่วมงาน
           <br className="sm:hidden block" />
           สร้างสรรค์ (Co-working and <br className="sm:hidden block" />

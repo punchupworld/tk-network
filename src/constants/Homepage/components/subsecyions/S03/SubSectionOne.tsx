@@ -86,7 +86,7 @@ const SubSectionOne = () => {
         <p className="font-th desktop-s6-th-400 text-tk-black">
           การพัฒนาพื้นที่การเรียนรู้
           <br className="sm:hidden block" />
-          อย่างยั่งยืน จำเป็นต้องผสาน
+          อย่างยั่งยืนจำเป็นต้องผสาน
           <br className="sm:hidden block" />
           การออกแบบพื้นที่
           <br className="hidden sm:block" />
@@ -187,7 +187,7 @@ const SubSectionOne = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             ไม่ว่าหน่วยงานลักษณะไหน
             <br className="sm:hidden block" />
-            ก็สามารถเข้าร่วม เครือข่าย <br className="sm:hidden block" />
+            ก็สามารถเข้าร่วมเครือข่าย <br className="sm:hidden block" />
             TK Park ได้ ตราบใดที่สนใจและ
             <br className="sm:hidden block" />
             ต้องการสร้างพื้นที่การเรียนรู้
@@ -222,14 +222,14 @@ const SubSectionOne = () => {
             <br className="sm:hidden block" />
             เป้าหมายหลัก สนับสนุน
             <br className="sm:hidden block" />
-            การเรียนรู้นอกห้องเรียนใน
+            การเรียนรู้นอกห้องเรียนในรูปแบบต่างๆ{" "}
             <br className="hidden sm:block" />
-            รูปแบบต่างๆ หรือนำข้อมูล
+            หรือนำข้อมูล
             <br className="sm:hidden block" />
             ของพื้นที่การเรียนรู้ไปเป็น
             <br className="sm:hidden block" />
             ส่วนหนึ่งของแผนการทำ CSR
-            <br /> ของบริษัท
+            <br className="sm:hidden block" /> ของบริษัท
           </p>
         </div>
       </div>
@@ -263,7 +263,7 @@ const SubSectionOne = () => {
               พื้นที่สาธารณะ (Public Space) <br className="sm:hidden block" />
               ที่สร้าง
               <br className="hidden sm:block" />
-              การมี ส่วนร่วมของคน
+              การมีส่วนร่วมของคน
               <br className="sm:hidden block" />
               ในชุมชน จุดนัดพบปะสังสรรค์
               <br className="sm:hidden block" />
@@ -271,8 +271,8 @@ const SubSectionOne = () => {
               หรือ
               <br className="sm:hidden block" />
               เมกเกอร์สเปซ (Makerspace) <br />
-              ดังนั้นพื้นที่การเรียนรู้ <br className="hidden sm:block" />
-              ควรคิดถึง
+              ดังนั้นพื้นที่การเรียนรู้ควรคิดถึง
+              <br className="hidden sm:block" />
               <br className="sm:hidden block" />
               กลุ่มเป้าหมายก่อน และควร
               <br className="sm:hidden block" />
@@ -643,7 +643,9 @@ const SubSectionOne = () => {
               การเรียนรู้โดยไม่ตั้งใจ และ <br />
               สอดแทรกไปกับการทำกิจกรรม
               <br className="sm:hidden block" />
-              รูปแบบต่างๆ ได้
+              รูปแบบ
+              <br className="hidden sm:block" />
+              ต่างๆ ได้
             </p>
           </div>
         </div>
@@ -680,15 +682,14 @@ const SubSectionOne = () => {
               <div className="flex flex-col justify-end">
                 <p className="border-x border-t  border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   คำนึงถึงความสนใจของ <br />
-                  กลุ่มผู้ใช้งาน และ
+                  กลุ่มผู้ใช้งานและ
                   <br className="sm:hidden block" />
                   สภาพแวดล้อมเป็นหลัก
                 </p>
                 <p className="border-x border-t  border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   จัดชั้นหนังสือให้ดึงดูด <br />
                   ความสนใจเด็ก เช่น <br className="sm:hidden block" />
-                  วางหนังสือหันหน้าปกออก
-                  <br className="sm:hidden block" />
+                  วางหนังสือหันหน้าปกออก <br className="sm:hidden block" />
                   หมั่นเปลี่ยนหนังสือ
                   <br className="sm:hidden block" />
                   เป็นหนังสือออกใหม่
@@ -729,7 +730,9 @@ const SubSectionOne = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             งบประมาณมักจะเป็นประเด็น
             <br className="sm:hidden block" />
-            แรกๆ ที่เครือข่ายต้องการทราบ
+            แรกๆ ที่
+            <br className="hidden sm:block" />
+            เครือข่ายต้องการทราบ
             <br className="sm:hidden block" />
             ข้อมูล โดยหน่วยงาน
             <br className="hidden sm:block" />
@@ -747,7 +750,7 @@ const SubSectionOne = () => {
             <br className="sm:hidden block" />
             หลัก ยังต้องคำนึงถึงงบประมาณ
             <br className="sm:hidden block" />
-            ดำเนินการ ในแต่ละปีด้วย
+            ดำเนินการในแต่ละปีด้วย
           </p>
         </div>
       </div>

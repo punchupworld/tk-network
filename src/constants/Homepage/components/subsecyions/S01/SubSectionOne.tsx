@@ -23,19 +23,24 @@ const SubSectionOne = () => {
         id="subsubtopic1"
       >
         <p className="text-tk-black desktop-s6-th-400">
-          เมื่อหน่วยงานสนใจที่จะสร้าง <br className="sm:hidden block" />
+          เมื่อหน่วยงานสนใจที่จะสร้าง
+          <br className="sm:hidden block" />
           พื้นที่การเรียนรู้ร่วมกันกับ <br className="sm:hidden block" /> TK
           Park <br className="hidden sm:block" />
           นี่คือภาพคร่าวๆ <br className="sm:hidden block" />
           ของกระบวนการเบื้องต้น
         </p>
         <p className="text-tk-black desktop-s6-th-400 ">
-          เครือข่ายอาจเริ่มทำงาน <br className="sm:hidden block" />
-          โดยการศึกษาเป้าหมายก่อน <br className="sm:hidden block" />
+          เครือข่ายอาจเริ่มทำงาน
+          <br className="sm:hidden block" />
+          โดยการศึกษาเป้าหมายก่อน
+          <br className="sm:hidden block" />
           เป็นอันดับแรก
           <br className="hidden sm:block" />
-          เมื่อเราเข้าใจ <br className="sm:hidden block" />
-          กลุ่มเป้าหมายและพื้นที่ ก็จะเข้าสู่ <br className="sm:hidden block" />
+          เมื่อเราเข้าใจ
+          <br className="sm:hidden block" />
+          กลุ่มเป้าหมายและพื้นที่ ก็จะเข้าสู่
+          <br className="sm:hidden block" />
           กระบวนการคิดเชิงออกแบบ <br className="hidden sm:block" />
           เช่น <br className="sm:hidden block" /> การบริการต้องเป็นแบบไหน{" "}
           <br className="sm:hidden block" />
@@ -43,12 +48,15 @@ const SubSectionOne = () => {
           <br className="hidden sm:block" />
           ลักษณะใด
           <br className="sm:hidden block" />
-          จึงจะตอบโจทย์ แล้วโปรแกรม <br className="sm:hidden block" />
+          จึงจะตอบโจทย์ แล้วโปรแกรม
+          <br className="sm:hidden block" />
           กิจกรรมล่ะ จะออกแบบอย่างไรดี
           <br />
           ให้สอดคล้องกับบริบทของพื้นที่ <br className="sm:hidden block" />
-          และกลุ่มเป้าหมายหลัก ทรัพยากร <br className="sm:hidden block" />
-          สารสนเทศของเราจะเข้าไปช่วย <br className="sm:hidden block" />
+          และกลุ่มเป้าหมายหลัก ทรัพยากร
+          <br className="sm:hidden block" />
+          สารสนเทศของเราจะเข้าไปช่วย
+          <br className="sm:hidden block" />
           สนับสนุนผู้ใช้งานอย่างไรได้บ้าง
         </p>
         <p className="text-tk-black desktop-s6-th-400">
@@ -67,14 +75,12 @@ const SubSectionOne = () => {
           ทรัพยากร พื้นที่กายภาพ <br className="sm:hidden block" />
           การบริหารจัดการ งบประมาณ
           <br />
-          และความต้องการของชุมชน
-          <br className="sm:hidden block" />
+          และความต้องการของชุมชน <br className="sm:hidden block" />
           เพราะพื้นที่การเรียนรู้ที่ดีไม่ได้มี
           <br className="sm:hidden block" />
           รูปแบบตายตัว <br className="hidden sm:block" /> แต่คือพื้นที่
           <br className="sm:hidden block" />
-          ที่สอดคล้องกับวิถีชีวิตของผู้คน
-          <br className="sm:hidden block" />
+          ที่สอดคล้องกับวิถีชีวิตของผู้คน <br className="sm:hidden block" />
           และสามารถสร้างการเรียนรู้ได้
           <br className="sm:hidden block" />
           อย่างยั่งยืน
@@ -103,11 +109,11 @@ const SubSectionOne = () => {
                 กับบริบทและความต้องการของพื้นที่
               </p>
               <p className="border-b border-tk-black p-5 font-th desktop-s6-th-400 leading-normal last:border-b-0">
-                ยกระดับสร้างอนาคต
+                ยกระดับ สร้างอนาคต
                 <br className="sm:hidden block" />
                 ของคน
                 <br className="hidden sm:block" />
-                ในพื้นที่ให้ เข้าถึง
+                ในพื้นที่ให้เข้าถึง
                 <br className="sm:hidden block" />
                 การเรียนรู้
                 <br className="hidden sm:block" />

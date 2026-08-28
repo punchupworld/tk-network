@@ -75,9 +75,11 @@ const IntroSection = () => {
           <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
           <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
             <p className="font-th desktop-s5-th-700 leading-normal">
-              เราไม่ได้สร้างเพียง <br className="md:hidden block" />
+              เราไม่ได้สร้างเพียง
+              <br className="md:hidden block" />
               พื้นที่การเรียนรู้ <br />
-              แต่ร่วมสร้างโอกาส <br className="md:hidden block" />
+              แต่ร่วมสร้างโอกาส
+              <br className="md:hidden block" />
               ในการเรียนรู้ตลอดชีวิต <br />
               ให้เกิดขึ้นในทุกพื้นที่
             </p>
@@ -101,7 +103,7 @@ const IntroSection = () => {
             <p className="w-fit max-w-full text-start font-th mobile-s6-th-400 text-tk-black md:w-full md:desktop-s6-th-400">
               เราเป็นหน่วยงานภายใต้สำนักงานบริหาร
               <br className="sm:hidden block" />
-              และพัฒนาองค์ความรู้ (องค์การมหาชน)
+              และพัฒนาองค์ความรู้ (องค์การมหาชน){" "}
               <br className="sm:hidden block" />
               ที่เชื่อมั่นในการสร้างพื้นที่แห่งการเรียนรู้
               <br className="sm:hidden block" />
@@ -111,13 +113,15 @@ const IntroSection = () => {
               <br className="sm:hidden block" />
               ที่ดีจะสามารถสนับสนุนให้
               <br className="hidden sm:block" />
-              ผู้ใช้บริการ <br className="sm:hidden block" />
+              ผู้ใช้บริการ
+              <br className="sm:hidden block" />
               เห็นภาพว่า ตัวเองจะส่งต่อความสร้างสรรค์
               <br className="sm:hidden block" />
               ต่อสังคมได้อย่างไร <br className="hidden sm:block" />
-              โดยเฉพาะเด็กและ <br className="sm:hidden block" />
+              โดยเฉพาะเด็กและ
+              <br className="sm:hidden block" />
               เยาวชนรุ่นใหม่ ผู้ต้องเติบโตไปพร้อมๆ
-              <br className="sm:hidden block" /> กับโลก ดิจิทัล
+              <br className="sm:hidden block" /> กับโลกดิจิทัล
               <br className="hidden sm:block" /> ไร้พรมแดน
             </p>
           </div>
@@ -125,18 +129,21 @@ const IntroSection = () => {
         <div className="flex w-full flex-col sm:items-start items-center justify-center gap-5 p-10 bg-[#FEE6A6] border-2 border-white">
           <span className="text-tk-black desktop-s6-th-400">
             <span className="font-th desktop-s6-th-700">เครือข่าย TK Park</span>{" "}
-            คือกลุ่มหน่วยงาน <br className="sm:hidden block" />
-            ที่ร่วมกันพัฒนาแหล่งเรียนรู้ <br className="sm:hidden block" />
-            ของตนเอง ให้เป็นพื้นที่ที่ผู้คนทุกวัย{" "}
+            คือกลุ่มหน่วยงาน
+            <br className="sm:hidden block" />
+            ที่ร่วมกันพัฒนาแหล่งเรียนรู้
+            <br className="sm:hidden block" />
+            ของตนเองให้เป็นพื้นที่ที่ผู้คนทุกวัย
             <br className="sm:hidden block" />
             เข้ามาเรียนรู้ พบปะ แลกเปลี่ยน <br className="sm:hidden block" />
-            และสร้างสรรค์ร่วมกัน มุ่งมั่นพัฒนา{" "}
+            และสร้างสรรค์ร่วมกัน มุ่งมั่นพัฒนา
             <br className="sm:hidden block" />
             พื้นที่การเรียนรู้ของตนให้เป็น <br className="sm:hidden block" />{" "}
             “ห้องสมุดมีชีวิต” หรือ Living <br className="sm:hidden block" />{" "}
             Library พื้นที่ซึ่งความรู้ แรงบันดาลใจ{" "}
             <br className="sm:hidden block" />
-            ความคิดสร้างสรรค์ การทดลองและ <br className="sm:hidden block" />
+            ความคิดสร้างสรรค์ การทดลองและ
+            <br className="sm:hidden block" />
             ลงมือทำ สามารถเกิดขึ้นได้ <br className="sm:hidden block" />
             ในที่เดียวกันทั่วภูมิภาคในประเทศไทย{" "}
             <br className="sm:hidden block" />
@@ -145,15 +152,19 @@ const IntroSection = () => {
             เพื่อประเมินความพร้อมในด้านพื้นที่{" "}
             <br className="sm:hidden block" />
             การบริการ และวิธีการบริหารจัดการ <br className="sm:hidden block" />
-            ทรัพยากรของชุมชนตนเอง รวมถึง <br className="sm:hidden block" />
-            สำรวจกิจกรรมและตัวอย่างของ <br className="sm:hidden block" />
+            ทรัพยากรของชุมชนตนเอง รวมถึง
+            <br className="sm:hidden block" />
+            สำรวจกิจกรรมและตัวอย่างของ
+            <br className="sm:hidden block" />
             พื้นที่การเรียนรู้ที่ดีได้ที่เว็บไซต์แห่งนี้
           </span>
 
           <p className="text-tk-black desktop-s6-th-400">
-            การสร้างพื้นที่การเรียนรู้มีชีวิต <br className="sm:hidden block" />
+            การสร้างพื้นที่การเรียนรู้มีชีวิต
+            <br className="sm:hidden block" />
             ต้องเกิดจากบุคลากรคนเก่งในพื้นที่ <br className="sm:hidden block" />
-            และสร้างโดยใช้หลักคิด “ผู้ใช้ <br className="sm:hidden block" />
+            และสร้างโดยใช้หลักคิด “ผู้ใช้
+            <br className="sm:hidden block" />
             เป็นศูนย์กลาง” (User-centered) <br className="sm:hidden block" />
             ให้ท้องถิ่นมี
             <br className="hidden sm:block" />
@@ -164,16 +175,19 @@ const IntroSection = () => {
           <span className="text-white desktop-s6-th-400">
             ไม่ว่าหน่วยงานของคุณจะเพิ่งเริ่มต้น{" "}
             <br className="sm:hidden block" />
-            หรืออยู่ในระหว่างการพัฒนา <br className="sm:hidden block" />
-            แหล่งเรียนรู้ TK Park พร้อมสนับสนุน{" "}
+            หรืออยู่ในระหว่างการพัฒนา
+            <br className="sm:hidden block" />
+            แหล่งเรียนรู้ TK Park พร้อมสนับสนุน
             <br className="sm:hidden block" />
             ทั้งองค์ความรู้ เครื่องมือ มาตรฐาน{" "}
-            <br className="sm:hidden block" /> และประสบการณ์ จากเครือข่าย{" "}
+            <br className="sm:hidden block" /> และประสบการณ์จากเครือข่าย
             <br className="sm:hidden block" />
-            ทั่วประเทศ เพื่อให้หน่วยงานสามารถ <br className="sm:hidden block" />
-            พัฒนาแหล่งเรียนรู้ที่เหมาะ กับบริบท{" "}
+            ทั่วประเทศ เพื่อให้หน่วยงานสามารถ
             <br className="sm:hidden block" />
-            ของพื้นที่ และเติบโตเป็นศูนย์กลาง <br className="sm:hidden block" />
+            พัฒนาแหล่งเรียนรู้ที่เหมาะ กับบริบท
+            <br className="sm:hidden block" />
+            ของพื้นที่ และเติบโตเป็นศูนย์กลาง
+            <br className="sm:hidden block" />
             การเรียนรู้ของชุมชนได้อย่างยั่งยืน
           </span>
         </div>
@@ -181,7 +195,8 @@ const IntroSection = () => {
           <p className="font-th desktop-s4-th-700 text-tk-red text-center">
             6 ขั้นตอน
             <br />
-            ในการเข้าร่วม <br className="sm:hidden block" />
+            ในการเข้าร่วม
+            <br className="sm:hidden block" />
             เครือข่าย
           </p>
         </div>

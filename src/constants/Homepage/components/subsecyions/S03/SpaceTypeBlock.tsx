@@ -115,7 +115,7 @@ const SpaceTypeBlock = ({
             </div>
             <p className="font-th desktop-s5-th-700 text-tk-black">{title}</p>
           </div>
-          <div className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto font-th desktop-s6-th-400 text-tk-black">
+          <div className="flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto font-th desktop-s7-th-400 text-tk-black">
             {children}
           </div>
         </div>

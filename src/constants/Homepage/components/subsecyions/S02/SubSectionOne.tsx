@@ -59,7 +59,7 @@ const AGENCY_ITEMS = [
   <>
     ครุภัณฑ์สำนักงาน ครุภัณฑ์
     <br className="sm:hidden block" />
-    เกี่ยวกับระบบ ห้องสมุดอัตโนมัติ
+    เกี่ยวกับระบบห้องสมุดอัตโนมัติ
   </>,
   "บุคลากรเพื่อบริหารจัดการ",
   "หนังสือและสื่อรายปี",
@@ -81,7 +81,7 @@ const TK_PARK_ITEMS = [
     ให้บุคลากร
   </>,
   <>
-    ฝึกอบรมบุคลาการและ
+    ฝึกอบรมบุคลากรและ
     <br /> ฝึกปฏิบัติงานจริง
   </>,
   <>
@@ -151,8 +151,7 @@ const SubSectionOne = () => {
         <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
           ถึงแม้แต่ละเครือข่ายจะพัฒนา
           <br className="sm:hidden block" />
-          แหล่งเรียนรู้ตามบริบทของตนเอง
-          <br className="sm:hidden block" />
+          แหล่งเรียนรู้ตามบริบทของตนเอง <br className="sm:hidden block" />
           แต่ก็ไม่ได้ทำงานเพียงลำพัง <br className="sm:hidden block" />
           เนื่องจากทุกๆ เครือข่ายสามารถ
           <br className="sm:hidden block" />
@@ -180,8 +179,7 @@ const SubSectionOne = () => {
           สอดคล้องกับความพร้อมและ
           <br className="sm:hidden block" />
           ศักยภาพของพื้นที่การเรียนรู้ <br />
-          ในจังหวัดของตน โดย TK Park
-          <br className="sm:hidden block" />
+          ในจังหวัดของตน โดย TK Park <br className="sm:hidden block" />
           มีรูปแบบการเข้าร่วมที่สามารถ
           <br className="sm:hidden block" />
           ยืดหยุ่นได้ตามลักษณะเฉพาะ
@@ -374,8 +372,7 @@ const SubSectionOne = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             สำหรับหน่วยงานที่ต้องการ
             <br className="sm:hidden block" />
-            นำองค์ประกอบของ TK Park
-            <br className="sm:hidden block" />
+            นำองค์ประกอบของ TK Park <br className="sm:hidden block" />
             ไปใช้กับพื้นที่การเรียนรู้เดิม
             <br className="hidden sm:block" />
             ให้
@@ -390,7 +387,7 @@ const SubSectionOne = () => {
             <br className="sm:hidden block" />
             สนุกขึ้น แผนนี้เหมาะกับเครือข่าย
             <br className="sm:hidden block" />
-            ที่ต้องการยกระดับ ห้องสมุดหรือ
+            ที่ต้องการยกระดับห้องสมุดหรือ
             <br className="sm:hidden block" />
             พื้นที่การเรียนรู้ในชุมชนและ
             <br className="sm:hidden block" />
@@ -434,8 +431,7 @@ const SubSectionOne = () => {
             ห้องสมุดมีชีวิตไปใช้
             <br className="sm:hidden block" /> เน้นกิจกรรมสร้างสรรค์
             <br className="sm:hidden block" />
-            แลกเปลี่ยนองค์ความรู้
-            <br className="hidden sm:block" />
+            แลกเปลี่ยนองค์ความรู้ {/* <br className="hidden sm:block" /> */}
             แผนนี้
             <br className="sm:hidden block" />
             เหมาะกับ

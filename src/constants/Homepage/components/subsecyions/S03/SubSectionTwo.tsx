@@ -407,9 +407,8 @@ const SubSectionTwo = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             บรรยากาศและสภาพแวดล้อม
             <br className="sm:hidden block" />
-            ที่ดี
-            <br className="hidden sm:block" />
-            สามารถ ส่งเสริมการเรียนรู้
+            ที่ดีสามารถ <br className="hidden sm:block" />
+            ส่งเสริมการเรียนรู้
             <br className="sm:hidden block" />
             ได้อย่างเป็นธรรมชาติ
           </p>
