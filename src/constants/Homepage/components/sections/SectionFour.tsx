@@ -40,7 +40,9 @@ function SectionCover() {
               <p className="font-th desktop-s6-th-400 text-white">
                 หน่วยงานดำเนินการจัดซื้อจัดจ้าง
                 <br /> สถาปนิกและผู้รับเหมาเพื่อ <br /> 1) ก่อสร้างอาคาร
-                <br /> 2) พัฒนาปรับปรุงจากพื้นที่เดิม
+                <br /> 2) พัฒนาปรับปรุงจาก
+                <br className="sm:hidden block" />
+                พื้นที่เดิม
               </p>
             </div>
           </div>
@@ -71,9 +73,13 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
         <p className="font-th desktop-s5-th-700 leading-normal">
-          "การก่อสร้างไม่ใช่เพียงการสร้างอาคาร <br /> แต่คือการสร้างพื้นที่
+          "การก่อสร้างไม่ใช่เพียง
+          <br className="sm:hidden block" />
+          การสร้างอาคาร <br /> แต่คือการสร้างพื้นที่
           <br />
-          ที่พร้อมรองรับการเรียนรู้ของชุมชน"
+          ที่พร้อมรองรับ
+          <br className="sm:hidden block" />
+          การเรียนรู้ของชุมชน"
         </p>
       </blockquote>
     </div>
@@ -126,15 +132,33 @@ const SectionFour = () => {
         <QuoteSection />
         <div className="flex w-full flex-col items-start justify-start gap-5 p-10 border-2 border-white bg-pink-400 max-w-[602px] mx-auto">
           <p className="font-th desktop-s6-th-400 text-tk-black">
-            ส่วนนี้จะเป็นบทบาทหน้าที่ของหน่วยงานเจ้าภาพในการดำเนินการก่อสร้างพื้นที่การเรียนรู้
-            โดยหลังจากที่ได้หารือและทำความเข้าใจพื้นที่
-            ศักยภาพและเงื่อนไขของตนเองอย่างละเอียด
-            หน่วยงานจะเริ่มประสานงานกับสถาปนิกและผู้รับเหมาเพื่อก่อสร้างพื้นที่การเรียนรู้หรือห้องสมุดมีชีวิตให้เป็นรูปเป็นร่าง{" "}
-            <br />
+            ส่วนนี้จะเป็นบทบาทหน้าที่ของ
+            <br className="sm:hidden block" />
+            หน่วยงานเจ้าภาพในการดำเนิน
+            <br className="sm:hidden block" />
+            การก่อสร้างพื้นที่การเรียนรู้
+            <br className="sm:hidden block" />
+            โดยหลังจากที่ได้หารือและ
+            <br className="sm:hidden block" />
+            ทำความเข้าใจพื้นที่ ศักยภาพ
+            <br className="sm:hidden block" />
+            และเงื่อนไขของตนเอง
+            <br className="sm:hidden block" />
+            อย่างละเอียด หน่วยงานจะเริ่ม
+            <br className="sm:hidden block" />
+            ประสานงานกับสถาปนิกและ
+            <br className="sm:hidden block" />
+            ผู้รับเหมาเพื่อก่อสร้างพื้นที่
+            <br className="sm:hidden block" />
+            การเรียนรู้หรือห้องสมุดมีชีวิต
+            <br className="sm:hidden block" />
+            ให้เป็นรูปเป็นร่าง <br className="hidden sm:block" />
             ขึ้นมา
           </p>
           <p className="font-th desktop-s7-th-400 text-neutral-dark-darkest">
-            *ระยะเวลาและรายละเอียดในการก่อสร้างขึ้นอยู่กับบริบทของพื้นที่นั้นๆ
+            *ระยะเวลาและรายละเอียดในการ
+            <br className="sm:hidden block" />
+            ก่อสร้างขึ้นอยู่กับบริบทของพื้นที่นั้นๆ
           </p>
         </div>
         <KnowledgeBox />

@@ -125,7 +125,12 @@ const IconOne = () => {
 const FACILITIES = [
   {
     title: "ชั้นวางรองเท้า",
-    tips: ["คำนึงถึงจุดถอดรองเท้าที่เพียงพอ ไม่เกะกะบริเวณทางเข้าหลัก"],
+    tips: [
+      <>
+        คำนึงถึงจุดถอดรองเท้าที่เพียงพอ <br className="sm:hidden block" />
+        ไม่เกะกะบริเวณทางเข้าหลัก
+      </>,
+    ],
   },
   {
     title: "จุดบริการฝากสัมภาระ",
@@ -262,7 +267,7 @@ const FacilityRow = ({ title, tips }: { title: string; tips: ReactNode[] }) => {
           open ? "block" : "hidden"
         }`}
       >
-        <div className="flex justify-between items-start gap-2.5">
+        <div className="flex justify-between items-start gap-2.5 md:flex-row flex-col">
           {tips.map((tip, index) => (
             <p
               key={index}
@@ -296,7 +301,11 @@ const SubSectionTwo = () => {
           aria-hidden="true"
         />
         <p className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s4-th-700 leading-normal text-white">
-          หลักการออกแบบพื้นที่
+          หลักการ
+          <br className="sm:hidden block" />
+          ออกแบบ
+          <br className="sm:hidden block" />
+          พื้นที่
         </p>
       </div>
 
@@ -308,18 +317,21 @@ const SubSectionTwo = () => {
           <div className="flex items-center justify-center">
             <p className="font-th desktop-s6-th-400 text-tk-black">
               <b>
-                พื้นที่การเรียนรู้ที่มี <br />
+                พื้นที่การเรียนรู้ที่มี <br className="hidden sm:block" />
                 ผู้ใช้งานหลากหลาย <br /> ไม่ว่าจะเป็นเด็ก เยาวชน นักเรียน
                 นักศึกษา
-                <br />
+                <br className="hidden sm:block" />
                 ผู้สูงอายุ
               </b>
-              ควรคำนึงถึง <br /> 3 องค์ประกอบหลัก <br />
+              <br className="sm:hidden block" />
+              ควรคำนึงถึง <br className="hidden sm:block" /> 3{" "}
+              <br className="sm:hidden block" />
+              องค์ประกอบหลัก <br className="hidden sm:block" />
               ในการออกแบบ ดังนี้
             </p>
           </div>
         </div>
-        <div className="p-10 border-2 border-white bg-orange-50 flex flex-col items-start justify-start gap-2.5 md:w-100 shrink-0 w-full">
+        <div className="md:p-10 p-5 border-2 border-white bg-orange-50 flex flex-col items-start justify-start gap-2.5 md:w-100 shrink-0 w-full">
           <HoverTipRow
             label="ยึดผู้ใช้เป็นศูนย์กลาง"
             detail="รองรับความต้องการผู้ใช้หลายกลุ่มที่มีพฤติกรรมและความต้องการแตกต่างกัน"
@@ -393,8 +405,13 @@ const SubSectionTwo = () => {
         </div>
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            บรรยากาศและสภาพแวดล้อมที่ดี <br />
-            สามารถส่งเสริมการเรียนรู้ได้อย่างเป็นธรรมชาติ
+            บรรยากาศและสภาพแวดล้อม
+            <br className="sm:hidden block" />
+            ที่ดี
+            <br className="hidden sm:block" />
+            สามารถ ส่งเสริมการเรียนรู้
+            <br className="sm:hidden block" />
+            ได้อย่างเป็นธรรมชาติ
           </p>
         </div>
       </div>
@@ -599,32 +616,58 @@ const SubSectionTwo = () => {
               </div>
               <div className="flex min-h-0 flex-1 flex-col gap-2.5 overflow-y-auto font-th desktop-s7-th-400 text-white">
                 <p className="font-th desktop-s7-th-400">
-                  หน่วยงานสามารถออกแบบพื้นที่สำนักงานให้มีเพียงพื้นที่เดียว
-                  หรือกระจายเป็น 2-3 พื้นที่ย่อย โดยสามารถแบ่งประเภทหลักๆ <br />
+                  หน่วยงานสามารถออกแบบพื้นที่สำนักงาน
+                  <br className="sm:hidden block" />
+                  ให้มีเพียงพื้นที่เดียว หรือกระจายเป็น 2-3{" "}
+                  <br className="sm:hidden block" />
+                  พื้นที่ย่อย โดยสามารถแบ่งประเภทหลักๆ <br />
                   ได้เป็น พื้นที่สำนักงานต้อนรับและพื้นที่บริหาร
                 </p>
                 <p>
                   <b className="font-th desktop-s7-th-400">
                     การออกแบบพื้นที่สำนักงานต้อนรับ
                   </b>
-                  ควรให้ความสำคัญกับตำแหน่งและความครอบคลุมของพื้นที่บริการให้ข้อมูลประชาสัมพันธ์
-                  การสมัครและบริหารงานสมาชิก การติดต่อกับพันธมิตรและผู้สนใจ
-                  ทำกิจกรรมในพื้นที่
-                  โดยรวมคือให้เน้นบริการอำนวยความสะดวกให้พื้นที่ในรูปแบบต่างๆ
+                  ควรให้
+                  <br className="sm:hidden block" />
+                  ความสำคัญกับตำแหน่งและความครอบคลุม
+                  <br className="sm:hidden block" />
+                  ของพื้นที่บริการให้ข้อมูลประชาสัมพันธ์
+                  <br className="sm:hidden block" />
+                  การสมัครและบริหารงานสมาชิก การติดต่อ
+                  <br className="sm:hidden block" />
+                  กับพันธมิตรและผู้สนใจ ทำกิจกรรมในพื้นที่
+                  <br className="sm:hidden block" />
+                  โดยรวมคือให้เน้นบริการอำนวยความสะดวก
+                  <br className="sm:hidden block" />
+                  ให้พื้นที่ในรูปแบบต่างๆ
                 </p>
                 <p>
                   <b className="font-th desktop-s7-th-400">
                     การออกแบบพื้นที่สำนักงานบริหาร
                   </b>
-                  ควรให้ความสำคัญกับ <br />
-                  สภาพแวดล้อม ที่ส่งเสริมประสิทธิภาพของการทำงานของ <br />
-                  เจ้าหน้าที่ฝ่ายสนับสนุน เช่น ฝ่ายบริหาร ฝ่ายธุรการ
-                  โดยอาจแยกเส้นทางออกมา
-                  เพื่อประสิทธิภาพในการดูแลรักษาและความปลอดภัย
+                  ควรให้
+                  <br className="sm:hidden block" />
+                  ความสำคัญกับ
+                  <br className="hidden sm:block" />
+                  สภาพแวดล้อม ที่ส่งเสริม
+                  <br className="sm:hidden block" />
+                  ประสิทธิภาพของการทำงานของ
+                  <br className="hidden sm:block" />
+                  เจ้าหน้าที่
+                  <br className="sm:hidden block" />
+                  ฝ่ายสนับสนุน เช่น ฝ่ายบริหาร ฝ่ายธุรการ
+                  <br className="sm:hidden block" /> โดยอาจแยกเส้นทางออกมา
+                  เพื่อประสิทธิภาพ
+                  <br className="sm:hidden block" />
+                  ในการดูแลรักษาและความปลอดภัย
                 </p>
                 <p>
-                  พื้นที่นี้ควรออกแบบให้มีพื้นที่เก็บอุปกรณ์สำหรับการทำกิจกรรม
-                  ในพื้นที่สตูดิโอ และพื้นที่นั่งทำงานด้วย เช่น อุปกรณ์เวที
+                  พื้นที่นี้ควรออกแบบให้มีพื้นที่เก็บอุปกรณ์
+                  <br className="sm:hidden block" />
+                  สำหรับการทำกิจกรรม ในพื้นที่สตูดิโอ{" "}
+                  <br className="sm:hidden block" />
+                  และพื้นที่นั่งทำงานด้วย เช่น อุปกรณ์เวที{" "}
+                  <br className="sm:hidden block" />
                   เครื่องเสียง เฟอร์นิเจอร์
                 </p>
               </div>
@@ -661,11 +704,25 @@ const SubSectionTwo = () => {
         </div>
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            พื้นที่การเรียนรู้สามารถออกแบบให้มีฟังก์ชัน
-            และบริการที่หลากหลายตามความต้องการของผู้ใช้งานและบริบทของแต่ละพื้นที่
-            <br />
-            โดยหน่วยงานสามารถเลือกประยุกต์ใช้หรือเพิ่มเติมองค์ประกอบต่างๆ
-            ให้เหมาะสมกับขนาดพื้นที่ งบประมาณ และเป้าหมายการให้บริการของตนเอง
+            พื้นที่การเรียนรู้สามารถออกแบบ
+            <br className="sm:hidden block" />
+            ให้มีฟังก์ชัน และบริการที่
+            <br className="sm:hidden block" />
+            หลากหลายตามความต้องการ
+            <br className="sm:hidden block" />
+            ของผู้ใช้งานและบริบทของแต่ละ
+            <br className="sm:hidden block" />
+            พื้นที่
+            <br className="hidden sm:block" />
+            โดยหน่วยงานสามารถเลือก
+            <br className="sm:hidden block" />
+            ประยุกต์ใช้หรือเพิ่มเติม
+            <br className="sm:hidden block" />
+            องค์ประกอบต่างๆ ให้เหมาะสมกับ
+            <br className="sm:hidden block" />
+            ขนาดพื้นที่ งบประมาณ และ
+            <br className="sm:hidden block" />
+            เป้าหมายการให้บริการของตนเอง
           </p>
         </div>
       </div>
@@ -726,9 +783,22 @@ const SubSectionTwo = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance mb-20">
             นอกจากการกำหนดประเภทของพื้นที่แล้ว
             <br />
-            รายละเอียดด้านการออกแบบและมาตรฐานการใช้งานยังเป็นองค์ประกอบสำคัญที่ช่วยให้พื้นที่การเรียนรู้ใช้งานได้อย่างมีประสิทธิภาพ
-            ปลอดภัย และรองรับผู้ใช้บริการทุกกลุ่ม
-            โดยหน่วยงานสามารถนำแนวทางต่อไปนี้ไปปรับใช้ให้เหมาะสมกับบริบทของพื้นที่
+            รายละเอียดด้านการออกแบบ
+            <br className="sm:hidden block" />
+            และมาตรฐานการใช้งานยังเป็น
+            <br className="sm:hidden block" />
+            องค์ประกอบสำคัญที่ช่วยให้พื้นที่
+            <br className="sm:hidden block" />
+            การเรียนรู้ใช้งานได้อย่าง
+            <br className="sm:hidden block" />
+            มีประสิทธิภาพ ปลอดภัย <br className="sm:hidden block" />
+            และรองรับผู้ใช้บริการทุกกลุ่ม
+            <br className="sm:hidden block" />
+            โดยหน่วยงานสามารถ
+            <br className="sm:hidden block" />
+            นำแนวทางต่อไปนี้ไปปรับใช้ให้
+            <br className="sm:hidden block" />
+            เหมาะสมกับบริบทของพื้นที่
           </p>
           <div className="flex justify-end items-end gap-2.5">
             <ShapeBoxOne />

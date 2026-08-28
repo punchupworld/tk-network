@@ -84,18 +84,35 @@ const SubSectionOne = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          การพัฒนาพื้นที่การเรียนรู้อย่างยั่งยืน จำเป็นต้องผสานการออกแบบพื้นที่
-          <br />
-          ที่ยืดหยุ่นและหลากหลาย เครือข่ายต้องเข้าใจผู้ใช้อย่างถ่องแท้ และจัด
-          <br />
-          ระบบการบริหารที่มีประสิทธิภาพ
-          ควบคู่ไปกับการเลือกสรรแนวทางที่เหมาะสมกับศักยภาพของตน
+          การพัฒนาพื้นที่การเรียนรู้
+          <br className="sm:hidden block" />
+          อย่างยั่งยืน จำเป็นต้องผสาน
+          <br className="sm:hidden block" />
+          การออกแบบพื้นที่
+          <br className="hidden sm:block" />
+          ที่ยืดหยุ่นและ
+          <br className="sm:hidden block" />
+          หลากหลาย เครือข่ายต้องเข้าใจ
+          <br className="sm:hidden block" />
+          ผู้ใช้อย่างถ่องแท้ และจัด
+          <br className="hidden sm:block" />
+          ระบบ
+          <br className="sm:hidden block" />
+          การบริหารที่มีประสิทธิภาพ ควบคู่
+          <br className="sm:hidden block" />
+          ไปกับการเลือกสรรแนวทาง
+          <br className="sm:hidden block" />
+          ที่เหมาะสมกับศักยภาพของตน
         </p>
 
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
           <div>
             <p className="font-th desktop-s6-th-400 text-tk-black px-2.5 py-1 bg-yellow-700 w-fit">
-              โดยองค์ประกอบที่สำคัญในการวางแผนเพื่อพัฒนาพื้นที่การเรียนรู้
+              โดยองค์ประกอบที่สำคัญ
+              <br className="sm:hidden block" />
+              ในการวางแผนเพื่อพัฒนา
+              <br className="sm:hidden block" />
+              พื้นที่การเรียนรู้
             </p>
             <p className="font-th desktop-s6-th-700 text-tk-black px-2.5 py-1 bg-yellow-700 w-fit">
               มีอยู่ 4 ด้าน ประกอบด้วย
@@ -168,26 +185,50 @@ const SubSectionOne = () => {
             เป็นใครได้บ้าง
           </p>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            ไม่ว่าหน่วยงานลักษณะไหนก็สามารถเข้าร่วม เครือข่าย TK Park ได้
-            ตราบใดที่สนใจและต้องการสร้างพื้นที่การเรียนรู้ในชุมชน
-            <br />
-            ของตัวเอง และอยากให้คนในพื้นที่ได้เข้าถึงความรู้ ทรัพยากร
-            เพื่อพัฒนาตัวเองอย่างไม่มีที่สิ้นสุด
+            ไม่ว่าหน่วยงานลักษณะไหน
+            <br className="sm:hidden block" />
+            ก็สามารถเข้าร่วม เครือข่าย <br className="sm:hidden block" />
+            TK Park ได้ ตราบใดที่สนใจและ
+            <br className="sm:hidden block" />
+            ต้องการสร้างพื้นที่การเรียนรู้
+            <br className="sm:hidden block" />
+            ในชุมชน
+            <br className="hidden sm:block" />
+            ของตัวเอง และอยากให้
+            <br className="sm:hidden block" />
+            คนในพื้นที่ได้เข้าถึงความรู้ <br className="sm:hidden block" />
+            ทรัพยากร เพื่อพัฒนาตัวเอง
+            <br className="sm:hidden block" />
+            อย่างไม่มีที่สิ้นสุด
           </p>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             ตลอดระยะเวลาที่ผ่านมา TK Park <br />
             ร่วมงานกับทั้งหน่วยงานรัฐและ <br />
             องค์กรไม่แสวงผลกำไร ตั้งแต่ <br />
-            องค์การบริหารส่วนจังหวัด องค์การบริหารส่วนตำบล เทศบาลตำบล เมือง นคร
-            กระทรวง กรม หน่วยงานด้านการศึกษา มูลนิธิ สหกรณ์ และสมาคม
+            องค์การบริหารส่วนจังหวัด องค์การบริหารส่วนตำบล เทศบาลตำบล{" "}
+            <br className="sm:hidden block" />
+            เมือง นคร กระทรวง กรม <br className="sm:hidden block" />
+            หน่วยงานด้านการศึกษา <br className="sm:hidden block" />
+            มูลนิธิ สหกรณ์ และสมาคม
           </p>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            หน่วยงานเอกชน มักจะร่วมงานกับ <br />
-            TK Park ในหลายรูปแบบ เช่น สร้างพื้นที่ <br />
-            การเรียนรู้ซึ่งเป็นเป้าหมายหลัก สนับสนุนการเรียนรู้นอกห้องเรียนใน
-            <br />
-            รูปแบบต่างๆ
-            หรือนำข้อมูลของพื้นที่การเรียนรู้ไปเป็นส่วนหนึ่งของแผนการทำ CSR
+            หน่วยงานเอกชน มักจะร่วมงาน
+            <br className="sm:hidden block" />
+            กับ <br className="hidden sm:block" />
+            TK Park ในหลายรูปแบบ เช่น <br className="sm:hidden block" />
+            สร้างพื้นที่
+            <br className="hidden sm:block" />
+            การเรียนรู้ซึ่งเป็น
+            <br className="sm:hidden block" />
+            เป้าหมายหลัก สนับสนุน
+            <br className="sm:hidden block" />
+            การเรียนรู้นอกห้องเรียนใน
+            <br className="hidden sm:block" />
+            รูปแบบต่างๆ หรือนำข้อมูล
+            <br className="sm:hidden block" />
+            ของพื้นที่การเรียนรู้ไปเป็น
+            <br className="sm:hidden block" />
+            ส่วนหนึ่งของแผนการทำ CSR
             <br /> ของบริษัท
           </p>
         </div>
@@ -209,42 +250,90 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 border-2 border-white bg-orange-50 flex flex-col gap-2.5">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              หากจะสร้างพื้นที่การเรียนรู้สักที่ <br />
-              ทำเลที่ตั้งต้องมีคุณสมบัติพื้นฐานที่เหมาะกับ <br />
-              จุดประสงค์ของการสร้าง ไม่ว่าจะเป็นการเป็นพื้นที่สาธารณะ (Public
-              Space) ที่สร้าง <br />
-              การมี ส่วนร่วมของคนในชุมชน จุดนัดพบปะสังสรรค์
-              พื้นที่อบรมพัฒนาทักษะ <br />
-              หรือเมกเกอร์สเปซ (Makerspace) <br />
-              ดังนั้นพื้นที่การเรียนรู้ <br />
-              ควรคิดถึงกลุ่มเป้าหมายก่อน และควรตั้งอยู่บริเวณใจกลางเมือง
-              และอยู่ใกล้กับชุมชน <br />
-              ผู้ใช้บริการจะได้เข้าถึงง่ายและเดินทางสะดวก
+              หากจะสร้างพื้นที่การเรียนรู้
+              <br className="sm:hidden block" />
+              สักที่ <br className="hidden sm:block" />
+              ทำเลที่ตั้งต้องมีคุณสมบัติ
+              <br className="sm:hidden block" />
+              พื้นฐานที่เหมาะกับ <br className="hidden sm:block" />
+              จุดประสงค์
+              <br className="sm:hidden block" />
+              ของการสร้าง ไม่ว่าจะเป็นการเป็น
+              <br className="sm:hidden block" />
+              พื้นที่สาธารณะ (Public Space) <br className="sm:hidden block" />
+              ที่สร้าง
+              <br className="hidden sm:block" />
+              การมี ส่วนร่วมของคน
+              <br className="sm:hidden block" />
+              ในชุมชน จุดนัดพบปะสังสรรค์
+              <br className="sm:hidden block" />
+              พื้นที่อบรมพัฒนาทักษะ <br className="hidden sm:block" />
+              หรือ
+              <br className="sm:hidden block" />
+              เมกเกอร์สเปซ (Makerspace) <br />
+              ดังนั้นพื้นที่การเรียนรู้ <br className="hidden sm:block" />
+              ควรคิดถึง
+              <br className="sm:hidden block" />
+              กลุ่มเป้าหมายก่อน และควร
+              <br className="sm:hidden block" />
+              ตั้งอยู่บริเวณใจกลางเมือง <br className="sm:hidden block" />
+              และอยู่ใกล้กับชุมชน <br className="hidden sm:block" />
+              ผู้ใช้บริการ
+              <br className="sm:hidden block" />
+              จะได้เข้าถึงง่ายและเดินทางสะดวก
             </p>
           </div>
         </div>
         <div className="border-2 border-white">
           <div className="p-10 bg-orange-300 border-b-2 border-white">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              <b> ทำเลที่ตั้งสำคัญขนาดไหน ส่งผลดีแค่ไหน</b>
+              <b>
+                ทำเลที่ตั้งสำคัญขนาดไหน
+                <br className="sm:hidden block" /> ส่งผลดีแค่ไหน
+              </b>
               <br />
-              คำตอบอาจอยู่ที่เป้าหมายและวิสัยทัศน์ของผู้สร้าง
-              พื้นที่การเรียนรู้สามารถสร้างอนาคตของผู้ประกอบการหน้าใหม่ นวัตกร
-              หรือครีเอทีฟได้ไหม <br />
-              บริการของภาครัฐสามารถมัดรวมกันไว้ในนี้จนกลายเป็นการให้บริการแบบเบ็ดเสร็จ
-              (One-stop Service)
-              แบบที่ประชาชนได้รับความสะดวกสบายในการเข้าถึงบริการพื้นฐานหรือเปล่า?
+              คำตอบอาจอยู่ที่เป้าหมายและ
+              <br className="sm:hidden block" />
+              วิสัยทัศน์ของผู้สร้าง พื้นที่
+              <br className="sm:hidden block" />
+              การเรียนรู้สามารถสร้างอนาคต
+              <br className="sm:hidden block" />
+              ของผู้ประกอบการหน้าใหม่ <br className="sm:hidden block" />
+              นวัตกร หรือครีเอทีฟได้ไหม <br />
+              บริการของภาครัฐสามารถมัดรวม
+              <br className="sm:hidden block" />
+              กันไว้ในนี้จนกลายเป็นการให้
+              <br className="sm:hidden block" />
+              บริการแบบเบ็ดเสร็จ <br className="sm:hidden block" />
+              (One-stop Service) แบบที่
+              <br className="sm:hidden block" />
+              ประชาชนได้รับความสะดวกสบาย
+              <br className="sm:hidden block" />
+              ในการเข้าถึงบริการพื้นฐาน
+              <br className="sm:hidden block" />
+              หรือเปล่า?
             </p>
           </div>
           <div className="flex gap-2.5 p-10 bg-yellow-100 border-b-2 border-white md:flex-row flex-col">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance md:w-1/2 w-full">
-              <b>เมืองอาร์ฮุส เดนมาร์ก</b> มีห้องสมุดประชาชน <b>Dokk1</b>{" "}
-              ซึ่งได้รับการออกแบบในฐานะศูนย์กลางขนาดใหญ่ของชุมชนตรงใจกลางเมือง{" "}
-              <br />
-              แถมยังตั้งอยู่ริมน้ำ มีขนาดกว้างขวางและสวยงาม เข้าถึงง่าย เหมาะกับ{" "}
-              <br />
+              <b>เมืองอาร์ฮุส เดนมาร์ก</b> <br className="sm:hidden block" />
+              มีห้องสมุดประชาชน <b>Dokk1</b> <br className="sm:hidden block" />
+              ซึ่งได้รับการออกแบบในฐานะ
+              <br className="sm:hidden block" />
+              ศูนย์กลางขนาดใหญ่ของชุมชน
+              <br className="sm:hidden block" />
+              ตรงใจกลางเมือง <br className="hidden sm:block" />
+              แถมยังตั้งอยู่
+              <br className="sm:hidden block" />
+              ริมน้ำ มีขนาดกว้างขวางและ
+              <br className="sm:hidden block" />
+              สวยงาม เข้าถึงง่าย เหมาะกับ <br />
               การจัดกิจกรรมหลากหลายรูปแบบ <br />
-              เพราะอาร์ฮุสให้ความสำคัญกับความรู้ วัฒนธรรม และการรวมกลุ่มชุมชน
+              เพราะอาร์ฮุสให้ความสำคัญกับ
+              <br className="sm:hidden block" />
+              ความรู้ วัฒนธรรม และการรวม
+              <br className="sm:hidden block" />
+              กลุ่มชุมชน
             </p>
             <div className="flex justify-end items-end ">
               <button
@@ -301,14 +390,31 @@ const SubSectionOne = () => {
           </div>
           <div className="flex gap-2.5 p-10 bg-orange-50 border-b-2 border-white md:flex-row flex-col">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance md:w-1/2 w-full">
-              ห้องสมุด <b>Oodi</b> ของประเทศ<b>ฟินแลนด์</b>ก็เช่นกัน
-              นี่คือพื้นที่สาธารณะที่มีบริการผสมผสานอย่างครอบคลุม
-              คือมีทั้งห้องสมุดแบบดั้งเดิมพร้อม <br />
-              บริการใหม่ๆ ที่ก้าวไปพร้อมกับยุคสมัย เช่น ห้องนิทาน <br />
-              (Children&apos;s story room) หรือสนามเด็กเล่น สาธารณะบนระเบียงชั้น
-              3 ของห้องสมุด พื้นที่สำหรับเด็กและครอบครัว
-              ซึ่งตอบโจทย์ความต้องการของชุมชนที่ต้องการพื้นที่
-              สาธารณะสำหรับเด็กและครอบครัว <br /> (Services for Families)
+              ห้องสมุด <b>Oodi</b> ของประเทศ
+              <br className="sm:hidden block" />
+              <b>ฟินแลนด์</b>ก็เช่นกัน นี่คือพื้นที่
+              <br className="sm:hidden block" />
+              สาธารณะที่มีบริการผสมผสาน
+              <br className="sm:hidden block" />
+              อย่างครอบคลุม คือมีทั้งห้องสมุด
+              <br className="sm:hidden block" />
+              แบบดั้งเดิมพร้อม <br className="hidden sm:block" />
+              บริการใหม่ๆ <br className="sm:hidden block" />
+              ที่ก้าวไปพร้อมกับยุคสมัย เช่น <br className="sm:hidden block" />
+              ห้องนิทาน <br className="hidden sm:block" />
+              (Children&apos;s story <br className="sm:hidden block" />
+              room) หรือสนามเด็กเล่น <br className="sm:hidden block" />
+              สาธารณะบนระเบียงชั้น 3 <br className="sm:hidden block" />
+              ของห้องสมุด พื้นที่สำหรับเด็ก
+              <br className="sm:hidden block" />
+              และครอบครัว ซึ่งตอบโจทย์
+              <br className="sm:hidden block" />
+              ความต้องการของชุมชน
+              <br className="sm:hidden block" />
+              ที่ต้องการพื้นที่ สาธารณะสำหรับ
+              <br className="sm:hidden block" />
+              เด็กและครอบครัว <br /> (Services for Families){" "}
+              <br className="sm:hidden block" />
               ที่เข้าถึงได้
             </p>
             <div className="flex justify-end items-end ">
@@ -366,9 +472,17 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 bg-yellow-700">
             <p className="font-th desktop-s6-th-700 text-tk-black text-balance">
-              ห้องสมุดกลายเป็นสิ่งที่เราเรียกว่า Third Place
-              หรือพื้นที่ที่เป็นส่วนหนึ่งของวิถีชีวิตคนในเมือง
-              สองโครงการนี้จึงเกิดขึ้นโดยมีทำเลที่ตั้งเป็นหัวใจ
+              ห้องสมุดกลายเป็นสิ่งที่เรา
+              <br className="sm:hidden block" />
+              เรียกว่า Third Place หรือพื้นที่
+              <br className="sm:hidden block" />
+              ที่เป็นส่วนหนึ่งของวิถีชีวิต
+              <br className="sm:hidden block" />
+              คนในเมือง สองโครงการนี้
+              <br className="sm:hidden block" />
+              จึงเกิดขึ้นโดยมีทำเลที่ตั้ง
+              <br className="sm:hidden block" />
+              เป็นหัวใจ
             </p>
           </div>
         </div>
@@ -377,9 +491,13 @@ const SubSectionOne = () => {
       <div className="flex w-full flex-col items-start">
         <CoverCap color="#91C5F4" />
         <div className="flex w-full flex-col items-start gap-10 border-x-2 border-b-2 border-white bg-[#91C5F4] md:px-10 px-5 pt-5 pb-10 text-white">
-          <div>
-            <h2 className="text-center md:text-left font-th desktop-s6-th-700 px-2.5 py-1.5 text-tk-black border-2 border-tk-black rounded-full">
-              เกณฑ์การพิจารณาทำเลที่ตั้งที่เหมาะสม สอดคล้องกับการพัฒนาเมือง
+          <div className="w-full md:w-fit">
+            <h2 className=" text-center md:text-left font-th desktop-s6-th-700 px-2.5 py-1.5 text-tk-black border-2 border-tk-black rounded-full">
+              เกณฑ์การพิจารณาทำเลที่ตั้ง
+              <br className="sm:hidden block" />
+              ที่เหมาะสม สอดคล้องกับการ
+              <br className="sm:hidden block" />
+              พัฒนาเมือง
             </h2>
           </div>
           <div className="grid w-full grid-cols-1 md:grid-cols-2">
@@ -397,12 +515,14 @@ const SubSectionOne = () => {
                 จุดจอดรถ
               </p>
               <p className="border-x border-t md:border-b border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black">
-                อยู่ในย่านชุมชน ย่านค้าขาย หรือริมถนนสายหลัก
+                อยู่ในย่านชุมชน ย่านค้าขาย <br className="sm:hidden block" />
+                หรือริมถนนสายหลัก
               </p>
             </div>
             <div className="flex flex-col justify-end">
               <p className="border-x border-t md:border-l-0 border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black">
-                อยู่ใกล้กับโรงเรียนหรือสถาบัน การศึกษา
+                อยู่ใกล้กับโรงเรียนหรือสถาบัน <br className="sm:hidden block" />
+                การศึกษา
               </p>
               <p className="border-x border-t md:border-l-0 border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black">
                 หากอยู่ในอาคารหลายชั้น <br />
@@ -418,51 +538,73 @@ const SubSectionOne = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 sm:justify-end justify-start w-full">
             <h2 className="w-fit font-th desktop-s6-th-700 px-5 py-1.5 text-tk-black border-2 border-tk-black rounded-full">
               ตัวอย่าง
             </h2>
             <div className="flex items-end md:flex-row flex-col">
               <div className="px-2.5 py-1 bg-tk-black">
                 <p className="font-th desktop-s6-th-700 text-white text-nowrap">
-                  อุทยานการเรียนรู้ <br />
+                  อุทยาน
+                  <br className="sm:hidden block" />
+                  การเรียนรู้
+                  <br className="hidden sm:block" />
                   ยะลา
                 </p>
               </div>
               <div className="bg-white border border-tk-black">
                 <div className="px-[14px] py-2.5 font-th desktop-s6-th-400 text-tk-black ">
-                  ตั้งอยู่ใจกลางเมือง บริเวณลานกีฬา ศูนย์เยาวชน ศูนย์ผู้สูงอายุ
-                  รายล้อมไปด้วยร้านค้าและที่อยู่อาศัย
+                  ตั้งอยู่ใจกลางเมือง บริเวณลาน
+                  <br className="sm:hidden block" />
+                  กีฬา ศูนย์เยาวชน ศูนย์ผู้สูงอายุ
+                  <br className="sm:hidden block" />
+                  รายล้อมไปด้วยร้านค้าและ
+                  <br className="sm:hidden block" />
+                  ที่อยู่อาศัย
                 </div>
               </div>
             </div>
             <div className="flex items-end md:flex-row flex-col">
               <div className="px-2.5 py-1 bg-tk-black">
                 <p className="font-th desktop-s6-th-700 text-white text-nowrap">
-                  อุทยานการเรียนรู้ <br />
+                  อุทยาน
+                  <br className="sm:hidden block" />
+                  การเรียนรู้
+                  <br className="hidden sm:block" />
                   ศรีสะเกษ
                 </p>
               </div>
               <div className="bg-white border border-tk-black">
                 <div className="px-[14px] py-2.5 font-th desktop-s6-th-400 text-tk-black">
-                  ตั้งอยู่บนถนนสายหลักของเมือง รายล้อมด้วยสถาบันการศึกษา
-                  ตั้งแต่โรงเรียนอนุบาลจนถึงสถาบันอุดมศึกษา
+                  ตั้งอยู่บนถนนสายหลักของเมือง{" "}
+                  <br className="sm:hidden block" />
+                  รายล้อมด้วยสถาบันการศึกษา
+                  <br className="sm:hidden block" />
+                  ตั้งแต่โรงเรียนอนุบาลจนถึง
+                  <br className="sm:hidden block" />
+                  สถาบันอุดมศึกษา
                 </div>
               </div>
             </div>
             <div className="flex items-end md:flex-row flex-col ">
               <div className="px-2.5 py-1 bg-tk-black">
                 <p className="font-th desktop-s6-th-700 text-white text-nowrap">
-                  อุทยานการเรียนรู้
+                  อุทยาน
+                  <br className="sm:hidden block" />
+                  การเรียนรู้
                   <br />
                   แม่ฮ่องสอน
                 </p>
               </div>
               <div className="bg-white border border-tk-black">
                 <div className="px-[14px] py-2.5 font-th desktop-s6-th-400 text-tk-black">
-                  ตั้งอยู่ใจกลางเมือง ย่านธุรกิจ ย่านค้าขาย ที่อยู่อาศัย
-                  และภายในยังเป็นศูนย์ไอซีที
-                  และพื้นที่เรียนรู้ของวิทยาลัยชุมชนแม่ฮ่องสอน
+                  ตั้งอยู่ใจกลางเมือง ย่านธุรกิจ{" "}
+                  <br className="sm:hidden block" />
+                  ย่านค้าขาย ที่อยู่อาศัย และภายใน
+                  <br className="sm:hidden block" />
+                  ยังเป็นศูนย์ไอซีที และพื้นที่เรียนรู้
+                  <br className="sm:hidden block" />
+                  ของวิทยาลัยชุมชนแม่ฮ่องสอน
                 </div>
               </div>
             </div>
@@ -488,12 +630,20 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
             <p className="font-th desktop-s6-th-400 text-tk-black">
-              หนังสือและสื่อที่หลากหลาย ทำให้เกิด <br />
-              การเรียนรู้ที่หลายหลากตามความสนใจของ <br />
-              ผู้ใช้บริการ
-              เนื่องจากหนังสือและสื่อเป็นตัวกลางสำคัญที่หน่วยงานสามารถจัดหมวดหมู่เพื่อสร้างการเรียนรู้โดยไม่ตั้งใจ
-              และ <br />
-              สอดแทรกไปกับการทำกิจกรรมรูปแบบต่างๆ ได้
+              หนังสือและสื่อที่หลากหลาย <br className="sm:hidden block" />
+              ทำให้เกิด <br className="hidden sm:block" />
+              การเรียนรู้ที่หลายหลากตามความสนใจของ
+              <br className="hidden sm:block" />
+              ผู้ใช้บริการ เนื่องจากหนังสือและสื่อ
+              <br className="sm:hidden block" />
+              เป็นตัวกลางสำคัญที่หน่วยงาน
+              <br className="sm:hidden block" />
+              สามารถจัดหมวดหมู่เพื่อสร้าง
+              <br className="sm:hidden block" />
+              การเรียนรู้โดยไม่ตั้งใจ และ <br />
+              สอดแทรกไปกับการทำกิจกรรม
+              <br className="sm:hidden block" />
+              รูปแบบต่างๆ ได้
             </p>
           </div>
         </div>
@@ -509,29 +659,47 @@ const SubSectionOne = () => {
             <div className="mt-px grid w-full grid-cols-1 md:grid-cols-2">
               <div className="flex flex-col justify-end">
                 <p className="md:border-l md:border-r-0 border-x border-t border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
-                  จัดหาหนังสือตามแนวทางการ
-                  <br />
-                  คัดเลือก หนังสือสำหรับเด็ก <br />
+                  จัดหาหนังสือตามแนวทาง
+                  <br className="sm:hidden block" />
+                  การ
+                  <br className="hidden sm:block" />
+                  คัดเลือก หนังสือสำหรับ
+                  <br className="sm:hidden block" />
+                  เด็ก
+                  <br className="hidden sm:block" />
                   แต่ละช่วงวัย
                 </p>
                 <p className="md:border-l md:border-r-0 border-x md:border-y border-t border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
-                  จัดหาประเภทของหนังสือให้มีความหลากหลาย ทันสมัย และเพียงพอ เช่น
+                  จัดหาประเภทของหนังสือ
+                  <br className="sm:hidden block" />
+                  ให้มีความหลากหลาย <br className="sm:hidden block" />
+                  ทันสมัย และเพียงพอ เช่น <br className="sm:hidden block" />
                   วารสาร สื่อมัลติมีเดีย
                 </p>
               </div>
               <div className="flex flex-col justify-end">
                 <p className="border-x border-t  border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   คำนึงถึงความสนใจของ <br />
-                  กลุ่มผู้ใช้งาน และสภาพแวดล้อมเป็นหลัก
+                  กลุ่มผู้ใช้งาน และ
+                  <br className="sm:hidden block" />
+                  สภาพแวดล้อมเป็นหลัก
                 </p>
                 <p className="border-x border-t  border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
                   จัดชั้นหนังสือให้ดึงดูด <br />
-                  ความสนใจเด็ก เช่น วางหนังสือหันหน้าปกออก
-                  หมั่นเปลี่ยนหนังสือเป็นหนังสือออกใหม่หรือหนังสือแนะนำ
+                  ความสนใจเด็ก เช่น <br className="sm:hidden block" />
+                  วางหนังสือหันหน้าปกออก
+                  <br className="sm:hidden block" />
+                  หมั่นเปลี่ยนหนังสือ
+                  <br className="sm:hidden block" />
+                  เป็นหนังสือออกใหม่
+                  <br className="sm:hidden block" />
+                  หรือหนังสือแนะนำ
                 </p>
                 <p className="border-x border-t border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
-                  จัดเก็บหนังสือ สื่อการเรียนรู้ และวัสดุอุปกรณ์ต่างๆ ในสถานที่{" "}
-                  <br />
+                  จัดเก็บหนังสือ สื่อการเรียนรู้{" "}
+                  <br className="sm:hidden block" />
+                  และวัสดุอุปกรณ์ต่างๆ <br className="sm:hidden block" />
+                  ในสถานที่ <br className="hidden sm:block" />
                   ที่เหมาะสม
                 </p>
                 <p className="border-x border-t border-b border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black bg-white">
@@ -559,12 +727,27 @@ const SubSectionOne = () => {
         </div>
         <div className="p-10 border-2 border-white bg-orange-50 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            งบประมาณมักจะเป็นประเด็นแรกๆ ที่เครือข่ายต้องการทราบข้อมูล
-            โดยหน่วยงาน <br />
-            ต้องวางแผนเรื่องการจัดสรรงบประมาณ <br />
-            อย่างเหมาะสม เพราะนอกจากงบประมาณ <br />
-            ด้านการก่อสร้าง พื้นที่การเรียนรู้ซึ่งเป็น <br />
-            งบประมาณหลัก ยังต้องคำนึงถึงงบประมาณดำเนินการ ในแต่ละปีด้วย
+            งบประมาณมักจะเป็นประเด็น
+            <br className="sm:hidden block" />
+            แรกๆ ที่เครือข่ายต้องการทราบ
+            <br className="sm:hidden block" />
+            ข้อมูล โดยหน่วยงาน
+            <br className="hidden sm:block" />
+            ต้องวางแผน
+            <br className="sm:hidden block" />
+            เรื่องการจัดสรรงบประมาณ <br />
+            อย่างเหมาะสม เพราะนอกจาก
+            <br className="sm:hidden block" />
+            งบประมาณ
+            <br className="hidden sm:block" />
+            ด้านการก่อสร้าง <br className="sm:hidden block" />
+            พื้นที่การเรียนรู้ซึ่งเป็น
+            <br className="hidden sm:block" />
+            งบประมาณ
+            <br className="sm:hidden block" />
+            หลัก ยังต้องคำนึงถึงงบประมาณ
+            <br className="sm:hidden block" />
+            ดำเนินการ ในแต่ละปีด้วย
           </p>
         </div>
       </div>

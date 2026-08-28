@@ -328,11 +328,33 @@ const HoverSpaceGrid = () => {
         <SpaceRow>
           <HoverCell
             title="ห้องสมุดมีชีวิต"
-            description="ให้บริการด้านค้นคว้าข้อมูล โดยมีหนังสือเกมสร้างสรรค์ และสื่อมัลติมีเดียหลากหลาย เช่น หนังสือ วารสาร  สื่อเรียนรู้ อิเล็กทรอนิกส์ทั้งไทยและสากล"
+            description={
+              <>
+                ให้บริการด้านค้นคว้าข้อมูล <br className="sm:hidden block" />
+                โดยมีหนังสือเกมสร้างสรรค์
+                <br className="sm:hidden block" />
+                และสื่อมัลติมีเดียหลากหลาย <br className="sm:hidden block" />
+                เช่น หนังสือ วารสาร สื่อเรียนรู้{" "}
+                <br className="sm:hidden block" />
+                อิเล็กทรอนิกส์ทั้งไทยและสากล
+              </>
+            }
             image={BOX_IMAGE}
             tips={[
-              "จัดหาสื่อเรียนรู้ใหม่ๆ อยู่เสมอ เช่น บรรณารักษ์คัดเลือกสื่อทุกไตรมาส เก็บข้อมูลจากความสนใจและข้อเสนอแนะของผู้ใช้งาน",
-              "ควรปรับเปลี่ยนให้ตอบโจทย์การใช้งาน และสร้างประสบการณ์ใหม่ๆ",
+              <>
+                จัดหาสื่อเรียนรู้ใหม่ๆ อยู่เสมอ{" "}
+                <br className="sm:hidden block" />
+                เช่น บรรณารักษ์คัดเลือกสื่อ
+                <br className="sm:hidden block" />
+                ทุกไตรมาส เก็บข้อมูลจากความ
+                <br className="sm:hidden block" />
+                สนใจและข้อเสนอแนะของผู้ใช้งาน
+              </>,
+              <>
+                ควรปรับเปลี่ยนให้ตอบโจทย์
+                <br className="sm:hidden block" />
+                การใช้งาน และสร้างประสบการณ์ใหม่ๆ
+              </>,
             ]}
             className="col-span-6 md:col-span-4 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
@@ -342,18 +364,42 @@ const HoverSpaceGrid = () => {
             description={
               <>
                 บรรยากาศแห่ง
+                <br className="hidden sm:block" />
+                การเรียนรู้ที่ทำให้
+                <br className="sm:hidden block" />
+                เด็กๆรู้สึกสนุกสนาน และเหมาะ
+                <br className="sm:hidden block" />
+                กับช่วงวัย ผ่านการเล่น สระน้ำ
+                <br className="sm:hidden block" />
+                ความรู้ (Reading Pool)
                 <br />
-                การเรียนรู้ที่ทำให้เด็กๆรู้สึกสนุกสนาน และเหมาะกับช่วงวัย
-                ผ่านการเล่น สระน้ำความรู้ (Reading Pool)
-                <br />
-                บ้านต้นไม้ และบันไดรักการอ่าน พร้อมกิจกรรมฝึกทักษะพัฒนา
-                สมองแบบบูรณาการ (Brain-based Learning)
+                บ้านต้นไม้ และบันไดรักการอ่าน <br className="sm:hidden block" />
+                พร้อมกิจกรรมฝึกทักษะพัฒนา <br className="sm:hidden block" />
+                สมองแบบบูรณาการ <br className="sm:hidden block" />
+                (Brain-based Learning)
               </>
             }
             image={BOX_IMAGE_2}
             tips={[
-              "ออกแบบสภาพแวดล้อมโดย เน้นที่ความปลอดภัยของเด็ก เป็นสำคัญ และจัดหาเฟอร์นิเจอร์ ที่เหมาะสมกับการใช้งาน",
-              "จัดหาหนังสือและกิจกรรมส่งเสริมการพัฒนาทักษะสำหรับเด็กและผู้ปกครอง เด็กๆ สามารถเรียนรู้ได้ด้วยตัวเองอย่างเพลิดเพลิน ส่วนผู้ปกครองก็สามารถค้นคว้าและทำกิจกรรมร่วมกันได้",
+              <>
+                ออกแบบสภาพแวดล้อมโดย <br className="sm:hidden block" />
+                เน้นที่ความปลอดภัยของเด็ก <br className="sm:hidden block" />
+                เป็นสำคัญ และจัดหาเฟอร์นิเจอร์{" "}
+                <br className="sm:hidden block" />
+                ที่เหมาะสมกับการใช้งาน
+              </>,
+              <>
+                จัดหาหนังสือและกิจกรรมส่งเสริม
+                <br className="sm:hidden block" />
+                การพัฒนาทักษะสำหรับเด็กและ
+                <br className="sm:hidden block" />
+                ผู้ปกครอง เด็กๆ สามารถเรียนรู้
+                <br className="sm:hidden block" />
+                ได้ด้วยตัวเองอย่างเพลิดเพลิน <br className="sm:hidden block" />
+                ส่วนผู้ปกครองก็สามารถค้นคว้า
+                <br className="sm:hidden block" />
+                และทำกิจกรรมร่วมกันได้
+              </>,
               "มีเจ้าหน้าที่ผู้เชี่ยวชาญด้านการดูแลเด็กปฐมวัย",
             ]}
             className="col-span-6 md:col-span-2 md:border-r-2 border-white"
@@ -367,12 +413,19 @@ const HoverSpaceGrid = () => {
               <>
                 พื้นที่สงบสำหรับ <br />
                 ผู้ที่ต้องการใช้สมาธิ <br />
-                ในการอ่านและค้นคว้า ข้อมูลความรู้จากหนังสืออ้างอิง
+                ในการอ่านและค้นคว้า <br className="sm:hidden block" />
+                ข้อมูลความรู้จากหนังสืออ้างอิง
               </>
             }
             image={BOX_IMAGE_3}
             tips={[
-              "ควรใช้วัสดุเก็บเสียงกั้นพื้นที่ และแยกโซนนี้ออกมาจากพื้นที่ที่ต้องใช้เสียง",
+              <>
+                ควรใช้วัสดุเก็บเสียงกั้นพื้นที่{" "}
+                <br className="sm:hidden block" />
+                และแยกโซนนี้ออกมาจากพื้นที่
+                <br className="sm:hidden block" />
+                ที่ต้องใช้เสียง
+              </>,
             ]}
             className="col-span-6 md:col-span-2 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
@@ -402,12 +455,38 @@ const HoverSpaceGrid = () => {
         <SpaceRow bordered>
           <HoverCell
             title="ห้องสมุดไอที"
-            description="พื้นที่ส่งเสริมทักษะความรู้ด้านไอที โดยให้บริการหนังสือและสื่อความรู้ด้านไอทีที่หลากหลาย พร้อมบริการคอมพิวเตอร์"
+            description={
+              <>
+                พื้นที่ส่งเสริมทักษะความรู้ด้านไอที{" "}
+                <br className="sm:hidden block" />
+                โดยให้บริการหนังสือและ
+                <br className="sm:hidden block" />
+                สื่อความรู้ด้านไอทีที่หลากหลาย{" "}
+                <br className="sm:hidden block" />
+                พร้อมบริการคอมพิวเตอร์
+              </>
+            }
             image={BOX_IMAGE_5}
             tips={[
-              "อัพเดทกิจกรรมด้านไอทีอย่างสม่ำเสมอทั้งระดับพื้นฐานและเฉพาะทาง (อาจต่อยอดเป็นอาชีพได้)",
-              "ควรมีบริการอินเตอร์เน็ตและมีเจ้าหน้าที่เทคนิคคอยดูแล",
-              "เฟอร์นิเจอร์สำหรับการนั่งทำงานกับคอมพิวเตอร์",
+              <>
+                อัพเดทกิจกรรมด้านไอทีอย่าง
+                <br className="sm:hidden block" />
+                สม่ำเสมอ ทั้งระดับพื้นฐานและ
+                <br className="sm:hidden block" />
+                เฉพาะทาง (อาจต่อยอดเป็น
+                <br className="sm:hidden block" />
+                อาชีพได้)
+              </>,
+              <>
+                ควรมีบริการอินเตอร์เน็ตและ
+                <br className="sm:hidden block" />
+                มีเจ้าหน้าที่เทคนิคคอยดูแล
+              </>,
+              <>
+                เฟอร์นิเจอร์สำหรับการนั่งทำงาน{" "}
+                <br className="sm:hidden block" />
+                กับคอมพิวเตอร์
+              </>,
             ]}
             className="col-span-6 md:col-span-4 border-b-2 md:border-b-0 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
@@ -453,13 +532,20 @@ const HoverSpaceGrid = () => {
                 <br />
                 ทั้งภาพยนตร์สั้น แอนิเมชันทั้งไทยและต่างประเทศ รวมถึง
                 <br />
-                ฉายผลงานสร้างสรรค์ของเยาวชนรุ่นใหม่
-                พร้อมการแลกเปลี่ยนเรียนรู้กับวิทยากร
+                ฉายผลงานสร้างสรรค์ของเยาวชนรุ่นใหม่ พร้อมการ
+                <br className="sm:hidden block" />
+                แลกเปลี่ยนเรียนรู้กับวิทยากร
               </>
             }
             image={BOX_IMAGE_7}
             tips={[
-              "ฉายภาพยนตร์ใหม่ๆ เป็นประจำ โดยอาจเปิดรับความคิดเห็นของผู้ใช้งานต่อภาพยนตร์ที่ต้องการชม",
+              <>
+                ฉายภาพยนตร์ใหม่ๆ เป็นประจำ <br className="sm:hidden block" />
+                โดยอาจเปิดรับความคิดเห็น <br className="sm:hidden block" />
+                ของผู้ใช้งานต่อภาพยนตร์
+                <br className="sm:hidden block" />
+                ที่ต้องการชม
+              </>,
               "จัดหาภาพยนตร์ที่ถูกลิขสิทธิ์",
             ]}
             className="col-span-6 md:col-span-3 border-b-2 md:border-b-0 md:border-r-2 border-white"
@@ -471,15 +557,29 @@ const HoverSpaceGrid = () => {
               <>
                 ลานเปิดกว้างสำหรับทุกเพศ
                 <br />
-                ทุกวัย ไม่ว่าใครก็สามารถมาแสดงผลงาน ความคิด ความสามารถ
-                หรือจัดกิจกรรมสร้างสรรค์ได้ทุกประเภท เช่น การร้องเพลง เล่นละคร
+                ทุกวัย ไม่ว่าใครก็สามารถมาแสดง{" "}
+                <br className="sm:hidden block" />
+                ผลงาน ความคิด ความสามารถ <br className="sm:hidden block" />
+                หรือจัดกิจกรรมสร้างสรรค์
+                <br className="sm:hidden block" />
+                ได้ทุกประเภท เช่น การร้องเพลง <br className="sm:hidden block" />
+                เล่นละคร
+                <br className="hidden sm:block" />
+                พร้อมอุปกรณ์แสงและ
                 <br />
-                พร้อมอุปกรณ์แสงและเสียงที่ได้มาตรฐานไว้บริการ
+                เสียงที่ได้มาตรฐานไว้บริการ
               </>
             }
             image={BOX_IMAGE_8}
             tips={[
-              "จัดกิจกรรมส่งเสริมการเรียนรู้เป็นประจำ โดยมีเจ้าหน้าที่เป็นวิทยากรนำกิจกรรม หรือเชิญวิทยากรจากภายนอก",
+              <>
+                จัดกิจกรรมส่งเสริมการเรียนรู้
+                <br className="sm:hidden block" />
+                เป็นประจำ โดยมีเจ้าหน้าที่
+                <br className="sm:hidden block" />
+                เป็นวิทยากรนำกิจกรรม <br className="sm:hidden block" />
+                หรือเชิญวิทยากรจากภายนอก
+              </>,
             ]}
             className="col-span-6 md:col-span-3 md:border-r-2 border-white"
             onOpenImage={setOpenImage}
@@ -490,15 +590,31 @@ const HoverSpaceGrid = () => {
             title="ศูนย์การเรียนรู้อเนกประสงค์"
             description={
               <>
-                พื้นที่เอนกประสงค์สำหรับการเรียนรู้ทุกรูปแบบ เช่น การสัมมนา
-                <br />
-                การอบรมเชิงปฏิบัติการ การเรียนรู้เชิงสาระบันเทิง
-                รวมไปถึงการแสดงดนตรี ละครเวที และศิลปะการแสดงแขนงต่างๆ
+                พื้นที่เอนกประสงค์สำหรับ
+                <br className="sm:hidden block" />
+                การเรียนรู้ทุกรูปแบบ เช่น <br className="sm:hidden block" />
+                การสัมมนา
+                <br className="hidden sm:block" />
+                การอบรมเชิง
+                <br className="sm:hidden block" />
+                ปฏิบัติการ การเรียนรู้เชิงสาระ
+                <br className="sm:hidden block" />
+                บันเทิง รวมไปถึงการแสดงดนตรี <br className="sm:hidden block" />
+                ละครเวที และศิลปะการแสดง
+                <br className="sm:hidden block" />
+                แขนงต่างๆ
               </>
             }
             image={BOX_IMAGE_9}
             tips={[
-              "ออกแบบพื้นที่ให้ยืดหยุ่นรองรับกิจกรรมหลายรูปแบบ เช่น ปรับเปลี่ยนให้ฉายภาพยนตร์ จัดงานสัมมนา จัดงานแถลงข่าวได้",
+              <>
+                ออกแบบพื้นที่ให้ยืดหยุ่นรองรับ
+                <br className="sm:hidden block" />
+                กิจกรรมหลายรูปแบบ เช่น <br className="sm:hidden block" />
+                ปรับเปลี่ยนให้ฉายภาพยนตร์ จัด
+                <br className="sm:hidden block" />
+                งานสัมมนา จัดงานแถลงข่าวได้
+              </>,
               "จัดทำระบบการจองล่วงหน้าสำหรับบุคคลภายนอก",
             ]}
             className="col-span-6 md:border-r-2 border-white"
@@ -516,16 +632,40 @@ const HoverSpaceGrid = () => {
           <HoverCell
             title="มุมอาหารเครื่องดื่ม"
             tips={[
-              "แจ้งข้อตกลงในการเก็บและทิ้งอย่างชัดเจนหากผู้ใช้บริการต้องการนำเครื่องดื่มเข้ามาในพื้นที่",
-              "อาจใช้พื้นที่ด้านนอกอาคารเป็นพื้นที่สำหรับรับประทานอาหาร",
+              <>
+                แจ้งข้อตกลงในการเก็บและ
+                <br className="sm:hidden block" />
+                ทิ้งอย่างชัดเจนหากผู้ใช้บริการ
+                <br className="sm:hidden block" />
+                ต้องการนำเครื่องดื่มเข้ามา
+                <br className="sm:hidden block" />
+                ในพื้นที่
+              </>,
+              <>
+                อาจใช้พื้นที่ด้านนอกอาคาร
+                <br className="sm:hidden block" />
+                เป็นพื้นที่สำหรับรับประทานอาหาร
+              </>,
               <>
                 เลือกใช้เฟอร์นิเจอร์ที่ทำ
                 <br />
                 ความสะอาดง่าย ดูเรียบร้อย
-                โดยพิจารณาวัสดุของเฟอร์นิเจอร์ให้เหมาะสม
+                <br className="sm:hidden block" />
+                โดยพิจารณาวัสดุของ
+                <br className="sm:hidden block" />
+                เฟอร์นิเจอร์ให้เหมาะสม
+                <br className="sm:hidden block" />
                 ไม่เลอะเป็นคราบหรือสกปรกง่าย
               </>,
-              "แยกมุมอาหารและเครื่องดื่มออกมาจากโซนของพื้นที่การเรียนรู้ หรือใช้พื้นที่นอกอาคาร",
+              <>
+                แยกมุมอาหารและเครื่องดื่ม
+                <br className="sm:hidden block" />
+                ออกมาจากโซนของพื้นที่
+                <br className="sm:hidden block" />
+                การเรียนรู้ หรือใช้พื้นที่
+                <br className="sm:hidden block" />
+                นอกอาคาร
+              </>,
             ]}
             className="col-span-6 md:col-auto md:col-start-4 md:col-end-7"
             onOpenImage={setOpenImage}
@@ -556,7 +696,11 @@ const HoverSpaceGrid = () => {
             title="ที่จอดรถ"
             tips={[
               "ต้องคำนึงถึงปริมาณที่เพียงพอในการรองรับจำนวนผู้ใช้บริการ และประเภทของยานพาหนะ เช่น ในบางพื้นที่ไม่ควรมีพื้นที่จอดรถจักรยานยนตร์มากจนเกินไป",
-              "ควรตั้งอยู่ในจุดที่รถสาธารณะเข้าถึงได้",
+              <>
+                ควรตั้งอยู่ในจุดที่รถสาธารณะ
+                <br className="sm:hidden block" />
+                เข้าถึงได้
+              </>,
               "มีจุดเชื่อมต่อจากจุดจอดรถกับตัวอาคาร",
             ]}
             className="col-span-6 md:col-span-3"

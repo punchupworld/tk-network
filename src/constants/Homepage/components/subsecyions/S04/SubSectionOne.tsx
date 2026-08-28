@@ -149,11 +149,14 @@ const SubSectionOne = () => {
           งบประมาณเป็นหนึ่งในปัจจัยสำคัญที่มีผลต่อการสร้างพื้นที่การเรียนรู้{" "}
           <br />
           หน่วยงานจึงต้องบริหารจัดการงบประมาณอย่างมีประสิทธิภาพ
-          และควรพึ่งพาแหล่งงบประมาณจากหลากหลายที่มา เช่น หน่วยงานต้นสังกัด
-          เงินบริจาคจากภาคเอกชน ค่าบำรุงห้องสมุดจากสมาชิก และรายได้อื่นๆ เช่น
-          การเขียนโครงการขอทุนสนับสนุน
+          และควรพึ่งพาแหล่งงบประมาณจากหลากหลายที่มา เช่น{" "}
+          <br className="sm:hidden block" />
+          หน่วยงานต้นสังกัด เงินบริจาคจากภาคเอกชน ค่าบำรุงห้องสมุดจากสมาชิก
+          และรายได้อื่นๆ เช่น การเขียนโครงการขอทุนสนับสนุน
           นอกจากนั้นผู้บริหารของพื้นที่การเรียนรู้ควรยึดหลักความรับผิดชอบต่อสังคมในภาคธุรกิจ
-          (CSR) โดยแสวงหาความร่วมมือจากภาคเอกชนในการสนับสนุนด้านเงินทุน
+          (CSR) โดยแสวงหาความร่วมมือจากภาคเอกชนในการสนับสนุน
+          <br className="sm:hidden block" />
+          ด้านเงินทุน
         </p>
 
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
@@ -207,7 +210,10 @@ const SubSectionOne = () => {
         >
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             งบประมาณสำหรับช่วงเริ่มต้น <br />
-            ส่วนใหญ่จะนำไปใช้ในการก่อสร้างอาคาร ตกแต่งพื้นที่ เตรียมเปิดบริการ
+            ส่วนใหญ่จะนำไปใช้ในการก่อสร้าง
+            <br className="sm:hidden block" />
+            อาคาร ตกแต่งพื้นที่ <br className="sm:hidden block" />
+            เตรียมเปิดบริการ
           </p>
         </div>
       </div>
@@ -322,18 +328,39 @@ const SubSectionOne = () => {
               <div className="grid grid-cols-3 gap-3 md:flex md:justify-between md:gap-0">
                 <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
-                    จัดหาอุปกรณ์ประกอบการใช้งานระบบห้องสมุดอัตโนมัติ (Walai
+                    จัดหาอุปกรณ์
+                    <br className="sm:hidden block" />
+                    ประกอบ
+                    <br className="sm:hidden block" />
+                    การใช้งาน
+                    <br className="sm:hidden block" />
+                    ระบบห้องสมุด
+                    <br className="sm:hidden block" />
+                    อัตโนมัติ (Walai <br className="sm:hidden block" />
                     Autolib)
                   </p>
                 </div>
                 <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
-                    จัดหาอุปกรณ์ประกอบการการจัดแคตตาล็อก ทรัพยากรสารสนเทศ
+                    จัดหาอุปกรณ์
+                    <br className="sm:hidden block" />
+                    ประกอบการการจัด
+                    <br className="sm:hidden block" />
+                    แคตตาล็อก <br className="sm:hidden block" />
+                    ทรัพยากร
+                    <br className="sm:hidden block" />
+                    สารสนเทศ
                   </p>
                 </div>
                 <div className="text-center max-w-full text-balance md:max-w-38.75">
                   <p className="font-th desktop-s7-th-700 text-white">
-                    จัดหาอุปกรณ์ประกอบ การใช้งานระบบสมาชิก (TK Member)
+                    จัดหาอุปกรณ์
+                    <br className="sm:hidden block" />
+                    ประกอบ <br className="sm:hidden block" />
+                    การใช้งาน
+                    <br className="sm:hidden block" />
+                    ระบบสมาชิก <br className="sm:hidden block" />
+                    (TK Member)
                   </p>
                 </div>
               </div>
@@ -363,7 +390,8 @@ const SubSectionOne = () => {
             จำแนกได้เป็นงบสำหรับ <br />
             การจ้างบุคลากร การจัดกิจกรรม การจัดซื้อทรัพยากรสารสนเทศเพิ่มเติม
             รวมทั้ง <br />
-            ค่าสาธารณูปโภคต่างๆ เช่น ค่าน้ำประปา <br /> ค่าไฟฟ้า
+            ค่าสาธารณูปโภคต่างๆ เช่น ค่าน้ำประปา{" "}
+            <br className="hidden sm:block" /> ค่าไฟฟ้า
           </p>
         </div>
       </div>

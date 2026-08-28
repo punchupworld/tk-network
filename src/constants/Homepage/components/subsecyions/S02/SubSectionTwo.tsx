@@ -47,17 +47,39 @@ const SubSectionTwo = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          ทุกอย่างต้องเริ่มจาก “ความพร้อมของเครือข่าย” เนื่องจากความแตกต่าง
-          <br />
-          ในบริบททางกายภาพและการบริหารจัดการของหน่วยงานเจ้าภาพ ดังนั้น
-          <br />
-          การหารือร่วมกันจึงเป็นกระบวนการสำคัญที่จะทำให้หน่วยงานในฐานะเครือข่าย
-          TK Park เข้าใจและต่อยอดได้ว่า
-          การสร้างพื้นที่การเรียนรู้ที่เป็นหัวใจของชุมชนต้องการอะไร
+          ทุกอย่างต้องเริ่มจาก
+          <br className="sm:hidden block" /> “ความพร้อมของเครือข่าย”
+          <br className="sm:hidden block" />
+          เนื่องจากความแตกต่าง
+          <br className="hidden sm:block" />
+          ในบริบท
+          <br className="sm:hidden block" />
+          ทางกายภาพและการบริหาร
+          <br className="sm:hidden block" />
+          จัดการของหน่วยงานเจ้าภาพ <br className="sm:hidden block" />
+          ดังนั้น
+          <br className="hidden sm:block" />
+          การหารือร่วมกันจึงเป็น
+          <br className="sm:hidden block" />
+          กระบวนการสำคัญที่จะทำให้
+          <br className="sm:hidden block" />
+          หน่วยงานในฐานะเครือข่าย
+          <br className="sm:hidden block" /> TK Park เข้าใจและต่อยอดได้ว่า
+          <br className="sm:hidden block" />
+          การสร้างพื้นที่การเรียนรู้ที่เป็น
+          <br className="sm:hidden block" />
+          หัวใจของชุมชนต้องการอะไร
+          <br className="sm:hidden block" />
           ต้องดำเนินการอย่างไรบ้าง
-          โดยตัวอย่างด้านล่างเหล่านี้คือเครื่องมือที่ทาง TK Park
-          สามารถให้คำแนะนำตามความเหมาะสม
-          <br />
+          <br className="sm:hidden block" />
+          โดยตัวอย่างด้านล่างเหล่านี้
+          <br className="sm:hidden block" />
+          คือเครื่องมือที่ทาง TK Park
+          <br className="sm:hidden block" />
+          สามารถให้คำแนะนำตามความ
+          <br className="sm:hidden block" />
+          เหมาะสม
+          <br className="hidden sm:block" />
           อย่างเต็มกำลัง
         </p>
       </div>
@@ -80,10 +102,15 @@ const SubSectionTwo = () => {
           style={{ height: "stretch" }}
         >
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            โมเดลพื้นที่การเรียนรู้พร้อมใช้งาน ไม่ว่าจะเป็น
-            <br />
-            โมเดลด้านการออกแบบพื้นที่ การบริการ
-            <br /> การบริหารจัดการ
+            โมเดลพื้นที่การเรียนรู้
+            <br className="sm:hidden block" />
+            พร้อมใช้งาน ไม่ว่าจะเป็น
+            <br className="hidden sm:block" />
+            โมเดล
+            <br className="sm:hidden block" />
+            ด้านการออกแบบพื้นที่
+            <br className="sm:hidden block" /> การบริการ
+            <br className="hidden sm:block" /> การบริหารจัดการ
           </p>
         </div>
       </div>
@@ -103,15 +130,34 @@ const SubSectionTwo = () => {
         </div>
         <div className="p-10 border-2 border-white bg-orange-50 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            TK Park
-            รวบรวมแนวคิดและรูปแบบกิจกรรมที่ผ่านการพัฒนาและทดลองใช้งานจากพื้นที่การเรียนรู้
-            ทั่วประเทศ เพื่อให้หน่วยงานสามารถนำไปประยุกต์ใช้ได้ อย่างเหมาะสม
-            <br />
-            กับบริบทของตนเอง ทั้งกิจกรรมส่งเสริมการอ่าน
-            การเรียนรู้เชิงสร้างสรรค์ เวิร์กช็อป การเรียนรู้ผ่านการเล่น
-            ตลอดจนกิจกรรมที่ช่วยสร้างการมีส่วนร่วม ของคนในชุมชน
-            <br /> โดยสามารถเลือกปรับรูปแบบ ระยะเวลา
-            และกลุ่มเป้าหมายให้สอดคล้องกับศักยภาพของพื้นที่ได้
+            TK Park รวบรวมแนวคิดและ
+            <br className="sm:hidden block" />
+            รูปแบบกิจกรรมที่ผ่านการพัฒนา
+            <br className="sm:hidden block" />
+            และทดลองใช้งานจากพื้นที่
+            <br className="sm:hidden block" />
+            การเรียนรู้ ทั่วประเทศ เพื่อให้
+            <br className="sm:hidden block" />
+            หน่วยงานสามารถนำไปประยุกต์
+            <br className="sm:hidden block" />
+            ใช้ได้ อย่างเหมาะสม
+            <br className="hidden sm:block" />
+            กับบริบท
+            <br className="sm:hidden block" />
+            ของตนเอง ทั้งกิจกรรมส่งเสริม
+            <br className="sm:hidden block" />
+            การอ่าน การเรียนรู้เชิงสร้างสรรค์ <br className="sm:hidden block" />
+            เวิร์กช็อป การเรียนรู้ผ่านการเล่น
+            <br className="sm:hidden block" />
+            ตลอดจนกิจกรรมที่ช่วยสร้าง
+            <br className="sm:hidden block" />
+            การมีส่วนร่วม ของคนในชุมชน
+            <br /> โดยสามารถเลือกปรับรูปแบบ
+            <br className="sm:hidden block" /> ระยะเวลา และกลุ่มเป้าหมาย
+            <br className="sm:hidden block" />
+            ให้สอดคล้องกับศักยภาพ
+            <br className="sm:hidden block" />
+            ของพื้นที่ได้
           </p>
         </div>
       </div>
@@ -133,14 +179,15 @@ const SubSectionTwo = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             ระบบและเครื่องมือ
             <br />
-            เพื่อช่วยให้การทำงาน สะดวกสบายขึ้น
+            เพื่อช่วยให้การทำงาน <br className="sm:hidden block" />
+            สะดวกสบายขึ้น
           </p>
         </div>
       </div>
       <div className="flex w-full flex-col items-start" id="subsubtopic7">
         <CoverCap color="#F5333F" />
         <div className="flex w-full flex-col items-start gap-10 border-x-2 border-white bg-[#F5333F] px-10 pt-5 pb-10 text-white">
-          <div className="flex">
+          <div className="flex flex-col sm:flex-row">
             <h2 className="font-th desktop-s6-th-400 px-2.5 py-1 bg-tk-black text-white">
               ระบบและเครื่องมือที่จะได้รับ
             </h2>
@@ -159,9 +206,13 @@ const SubSectionTwo = () => {
             </div>
             <div className="bg-white border border-yellow-700">
               <div className="px-[14px] py-2.5 font-th desktop-s6-th-400 text-tk-red border-b border-yellow-700">
-                โปรแกรมพื้นฐานที่ช่วยบรรณารักษ์จัดการทรัพยากร
+                โปรแกรมพื้นฐานที่ช่วย
+                <br className="sm:hidden block" />
+                บรรณารักษ์จัดการทรัพยากร
                 <br />
-                อัตโนมัติ ภายในพื้นที่การเรียนรู้อย่างครอบคลุม
+                อัตโนมัติ ภายในพื้นที่
+                <br className="sm:hidden block" />
+                การเรียนรู้อย่างครอบคลุม
               </div>
               <div className="px-[14px] py-2.5 font-th desktop-s6-th-400 text-tk-red border-b border-yellow-700">
                 การบริหารจัดการ การจัดเก็บ เลือกสรร จัดหา
@@ -185,13 +236,30 @@ const SubSectionTwo = () => {
             </div>
             <div className="bg-white border border-yellow-700">
               <div className="px-[14px] py-2.5 font-th desktop-s6-th-400 text-tk-red">
-                แอปพลิเคชันที่รวบรวมบริการของ TK Park ไว้ในที่เดียว
-                สมาชิกสามารถเข้าถึงบริการห้องสมุดและกิจกรรมต่างๆ
-                <br /> ได้อย่างสะดวกสบายผ่านสมาร์ตโฟน ไม่ว่าจะเป็นการค้นหา
+                แอปพลิเคชันที่รวบรวม
+                <br className="sm:hidden block" />
+                บริการของ TK Park ไว้ใน
+                <br className="sm:hidden block" />
+                ที่เดียว สมาชิกสามารถเข้าถึง
+                <br className="sm:hidden block" />
+                บริการห้องสมุดและกิจกรรม
+                <br className="sm:hidden block" />
+                ต่างๆ
+                <br className="hidden sm:block" /> ได้อย่างสะดวกสบาย
+                <br className="sm:hidden block" />
+                ผ่านสมาร์ตโฟน <br className="sm:hidden block" />
+                ไม่ว่าจะเป็นการค้นหา
                 <br />
-                การจองหนังสือ การสมัครเข้าร่วมกิจกรรม โดยสามารถ <br />
-                ใช้บัตรสมาชิกดิจิทัล (QR Code) ตรวจสอบข้อมูลสมาชิก
-                และเชื่อมต่อบริการอ่านหนังสือออนไลน์ (TK Read) ได้ทุกที่ทุกเวลา
+                การจองหนังสือ การสมัคร
+                <br className="sm:hidden block" />
+                เข้าร่วมกิจกรรม โดยสามารถ <br />
+                ใช้บัตรสมาชิกดิจิทัล <br className="sm:hidden block" />
+                (QR Code) ตรวจสอบข้อมูล
+                <br className="sm:hidden block" />
+                สมาชิก และเชื่อมต่อบริการ
+                <br className="sm:hidden block" />
+                อ่านหนังสือออนไลน์ <br className="sm:hidden block" />
+                (TK Read) ได้ทุกที่ทุกเวลา
               </div>
             </div>
           </div>
@@ -210,7 +278,7 @@ const SubSectionTwo = () => {
               </div>
             </div>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start md:flex-row flex-col">
             <div className="px-2.5 py-1 bg-yellow-700">
               <p className="font-th desktop-s6-th-700 text-white text-nowrap">
                 แพลตฟอร์ม
@@ -247,8 +315,15 @@ const SubSectionTwo = () => {
         </div>
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            จัดอบรมกระบวนการพัฒนาศักยภาพบุคลากรผ่านการฝึกปฏิบัติงาน <br />
-            (On-the-Job Training) ก่อนเปิดบริการเกี่ยวกับการทำงานหลังบ้าน
+            จัดอบรมกระบวนการพัฒนา
+            <br className="sm:hidden block" />
+            ศักยภาพบุคลากรผ่านการ
+            <br className="sm:hidden block" />
+            ฝึกปฏิบัติงาน <br />
+            (On-the-Job Training) <br className="sm:hidden block" />
+            ก่อนเปิดบริการเกี่ยวกับ
+            <br className="sm:hidden block" />
+            การทำงานหลังบ้าน
             <br />
             ที่ครอบคลุมทุกด้าน
           </p>
@@ -276,12 +351,22 @@ const SubSectionTwo = () => {
             </div>
             <div className="px-[14px] py-2.5 border border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                อบรมความรู้ด้านบรรณารักษ์และการบริหารจัดการ
+                อบรมความรู้ด้านบรรณารักษ์
+                <br className="sm:hidden block" />
+                และการบริหารจัดการ
                 <br />
-                ห้องสมุด
-                เสริมสร้างองค์ความรู้พื้นฐานที่จำเป็นสำหรับการดำเนินงานห้องสมุด
-                เช่น การพัฒนาทรัพยากรสารสนเทศ
-                การคัดเลือกหนังสือและสื่อการเรียนรู้
+                ห้องสมุด เสริมสร้าง
+                <br className="sm:hidden block" />
+                องค์ความรู้พื้นฐาน
+                <br className="sm:hidden block" />
+                ที่จำเป็นสำหรับการดำเนิน
+                <br className="sm:hidden block" />
+                งานห้องสมุด เช่น การพัฒนา
+                <br className="sm:hidden block" />
+                ทรัพยากรสารสนเทศ <br className="sm:hidden block" />
+                การคัดเลือกหนังสือ
+                <br className="sm:hidden block" />
+                และสื่อการเรียนรู้
               </p>
             </div>
           </div>
@@ -293,9 +378,21 @@ const SubSectionTwo = () => {
             </div>
             <div className="px-[14px] py-2.5 border border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                อบรมการใช้งานระบบห้องสมุดอัตโนมัติและระบบสมาชิก
-                พัฒนาทักษะการใช้งานระบบห้องสมุดอัตโนมัติและเครื่องมือดิจิทัลที่ใช้ในการบริหารจัดการห้องสมุด
-                เช่น การยืม–คืนทรัพยากร
+                อบรมการใช้งานระบบ
+                <br className="sm:hidden block" />
+                ห้องสมุดอัตโนมัติและระบบ
+                <br className="sm:hidden block" />
+                สมาชิก พัฒนาทักษะ
+                <br className="sm:hidden block" />
+                การใช้งานระบบห้องสมุด
+                <br className="sm:hidden block" />
+                อัตโนมัติและเครื่องมือดิจิทัล
+                <br className="sm:hidden block" />
+                ที่ใช้ในการบริหารจัดการ
+                <br className="sm:hidden block" />
+                ห้องสมุด เช่น การยืม–คืน
+                <br className="sm:hidden block" />
+                ทรัพยากร
               </p>
             </div>
           </div>
@@ -307,11 +404,25 @@ const SubSectionTwo = () => {
             </div>
             <div className="px-[14px] py-2.5 border border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                อบรมกิจกรรมส่งเสริมการเรียนรู้และแนวทาง <br />
-                การจัดกิจกรรม เสริมสร้างความรู้และทักษะในการออกแบบและดำเนิน
-                กิจกรรมให้สอดคล้องกับบริบทของพื้นที่และกลุ่มเป้าหมาย
-                และสร้างการมีส่วนร่วมกับทุกภาคส่วนในพื้นที่ ทั้งภาครัฐ ภาคเอกชน
-                ภาคประชาสังคม สถานศึกษา และชุมชน
+                อบรมกิจกรรมส่งเสริม
+                <br className="sm:hidden block" />
+                การเรียนรู้และแนวทาง <br />
+                การจัดกิจกรรม เสริมสร้าง
+                <br className="sm:hidden block" />
+                ความรู้และทักษะในการ
+                <br className="sm:hidden block" />
+                ออกแบบและดำเนินกิจกรรม
+                <br className="sm:hidden block" />
+                ให้สอดคล้องกับบริบทของ
+                <br className="sm:hidden block" />
+                พื้นที่และกลุ่มเป้าหมาย
+                <br className="sm:hidden block" />
+                และสร้างการมีส่วนร่วม
+                <br className="sm:hidden block" />
+                กับทุกภาคส่วนในพื้นที่ <br className="sm:hidden block" />
+                ทั้งภาครัฐ ภาคเอกชน <br className="sm:hidden block" />
+                ภาคประชาสังคม สถานศึกษา <br className="sm:hidden block" />
+                และชุมชน
               </p>
             </div>
           </div>
@@ -323,12 +434,31 @@ const SubSectionTwo = () => {
             </div>
             <div className="px-[14px] py-2.5 border border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                อบรมด้านการประชาสัมพันธ์และการใช้อัตลักษณ์ของ องค์กร (Corporate
+                อบรมด้านการประชาสัมพันธ์
+                <br className="sm:hidden block" />
+                และการใช้อัตลักษณ์ของ
+                <br className="sm:hidden block" /> องค์กร (Corporate{" "}
+                <br className="sm:hidden block" />
                 Identity: CI) ของ TK Park
-                พัฒนาความรู้ความเข้าใจเกี่ยวกับการสื่อสารประชาสัมพันธ์
-                การสร้างการรับรู้และภาพลักษณ์องค์กรให้สอดคล้องกัน เช่น
-                การจัดทำสื่อประชาสัมพันธ์ <br /> การใช้งานตราสัญลักษณ์ สี
-                รูปแบบตัวอักษร และองค์ประกอบการสื่อสารต่างๆ
+                <br className="sm:hidden block" />
+                พัฒนาความรู้ความเข้าใจ
+                <br className="sm:hidden block" />
+                เกี่ยวกับการสื่อสาร
+                <br className="sm:hidden block" />
+                ประชาสัมพันธ์ การสร้าง
+                <br className="sm:hidden block" />
+                การรับรู้และภาพลักษณ์
+                <br className="sm:hidden block" />
+                องค์กรให้สอดคล้องกัน
+                <br className="sm:hidden block" /> เช่น การจัดทำสื่อ
+                <br className="sm:hidden block" />
+                ประชาสัมพันธ์ <br className="hidden sm:block" /> การใช้งาน
+                <br className="sm:hidden block" />
+                ตราสัญลักษณ์ สี รูปแบบ
+                <br className="sm:hidden block" />
+                ตัวอักษร และองค์ประกอบ
+                <br className="sm:hidden block" />
+                การสื่อสารต่างๆ
               </p>
             </div>
           </div>
@@ -340,13 +470,31 @@ const SubSectionTwo = () => {
             </div>
             <div className="px-[14px] py-2.5 border border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                เรียนรู้งานบริการจากพื้นที่ต้นแบบต่างๆ ของ TK Park
-                เรียนรู้การปฏิบัติงานจริงจากอุทยานการเรียนรู้ <br />
-                TK Park ชั้น 8 ศูนย์การค้าเซ็นทรัลเวิลด์ ซึ่งเป็นพื้นที่ต้นแบบ
-                โดยสังเกตการณ์และฝึกปฏิบัติงานภายใต้ <br />
-                การดูแลของเจ้าหน้าที่ผู้มีประสบการณ์เพื่อให้บริการผู้ใช้งานได้อย่างตรงจุด
+                เรียนรู้งานบริการจากพื้นที่
+                <br className="sm:hidden block" />
+                ต้นแบบต่างๆ ของ TK Park
+                <br className="sm:hidden block" />
+                เรียนรู้การปฏิบัติงานจริง
+                <br className="sm:hidden block" />
+                จากอุทยานการเรียนรู้ <br />
+                TK Park ชั้น 8 ศูนย์การค้า
+                <br className="sm:hidden block" />
+                เซ็นทรัลเวิลด์ ซึ่งเป็นพื้นที่
+                <br className="sm:hidden block" />
+                ต้นแบบ โดยสังเกตการณ์และ
+                <br className="sm:hidden block" />
+                ฝึกปฏิบัติงานภายใต้ <br className="hidden sm:block" />
+                การดูแล
+                <br className="sm:hidden block" />
+                ของเจ้าหน้าที่ผู้มี
+                <br className="sm:hidden block" />
+                ประสบการณ์เพื่อให้บริการ
+                <br className="sm:hidden block" />
+                ผู้ใช้งานได้อย่างตรงจุด <br className="sm:hidden block" />
                 รวมถึงการบริหารจัดการ <br />
-                พื้นที่การเรียนรู้ และปัญหาเฉพาะหน้าต่างๆ
+                พื้นที่การเรียนรู้ และปัญหา
+                <br className="sm:hidden block" />
+                เฉพาะหน้าต่างๆ
               </p>
             </div>
           </div>

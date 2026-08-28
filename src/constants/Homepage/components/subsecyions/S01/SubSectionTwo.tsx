@@ -20,54 +20,140 @@ const SubSectionTwo = () => {
       </div>
       <div
         id="subsubtopic2"
-        className="flex w-full flex-col items-start justify-center gap-5 p-10 bg-[#FEE6A6] border-2 border-white"
+        className="flex w-full flex-col sm:items-start items-center justify-center gap-5 p-10 bg-[#FEE6A6] border-2 border-white"
       >
         <p className="text-tk-red desktop-s6-th-700">
-          ห้องสมุดมีชีวิตในประเทศไทยคืออะไร
+          ห้องสมุดมีชีวิตในประเทศไทย
+          <br className="sm:hidden block" />
+          คืออะไร
         </p>
         <p className="text-tk-black desktop-s6-th-400">
-          ตั้งแต่ก่อตั้ง TK Park
-          ตีโจทย์ความเป็นห้องสมุดอย่างต่อเนื่องโดยศึกษาจากบริบทไทยและโลก
-          คิดค้นการสร้างต้นแบบพื้นที่การเรียนรู้ในรูปแบบ “ห้องสมุดมีชีวิต”
-          ไปสู่การขยายบทบาทในการ “สร้างระบบนิเวศการเรียนรู้” ให้เกิดขึ้น
-          <br />
+          ตั้งแต่ก่อตั้ง TK Park ตีโจทย์
+          <br className="sm:hidden block" />
+          ความเป็นห้องสมุดอย่างต่อเนื่อง
+          <br className="sm:hidden block" />
+          โดยศึกษาจากบริบทไทยและโลก
+          <br className="sm:hidden block" />
+          คิดค้นการสร้างต้นแบบ
+          <br className="sm:hidden block" />
+          พื้นที่การเรียนรู้ในรูปแบบ <br className="sm:hidden block" />
+          “ห้องสมุดมีชีวิต” ไปสู่การขยาย
+          <br className="sm:hidden block" />
+          บทบาทในการ “สร้างระบบนิเวศ
+          <br className="sm:hidden block" />
+          การเรียนรู้” ให้เกิดขึ้น
+          <br className="hidden sm:block" />
           ทั่วประเทศ
         </p>
         <p className="text-tk-black desktop-s6-th-400">
-          ภาพจำของห้องสมุดแบบดั้งเดิมคือการเป็นแหล่งเก็บหนังสือและให้บริการ
+          ภาพจำของห้องสมุดแบบดั้งเดิม
+          <br className="sm:hidden block" />
+          คือการเป็นแหล่งเก็บหนังสือและ
+          <br className="sm:hidden block" />
+          ให้บริการ
+          <br className="hidden sm:block" />
+          ยืม-คืนหนังสือ แต่ใน
+          <br className="sm:hidden block" />
+          ยุคปัจจุบันห้องสมุดควรพัฒนา
+          <br className="sm:hidden block" />
+          บริการที่ผสมผสาน
+          <br className="hidden sm:block" />
+          การเรียนรู้
+          <br className="sm:hidden block" />
+          เข้าไปในพื้นที่สาธารณะ ทั้งใน
+          <br className="sm:hidden block" />
+          รูปแบบออฟไลน์และออนไลน์
           <br />
-          ยืม-คืนหนังสือ แต่ในยุคปัจจุบันห้องสมุดควรพัฒนาบริการที่ผสมผสาน
-          <br />
-          การเรียนรู้เข้าไปในพื้นที่สาธารณะทั้งในรูปแบบออฟไลน์และออนไลน์
-          <br />
-          เพื่อตอบโจทย์ความต้องการของผู้ใช้งานในพื้นที่เป็นหลัก
-          ดังนั้นการเกิดขึ้นของห้องสมุดมีชีวิต
-          คือการเปลี่ยนภาพของห้องสมุดที่มีแต่หนังสือให้เป็นพื้นที่ของการแลกเปลี่ยน
-          เรียนรู้ รวมผู้คนมาร่วมงานสร้างสรรค์ (Co-working and Learning Spaces)
-          และมอบแรงบันดาลใจให้เด็กและเยาวชน (Makerspace) เป็นคนสู้ฝัน (Dream
-          Maker) ได้ทดลองลงมือทำผ่านกิจกรรมที่ออกแบบให้เหมาะสมกับพวกเขา
+          เพื่อตอบโจทย์ความต้องการ
+          <br className="sm:hidden block" />
+          ของผู้ใช้งานในพื้นที่เป็นหลัก ดังนั้นการเกิดขึ้นของห้องสมุด
+          <br className="sm:hidden block" />
+          มีชีวิต คือการเปลี่ยนภาพของ
+          <br className="sm:hidden block" />
+          ห้องสมุดที่มีแต่หนังสือให้เป็น
+          <br className="sm:hidden block" />
+          พื้นที่ของการแลกเปลี่ยน <br className="sm:hidden block" />
+          เรียนรู้ รวมผู้คนมาร่วมงาน
+          <br className="sm:hidden block" />
+          สร้างสรรค์ (Co-working and <br className="sm:hidden block" />
+          Learning Spaces) และมอบ
+          <br className="sm:hidden block" />
+          แรงบันดาลใจให้เด็กและเยาวชน
+          <br className="sm:hidden block" /> (Makerspace) เป็นคนสู้ฝัน
+          <br className="sm:hidden block" /> (Dream Maker) ได้ทดลอง
+          <br className="sm:hidden block" />
+          ลงมือทำผ่านกิจกรรมที่ออกแบบ
+          <br className="sm:hidden block" />
+          ให้เหมาะสมกับพวกเขา
         </p>
         <p className="text-tk-black desktop-s6-th-400">
-          ปัจจุบันประเทศไทยเริ่มออกแบบพื้นที่การเรียนรู้อย่างมีสีสันและตรงตามโจทย์
-          การใช้งานให้ได้มากที่สุด TK Park
-          ในฐานะผู้มีประสบการณ์ในการออกแบบพื้นที่การเรียนรู้เห็นว่า
-          ห้องสมุดภายใต้การบริหารจัดการของเครือข่ายใน
-          <br />
-          หลายพื้นที่มีความโปร่งโล่ง นุ่มสบาย มีหมอนและโซฟาไว้สำหรับนั่งเล่น
-          <br />
-          หรือถึงขั้นมีบริการกาแฟและอาหารว่าง ทุกคนสามารถเข้าถึงอินเทอร์เน็ตได้
-          <br />
-          มีห้องประชุม ห้องเวิร์คช็อป ห้องที่สามารถใช้เสียงได้เต็มที่
-          รวมถึงการจัดกิจกรรมต่างๆ ตามความเชี่ยวชาญของห้องสมุด
+          ปัจจุบันประเทศไทยเริ่มออกแบบ
+          <br className="sm:hidden block" />
+          พื้นที่การเรียนรู้อย่างมีสีสันและ
+          <br className="sm:hidden block" />
+          ตรงตามโจทย์ การใช้งานให้ได้
+          <br className="sm:hidden block" />
+          มากที่สุด TK Park ในฐานะผู้มี
+          <br className="sm:hidden block" />
+          ประสบการณ์ในการออกแบบ
+          <br className="sm:hidden block" />
+          พื้นที่การเรียนรู้เห็นว่า ห้องสมุด
+          <br className="sm:hidden block" />
+          ภายใต้การบริหารจัดการของ
+          <br className="sm:hidden block" />
+          เครือข่ายใน
+          <br className="hidden sm:block" />
+          หลายพื้นที่มีความ
+          <br className="sm:hidden block" />
+          โปร่งโล่ง นุ่มสบาย มีหมอน
+          <br className="sm:hidden block" />
+          และโซฟาไว้สำหรับนั่งเล่น
+          <br className="hidden sm:block" />
+          หรือ
+          <br className="sm:hidden block" />
+          ถึงขั้นมีบริการกาแฟและ
+          <br className="sm:hidden block" />
+          อาหารว่าง ทุกคนสามารถเข้าถึง
+          <br className="sm:hidden block" />
+          อินเทอร์เน็ตได้
+          <br className="hidden sm:block" />
+          มีห้องประชุม <br className="sm:hidden block" />
+          ห้องเวิร์คช็อป ห้องที่สามารถ
+          <br className="sm:hidden block" />
+          ใช้เสียงได้เต็มที่ รวมถึงการจัด
+          <br className="sm:hidden block" />
+          กิจกรรมต่างๆ ตามความ
+          <br className="sm:hidden block" />
+          เชี่ยวชาญของห้องสมุด
         </p>
         <p className="text-tk-black desktop-s6-th-400">
-          การออกแบบที่หลากหลายและฟังก์ชันการใช้งานที่เพิ่มขึ้นมาบ่งบอกถึง <br />
-          การให้ความสำคัญกับผู้ใช้งานเป็นหลัก ดังนั้นของบางอย่าง
-          <br />
-          แค่มีอยู่อย่างเดียวจึงไม่เพียงพอ เช่น เราอาจมีหนังสือล้นห้องสมุด
-          <br /> แต่ไม่มีระบบหรือกิจกรรมที่ส่งเสริมให้เกิดการเรียนรู้ตลอดชีวิต
-          <br />
-          ภารกิจของการสร้างการเรียนรู้อย่างไม่มีที่สิ้นสุดก็อาจไม่ประสบผลสำเร็จ
+          การออกแบบที่หลากหลายและ
+          <br className="sm:hidden block" />
+          ฟังก์ชันการใช้งานที่เพิ่มขึ้นมา
+          <br className="sm:hidden block" />
+          บ่งบอกถึง <br className="hidden sm:block" />
+          การให้ความสำคัญกับ
+          <br className="sm:hidden block" />
+          ผู้ใช้งานเป็นหลัก ดังนั้น
+          <br className="sm:hidden block" />
+          ของบางอย่าง
+          <br className="hidden sm:block" />
+          แค่มีอยู่อย่างเดียว
+          <br className="sm:hidden block" />
+          จึงไม่เพียงพอ เช่น เราอาจมี
+          <br className="sm:hidden block" />
+          หนังสือล้นห้องสมุด
+          <br className="hidden sm:block" /> แต่ไม่มีระบบ
+          <br className="sm:hidden block" />
+          หรือกิจกรรมที่ส่งเสริมให้เกิด
+          <br className="sm:hidden block" />
+          การเรียนรู้ตลอดชีวิต
+          <br className="hidden sm:block" />
+          ภารกิจของ
+          <br className="sm:hidden block" />
+          การสร้างการเรียนรู้อย่างไม่มี
+          <br className="sm:hidden block" />
+          ที่สิ้นสุดก็อาจไม่ประสบผลสำเร็จ
         </p>
       </div>
       <div
@@ -84,14 +170,14 @@ const SubSectionTwo = () => {
         </div>
 
         <div className=" flex w-full flex-col items-center justify-center gap-2.5 border-x-2 border-b-2 border-white bg-[#FFBAA1] px-10 pb-10 text-white ">
-          <div className="flex items-end mt-0.5">
+          <div className="flex items-end mt-0.5 md:flex-row flex-col">
             <div className="flex flex-col flex-1">
-              <div className="border-l border-tk-black border-t px-[14px] py-[10px]">
+              <div className="border-l border-tk-black border-t border-r md:border-r-0 px-[14px] py-[10px]">
                 <p className="font-th desktop-s6-th-400 text-tk-black">
                   สร้างระบบนิเวศการเรียนรู้เพื่อ พัฒนาศักยภาพของทุกคนในพื้นที่
                 </p>
               </div>
-              <div className="border-l border-tk-black border-b border-t px-[14px] py-[10px]">
+              <div className="border-l border-tk-black md:border-b border-t border-r md:border-r-0 px-[14px] py-[10px]">
                 <p className="font-th desktop-s6-th-400 text-tk-black">
                   ปรับเปลี่ยนให้เข้ากับยุคสมัยและ ความต้องการของผู้ใช้อยู่เสมอ
                 </p>

@@ -9,6 +9,7 @@ import { asset } from "@/src/lib/asset";
 type NavItem = {
   id: string;
   label?: string;
+  mobileLabel?: string;
   icon?: React.ReactNode;
   grow?: boolean;
   href?: string;
@@ -22,15 +23,16 @@ const navItems: NavItem[] = [
       <Image
         src={asset("/img/tkpark-logo.svg")}
         alt="TKPark"
-        width={100}
+        width={89}
         height={34}
-        className="w-auto h-[34px] transition-[filter] duration-200 group-hover:brightness-0 group-hover:invert"
+        className="h-6 w-auto md:h-8.5 transition-[filter] duration-200 brightness-0 invert"
       />
     ),
   },
   {
     id: "steps",
     label: "6 ขั้นตอนในการเข้าร่วมเครือข่าย",
+    mobileLabel: "6 ขั้นตอนในการเข้าร่วมเครือข่าย",
     grow: true,
   },
 ];
@@ -64,8 +66,8 @@ const Navbar = () => {
 
   const navClassName = (item: NavItem, isActive: boolean) =>
     [
-      "flex items-center gap-2 rounded-full px-4 py-px self-stretch",
-      item.grow ? "flex-1 w-full" : "w-auto",
+      "flex items-center gap-1.5 md:gap-2 rounded-full px-2.5 md:px-4 md:py-px py-1 self-stretch",
+      item.grow ? "min-w-0 flex-1 w-full" : "w-auto",
       "text-sm leading-5 whitespace-nowrap",
       "group transition-colors duration-200",
       "border hover:text-white",
@@ -104,7 +106,18 @@ const Navbar = () => {
           const content = (
             <>
               {item.icon ? <span className="shrink-0">{item.icon}</span> : null}
-              <span className="desktop-s6-700">{item.label}</span>
+              {item.mobileLabel ? (
+                <>
+                  <span className="md:hidden mobile-s6-th-700">
+                    {item.mobileLabel}
+                  </span>
+                  <span className="hidden md:inline desktop-s6-th-700">
+                    {item.label}
+                  </span>
+                </>
+              ) : item.label ? (
+                <span className="desktop-s6-th-700">{item.label}</span>
+              ) : null}
               {isStepsOpen ? (
                 <span
                   className="ml-auto flex shrink-0 items-center justify-center rounded-full p-0.5"

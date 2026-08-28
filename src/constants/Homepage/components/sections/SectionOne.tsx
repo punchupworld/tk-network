@@ -38,7 +38,7 @@ function SectionCover() {
         <p className="w-[150px] font-en desktop-s5-400 leading-normal">
           Get to Know
         </p>
-        <div className="flex w-full items-end">
+        <div className="flex w-full items-end md:flex-row flex-col">
           <div className="border border-white px-3.5 py-1.5 font-th desktop-s6-th-400 leading-normal">
             <p>ประเมินความพร้อม</p>
             <p>ของหน่วยงานร่วมกัน</p>
@@ -67,7 +67,8 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
         <p className="font-th desktop-s5-th-700 leading-normal">
-          การพัฒนา “พื้นที่การเรียนรู้ท้องถิ่น”
+          การพัฒนา <br className="sm:hidden block" />
+          “พื้นที่การเรียนรู้ท้องถิ่น”
           <br />
           เริ่มต้นจาก “เราทุกคน”
         </p>

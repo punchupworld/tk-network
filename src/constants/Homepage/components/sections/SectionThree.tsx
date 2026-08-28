@@ -18,40 +18,61 @@ function SectionCover() {
         <p className="font-en desktop-s5-400 leading-normal">
           Design Your Space
         </p>
-        <div className="flex items-end flex-col md:flex-row">
-          <div className="flex flex-col border-white md:border-r-0 border-r flex-1">
+        <div className="flex items-end flex-col md:flex-row w-full">
+          <div className="flex flex-col border-white md:border-r-0 border-r flex-1 w-full md:w-auto">
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 จัดการสนทนากลุ่ม
                 <br />
-                (Focus group) ของผู้มีส่วนได้ส่วนเสีย เช่น ชุมชน
-                หน่วยงานรัฐและเอกชน เพื่อทำความเข้าใจลักษณะของพื้นที่
-                และสร้างความรู้สึกเป็นเจ้าของในพื้นที่ การเรียนรู้
+                (Focus group) ของผู้มี
+                <br className="sm:hidden block" />
+                ส่วนได้ส่วนเสีย เช่น ชุมชน
+                <br className="sm:hidden block" />
+                หน่วยงานรัฐและเอกชน <br className="sm:hidden block" />
+                เพื่อทำความเข้าใจลักษณะ
+                <br className="sm:hidden block" />
+                ของพื้นที่ และสร้างความรู้สึก
+                <br className="sm:hidden block" />
+                เป็นเจ้าของในพื้นที่ <br className="sm:hidden block" />
+                การเรียนรู้
               </p>
             </div>
             <div className="border-l border-white border-t md:border-b px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                จัดทำแผนภูมิเพื่อระบุผู้มีส่วนได้ส่วนเสีย (Stakeholders Map)
-                เพื่อเชิญชวนให้เข้ามามีส่วนร่วมตั้งแต่แรก
+                จัดทำแผนภูมิเพื่อระบุ
+                <br className="sm:hidden block" />
+                ผู้มีส่วนได้ส่วนเสีย <br className="sm:hidden block" />
+                (Stakeholders Map) <br className="sm:hidden block" />
+                เพื่อเชิญชวนให้เข้ามามี
+                <br className="sm:hidden block" />
+                ส่วนร่วมตั้งแต่แรก
               </p>
             </div>
           </div>
-          <div className="flex flex-col border-r border-white flex-1">
+          <div className="flex flex-col border-r border-white flex-1 w-full md:w-auto">
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
                 วิเคราะห์ข้อมูลพื้นฐานชุมชน
                 <br />
                 เป็นสารตั้งต้นเพื่อ แตกย่อย
                 <br />
-                รายละเอียดที่ต้องพัฒนา เช่น ปัญหาสิ่งแวดล้อมใน พื้นที่
-                <br />
-                แหล่งทรัพยากร สัดส่วนของครัวเรือน ที่มีเด็กอายุ 0-6 ปี
+                รายละเอียดที่ต้องพัฒนา <br className="sm:hidden block" />
+                เช่น ปัญหาสิ่งแวดล้อมใน <br className="sm:hidden block" />
+                พื้นที่
+                <br className="hidden sm:block" />
+                แหล่งทรัพยากร <br className="sm:hidden block" />
+                สัดส่วนของครัวเรือน <br className="sm:hidden block" />
+                ที่มีเด็กอายุ 0-6 ปี
               </p>
             </div>
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                ศึกษาข้อมูลรอบด้าน เกี่ยวกับพื้นที่ เช่น ยุทธศาสตร์จังหวัด
-                แผนพัฒนาภาค หรือแผนพัฒนาท้องถิ่น ในระยะ 3-5 ปี
+                ศึกษาข้อมูลรอบด้าน <br className="sm:hidden block" />
+                เกี่ยวกับพื้นที่ เช่น <br className="sm:hidden block" />
+                ยุทธศาสตร์จังหวัด <br className="sm:hidden block" />
+                แผนพัฒนาภาค <br className="sm:hidden block" />
+                หรือแผนพัฒนาท้องถิ่น <br className="sm:hidden block" />
+                ในระยะ 3-5 ปี
               </p>
             </div>
             <div className="border-l border-white border-t  px-[14px] py-[10px]">
@@ -63,7 +84,9 @@ function SectionCover() {
             </div>
             <div className="border-l border-white border-t border-b px-[14px] py-[10px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                สรุปรูปแบบของพื้นที่ บริการและแนวทางการ ออกแบบ
+                สรุปรูปแบบของพื้นที่ <br className="sm:hidden block" />
+                บริการและแนวทางการ <br className="sm:hidden block" />
+                ออกแบบ
               </p>
             </div>
           </div>
@@ -87,7 +110,9 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="relative flex w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-4 text-center text-white md:absolute md:left-0 md:top-[18.0952%] md:h-[81.9048%] md:p-2.5">
         <span className="font-th mobile-s5-th-700 md:desktop-s5-th-700 leading-normal">
-          หัวใจของการออกแบบพื้นที่การเรียนรู้ คือ <br />
+          หัวใจของการออกแบบ
+          <br className="sm:hidden block" />
+          พื้นที่การเรียนรู้ คือ <br />
           พื้นที่ (Space){" "}
           <b className="font-th mobile-s5-th-700 md:desktop-s5-th-700 text-tk-black">
             ที่ยืดหยุ่น
@@ -176,7 +201,7 @@ function KnowledgeBox() {
             ออกแบบพื้นที่
           </p>
         </div>
-        <div className="absolute left-[176px] top-[48px] flex size-[168px] items-center justify-center">
+        <div className="absolute sm:right-[18px] right-0 top-[48px] flex size-[168px] items-center justify-center">
           <T07
             fill="#f5333f"
             stroke="none"

@@ -91,7 +91,7 @@ const PLAYSPACE_MAP_OVERLAY =
 
 const PlayspaceMapLabel = ({ hidden = false }: { hidden?: boolean }) => (
   <div
-    className={`ml-[8%] mt-[15%] w-[28.333%] max-[400px]:mt-[30%] md:mt-[3%] ${
+    className={`ml-[8%] mt-[15%] w-[28.333%] max-[400px]:mt-[48%] md:mt-[3%] ${
       hidden ? "invisible" : ""
     }`}
     aria-hidden={hidden}
@@ -114,10 +114,20 @@ const PlayspaceMapBlurb = ({ hidden = false }: { hidden?: boolean }) => (
     aria-hidden={hidden}
   >
     <p className="text-balance font-th desktop-s7-th-400 text-white">
-      TK Park ไม่ได้เป็นเพียงอาคารที่แบ่งเป็นหลายห้อง
-      แต่เป็นพื้นที่การเรียนรู้ที่ออกแบบให้รองรับประสบการณ์การเรียนรู้หลายรูปแบบ
-      โดยแต่ละโซนมีบทบาทต่างกันและเชื่อมต่อกัน เพื่อให้ผู้ใช้สามารถเลือกเรียนรู้
-      เล่น สร้างสรรค์ และพบปะผู้คนได้ตามความสนใจ
+      TK Park ไม่ได้เป็นเพียงอาคาร
+      <br className="sm:hidden block" />
+      ที่แบ่งเป็นหลายห้อง แต่เป็นพื้นที่
+      <br className="sm:hidden block" />
+      การเรียนรู้ที่ออกแบบให้รองรับ
+      <br className="sm:hidden block" />
+      ประสบการณ์การเรียนรู้หลายรูปแบบ <br className="sm:hidden block" />
+      โดยแต่ละโซนมีบทบาทต่างกันและ
+      <br className="sm:hidden block" />
+      เชื่อมต่อกัน เพื่อให้ผู้ใช้สามารถเลือก
+      <br className="sm:hidden block" />
+      เรียนรู้ เล่น สร้างสรรค์ และพบปะผู้คน
+      <br className="sm:hidden block" />
+      ได้ตามความสนใจ
     </p>
   </div>
 );
@@ -225,9 +235,12 @@ const PLAY_ZONES: {
     body: (
       <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black text-balance">
         โซนเกมคอนโซลบริการ เครื่องเพลย์สเตชัน 5 <br />
-        นินเทนโด สวิช (Nintendo Switch) และเครื่องเล่น VR (Meta Quest)
-        ให้เกมเมอร์เข้ามา สนุกสนานได้ฟรี แค่เพียงจองคิวผ่านเว็บไซต์
-        หรือแอปพลิเคชัน <br />
+        นินเทนโด สวิช (Nintendo Switch) <br className="sm:hidden block" />
+        และเครื่องเล่น VR (Meta Quest) ให้เกมเมอร์
+        <br className="sm:hidden block" />
+        เข้ามา สนุกสนานได้ฟรี แค่เพียงจองคิว
+        <br className="sm:hidden block" />
+        ผ่านเว็บไซต์ หรือแอปพลิเคชัน <br />
         My TK เป็นรายชั่วโมง
       </p>
     ),
@@ -239,10 +252,13 @@ const PLAY_ZONES: {
     sticky: "top-0 z-30",
     body: (
       <p className="text-center font-th desktop-s7-th-400 leading-normal text-tk-black">
-        ที่นี่ไม่ใช่พื้นที่ดนตรีธรรมดา เพราะมีบริการห้องเก็บเสียง
+        ที่นี่ไม่ใช่พื้นที่ดนตรีธรรมดา <br className="sm:hidden block" />
+        เพราะมีบริการห้องเก็บเสียง
         <br />
-        ส่วนตัว (Soundbox) พร้อมอุปกรณ์ ใครอยากมาซ้อมดนตรี ร้องเพลง
-        ทำเดโมก็ยังได้ และยังมีทรัพยากร เกี่ยวกับดนตรีหลายด้าน
+        ส่วนตัว (Soundbox) พร้อมอุปกรณ์ <br className="sm:hidden block" />
+        ใครอยากมาซ้อมดนตรี ร้องเพลง ทำเดโมก็ยังได้{" "}
+        <br className="sm:hidden block" />
+        และยังมีทรัพยากร เกี่ยวกับดนตรีหลายด้าน
         <br />
         ให้ค้นคว้าอีกด้วย
       </p>
@@ -259,7 +275,9 @@ const PLAY_ZONES: {
         <br />
         พูดคุย ทำกิจกรรมร่วมกัน และ
         <br />
-        เล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือของนักออกแบบไทยไว้บริการ ถึง
+        เล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือ
+        <br className="sm:hidden block" />
+        ของนักออกแบบไทยไว้บริการ ถึง
         <br /> 100 กว่าเกม
       </p>
     ),
@@ -290,19 +308,42 @@ const SubSectionThree = () => {
       >
         <div className="p-10 border-2 border-white bg-orange-300 max-w-[600px]">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            <b>ประสบการณ์ในการสร้างห้องสมุดกว่า 10 ปีของ TK Park</b>
+            <b>
+              ประสบการณ์ในการสร้าง
+              <br className="sm:hidden block" />
+              ห้องสมุดกว่า 10 ปีของ <br className="sm:hidden block" />
+              TK Park
+            </b>
             <br />
-            ทำให้เราเข้าใจว่าการเรียนรู้ในยุคปัจจุบันเปลี่ยนแปลงไปมาก
+            ทำให้เราเข้าใจว่าการเรียนรู้
+            <br className="sm:hidden block" />
+            ในยุคปัจจุบันเปลี่ยนแปลงไปมาก
             <br />
             <br />
-            การอ่านหนังสือหรือเรียนรู้ในห้องสมุดแบบดั้งเดิมอาจไม่เพียงพออีกต่อไป{" "}
-            <br />
-            TK Park จึงสร้างสรรค์เพลย์สเปซ (Play Space) พื้นที่การเรียนรู้ขนาด
-            330 ตารางเมตร ณ ชั้น 8 ศูนย์การค้าเซ็นทรัลเวิลด์ขึ้นมา
+            การอ่านหนังสือหรือเรียนรู้
+            <br className="sm:hidden block" />
+            ในห้องสมุดแบบดั้งเดิมอาจ
+            <br className="sm:hidden block" />
+            ไม่เพียงพออีกต่อไป <br />
+            TK Park จึงสร้างสรรค์
+            <br className="sm:hidden block" />
+            เพลย์สเปซ (Play Space) <br className="sm:hidden block" />
+            พื้นที่การเรียนรู้ขนาด <br className="sm:hidden block" />
+            330 ตารางเมตร ณ ชั้น 8 <br className="sm:hidden block" />
+            ศูนย์การค้าเซ็นทรัลเวิลด์ขึ้นมา <br className="sm:hidden block" />
             เพื่อตอบโจทย์การเรียนรู้สมัยใหม่
-            ที่อยู่ภายใต้แนวคิดพื้นที่สนุกเชื่อมผู้คน (Your Community
-            Playground)
-            และเป็นตัวอย่างในการสร้างแรงบันดาลใจให้หน่วยงานทั่วไทยที่ต้องการสร้างพื้นที่การเรียนรู้ในรูปแบบของตนเอง
+            <br className="sm:hidden block" />
+            ที่อยู่ภายใต้แนวคิดพื้นที่สนุกเชื่อมผู้คน (Your Community{" "}
+            <br className="sm:hidden block" />
+            Playground) และเป็นตัวอย่าง
+            <br className="sm:hidden block" />
+            ในการสร้างแรงบันดาลใจ
+            <br className="sm:hidden block" />
+            ให้หน่วยงานทั่วไทยที่ต้องการ
+            <br className="sm:hidden block" />
+            สร้างพื้นที่การเรียนรู้ในรูปแบบ
+            <br className="sm:hidden block" />
+            ของตนเอง
           </p>
         </div>
 
@@ -345,7 +386,9 @@ const SubSectionThree = () => {
             <span className="font-th desktop-s5-th-700 leading-normal">
               "ความสนุก
               <br />
-              คือจุดเริ่มต้นของการเรียนรู้ที่มีความหมาย"
+              คือจุดเริ่มต้นของ
+              <br className="sm:hidden block" />
+              การเรียนรู้ที่มีความหมาย"
             </span>
           </blockquote>
         </div>
@@ -368,20 +411,37 @@ const SubSectionThree = () => {
             </div>
             <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
               <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-                พื้นที่การเรียนรู้รูปแบบใหม่ที่ออกแบบ โดยยึดผู้ใช้เป็นศูนย์กลาง
-                และเปิดโอกาสให้ผู้คนได้เรียนรู้ผ่านการเล่น พบปะ
+                พื้นที่การเรียนรู้รูปแบบใหม่
+                <br className="sm:hidden block" />
+                ที่ออกแบบ โดยยึดผู้ใช้เป็น
+                <br className="sm:hidden block" />
+                ศูนย์กลาง และเปิดโอกาสให้ผู้คน
+                <br className="sm:hidden block" />
+                ได้เรียนรู้ผ่านการเล่น พบปะ
                 <br />
-                แลกเปลี่ยน และต่อยอดความสนใจร่วมกัน <br />
+                แลกเปลี่ยน และต่อยอด
+                <br className="sm:hidden block" />
+                ความสนใจร่วมกัน <br />
                 <b className="font-th desktop-s6-th-700 text-tk-red text-balance">
-                  ภายใต้แนวคิดที่ว่า “ความสนุกคือจุดเริ่มต้น
-                  ของการเรียนรู้ที่มีความหมาย”
+                  ภายใต้แนวคิดที่ว่า “ความสนุก
+                  <br className="sm:hidden block" />
+                  คือจุดเริ่มต้น ของการเรียนรู้
+                  <br className="sm:hidden block" />
+                  ที่มีความหมาย”
                 </b>{" "}
                 <br /> <br />
-                โดยทำหน้าที่เป็นพื้นที่ทดลองเชื่อมโยงผู้คน
-                หลากหลายกลุ่มให้มาพบกัน จนกลายเป็น ชุมชนการเรียนรู้ที่มีชีวิต
+                โดยทำหน้าที่เป็นพื้นที่ทดลอง
+                <br className="sm:hidden block" />
+                เชื่อมโยงผู้คนหลากหลายกลุ่ม
+                <br className="sm:hidden block" />
+                ให้มาพบกัน จนกลายเป็นชุมชน
+                <br className="sm:hidden block" />
+                การเรียนรู้ที่มีชีวิต <br className="sm:hidden block" />
                 และเป็นต้นแบบ
                 <br />
-                ของการพัฒนาพื้นที่เรียนรู้ในอนาคต
+                ของการพัฒนาพื้นที่เรียนรู้
+                <br className="sm:hidden block" />
+                ในอนาคต
               </p>
             </div>
           </div>
@@ -390,16 +450,35 @@ const SubSectionThree = () => {
             <p className="font-th desktop-s6-th-400 text-tk-black ">
               <b className="font-th desktop-s6-th-700 text-tk-red">
                 {" "}
-                หากจะบอกว่าเพลย์สเปซเป็นสนามเด็กเล่นของชุมชน (Community
-                Playground) ก็คงจะไม่ผิดนัก
+                หากจะบอกว่าเพลย์สเปซ
+                <br className="sm:hidden block" />
+                เป็นสนามเด็กเล่นของชุมชน <br className="sm:hidden block" />
+                (Community Playground) <br className="sm:hidden block" />
+                ก็คงจะไม่ผิดนัก
               </b>{" "}
-              เพราะที่นี่มีโซนการใช้งานที่ถูกออกแบบให้รองรับกิจกรรมหลากหลายจนลืมเวลา
+              เพราะที่นี่
+              <br className="sm:hidden block" />
+              มีโซนการใช้งานที่ถูกออกแบบ
+              <br className="sm:hidden block" />
+              ให้รองรับกิจกรรมหลากหลาย
+              <br className="sm:hidden block" />
+              จนลืมเวลา
               <br />
               <br />
-              หน่วยงานสามารถศึกษาพื้นที่การทดลองรูปแบบใหม่
-              และนำไปปรับใช้ในการออกแบบพื้นที่การเรียนรู้ของตนเอง
-              โดยพื้นที่ที่ดีจะต้องทำหน้าที่เป็นตัวกลางเชื่อมโยงผู้คนให้เข้ามาใช้งาน
-              และมีโซนต่างๆ ที่ตอบโจทย์กลุ่มเป้าหมายอย่างแท้จริง
+              หน่วยงานสามารถศึกษาพื้นที่
+              <br className="sm:hidden block" />
+              การทดลองรูปแบบใหม่ และนำไป
+              <br className="sm:hidden block" />
+              ปรับใช้ในการออกแบบพื้นที่
+              <br className="sm:hidden block" />
+              การเรียนรู้ของตนเอง โดยพื้นที่
+              <br className="sm:hidden block" />
+              ที่ดีจะต้องทำหน้าที่เป็นตัวกลาง
+              <br className="sm:hidden block" />
+              เชื่อมโยงผู้คนให้เข้ามาใช้งาน <br className="sm:hidden block" />
+              และมีโซนต่างๆ ที่ตอบโจทย์
+              <br className="sm:hidden block" />
+              กลุ่มเป้าหมายอย่างแท้จริง
             </p>
           </div>
 
@@ -475,22 +554,36 @@ const SubSectionThree = () => {
         </div>
 
         <div
-          className="relative aspect-[600/420] w-full max-w-[600px]"
+          className="relative w-full max-w-[600px] pt-10"
           aria-label="คำกล่าวเกี่ยวกับการพัฒนาพื้นที่การเรียนรู้ท้องถิ่น"
         >
           <div className="absolute left-0 top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
-          <blockquote className="absolute left-[13.6%] top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
-            <span className="font-th md:desktop-s5-th-700 leading-normal text-balance desktop-s7-th-400">
-              "การเปิดเพลย์สเปซในต้นปีพ.ศ. 2569
-              คือความตั้งใจมอบเป็นของขวัญปีใหม่แก่พี่น้องชาวไทย
-              เราอยากเห็นพื้นที่นี้เป็นจุดเริ่มต้นของชุมชนคนรุ่นใหม่ที่จะช่วยกันขับเคลื่อนกรุงเทพฯ
-              ให้เป็นเมืองแห่งการเรียนรู้ที่สนุกสนาน
-              และเข้าถึงได้สำหรับทุกคนอย่างแท้จริง"
+          <blockquote className="relative ml-[13.6%] flex w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] px-4 py-5 text-center text-white md:px-6 md:py-8">
+            <span className="min-w-0 w-full text-pretty font-th mobile-s5-th-400 leading-normal md:desktop-s5-th-700">
+              "การเปิดเพลย์สเปซในต้นปี
+              <br className="sm:hidden block" />
+              พ.ศ. 2569 คือความตั้งใจมอบ
+              <br className="sm:hidden block" />
+              เป็นของขวัญปีใหม่แก่
+              <br className="sm:hidden block" />
+              พี่น้องชาวไทย เราอยากเห็นพื้นที่นี้
+              <br className="sm:hidden block" />
+              เป็นจุดเริ่มต้นของชุมชนคนรุ่นใหม่
+              <br className="sm:hidden block" />
+              ที่จะช่วยกันขับเคลื่อนกรุงเทพฯ
+              <br className="sm:hidden block" />
+              ให้เป็นเมืองแห่งการเรียนรู้ที่
+              <br className="sm:hidden block" />
+              สนุกสนาน และเข้าถึงได้สำหรับ
+              <br className="sm:hidden block" />
+              ทุกคนอย่างแท้จริง"
               <br />
               <br />
-              <b className="font-th desktop-s7-th-400 ">
-                นายวัฒนชัย วินิจจะกูล รักษาการผู้อำนวยการสถาบันอุทยานการเรียนรู้
-                TK Park
+              <b className="font-th desktop-s7-th-400">
+                นายวัฒนชัย วินิจจะกูล <br className="sm:hidden block" />
+                รักษาการผู้อำนวยการ
+                <br className="sm:hidden block" />
+                สถาบันอุทยานการเรียนรู้ TK Park
               </b>
             </span>
           </blockquote>
