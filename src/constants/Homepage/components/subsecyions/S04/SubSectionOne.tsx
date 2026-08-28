@@ -344,7 +344,7 @@ const SubSectionOne = () => {
                   <p className="font-th desktop-s7-th-700 text-white">
                     จัดหาอุปกรณ์
                     <br className="sm:hidden block" />
-                    ประกอบการการจัด
+                    ประกอบการจัด
                     <br className="sm:hidden block" />
                     แคตตาล็อก <br className="sm:hidden block" />
                     ทรัพยากร

@@ -258,9 +258,8 @@ const PLAY_ZONES: {
         ส่วนตัว (Soundbox) พร้อมอุปกรณ์ <br className="sm:hidden block" />
         ใครอยากมาซ้อมดนตรี ร้องเพลง ทำเดโมก็ยังได้{" "}
         <br className="sm:hidden block" />
-        และยังมีทรัพยากร เกี่ยวกับดนตรีหลายด้าน
-        <br />
-        ให้ค้นคว้าอีกด้วย
+        และยังมีทรัพยากรเกี่ยวกับดนตรีหลาย <br />
+        ด้านให้ค้นคว้าอีกด้วย
       </p>
     ),
   },
@@ -277,7 +276,7 @@ const PLAY_ZONES: {
         <br />
         เล่นบอร์ดเกมที่มีบอร์ดเกมฝีมือ
         <br className="sm:hidden block" />
-        ของนักออกแบบไทยไว้บริการ ถึง
+        ของนักออกแบบไทยไว้บริการถึง
         <br /> 100 กว่าเกม
       </p>
     ),
@@ -374,6 +373,7 @@ const SubSectionThree = () => {
                 <PlayspaceMapBlurb />
               </div>
             </div>
+            <div className="h-dvh" aria-hidden="true" />
           </div>
         </div>
 
@@ -384,11 +384,11 @@ const SubSectionThree = () => {
           <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
           <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
             <span className="font-th desktop-s5-th-700 leading-normal">
-              "ความสนุก
+              ความสนุก
               <br />
               คือจุดเริ่มต้นของ
               <br className="sm:hidden block" />
-              การเรียนรู้ที่มีความหมาย"
+              การเรียนรู้ที่มีความหมาย
             </span>
           </blockquote>
         </div>

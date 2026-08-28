@@ -180,10 +180,10 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
         <p className="font-th desktop-s5-th-700 leading-normal">
-          "การเปิดบริการ
+          การเปิดบริการ
           <br />
           คือการส่งมอบพื้นที่แห่งการเรียนรู้ให้ชุมชน <br />
-          และเปิดโอกาสให้การเรียนรู้เติบโตไปพร้อมกับผู้คน"
+          และเปิดโอกาสให้การเรียนรู้เติบโตไปพร้อมกับผู้คน
         </p>
       </blockquote>
     </div>
