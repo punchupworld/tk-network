@@ -72,7 +72,13 @@ const jobRoles: JobRole[] = [
         title: "งานหน้าบ้าน",
         items: [
           "รับสมัครสมาชิก",
-          "ให้บริการข้อมูลพื้นฐาน ตั้งแต่ตำแหน่งชั้นวางหนังสือที่ผู้ใช้บริการต้องการค้นหา",
+          <>
+            ให้บริการข้อมูลพื้นฐาน ตั้งแต่
+            <br className="sm:hidden block" />
+            ตำแหน่งชั้นวางหนังสือที่ผู้ใช้บริการ
+            <br className="sm:hidden block" />
+            ต้องการค้นหา
+          </>,
           "ให้บริการยืมคืนหนังสือและสื่อทั้งหมด",
         ],
       },
@@ -80,11 +86,21 @@ const jobRoles: JobRole[] = [
         title: "งานหลังบ้าน",
         items: [
           "วางแผนคัดเลือกและจัดซื้อหนังสือและสื่อต่างๆ",
-          "จัดทำระบบจัดเก็บหนังสือและสื่อ ตั้งแต่การทำแคตตาล็อกหนังสือ ติดแถบสัญลักษณ์ และนำหนังสือจัดขึ้นชั้นวาง",
+          <>
+            จัดทำระบบจัดเก็บหนังสือและสื่อ <br className="sm:hidden block" />
+            ตั้งแต่การทำแคตตาล็อกหนังสือ <br className="sm:hidden block" />
+            ติดแถบสัญลักษณ์ และนำหนังสือ
+            <br className="sm:hidden block" />
+            จัดขึ้นชั้นวาง
+          </>,
           "ดูแลรักษาทรัพยากรที่ชำรุด",
           <>
-            ดูแลข้อมูลสารสนเทศของห้องสมุด เช่น สถิติผู้เข้าใช้บริการ
-            เพื่อนำไปใช้วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับ
+            ดูแลข้อมูลสารสนเทศของห้องสมุด <br className="sm:hidden block" />
+            เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้
+            <br className="sm:hidden block" />
+            วิเคราะห์และจัดหาหนังสือ
+            <br className="sm:hidden block" />
+            ให้สอดคล้องกับ
             <br />
             ความต้องการของผู้ใช้บริการ
           </>,
@@ -103,7 +119,7 @@ const jobRoles: JobRole[] = [
       </>,
       <>
         ผลงานเกิดจากการผสมผสานด้านศิลปวัฒนธรรม ค่านิยมและวิถีชีวิตจากคนใน
-        <br />
+        <br className="hidden sm:block" />
         ท้องถิ่น
       </>,
     ],
@@ -111,23 +127,43 @@ const jobRoles: JobRole[] = [
       {
         title: "งานหน้าบ้าน",
         items: [
-          "จัดกิจกรรมการเรียนรู้ให้กับผู้ใช้บริการทั้งในและนอกสถานที่",
-          "ดูแลการรับสมัครลงทะเบียนเข้าร่วมกิจกรรมของผู้ใช้บริการ",
+          <>
+            จัดกิจกรรมการเรียนรู้ให้กับ
+            <br className="sm:hidden block" />
+            ผู้ใช้บริการทั้งในและนอกสถานที่
+          </>,
+          <>
+            ดูแลการรับสมัครลงทะเบียนเข้าร่วม
+            <br className="sm:hidden block" />
+            กิจกรรมของผู้ใช้บริการ
+          </>,
         ],
       },
       {
         title: "งานหลังบ้าน",
         items: [
-          "วางแผนกิจกรรมที่จะเกิดขึ้นตลอดทั้งปี",
-          "คิดค้นวิธีนำเสนอกิจกรรมให้เหมาะสมกับผู้ใช้ที่หลากหลายตั้งแต่เด็กปฐมวัยไปจนถึงวัยเกษียณ",
+          <>
+            วางแผนกิจกรรมที่จะเกิดขึ้น
+            <br className="sm:hidden block" />
+            ตลอดทั้งปี
+          </>,
+          <>
+            คิดค้นวิธีนำเสนอกิจกรรมให้
+            <br className="sm:hidden block" />
+            เหมาะสมกับผู้ใช้ที่หลากหลาย
+            <br className="sm:hidden block" />
+            ตั้งแต่เด็กปฐมวัยไปจนถึงวัยเกษียณ
+          </>,
           <>
             หาพาร์ทเนอร์เข้ามาจัดกิจกรรม
             <br />
             การเรียนรู้ร่วมกัน
           </>,
           <>
-            ดูแลข้อมูลสารสนเทศของห้องสมุด เช่น สถิติผู้เข้าใช้บริการ
-            เพื่อนำไปใช้วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับ
+            ดูแลข้อมูลสารสนเทศของห้องสมุด <br className="sm:hidden block" />
+            เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้
+            <br className="sm:hidden block" />
+            วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับ
             <br />
             ความต้องการของผู้ใช้บริการ
           </>,
@@ -140,7 +176,7 @@ const jobRoles: JobRole[] = [
     bullets: [
       <>
         ดูแลงานด้านเทคโนโลยีสารสนเทศทั้งหมดของพื้นที่การเรียนรู้เพื่อขับเคลื่อน
-        <br />
+        <br className="hidden sm:block" />
         ระบบหน้าบ้านและหลังบ้าน
       </>,
       "สนับสนุนการทำงานระบบไอทีให้กับเจ้าหน้าที่ภายในศูนย์",
@@ -163,8 +199,10 @@ const jobRoles: JobRole[] = [
             E-library
           </>,
           <>
-            ดูแลข้อมูลสารสนเทศของห้องสมุด เช่น สถิติผู้เข้าใช้บริการ
-            เพื่อนำไปใช้วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับ
+            ดูแลข้อมูลสารสนเทศของห้องสมุด <br className="sm:hidden block" />
+            เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้
+            <br className="sm:hidden block" />
+            วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับ
             <br />
             ความต้องการของผู้ใช้บริการ
           </>,
@@ -190,14 +228,29 @@ const jobRoles: JobRole[] = [
     columns: [
       {
         title: "งานหน้าบ้าน",
-        items: ["จัดงานสัมมนาอบรมในหัวข้อที่น่าสนใจให้กับคนในท้องถิ่น"],
+        items: [
+          <>
+            จัดงานสัมมนาอบรมในหัวข้อ
+            <br className="sm:hidden block" />
+            ที่น่าสนใจให้กับคนในท้องถิ่น
+          </>,
+        ],
       },
       {
         title: "งานหลังบ้าน",
         items: [
-          "รวบรวมองค์ความรู้เพื่อใช้สร้างกระบวนการเรียนรู้ให้ผู้มาใช้บริการ",
+          <>
+            รวบรวมองค์ความรู้เพื่อใช้สร้าง
+            <br className="sm:hidden block" />
+            กระบวนการเรียนรู้ให้ผู้มาใช้บริการ
+          </>,
           "พัฒนาเนื้อหาสาระ สร้างองค์ความรู้",
-          "ทำงานแบบบูรณาการจนสามารถนำความรู้ไปนำเสนอในรูปแบบต่างๆ ได้ เช่น การทำกิจกรรม",
+          <>
+            ทำงานแบบบูรณาการจนสามารถ
+            <br className="sm:hidden block" />
+            นำความรู้ไปนำเสนอในรูปแบบต่างๆ <br className="sm:hidden block" />
+            ได้ เช่น การทำกิจกรรม
+          </>,
         ],
       },
     ],
@@ -222,11 +275,17 @@ const jobRoles: JobRole[] = [
         title: "งานหลังบ้าน",
         items: [
           <>
-            จัดทำเนื้อหาเพื่อสื่อสารและประชาสัมพันธ์ โดยหาช่องทาง
+            จัดทำเนื้อหาเพื่อสื่อสารและ
+            <br className="sm:hidden block" />
+            ประชาสัมพันธ์ โดยหาช่องทาง
             <br />
             การสื่อสารที่เหมาะสมกับท้องถิ่น
           </>,
-          "วางแผนการประชาสัมพันธ์ประจำเดือนและประจำปี",
+          <>
+            วางแผนการประชาสัมพันธ์
+            <br className="sm:hidden block" />
+            ประจำเดือนและประจำปี
+          </>,
         ],
       },
     ],
@@ -326,21 +385,50 @@ const SubSectionTwo = () => {
       <div className="flex w-full flex-col items-center justify-center gap-2.5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
           เมื่อเราพูดถึงคำว่าห้องสมุดมีชีวิต
-          ผู้ที่ทำให้ห้องสมุดมีชีวิตขึ้นมาได้คือบุคลากรผู้เปรียบเสมือนสะพานเชื่อมผู้คนในท้องถิ่นกับพื้นที่การเรียนรู้
+          <br className="sm:hidden block" />
+          ผู้ที่ทำให้ห้องสมุดมีชีวิตขึ้นมาได้
+          <br className="sm:hidden block" />
+          คือบุคลากรผู้เปรียบเสมือน
+          <br className="sm:hidden block" />
+          สะพานเชื่อมผู้คนในท้องถิ่นกับ
+          <br className="sm:hidden block" />
+          พื้นที่การเรียนรู้
           <br />
-          ห้องสมุดไม่ใช่แค่พื้นที่เชิงกายภาพอีกต่อไป
-          แต่เป็นสถานที่ในการแลกเปลี่ยนองค์ความรู้ในชุมชนอย่างยั่งยืน
+          ห้องสมุดไม่ใช่แค่พื้นที่เชิงกายภาพ
+          <br className="sm:hidden block" />
+          อีกต่อไป แต่เป็นสถานที่ใน
+          <br className="sm:hidden block" />
+          การแลกเปลี่ยนองค์ความรู้
+          <br className="sm:hidden block" />
+          ในชุมชนอย่างยั่งยืน
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          บุคลากรของห้องสมุดจึงไม่ใช่ใครที่ไหน
-          แต่เป็นคนที่คลุกคลีใกล้ชิดกับคนในพื้นที่
-          และสามารถส่งต่อความรู้ไปสู่มือคนท้องถิ่น ขับเคลื่อนห้องสมุดของ <br />
-          พวกเขาให้มีความหลากหลายและตอบสนองการใช้งานของกลุ่มเป้าหมาย
+          บุคลากรของห้องสมุดจึงไม่ใช่
+          <br className="sm:hidden block" />
+          ใครที่ไหน แต่เป็นคนที่คลุกคลี
+          <br className="sm:hidden block" />
+          ใกล้ชิดกับคนในพื้นที่ และสามารถ
+          <br className="sm:hidden block" />
+          ส่งต่อความรู้ไปสู่มือคนท้องถิ่น <br className="sm:hidden block" />
+          ขับเคลื่อนห้องสมุดของ <br />
+          พวกเขาให้มีความหลากหลายและ
+          <br className="sm:hidden block" />
+          ตอบสนองการใช้งานของ
+          <br className="sm:hidden block" />
+          กลุ่มเป้าหมาย
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          นับได้ว่า บุคลากรเหล่านี้คือ “นักสร้างการเปลี่ยนแปลง” (Change Agent)
-          ของชุมชนอย่างแท้จริง หากขาดพวกเขาไป
-          พื้นที่การเรียนรู้คงจะไม่สามารถพัฒนาศักยภาพได้อย่างต่อเนื่องและยั่งยืน
+          นับได้ว่า บุคลากรเหล่านี้คือ <br className="sm:hidden block" />
+          “นักสร้างการเปลี่ยนแปลง” <br className="sm:hidden block" />
+          (Change Agent) ของชุมชน
+          <br className="sm:hidden block" />
+          อย่างแท้จริง หากขาดพวกเขาไป
+          <br className="sm:hidden block" />
+          พื้นที่การเรียนรู้คงจะไม่สามารถ
+          <br className="sm:hidden block" />
+          พัฒนาศักยภาพได้อย่างต่อเนื่อง
+          <br className="sm:hidden block" />
+          และยั่งยืน
         </p>
       </div>
       <div
@@ -364,29 +452,46 @@ const SubSectionTwo = () => {
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">นักคิด:</b>{" "}
-            กล้าคิดริเริ่มสร้างสรรค์การเรียนรู้ <br />
+            กล้าคิดริเริ่มสร้างสรรค์
+            <br className="sm:hidden block" />
+            การเรียนรู้
+            <br className="hidden sm:block" />
             รูปแบบใหม่
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">
               นักทดลอง:
             </b>{" "}
-            กล้าทดลอง ปรับเปลี่ยนสิ่งต่างๆ เพื่อผลกระทบที่ดีของสังคม
+            กล้าทดลอง <br className="sm:hidden block" />
+            ปรับเปลี่ยนสิ่งต่างๆ <br className="sm:hidden block" />
+            เพื่อผลกระทบที่ดีของสังคม
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">
               นักพัฒนา:
             </b>{" "}
-            กล้าเชื่อว่าทุกอย่างต่อยอดและปรับปรุงให้ดีขึ้นได้เสมอ
-            มุ่งมั่นพัฒนาตนเองและเรียนรู้ศาสตร์ใหม่ๆ
-            เพื่อตอบสนองความต้องการของคนในพื้นที่อย่างต่อเนื่อง
+            กล้าเชื่อว่าทุกอย่าง
+            <br className="sm:hidden block" />
+            ต่อยอดและปรับปรุงให้ดีขึ้น
+            <br className="sm:hidden block" />
+            ได้เสมอ มุ่งมั่นพัฒนาตนเอง
+            <br className="sm:hidden block" />
+            และเรียนรู้ศาสตร์ใหม่ๆ เพื่อ
+            <br className="sm:hidden block" />
+            ตอบสนองความต้องการ
+            <br className="sm:hidden block" />
+            ของคนในพื้นที่อย่างต่อเนื่อง
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black">
             <b className="font-th desktop-s6-th-700 text-tk-black ">
               นักบริการ:
             </b>{" "}
-            กล้าเข้าหา มีมนุษยสัมพันธ์ดี
-            ใจรักงานบริการต่อกลุ่มคนหลากหลายที่เข้ามาใช้งานห้องสมุด
+            กล้าเข้าหา <br className="sm:hidden block" />
+            มีมนุษยสัมพันธ์ดี ใจรักงานบริการ
+            <br className="sm:hidden block" />
+            ต่อกลุ่มคนหลากหลายที่เข้ามา
+            <br className="sm:hidden block" />
+            ใช้งานห้องสมุด
           </span>
         </div>
       </div>
@@ -408,20 +513,45 @@ const SubSectionTwo = () => {
         <div className="p-10 border-2 border-white bg-orange-50 flex gap-5 flex-col md:flex-row">
           <div className="flex flex-col gap-2.5">
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              เจ้าหน้าที่ของพื้นที่การเรียนรู้จะต้องเข้าใจการทำงานหน้าบ้านและหลังบ้าน
-              โดย <br />
-              งานหน้าบ้านคือการรู้ขอบเขตงานประจำวันและต้องเตรียมวางแผนงานประจำปี
-              ซึ่งเป็นการวางแผนภาพรวมของงานด้านบริการทั้งหมดที่จะเกิดขึ้น
-              เจ้าหน้าที่ต้องวางแผนจัดหาสื่อเรียนรู้จำพวกทรัพยากรสารสนเทศและอุปกรณ์ต่างๆ
-              เพื่อหมุนเวียนใช้ในห้องสมุด เช่น 3 ครั้ง/ปี
-              รวมถึงวางแผนการจัดกิจกรรมทั้งปี เช่น การเรียนเชิญวิทยากรจากข้างนอก{" "}
-              <br />
+              เจ้าหน้าที่ของพื้นที่การเรียนรู้
+              <br className="sm:hidden block" />
+              จะต้องเข้าใจการทำงานหน้าบ้าน
+              <br className="sm:hidden block" />
+              และหลังบ้าน โดย <br />
+              งานหน้าบ้านคือการรู้ขอบเขตงาน
+              <br className="sm:hidden block" />
+              ประจำวันและต้องเตรียมวางแผน
+              <br className="sm:hidden block" />
+              งานประจำปี ซึ่งเป็นการวางแผน
+              <br className="sm:hidden block" />
+              ภาพรวมของงานด้านบริการ
+              <br className="sm:hidden block" />
+              ทั้งหมดที่จะเกิดขึ้น เจ้าหน้าที่ต้อง
+              <br className="sm:hidden block" />
+              วางแผนจัดหาสื่อเรียนรู้จำพวก
+              <br className="sm:hidden block" />
+              ทรัพยากรสารสนเทศและอุปกรณ์
+              <br className="sm:hidden block" />
+              ต่างๆ เพื่อหมุนเวียนใช้ในห้องสมุด{" "}
+              <br className="sm:hidden block" />
+              เช่น 3 ครั้ง/ปี รวมถึงวางแผน
+              <br className="sm:hidden block" />
+              การจัดกิจกรรมทั้งปี เช่น <br className="sm:hidden block" />
+              การเรียนเชิญวิทยากรจากข้างนอก <br />
               จัดกิจกรรมโดยกำหนดตีมรายสัปดาห์ เป็นต้น
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
               ส่วนระบบจัดการหลังบ้าน
-              เจ้าหน้าที่ต้องเข้าใจระบบห้องสมุดอัตโนมัติของ TK Park
-              โดยต้องนำหนังสือทั้งหมดมาบันทึกข้อมูลลงในระบบและติดแถบสัญลักษณ์ตามฐานข้อมูล
+              <br className="sm:hidden block" />
+              เจ้าหน้าที่ต้องเข้าใจระบบห้องสมุด
+              <br className="sm:hidden block" />
+              อัตโนมัติของ TK Park โดย
+              <br className="sm:hidden block" />
+              ต้องนำหนังสือทั้งหมดมาบันทึก
+              <br className="sm:hidden block" />
+              ข้อมูลลงในระบบและติดแถบ
+              <br className="sm:hidden block" />
+              สัญลักษณ์ตามฐานข้อมูล
             </p>
           </div>
 
@@ -459,31 +589,61 @@ const SubSectionTwo = () => {
         </div>
         <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-5">
           <p className="font-th desktop-s6-th-700 text-tk-black text-balance">
-            เครือข่ายของ TK Park มีจำนวนเจ้าหน้าที่ตั้งแต่ 3-30 คน
-            โดยหน่วยงานต้องคำนวณตามความพร้อมและความเหมาะสมของศูนย์ตามปัจจัยเหล่านี้
+            เครือข่ายของ TK Park มีจำนวน
+            <br className="sm:hidden block" />
+            เจ้าหน้าที่ตั้งแต่ 3-30 คน <br className="sm:hidden block" />
+            โดยหน่วยงานต้องคำนวณ
+            <br className="sm:hidden block" />
+            ตามความพร้อมและความ
+            <br className="sm:hidden block" />
+            เหมาะสมของศูนย์ตามปัจจัย
+            <br className="sm:hidden block" />
+            เหล่านี้
           </p>
           <div className="flex flex-col gap-2.5">
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 ขนาด (Size):
               </b>{" "}
-              หากพื้นที่มีขนาดใหญ่มาก
-              ก็ต้องใช้จำนวนเจ้าหน้าที่มากขึ้นไปด้วยเพื่อบริการและดูแลอย่างทั่วถึง
+              หากพื้นที่
+              <br className="sm:hidden block" />
+              มีขนาดใหญ่มาก ก็ต้องใช้จำนวน
+              <br className="sm:hidden block" />
+              เจ้าหน้าที่มากขึ้นไปด้วยเพื่อ
+              <br className="sm:hidden block" />
+              บริการและดูแลอย่างทั่วถึง
             </span>
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-black ">
-                เวลาเปิดทำการ (Opening Hour):
+                เวลาเปิดทำการ (Opening <br className="sm:hidden block" />
+                Hour):
               </b>{" "}
-              หากเปิดบริการมากกว่า 8 ชั่วโมง อาจต้องใช้จำนวนเจ้าหน้าที่มากขึ้น
-              เนื่องจากต้องมีการจัดระบบการทำงานเป็นกะ
+              หากเปิดบริการมากกว่า <br className="sm:hidden block" />8 ชั่วโมง
+              อาจต้องใช้จำนวน
+              <br className="sm:hidden block" />
+              เจ้าหน้าที่มากขึ้น เนื่องจาก
+              <br className="sm:hidden block" />
+              ต้องมีการจัดระบบการทำงาน
+              <br className="sm:hidden block" />
+              เป็นกะ
             </span>
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 การบริการ (Service):
               </b>{" "}
-              หากมีจำนวนการบริการมาก ก็ต้องมีจำนวนเจ้าหน้าที่มากขึ้นตามไปด้วย
-              เช่น หากมีบริการห้องใช้ภาพยนตร์
-              ก็ต้องมีเจ้าหน้าที่ในการดูแลจัดตารางฉายภาพยนตร์ประจำสัปดาห์
+              หากมี
+              <br className="sm:hidden block" />
+              จำนวนการบริการมาก ก็ต้องมี
+              <br className="sm:hidden block" />
+              จำนวนเจ้าหน้าที่มากขึ้น
+              <br className="sm:hidden block" />
+              ตามไปด้วย เช่น หากมีบริการ
+              <br className="sm:hidden block" />
+              ห้องใช้ภาพยนตร์ ก็ต้องมี
+              <br className="sm:hidden block" />
+              เจ้าหน้าที่ในการดูแลจัดตาราง
+              <br className="sm:hidden block" />
+              ฉายภาพยนตร์ประจำสัปดาห์
             </span>
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-black ">
@@ -495,7 +655,13 @@ const SubSectionTwo = () => {
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 ลักษณะของกิจกรรม (Activity Character):
               </b>{" "}
-              หากมีการจัดกิจกรรมนอกพื้นที่หรือจัดตามโรงเรียนจำนวนของเจ้าหน้าที่ก็ต้องมากขึ้นตามไปด้วย
+              หากมีการจัด
+              <br className="sm:hidden block" />
+              กิจกรรมนอกพื้นที่หรือจัดตาม
+              <br className="sm:hidden block" />
+              โรงเรียนจำนวนของเจ้าหน้าที่
+              <br className="sm:hidden block" />
+              ก็ต้องมากขึ้นตามไปด้วย
             </span>
           </div>
         </div>
@@ -525,16 +691,39 @@ const SubSectionTwo = () => {
                 ก่อนเปิดให้บริการ
               </b>
               <br />
-              เจ้าหน้าที่ต้องทดลองใช้งานทั้งระบบและพื้นที่ในฐานะเจ้าหน้าที่และ
+              เจ้าหน้าที่ต้องทดลอง
+              <br className="sm:hidden block" />
+              ใช้งานทั้งระบบและพื้นที่
+              <br className="sm:hidden block" />
+              ในฐานะเจ้าหน้าที่และ
               <br />
-              ผู้ใช้บริการ เมื่อเจอปัญหาในการใช้งาน พวกเขาต้องปรับรูปแบบ
+              ผู้ใช้บริการ เมื่อเจอ
+              <br className="sm:hidden block" />
+              ปัญหาในการใช้งาน <br className="sm:hidden block" />
+              พวกเขาต้องปรับรูปแบบ
               <br />
-              การให้บริการอย่างทันท่วงที เช่น เคาน์เตอร์บริการควรจะเป็น
+              การให้บริการอย่าง
+              <br className="sm:hidden block" />
+              ทันท่วงที เช่น เคาน์เตอร์
+              <br className="sm:hidden block" />
+              บริการควรจะเป็น
               <br />
-              ตำแหน่งแรกๆ ที่ผู้ใช้บริการมองหาเมื่อต้องการสอบถามข้อมูล
+              ตำแหน่งแรกๆ ที่ผู้ใช้
+              <br className="sm:hidden block" />
+              บริการมองหาเมื่อ
+              <br className="sm:hidden block" />
+              ต้องการสอบถามข้อมูล
               <br />
-              ยืม-คืนหนังสือ ขอใช้บริการอินเตอร์เน็ต
-              และหากมีเคาน์เตอร์บริการอยู่หลายชั้นควรติดกล้องวงจรปิดเพื่อเป็นตัวช่วย
+              ยืม-คืนหนังสือ <br className="sm:hidden block" />
+              ขอใช้บริการอินเตอร์เน็ต
+              <br className="sm:hidden block" />
+              และหากมีเคาน์เตอร์
+              <br className="sm:hidden block" />
+              บริการอยู่หลายชั้นควร
+              <br className="sm:hidden block" />
+              ติดกล้องวงจรปิด
+              <br className="sm:hidden block" />
+              เพื่อเป็นตัวช่วย
             </span>
           </div>
           <div className="flex gap-2.5 px-[14px] py-2.5">
@@ -544,11 +733,24 @@ const SubSectionTwo = () => {
             <span className="font-th desktop-s6-th-400 text-tk-black">
               เจ้าหน้าที่ต้องช่วยกันหา
               <b className="font-th desktop-s6-th-700 text-tk-red ">
-                วิธีการแก้ไขปัญหาเพื่อยกระดับบริการให้ดียิ่งขึ้น
+                วิธีการแก้ไขปัญหาเพื่อ
+                <br className="sm:hidden block" />
+                ยกระดับบริการให้ดี
+                <br className="sm:hidden block" />
+                ยิ่งขึ้น
               </b>{" "}
-              เช่น หากพบว่าชั้นหนังสือสูงเกินไปสำหรับผู้ใช้บริการที่เป็น เด็ก
-              ต้องจัดหาเก้าอี้บันไดมาเพิ่มเติมไว้ เพื่อให้ปีนขึ้นไปหยิบหนังสือ
-              ได้สะดวกขึ้น
+              เช่น หากพบ
+              <br className="sm:hidden block" />
+              ว่าชั้นหนังสือสูงเกินไป
+              <br className="sm:hidden block" />
+              สำหรับผู้ใช้บริการที่
+              <br className="sm:hidden block" />
+              เป็น เด็ก ต้องจัดหาเก้าอี้
+              <br className="sm:hidden block" />
+              บันไดมาเพิ่มเติมไว้ <br className="sm:hidden block" />
+              เพื่อให้ปีนขึ้นไปหยิบ
+              <br className="sm:hidden block" />
+              หนังสือ ได้สะดวกขึ้น
             </span>
           </div>
           <div className="flex gap-2.5 px-[14px] py-2.5">
@@ -557,11 +759,30 @@ const SubSectionTwo = () => {
             </div>
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-red ">
-                เจ้าหน้าที่ควรทดสอบบริการและปรับเปลี่ยนพื้นที่
+                เจ้าหน้าที่ควรทดสอบ
+                <br className="sm:hidden block" />
+                บริการและปรับเปลี่ยน
+                <br className="sm:hidden block" />
+                พื้นที่
               </b>
-              อยู่ตลอดเพื่อตอบสนองต่อความต้องการต่อผู้ใช้บริการหรือตัวเจ้าหน้าที่เอง
-              ทั้งยังเป็นการเปลี่ยนบรรยากาศให้ผู้ที่ใช้บริการได้พบเจอกับประสบการณ์ใหม่ๆ
-              โดยสามารถทดสอบและทำตามง่ายๆ ใน 4 ขั้นตอนดังนี้
+              อยู่ตลอด เพื่อ
+              <br className="sm:hidden block" />
+              ตอบสนองต่อความ
+              <br className="sm:hidden block" />
+              ต้องการต่อผู้ใช้บริการ
+              <br className="sm:hidden block" />
+              หรือตัวเจ้าหน้าที่เอง <br className="sm:hidden block" />
+              ทั้งยังเป็นการเปลี่ยน
+              <br className="sm:hidden block" />
+              บรรยากาศให้ผู้ที่ใช้
+              <br className="sm:hidden block" />
+              บริการได้พบเจอกับ
+              <br className="sm:hidden block" />
+              ประสบการณ์ใหม่ๆ <br className="sm:hidden block" />
+              โดยสามารถทดสอบ
+              <br className="sm:hidden block" />
+              และทำตามง่ายๆ <br className="sm:hidden block" />
+              ใน 4 ขั้นตอนดังนี้
             </span>
           </div>
           <div className="w-full flex flex-col items-end justify-end">
@@ -571,7 +792,8 @@ const SubSectionTwo = () => {
                   <b className="font-th desktop-s6-th-700 text-tk-black ">
                     หาโจทย์ที่อยากปรับเปลี่ยน:
                   </b>{" "}
-                  อาจมาจากปัญหาที่ผู้ใช้งาน หรือเจ้าหน้าที่พบเจอ
+                  อาจมาจากปัญหาที่ผู้ใช้งาน <br className="sm:hidden block" />
+                  หรือเจ้าหน้าที่พบเจอ
                 </span>
               </div>
               <div className="px-[14px] py-2.5">
@@ -579,9 +801,13 @@ const SubSectionTwo = () => {
                   <b className="font-th desktop-s6-th-700 text-tk-black ">
                     เข้าโหมดทดลอง:
                   </b>{" "}
-                  ลองระดมสมองในกลุ่มทีมเจ้าหน้าที่
+                  ลองระดม
+                  <br className="sm:hidden block" />
+                  สมองในกลุ่มทีมเจ้าหน้าที่
                   <br />
-                  หาไอเดียใหม่ๆ ในการปรับเปลี่ยนพื้นที่
+                  หาไอเดียใหม่ๆ ในการ
+                  <br className="sm:hidden block" />
+                  ปรับเปลี่ยนพื้นที่
                 </span>
               </div>
               <div className="px-[14px] py-2.5">
@@ -589,8 +815,14 @@ const SubSectionTwo = () => {
                   <b className="font-th desktop-s6-th-700 text-tk-black ">
                     กรองผลตอบรับ:
                   </b>{" "}
-                  เก็บข้อมูลความคิดเห็นจากผู้ใช้บริการ
-                  และบันทึกสถิติการบริการต่างๆ เป็นบันทึกผลการทดลอง
+                  เก็บข้อมูล
+                  <br className="sm:hidden block" />
+                  ความคิดเห็นจากผู้ใช้บริการ <br className="sm:hidden block" />
+                  และบันทึกสถิติการบริการ
+                  <br className="sm:hidden block" />
+                  ต่างๆ เป็นบันทึกผล
+                  <br className="sm:hidden block" />
+                  การทดลอง
                 </span>
               </div>
               <div className="px-[14px] py-2.5">
@@ -598,9 +830,13 @@ const SubSectionTwo = () => {
                   <b className="font-th desktop-s6-th-700 text-tk-black ">
                     นำมาปรับต่อ:
                   </b>{" "}
-                  นำผลการทดลองมาพูดคุยกันในทีม
+                  นำผล
+                  <br className="sm:hidden block" />
+                  การทดลองมาพูดคุยกันในทีม
                   <br />
-                  เพื่อนำไปพัฒนาปรับปรุงพื้นที่และบริการต่อไป
+                  เพื่อนำไปพัฒนาปรับปรุง
+                  <br className="sm:hidden block" />
+                  พื้นที่และบริการต่อไป
                 </span>
               </div>
             </div>

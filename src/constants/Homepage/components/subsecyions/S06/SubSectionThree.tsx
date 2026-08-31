@@ -20,11 +20,23 @@ const SubSectionThree = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-2.5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          แต่ละพื้นที่มีบริบท ความต้องการ และแนวทางการพัฒนาที่แตกต่างกัน
-          แต่มีเป้าหมายร่วมกัน
-          คือการสร้างพื้นที่การเรียนรู้ที่ตอบโจทย์ผู้คนในชุมชน <br />
-          ลองสำรวจตัวอย่างจากเครือข่าย TK Park ทั่วประเทศ เพื่อเรียนรู้แนวคิด
-          และบทเรียนจากการพัฒนาพื้นที่จริง
+          แต่ละพื้นที่มีบริบท ความต้องการ <br className="sm:hidden block" />
+          และแนวทางการพัฒนาที่
+          <br className="sm:hidden block" />
+          แตกต่างกัน แต่มีเป้าหมาย
+          <br className="sm:hidden block" />
+          ร่วมกัน คือการสร้างพื้นที่
+          <br className="sm:hidden block" />
+          การเรียนรู้ที่ตอบโจทย์ผู้คน
+          <br className="sm:hidden block" />
+          ในชุมชน <br className="hidden sm:block" />
+          ลองสำรวจตัวอย่าง
+          <br className="sm:hidden block" />
+          จากเครือข่าย TK Park <br className="sm:hidden block" />
+          ทั่วประเทศ เพื่อเรียนรู้แนวคิด <br className="sm:hidden block" />
+          และบทเรียนจากการพัฒนา
+          <br className="sm:hidden block" />
+          พื้นที่จริง
         </p>
       </div>
 

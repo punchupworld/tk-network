@@ -47,13 +47,20 @@ const SubSectionOne = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          การวางนโยบายและการบริการอย่างชัดเจนคือกระดูกสันหลังของการพัฒนา
-          พื้นที่การเรียนรู้ให้ยั่งยืนอย่างระยะยาวก่อนเปิดบริการ
+          การวางนโยบายและการบริการ
+          <br className="sm:hidden block" />
+          อย่างชัดเจนคือกระดูกสันหลัง
+          <br className="sm:hidden block" />
+          ของการพัฒนา พื้นที่การเรียนรู้
+          <br className="sm:hidden block" />
+          ให้ยั่งยืนอย่างระยะยาวก่อนเปิดบริการ
         </p>
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
           <div className="flex px-2.5 py-1 bg-yellow-700 md:flex-row flex-col">
             <p className="font-th desktop-s6-th-400 text-tk-black ">
-              โดยนโยบายและข้อตกลงที่ควรกำหนด
+              โดยนโยบายและ
+              <br className="sm:hidden block" />
+              ข้อตกลงที่ควรกำหนด
             </p>
             <p className="font-th desktop-s6-th-700 text-tk-black ">
               มีอยู่ 4 ด้าน ประกอบด้วย
@@ -145,10 +152,23 @@ const SubSectionOne = () => {
             </ul>
           </span>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            ออกแบบให้เหมาะสมกับบริบทของพื้นที่ และกลุ่มเป้าหมาย เช่น
-            พื้นที่การเรียนรู้ที่อยู่ในค่ายทหารกำหนดประเภทสมาชิกเป็นกำลังพลและครอบครัวและบุคคลทั่วไป
-            หรือพื้นที่การเรียนรู้ในจังหวัดระยองกำหนดประเภทสมาชิกที่เป็นองค์กรขึ้นมาใหม่
-            เนื่องจากจังหวัดระยองมีโรงงานเป็นจำนวนมาก
+            ออกแบบให้เหมาะสมกับบริบท
+            <br className="sm:hidden block" />
+            ของพื้นที่ และกลุ่มเป้าหมาย เช่น <br className="sm:hidden block" />
+            พื้นที่การเรียนรู้ที่อยู่ในค่ายทหาร
+            <br className="sm:hidden block" />
+            กำหนดประเภทสมาชิกเป็น
+            <br className="sm:hidden block" />
+            กำลังพลและครอบครัวและบุคคล
+            <br className="sm:hidden block" />
+            ทั่วไป หรือพื้นที่การเรียนรู้ใน
+            <br className="sm:hidden block" />
+            จังหวัดระยองกำหนดประเภท
+            <br className="sm:hidden block" />
+            สมาชิกที่เป็นองค์กรขึ้นมาใหม่ <br className="sm:hidden block" />
+            เนื่องจากจังหวัดระยองมีโรงงาน
+            <br className="sm:hidden block" />
+            เป็นจำนวนมาก
           </p>
           <div>
             <div className="py-1 px-2.5 bg-tk-black w-fit">
@@ -161,7 +181,9 @@ const SubSectionOne = () => {
             </div>
             <div className="py-2.5 px-[14px] border-x border-t border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                กำหนดกลุ่มที่จะได้รับการยกเว้นค่าสมาชิก
+                กำหนดกลุ่มที่จะได้รับ
+                <br className="sm:hidden block" />
+                การยกเว้นค่าสมาชิก
               </p>
             </div>
             <div className="py-2.5 px-[14px] border-x border-t border-tk-black">
@@ -199,21 +221,29 @@ const SubSectionOne = () => {
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 ค่าประกัน:
               </b>{" "}
-              เงินประกันความเสียหายสำหรับ การยืมหนังสือและสื่อการเรียนรู้ออกไป{" "}
-              <br />
+              เงินประกันความ
+              <br className="sm:hidden block" />
+              เสียหายสำหรับ การยืมหนังสือ
+              <br className="sm:hidden block" />
+              และสื่อการเรียนรู้ออกไป <br />
               ข้างนอก
             </span>
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 ค่าปรับ:
               </b>{" "}
-              สมาชิกต้องจ่ายหากละเมิดเงื่อนไข การบริการ หรือก่อความเสียหาย
+              สมาชิกต้องจ่าย
+              <br className="sm:hidden block" />
+              หากละเมิดเงื่อนไข การบริการ <br className="sm:hidden block" />
+              หรือก่อความเสียหาย
             </span>
             <span className="font-th desktop-s6-th-400 text-tk-black">
               <b className="font-th desktop-s6-th-700 text-tk-black ">
                 ค่าบริการอื่นๆ :
               </b>{" "}
-              ตามบริบทและความเหมาะสม
+              ตามบริบท
+              <br className="sm:hidden block" />
+              และความเหมาะสม
             </span>
           </div>
           <div>
@@ -223,12 +253,18 @@ const SubSectionOne = () => {
 
             <div className="py-2.5 px-[14px] border-x border-t border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                คำนึงถึงค่าเฉลี่ยรายได้ของคนท้องถิ่น
+                คำนึงถึงค่าเฉลี่ยรายได้
+                <br className="sm:hidden block" />
+                ของคนท้องถิ่น
               </p>
             </div>
             <div className="py-2.5 px-[14px] border border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                สำรวจอัตราค่าสมาชิกของเครือข่ายในพื้นที่ใกล้เคียง
+                สำรวจอัตราค่าสมาชิก
+                <br className="sm:hidden block" />
+                ของเครือข่ายในพื้นที่
+                <br className="sm:hidden block" />
+                ใกล้เคียง
               </p>
             </div>
           </div>
@@ -252,16 +288,31 @@ const SubSectionOne = () => {
             <b className="font-th desktop-s6-th-700 text-tk-black ">
               ข้อบังคับพื้นฐาน:
             </b>{" "}
-            เพื่อป้องกันความเสียหาย ความเป็นระเบียบเรียบร้อยของทรัพย์สินภายใน
-            และอำนวยความสะดวกให้เจ้าหน้าที่บริหารจัดการง่ายขึ้น เช่น
-            การถอดรองเท้า การนำอาหารเครื่องดื่มเข้ามารับประทาน
+            เพื่อป้องกัน
+            <br className="sm:hidden block" />
+            ความเสียหาย ความเป็นระเบียบ
+            <br className="sm:hidden block" />
+            เรียบร้อยของทรัพย์สินภายใน
+            <br className="sm:hidden block" />
+            และอำนวยความสะดวกให้
+            <br className="sm:hidden block" />
+            เจ้าหน้าที่บริหารจัดการง่ายขึ้น <br className="sm:hidden block" />
+            เช่น การถอดรองเท้า การนำ
+            <br className="sm:hidden block" />
+            อาหารเครื่องดื่มเข้ามารับประทาน
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black text-balance">
             <b className="font-th desktop-s6-th-700 text-tk-black ">
               ข้อบังคับเฉพาะบริการ:
             </b>{" "}
-            เกิดขึ้นจากการเจอปัญหาในการใช้งาน เช่น
-            ห้ามเสียบแฟลชไดร์ฟที่คอมพิวเตอร์เพื่อป้องกันไวรัส
+            <br className="sm:hidden block" />
+            เกิดขึ้นจากการเจอปัญหา
+            <br className="sm:hidden block" />
+            ในการใช้งาน เช่น ห้ามเสียบ
+            <br className="sm:hidden block" />
+            แฟลชไดร์ฟที่คอมพิวเตอร์
+            <br className="sm:hidden block" />
+            เพื่อป้องกันไวรัส
           </span>
         </div>
       </div>
@@ -287,13 +338,26 @@ const SubSectionOne = () => {
             กลุ่มเป้าหมาย
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black text-balance py-2.5 px-[14px]">
-            ปัจจัยภายนอกที่ส่งผลต่อการเปิด-ปิดทำการ เช่น
-            พื้นที่บริการเมื่อการเรียนรู้อยู่ในอาคารของสถานที่อื่น
-            จึงต้องอิงเวลาปิดตามอาคารนั้นๆ
+            ปัจจัยภายนอกที่ส่งผลต่อ
+            <br className="sm:hidden block" />
+            การเปิด-ปิดทำการ เช่น <br className="sm:hidden block" />
+            พื้นที่บริการเมื่อการเรียนรู้
+            <br className="sm:hidden block" />
+            อยู่ในอาคารของสถานที่อื่น <br className="sm:hidden block" />
+            จึงต้องอิงเวลาปิดตาม
+            <br className="sm:hidden block" />
+            อาคารนั้นๆ
           </span>
           <span className="font-th desktop-s6-th-400 text-tk-black text-balance py-2.5 px-[14px]">
-            ปรับเปลี่ยนเวลาทำการได้ตามความ ต้องการและบริบทของกลุ่มเป้าหมาย เช่น
-            หากเปิดเช้าเกินไป คนในชุมชนจะติดภารกิจในการเรียน หรือทำงาน
+            ปรับเปลี่ยนเวลาทำการ
+            <br className="sm:hidden block" />
+            ได้ตามความต้องการและ
+            <br className="sm:hidden block" />
+            บริบทของกลุ่มเป้าหมาย <br className="sm:hidden block" />
+            เช่น หากเปิดเช้าเกินไป <br className="sm:hidden block" />
+            คนในชุมชนจะติดภารกิจ
+            <br className="sm:hidden block" />
+            ในการเรียน หรือทำงาน
           </span>
         </div>
       </div>

@@ -139,9 +139,16 @@ function SectionCover() {
           <div className="flex flex-col">
             <div className="border border-white px-[14px] py-[6px]">
               <p className="font-th desktop-s6-th-400 text-white">
-                จัดอบรมกระบวนการพัฒนาศักยภาพบุคลากรผ่านการฝึกปฏิบัติงาน
+                จัดอบรมกระบวนการพัฒนา
+                <br className="sm:hidden block" />
+                ศักยภาพบุคลากรผ่านการ
+                <br className="sm:hidden block" />
+                ฝึกปฏิบัติงาน
                 <br />
-                (On-the-Job Training) ให้บุคลากรประจำพื้นที่การเรียนรู้
+                (On-the-Job Training) <br className="sm:hidden block" />
+                ให้บุคลากร
+                <br className="sm:hidden block" />
+                ประจำพื้นที่การเรียนรู้
               </p>
             </div>
           </div>
@@ -165,9 +172,15 @@ function QuoteSection() {
       <div className="absolute left-[21.2625%] top-0 h-[78.3333%] w-[78.4053%] border-2 border-white bg-[#ffbaa1]" />
       <blockquote className="absolute left-0 top-[18.0952%] flex h-[81.9048%] w-[87.0432%] items-center justify-center border-2 border-white bg-[#f5333f] p-2.5 text-center text-white">
         <p className="font-th desktop-s5-th-700 leading-normal">
-          นโยบายที่ชัดเจนคือก้าวแรก
-          <br />
-          สู่การสร้างพื้นที่การเรียนรู้ที่ตอบโจทย์ชุมชน
+          นโยบายที่ชัดเจน
+          <br className="sm:hidden block" />
+          คือก้าวแรก
+          <br className="hidden sm:block" />
+          สู่การสร้าง
+          <br className="sm:hidden block" />
+          พื้นที่การเรียน
+          <br className="sm:hidden block" />
+          รู้ที่ตอบโจทย์ชุมชน
           <br />
           อย่างแท้จริง
         </p>

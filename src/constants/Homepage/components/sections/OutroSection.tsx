@@ -14,13 +14,17 @@ const OutroSection = () => {
         <div className="mx-auto w-full max-w-[600px]">
           <div className="relative flex w-full flex-col items-start">
             <CoverSub color="#5B73ED" />
-            <div className="absolute md:right-[40px] md:top-[40px] right-1 top-14 w-full h-full">
+            <div className="absolute md:right-[40px] md:top-[40px] right-1 top-1 w-full h-full">
               <div className="flex flex-col justify-end items-end">
                 <p className="font-th desktop-s6-th-400 text-white px-2.5 py-1.5 bg-tk-black w-fit">
-                  หากหน่วยงานของคุณพร้อมเปลี่ยนพื้นที่ในชุมชน
+                  หากหน่วยงานของคุณ
+                  <br className="sm:hidden block" />
+                  พร้อมเปลี่ยนพื้นที่ในชุมชน
                 </p>
                 <p className="font-th desktop-s6-th-400 text-white px-2.5 py-1.5 bg-tk-black w-fit">
-                  ให้กลายเป็นศูนย์กลางการเรียนรู้
+                  ให้กลายเป็นศูนย์กลาง
+                  <br className="sm:hidden block" />
+                  การเรียนรู้
                 </p>
                 <p className="font-th desktop-s6-th-700 text-white px-2.5 py-1.5 bg-tk-black w-fit">
                   เริ่มต้นได้ที่นี่
@@ -30,17 +34,31 @@ const OutroSection = () => {
 
             <div className="flex w-full flex-col  justify-center gap-10 border-x-2 border-b-2 border-white bg-[#5B73ED] p-10 text-white ">
               <p className="font-th desktop-s6-th-700 text-white">
-                หน่วยงานสามารถใช้คู่มือนี้เป็นแนวทางในการออกแบบและพัฒนาพื้นที่
-                <br />
-                การเรียนรู้ที่มีชีวิต
-                โดยเริ่มต้นจากศักยภาพและบริบทของพื้นที่ที่มีอยู่
+                หน่วยงานสามารถใช้คู่มือนี้
+                <br className="sm:hidden block" />
+                เป็นแนวทางในการออกแบบและ
+                <br className="sm:hidden block" />
+                พัฒนาพื้นที่
+                <br className="hidden sm:block" />
+                การเรียนรู้ที่มีชีวิต <br className="sm:hidden block" />
+                โดยเริ่มต้นจากศักยภาพและบริบท
+                <br className="sm:hidden block" />
+                ของพื้นที่ที่มีอยู่
               </p>
               <p className="font-th desktop-s6-th-400 text-white">
-                TK Park พร้อมเป็นพันธมิตรในการให้คำปรึกษา ถ่ายทอดองค์ความรู้
-                และสนับสนุนการพัฒนาระบบนิเวศการเรียนรู้
-                เพื่อสร้างพื้นที่ที่ตอบโจทย์ชุมชนและเติบโตได้อย่างยั่งยืน
+                TK Park พร้อมเป็นพันธมิตร
+                <br className="sm:hidden block" />
+                ในการให้คำปรึกษา ถ่ายทอด
+                <br className="sm:hidden block" />
+                องค์ความรู้ และสนับสนุนการพัฒนา
+                <br className="sm:hidden block" />
+                ระบบนิเวศการเรียนรู้ เพื่อสร้างพื้นที่
+                <br className="sm:hidden block" />
+                ที่ตอบโจทย์ชุมชนและเติบโต
+                <br className="sm:hidden block" />
+                ได้อย่างยั่งยืน
               </p>
-              <div className="flex gap-5 w-full">
+              <div className="flex gap-5 w-full  md:flex-row flex-col">
                 <div className="relative flex items-center justify-center">
                   <T03
                     fill="#F5333F"

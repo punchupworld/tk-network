@@ -17,13 +17,19 @@ const ReadNapActivityCard = ({ id = "subsubtopic27" }: { id?: string }) => {
       textClassName="text-white"
       descriptions={[
         <>
-          ผู้ใช้งานไม่เกรงกลัวที่จะเข้ามาเรียนรู้สื่อต่างๆ ในระยะเวลานาน
-          <br />
-          จึงออกแบบให้บรรยากาศมีความเป็นกันเอง
+          ผู้ใช้งานไม่เกรงกลัวที่จะเข้ามาเรียนรู้
+          <br className="sm:hidden block" />
+          สื่อต่างๆ ในระยะเวลานาน
+          <br className="hidden sm:block" />
+          จึงออกแบบ
+          <br className="sm:hidden block" />
+          ให้บรรยากาศมีความเป็นกันเอง
         </>,
         <>
           ผู้ใช้งานสามารถพักเปลี่ยนอิริยาบถ <br />
-          เพื่อบรรเทาความเหนื่อยล้า และกลับมาเรียนรู้สื่อต่างๆ อย่างสดใส
+          เพื่อบรรเทาความเหนื่อยล้า และกลับมา
+          <br className="sm:hidden block" />
+          เรียนรู้สื่อต่างๆ อย่างสดใส
         </>,
       ]}
       targets={[
@@ -41,22 +47,32 @@ const ReadNapActivityCard = ({ id = "subsubtopic27" }: { id?: string }) => {
             textClassName="text-white"
             boxClassName="border-y border-white flex flex-col items-center h-full py-2"
           >
-            จำกัดจำนวนที่นั่งในบริเวณโต๊ะเดียวกัน
-            เพื่อเปิดโอกาสให้ผู้ใช้งานจัดท่าทางที่ตนเองรู้สึกสบาย
+            จำกัดจำนวนที่นั่งในบริเวณโต๊ะเดียวกัน{" "}
+            <br className="sm:hidden block" />
+            เพื่อเปิดโอกาสให้ผู้ใช้งาน
+            <br className="sm:hidden block" />
+            จัดท่าทางที่ตนเองรู้สึกสบาย
           </ActivityCell>
           <ActivityCell
             textClassName="text-white"
             boxClassName="border-y border-white flex flex-col items-center h-full py-2"
           >
-            หลีกเลี่ยงใช้ เฟอร์นิเจอร์ ประเภทโต๊ะเก้าอี้ที่มีขนาดเกิน 4
-            ที่นั่งขึ้นไปหรือโซฟา เพื่อไม่ให้การ <br />
-            งีบหลับรบกวนกิจกรรมของผู้อื่น ในโต๊ะเดียวกัน
+            หลีกเลี่ยงใช้ เฟอร์นิเจอร์ ประเภทโต๊ะเก้าอี้
+            <br className="sm:hidden block" />
+            ที่มีขนาดเกิน 4 ที่นั่งขึ้นไปหรือโซฟา{" "}
+            <br className="sm:hidden block" />
+            เพื่อไม่ให้การ <br className="hidden sm:block" />
+            งีบหลับรบกวน
+            <br className="sm:hidden block" />
+            กิจกรรมของผู้อื่น ในโต๊ะเดียวกัน
           </ActivityCell>
           <ActivityCell
             textClassName="text-white"
             boxClassName="border-y border-white flex flex-col items-center h-full py-2"
           >
-            กำหนดสัญญาณเสียงตามเวลาที่เหมาะสมเพื่อป้องกันการงีบหลับจนนานเกินไป
+            กำหนดสัญญาณเสียงตามเวลาที่เหมาะสม
+            <br className="sm:hidden block" />
+            เพื่อป้องกันการงีบหลับจนนานเกินไป
           </ActivityCell>
         </>
       }

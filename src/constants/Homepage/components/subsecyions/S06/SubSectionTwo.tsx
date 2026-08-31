@@ -18,18 +18,37 @@ const SubSectionTwo = () => {
       </div>
       <div className="flex w-full flex-col justify-center gap-2.5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          ลองสำรวจกิจกรรมต้นแบบและกลุ่มเป้าหมายที่เหมาะกับผู้ใช้งานแต่ละกลุ่ม
-          <br />
-          ที่สามารถสร้างการเรียนรู้ทั้งแบบรู้ตัวและไม่รู้ตัว
-          เพราะแม้แต่กิจกรรมที่ดู <br />
+          ลองสำรวจกิจกรรมต้นแบบ
+          <br className="sm:hidden block" />
+          และกลุ่มเป้าหมายที่เหมาะ
+          <br className="sm:hidden block" />
+          กับผู้ใช้งานแต่ละกลุ่ม
+          <br className="hidden sm:block" />
+          ที่สามารถ
+          <br className="sm:hidden block" />
+          สร้างการเรียนรู้ทั้งแบบรู้ตัวและ
+          <br className="sm:hidden block" />
+          ไม่รู้ตัว เพราะแม้แต่กิจกรรมที่ดู <br />
           เรียบง่ายที่สุดก็ต้องการการจัดการอย่างละเอียด
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          บรรยากาศที่ดีสามารถกระตุ้นให้ผู้ใช้บริการอยากแบ่งปันและสร้างสรรค์งาน
-          ร่วมกับผู้อื่น
-          สิ่งอำนวยความสะดวกที่เหมาะเจาะก็จะช่วยสร้างประสบการณ์ที่ดีในการแบ่งปัน
-          สร้างปฏิสัมพันธ์ร่วมกันกับคนในชุมชน
-          แต่ที่สำคัญที่สุดคือความรู้สึกเป็นอิสระที่จะเรียนรู้อะไรก็ได้ด้วยตนเอง
+          บรรยากาศที่ดีสามารถกระตุ้น
+          <br className="sm:hidden block" />
+          ให้ผู้ใช้บริการอยากแบ่งปันและ
+          <br className="sm:hidden block" />
+          สร้างสรรค์งาน ร่วมกับผู้อื่น <br className="sm:hidden block" />
+          สิ่งอำนวยความสะดวกที่
+          <br className="sm:hidden block" />
+          เหมาะเจาะก็จะช่วยสร้าง
+          <br className="sm:hidden block" />
+          ประสบการณ์ที่ดีในการแบ่งปัน <br className="sm:hidden block" />
+          สร้างปฏิสัมพันธ์ร่วมกันกับคน
+          <br className="sm:hidden block" />
+          ในชุมชน แต่ที่สำคัญที่สุดคือ
+          <br className="sm:hidden block" />
+          ความรู้สึกเป็นอิสระที่จะเรียนรู้
+          <br className="sm:hidden block" />
+          อะไรก็ได้ด้วยตนเอง
         </p>
       </div>
       <ReadNapActivityCard />
@@ -68,7 +87,9 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center md:h-[110px] justify-center py-2"
               >
-                เตรียมสัญญาณ อินเตอร์เน็ตที่มีความเร็วและเสถียร
+                เตรียมสัญญาณ อินเตอร์เน็ต
+                <br className="sm:hidden block" />
+                ที่มีความเร็วและเสถียร
               </ActivityCell>
             </div>
             <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
@@ -76,8 +97,9 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                บริหารจัดการพื้นที่กึ่งภายนอกอาคาร ติดตั้งสิ่งอำนวยความสะดวก{" "}
-                <br />
+                บริหารจัดการพื้นที่กึ่งภายนอกอาคาร{" "}
+                <br className="sm:hidden block" />
+                ติดตั้งสิ่งอำนวยความสะดวก <br />
                 เพิ่มเติมเพื่อเป็นพื้นที่ฝึกฝน
               </ActivityCell>
               <ActivityCell
@@ -85,15 +107,19 @@ const SubSectionTwo = () => {
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
                 ควรเป็นพื้นที่ <br />
-                ที่คนนอกสามารถมองเห็นกิจกรรมที่เกิดขึ้นด้านในเพื่อกระตุ้นความสนใจในการเรียนรู้การ
-                แสดงออก
+                ที่คนนอกสามารถมองเห็นกิจกรรมที่เกิดขึ้นด้านใน
+                <br className="sm:hidden block" />
+                เพื่อกระตุ้นความสนใจในการเรียนรู้การ แสดงออก
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                ใช้วัสดุพื้นที่ไม่ก่อให้เกิดเสียงดังและวัสดุป้องกันเสียง
-                บริเวณประตู หรือรอยต่อผนัง
+                ใช้วัสดุพื้นที่ไม่ก่อให้เกิดเสียงดัง
+                <br className="sm:hidden block" />
+                และวัสดุป้องกันเสียง บริเวณประตู{" "}
+                <br className="sm:hidden block" />
+                หรือรอยต่อผนัง
               </ActivityCell>
             </div>
             <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
@@ -101,7 +127,9 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                พิจารณาติดตั้งผนังกระจกเงาบานใหญ่เพื่อตรวจสอบความถูกต้องของท่าทาง
+                พิจารณาติดตั้งผนังกระจกเงาบานใหญ่
+                <br className="sm:hidden block" />
+                เพื่อตรวจสอบความถูกต้องของท่าทาง
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"
@@ -118,7 +146,7 @@ const SubSectionTwo = () => {
         id="subsubtopic29"
         color="#5B73ED"
         title={
-          <b className="font-th desktop-s7-th-700">
+          <>
             กิจกรรม
             <br />
             จริงจังอนาคต
@@ -126,13 +154,25 @@ const SubSectionTwo = () => {
             E-Sport
             <br />
             Player
-          </b>
+          </>
         }
         textClassName="text-white"
         descriptions={[
-          "ผู้ใช้งานจะได้มีพื้นที่ที่เหมาะสมในการพัฒนาทักษะเพื่อแข่งอีสปอร์ต",
-          "สนับสนุนการใช้งานอย่างหลากหลายและทันสมัย",
-          "กระตุ้นให้ผู้ใช้งานได้ทดลองฝึกฝนทักษะใหม่ๆ",
+          <>
+            ผู้ใช้งานจะได้มีพื้นที่ที่เหมาะสม
+            <br className="sm:hidden block" />
+            ในการพัฒนาทักษะเพื่อแข่งอีสปอร์ต
+          </>,
+          <>
+            สนับสนุนการใช้งานอย่างหลากหลาย
+            <br className="sm:hidden block" />
+            และทันสมัย
+          </>,
+          <>
+            กระตุ้นให้ผู้ใช้งานได้ทดลอง
+            <br className="sm:hidden block" />
+            ฝึกฝนทักษะใหม่ๆ
+          </>,
         ]}
         targets={[
           "เหมาะสำหรับผู้ที่ต้องการฝึกฝนทักษะเกมออนไลน์แบบอีสปอร์ตอย่างเป็นทางการ",
@@ -156,14 +196,20 @@ const SubSectionTwo = () => {
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                อาจสนับสนุน จอภาพแสดงผลขนาดใหญ่ หรือชุดเฟอร์นิเจอร์สำหรับ
-                อีสปอร์ตโดยเฉพาะ
+                อาจสนับสนุน จอภาพแสดงผล
+                <br className="sm:hidden block" />
+                ขนาดใหญ่ หรือชุดเฟอร์นิเจอร์
+                <br className="sm:hidden block" />
+                สำหรับ อีสปอร์ตโดยเฉพาะ
               </ActivityCell>
               <ActivityCell
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                ควรกำหนดเวลาในการใช้งานต่อรอบ อย่างเหมาะสม
+                ควรกำหนดเวลา
+                <br className="sm:hidden block" />
+                ในการใช้งานต่อรอบ <br className="sm:hidden block" />
+                อย่างเหมาะสม
               </ActivityCell>
             </div>
             <div className="mt-4 flex flex-col gap-4 md:mt-5 md:grid md:grid-cols-3 md:gap-5">
@@ -178,7 +224,9 @@ const SubSectionTwo = () => {
                 textClassName="text-white"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full justify-center"
               >
-                เตรียมสัญญาณ อินเตอร์เน็ตที่มีความเร็วและเสถียร
+                เตรียมสัญญาณ อินเตอร์เน็ต
+                <br className="sm:hidden block" />
+                ที่มีความเร็วและเสถียร
               </ActivityCell>
             </div>
           </div>

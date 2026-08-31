@@ -49,47 +49,109 @@ const SubSectionOne = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          ลองจินตนาการห้องสมุดที่มีโต๊ะทำงานตัวใหญ่สำหรับระดมสมอง
-          ประดิษฐ์สิ่งของต่างๆ มีมุมเล่านิทานดีๆ หนังสือหลากหลายประเภทให้เลือก
-          มีบอร์ดเกมมากมายให้เล่น มีนิทรรศการให้เดินชม
-          หรือจะมีเสียงดนตรีคลอให้รู้สึก
+          ลองจินตนาการห้องสมุดที่มีโต๊ะ
+          <br className="sm:hidden block" />
+          ทำงานตัวใหญ่สำหรับระดมสมอง <br className="sm:hidden block" />
+          ประดิษฐ์สิ่งของต่างๆ มีมุมเล่า
+          <br className="sm:hidden block" />
+          นิทานดีๆ หนังสือหลากหลาย
+          <br className="sm:hidden block" />
+          ประเภทให้เลือก มีบอร์ดเกม
+          <br className="sm:hidden block" />
+          มากมายให้เล่น มีนิทรรศการ
+          <br className="sm:hidden block" />
+          ให้เดินชม หรือจะมีเสียงดนตรี
+          <br className="sm:hidden block" />
+          คลอให้รู้สึก
           <br className="hidden md:inline" />
           ผ่อนคลาย
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          เมื่อเปิดประตูแหล่งเรียนรู้ กลุ่มผู้ปกครองอาจจะอยากนั่งรอลูก บรรดาแม่ๆ
-          <br />
-          ได้โอกาสคุยกันระหว่างที่ลูกกำลังใช้พื้นที่
+          เมื่อเปิดประตูแหล่งเรียนรู้ <br className="sm:hidden block" />
+          กลุ่มผู้ปกครองอาจจะอยากนั่งรอ
+          <br className="sm:hidden block" />
+          ลูก บรรดาแม่ๆ
+          <br className="hidden sm:inline" />
+          ได้โอกาสคุยกัน
+          <br className="sm:hidden block" />
+          ระหว่างที่ลูกกำลังใช้พื้นที่ <br className="sm:hidden block" />
           กลุ่มเด็กเล็กอยากเข้ากิจกรรม
           <br />
-          เล่านิทานเด็ก กลุ่มนักเรียนนักศึกษาอาจจะอยากใช้ห้องประชุมทำงาน
-          คุยเล่นเรื่องซีรีส์ดัง อ่านไปงีบไป ติวหนังสือสอบ
-          กลุ่มผู้ใหญ่และผู้สูงอายุอาจจะอยากคุยเข้มสภากาแฟ หรือออกกำลังกาย
+          เล่านิทานเด็ก กลุ่มนักเรียน
+          <br className="sm:hidden block" />
+          นักศึกษาอาจจะอยากใช้ห้องประชุม
+          <br className="sm:hidden block" />
+          ทำงาน คุยเล่นเรื่องซีรีส์ดัง <br className="sm:hidden block" />
+          อ่านไปงีบไป ติวหนังสือสอบ <br className="sm:hidden block" />
+          กลุ่มผู้ใหญ่และผู้สูงอายุอาจจะ
+          <br className="sm:hidden block" />
+          อยากคุยเข้มสภากาแฟ หรือ
+          <br className="sm:hidden block" />
+          ออกกำลังกาย
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          การศึกษาข้อมูลภาคสนามของ TK Park พบว่า ผู้ใช้บริการทุกเพศทุกวัยที่
+          การศึกษาข้อมูลภาคสนามของ <br className="sm:hidden block" />
+          TK Park พบว่า <br className="sm:hidden block" />
+          ผู้ใช้บริการทุกเพศทุกวัยที่
           <br />
-          เข้ามาใช้พื้นที่การเรียนรู้ในแต่ละช่วงเวลาของวันและสัปดาห์มีความแตกต่างกันอย่างมีนัยยะสำคัญ
-          ขึ้นอยู่กับสถานที่ตั้งและรูปแบบการให้บริการ เช่น นักเรียน
-          นักศึกษาจะใช้งานแหล่งเรียนรู้เวลาเย็นเป็นหลัก
-          ผู้สูงอายุมักจะใช้เวลาช่วงสายของวันธรรมดาในหลายพื้นที่
-          และเพิ่มมากขึ้นในวันหยุด ส่วนช่วงบ่ายวันหยุด
-          พื้นที่จะเต็มไปด้วยกลุ่มคนหลากหลาย เช่น นักเรียนที่เข้ามาทำรายงาน
-          ซ้อมการแสดง ผู้ปกครองและเด็กเล็กอ่านหนังสือนิทาน ส่วนวัยทำงานอาจ
+          เข้ามาใช้พื้นที่การเรียนรู้ในแต่ละ
+          <br className="sm:hidden block" />
+          ช่วงเวลาของวันและสัปดาห์
+          <br className="sm:hidden block" />
+          มีความแตกต่างกันอย่างมี
+          <br className="sm:hidden block" />
+          นัยยะสำคัญ ขึ้นอยู่กับสถานที่ตั้ง
+          <br className="sm:hidden block" />
+          และรูปแบบการให้บริการ เช่น <br className="sm:hidden block" />
+          นักเรียน นักศึกษาจะใช้งาน
+          <br className="sm:hidden block" />
+          แหล่งเรียนรู้เวลาเย็นเป็นหลัก <br className="sm:hidden block" />
+          ผู้สูงอายุมักจะใช้เวลาช่วงสายของ
+          <br className="sm:hidden block" />
+          วันธรรมดาในหลายพื้นที่ และ
+          <br className="sm:hidden block" />
+          เพิ่มมากขึ้นในวันหยุด ส่วนช่วง
+          <br className="sm:hidden block" />
+          บ่ายวันหยุด พื้นที่จะเต็มไปด้วย
+          <br className="sm:hidden block" />
+          กลุ่มคนหลากหลาย เช่น นักเรียนที่
+          <br className="sm:hidden block" />
+          เข้ามาทำรายงาน ซ้อมการแสดง <br className="sm:hidden block" />
+          ผู้ปกครองและเด็กเล็กอ่านหนังสือ
+          <br className="sm:hidden block" />
+          นิทาน ส่วนวัยทำงานอาจ
           <br />
           นั่งทำงานกับโน้ตบุ้คสักตัว
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          ตำแหน่งที่ตั้งของแหล่งเรียนรู้เองก็มีผลกับการเข้าใช้งานของกลุ่มต่างๆ
-          <br />
-          เป็นอย่างมาก เช่น พื้นที่การเรียนรู้ที่อยู่ใกล้โรงเรียนจะมีนักเรียน
-          นักศึกษา
-          <br />
-          เข้ามาใช้งานมากเป็นพิเศษ
-          หรือผู้ปกครองจะเข้ามาใช้งานก่อนเวลาลูกหลานเลิกเรียน
-          ส่วนพื้นที่การเรียนรู้ที่อยู่ใกล้กับพื้นที่ชุมชน
-          ขาประจำคือกลุ่มผู้สูงอายุที่เข้ามาใช้งานช่วงสายจนถึงเที่ยงในวันธรรมดา
-          และมีผู้ใช้บริการทั่วไปจำนวนมากในวันหยุด
+          ตำแหน่งที่ตั้งของแหล่งเรียนรู้เอง
+          <br className="sm:hidden block" />
+          ก็มีผลกับการเข้าใช้งานของกลุ่ม
+          <br className="sm:hidden block" />
+          ต่างๆ
+          <br className="hidden sm:block" />
+          เป็นอย่างมาก เช่น พื้นที่
+          <br className="sm:hidden block" />
+          การเรียนรู้ที่อยู่ใกล้โรงเรียนจะมี
+          <br className="sm:hidden block" />
+          นักเรียน นักศึกษา
+          <br className="hidden sm:block" />
+          เข้ามาใช้งาน
+          <br className="sm:hidden block" />
+          มากเป็นพิเศษ หรือผู้ปกครอง
+          <br className="sm:hidden block" />
+          จะเข้ามาใช้งานก่อนเวลาลูกหลาน
+          <br className="sm:hidden block" />
+          เลิกเรียน ส่วนพื้นที่การเรียนรู้
+          <br className="sm:hidden block" />
+          ที่อยู่ใกล้กับพื้นที่ชุมชน ขาประจำ
+          <br className="sm:hidden block" />
+          คือกลุ่มผู้สูงอายุที่เข้ามาใช้งาน
+          <br className="sm:hidden block" />
+          ช่วงสายจนถึงเที่ยงในวันธรรมดา <br className="sm:hidden block" />
+          และมีผู้ใช้บริการทั่วไปจำนวนมาก
+          <br className="sm:hidden block" />
+          ในวันหยุด
         </p>
         <div className="flex flex-col gap-2.5 items-start justify-start w-full">
           <div className="flex flex-col ">
@@ -195,11 +257,17 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-5">
             <span className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              เด็กเล็กคือตัวละครหลัก ไม่ว่าพวกเขาจะอยากทำกิจกรรมอะไร เช่น
-              วาดรูประบายสี อ่านนิทาน คลาน เล่นของเล่นเสริมทักษะ
-              ปีนป่ายในพื้นที่ที่
+              เด็กเล็กคือตัวละครหลัก <br className="sm:hidden block" />
+              ไม่ว่าพวกเขาจะอยากทำกิจกรรม
+              <br className="sm:hidden block" />
+              อะไร เช่น วาดรูประบายสี <br className="sm:hidden block" />
+              อ่านนิทาน คลาน เล่นของเล่น
+              <br className="sm:hidden block" />
+              เสริมทักษะ ปีนป่ายในพื้นที่ที่
               <br />
-              ถูกออกแบบไว้ พ่อแม่อาจจะร่วมทำกิจกรรมด้วยหรืออ่านหนังสือ
+              ถูกออกแบบไว้ พ่อแม่อาจจะร่วมทำ
+              <br className="sm:hidden block" />
+              กิจกรรมด้วยหรืออ่านหนังสือ <br className="sm:hidden block" />
               เล่นโทรศัพท์อยู่ใกล้ๆ
             </span>
           </div>
@@ -219,20 +287,39 @@ const SubSectionOne = () => {
               TK Park อุทยานการเรียนรู้
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border-x border-t border-[#D9D9D9]">
-              ชุดการเรียนรู้ Toy Library ในห้องเด็ก ประกอบไปด้วยหนังสือ 1
-              เล่มที่
+              ชุดการเรียนรู้ Toy Library <br className="sm:hidden block" />
+              ในห้องเด็ก ประกอบไปด้วย
+              <br className="sm:hidden block" />
+              หนังสือ 1 เล่มที่
+              <br className="hidden sm:block" />
+              คัดสรรโดย
+              <br className="sm:hidden block" />
+              บรรณารักษ์ของห้องสมุดเด็ก <br className="sm:hidden block" />
+              TK Park และของเล่นไม้
               <br />
-              คัดสรรโดยบรรณารักษ์ของห้องสมุดเด็ก TK Park และของเล่นไม้
-              <br />
-              เสริมทักษะ 1 ชุดจากบริษัทแปลนทอยส์
+              เสริมทักษะ 1 ชุดจากบริษัท
+              <br className="sm:hidden block" />
+              แปลนทอยส์
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border border-[#D9D9D9]">
-              ชุดการเรียนรู้ Sort&Count Trees จากหนังสือเรื่อง “แตะต้นไม้วิเศษ”
-              และชุดของเล่นที่ประกอบด้วยฐานพร้อมเสา 4 ต้น พุ่มไม้ 10 พุ่ม เพื่อ
+              ชุดการเรียนรู้ Sort&Count <br className="sm:hidden block" />
+              Trees จากหนังสือเรื่อง <br className="sm:hidden block" />
+              “แตะต้นไม้วิเศษ” และชุด
+              <br className="sm:hidden block" />
+              ของเล่นที่ประกอบด้วยฐาน
+              <br className="sm:hidden block" />
+              พร้อมเสา 4 ต้น พุ่มไม้ 10 พุ่ม <br className="sm:hidden block" />
+              เพื่อ
+              <br className="hidden sm:block" />
+              ฝึกนับเลขและ
+              <br className="sm:hidden block" />
+              จำแนกสีผ่านต้นไม้ในฤดูกาล
+              <br className="sm:hidden block" />
+              ต่างๆ และช่วยเสริมสร้าง
               <br />
-              ฝึกนับเลขและจำแนกสีผ่านต้นไม้ในฤดูกาลต่างๆ และช่วยเสริมสร้าง
-              <br />
-              กล้ามเนื้อมัดเล็ก ความสัมพันธ์ของมือและสายตา
+              กล้ามเนื้อมัดเล็ก ความ
+              <br className="sm:hidden block" />
+              สัมพันธ์ของมือและสายตา
             </p>
           </div>
         </div>
@@ -259,13 +346,24 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-5">
             <span className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              ถ้านึกถึงห้องสมุดก็มักจะนึกถึงกลุ่มนักเรียน ก่อนเป็นอันดับแรก
-              พวกเขามักจะพากันมาใช้พื้นที่ห้องสมุดแบบเป็นแก๊งเพื่ออ่านหนังสือ
-              ทำรายงาน พักผ่อน
-              หรือใช้คอมพิวเตอร์เพื่อทำงานหรือรอผู้ปกครองมารับในช่วงเวลา
-              <br />
-              หลังเลิกเรียน หรือวันหยุดโดยไม่ต้อง
-              <br />
+              ถ้านึกถึงห้องสมุดก็มักจะนึกถึง
+              <br className="sm:hidden block" />
+              กลุ่มนักเรียน ก่อนเป็นอันดับแรก <br className="sm:hidden block" />
+              พวกเขามักจะพากันมาใช้พื้นที่
+              <br className="sm:hidden block" />
+              ห้องสมุดแบบเป็นแก๊งเพื่อ
+              <br className="sm:hidden block" />
+              อ่านหนังสือ ทำรายงาน พักผ่อน <br className="sm:hidden block" />
+              หรือใช้คอมพิวเตอร์เพื่อทำงาน
+              <br className="sm:hidden block" />
+              หรือรอผู้ปกครองมารับในช่วง
+              <br className="sm:hidden block" />
+              เวลา
+              <br className="hidden sm:block" />
+              หลังเลิกเรียน หรือวันหยุด
+              <br className="sm:hidden block" />
+              โดยไม่ต้อง
+              <br className="hidden sm:block" />
               เสียค่าใช้จ่ายเพิ่มเติม
             </span>
           </div>
@@ -285,24 +383,62 @@ const SubSectionOne = () => {
               เครือข่าย TK Park
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border-x border-t border-[#D9D9D9]">
-              <b>สร้างฝันสร้างคิดส์ อุทยานการเรียนรู้แม่ฮ่องสอน</b>{" "}
-              จังหวัดแม่ฮ่องสอนมีชาวชาติพันธุ์หลายกลุ่มอาศัยอยู่
-              อุทยานจึงจัดกิจกรรมน่ารู้ด้านภาษา เช่น ภาษาไทใหญ่ ภาษากะเหรี่ยง
-              เด็กๆ
-              จะได้เรียนรู้ว่าจังหวัดของตัวเองมีความหลากหลายทางภาษาและเรียนรู้มนุษย์ไปด้วย
+              <b>
+                สร้างฝันสร้างคิดส์ อุทยาน
+                <br className="sm:hidden block" />
+                การเรียนรู้แม่ฮ่องสอน
+              </b>{" "}
+              จังหวัดแม่ฮ่องสอนมีชาว
+              <br className="sm:hidden block" />
+              ชาติพันธุ์หลายกลุ่มอาศัยอยู่ <br className="sm:hidden block" />
+              อุทยานจึงจัดกิจกรรมน่ารู้
+              <br className="sm:hidden block" />
+              ด้านภาษา เช่น ภาษาไทใหญ่ <br className="sm:hidden block" />
+              ภาษากะเหรี่ยง เด็กๆ จะได้
+              <br className="sm:hidden block" />
+              เรียนรู้ว่าจังหวัดของตัวเอง
+              <br className="sm:hidden block" />
+              มีความหลากหลายทางภาษา
+              <br className="sm:hidden block" />
+              และเรียนรู้มนุษย์ไปด้วย
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border-x border-t border-[#D9D9D9]">
-              <b>มุมบันไดนักอ่าน อุทยานการเรียนรู้เมืองนครราชสีมา</b>{" "}
-              หนังสือและนิยายจำนวนมากทำให้มุมนี้กลายเป็นมุมยอดฮิตของกลุ่มเด็ก
-              และวัยรุ่น แถม
-              <br />
-              ยังมีบริการโต๊ะพับและเบาะที่เด็กๆ
-              สามารถหยิบไปใช้เองได้หากที่นั่งไม่เพียงพออีกด้วย
+              <b>
+                มุมบันไดนักอ่าน อุทยาน
+                <br className="sm:hidden block" />
+                การเรียนรู้เมืองนครราชสีมา
+              </b>{" "}
+              หนังสือและนิยายจำนวนมาก
+              <br className="sm:hidden block" />
+              ทำให้มุมนี้กลายเป็นมุม
+              <br className="sm:hidden block" />
+              ยอดฮิตของกลุ่มเด็ก และ
+              <br className="sm:hidden block" />
+              วัยรุ่น แถม
+              <br className="hidden sm:block" />
+              ยังมีบริการโต๊ะพับ
+              <br className="sm:hidden block" />
+              และเบาะที่เด็กๆ สามารถหยิบ
+              <br className="sm:hidden block" />
+              ไปใช้เองได้หากที่นั่งไม่
+              <br className="sm:hidden block" />
+              เพียงพออีกด้วย
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border border-[#D9D9D9]">
-              <b>ศูนย์วิทยาศาสตร์พื้นฐาน อุทยานการเรียนรู้ปัตตานี</b> เด็กๆ ใน 3
-              จังหวัดชายแดนภาคใต้ได้เข้าถึงสื่อการเรียนรู้วิทยาศาสตร์ ทดลองเล่น
-              ทดลองทำโดยใช้อุปกรณ์ทางวิทยาศาสตร์ที่เตรียมไว้ให้เล่นสนุก
+              <b>
+                ศูนย์วิทยาศาสตร์พื้นฐาน <br className="sm:hidden block" />
+                อุทยานการเรียนรู้ปัตตานี
+              </b>{" "}
+              เด็กๆ ใน 3 จังหวัดชายแดน
+              <br className="sm:hidden block" />
+              ภาคใต้ได้เข้าถึงสื่อการเรียนรู้
+              <br className="sm:hidden block" />
+              วิทยาศาสตร์ ทดลองเล่น <br className="sm:hidden block" />
+              ทดลองทำโดยใช้อุปกรณ์
+              <br className="sm:hidden block" />
+              ทางวิทยาศาสตร์ที่เตรียม
+              <br className="sm:hidden block" />
+              ไว้ให้เล่นสนุก
             </p>
           </div>
         </div>
@@ -329,12 +465,28 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-5">
             <span className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              กลุ่มนี้มีความต้องการในการใช้งานที่ <br />
-              หลากหลาย ไม่ว่าจะเป็นการอ่านหนังสือวิชาการ ทำรายงาน
-              ใช้คอมพิวเตอร์เพื่อเรียน เล่น หรือใช้ห้องสมุดเพื่อพักใจ นอนเล่น
-              <br />
-              คุยแลกเปลี่ยน หรือซ้อมการแสดง จึงต้องการลักษณะของพื้นที่หลายระดับ
-              ตั้งแต่ระดับที่เงียบสงบไปจนถึงพื้นที่ที่อนุญาตให้ใช้เสียง <br />
+              กลุ่มนี้มีความต้องการในการ
+              <br className="sm:hidden block" />
+              ใช้งานที่ <br className="hidden sm:block" />
+              หลากหลาย ไม่ว่าจะ
+              <br className="sm:hidden block" />
+              เป็นการอ่านหนังสือวิชาการ <br className="sm:hidden block" />
+              ทำรายงาน ใช้คอมพิวเตอร์
+              <br className="sm:hidden block" />
+              เพื่อเรียน เล่น หรือใช้ห้องสมุด
+              <br className="sm:hidden block" />
+              เพื่อพักใจ นอนเล่น
+              <br className="hidden sm:block" />
+              คุยแลก
+              <br className="sm:hidden block" />
+              เปลี่ยน หรือซ้อมการแสดง <br className="sm:hidden block" />
+              จึงต้องการลักษณะของพื้นที่
+              <br className="sm:hidden block" />
+              หลายระดับ ตั้งแต่ระดับที่เงียบ
+              <br className="sm:hidden block" />
+              สงบไปจนถึงพื้นที่ที่อนุญาต
+              <br className="sm:hidden block" />
+              ให้ใช้เสียง <br className="hidden sm:block" />
               ได้เต็มที่
             </span>
           </div>
@@ -356,11 +508,20 @@ const SubSectionOne = () => {
                   TK Park อุทยานการเรียนรู้
                 </p>
                 <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border border-[#D9D9D9]">
-                  เด็กๆ เรียนรู้และเล่นสนุก ผ่านบอร์ดเกม ซึ่งเป็นสื่อการเรียนรู้
-                  เพื่อพัฒนาทักษะชีวิตผ่านการสร้างเรื่องราวและประสบการณ์ต่างๆ
-                  พวกเขาจะได้คิดวิเคราะห์ สวมบทบาทเป็นตัวละคร
-                  และได้โอกาสสร้างมนุษยสัมพันธ์
-                  <br />
+                  เด็กๆ เรียนรู้และเล่นสนุก <br className="sm:hidden block" />
+                  ผ่านบอร์ดเกม ซึ่งเป็นสื่อ
+                  <br className="sm:hidden block" />
+                  การเรียนรู้ เพื่อพัฒนาทักษะ
+                  <br className="sm:hidden block" />
+                  ชีวิตผ่านการสร้างเรื่องราว
+                  <br className="sm:hidden block" />
+                  และประสบการณ์ต่างๆ <br className="sm:hidden block" />
+                  พวกเขาจะได้คิดวิเคราะห์ <br className="sm:hidden block" />
+                  สวมบทบาทเป็นตัวละคร <br className="sm:hidden block" />
+                  และได้โอกาสสร้างมนุษย
+                  <br className="sm:hidden block" />
+                  สัมพันธ์
+                  <br className="hidden sm:block" />
                   กับผู้อื่น
                 </p>
               </div>
@@ -369,11 +530,24 @@ const SubSectionOne = () => {
                   เครือข่าย TK Park
                 </p>
                 <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border-y border-r border-[#D9D9D9]">
-                  ห้องสมุดดนตรี (Sound Studio) ศูนย์การเรียนรู้เมืองฉะเชิงเทรา
-                  เดิมทีห้องสมุดนี้เป็นห้องสมุดดนตรีเดิมอยู่แล้ว
-                  แต่ปรับปรุงกระจกเงาให้ใหญ่ขึ้นจนเหมือนห้องซ้อมเต้น
-                  ใครอยากมาฝึกเต้นคัฟเวอร์ เต้นลีลาศเพื่อสุขภาพ
-                  หรืออัดวิดิโอเพื่อส่งประกวดก็ได้
+                  ห้องสมุดดนตรี (Sound <br className="sm:hidden block" />
+                  Studio) ศูนย์การเรียนรู้เมือง
+                  <br className="sm:hidden block" />
+                  ฉะเชิงเทรา เดิมทีห้องสมุดนี้
+                  <br className="sm:hidden block" />
+                  เป็นห้องสมุดดนตรีเดิม
+                  <br className="sm:hidden block" />
+                  อยู่แล้ว แต่ปรับปรุงกระจกเงา
+                  <br className="sm:hidden block" />
+                  ให้ใหญ่ขึ้นจนเหมือนห้อง
+                  <br className="sm:hidden block" />
+                  ซ้อมเต้น ใครอยากมาฝึกเต้น
+                  <br className="sm:hidden block" />
+                  คัฟเวอร์ เต้นลีลาศ
+                  <br className="sm:hidden block" />
+                  เพื่อสุขภาพ หรืออัดวิดิโอ
+                  <br className="sm:hidden block" />
+                  เพื่อส่งประกวดก็ได้
                 </p>
               </div>
             </div>
@@ -400,11 +574,22 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-5">
             <span className="font-th desktop-s6-th-400 text-tk-black text-balance">
-              อีกหนึ่งกลุ่มที่ใช้งานพื้นที่ทั้งแบบเดี่ยวและกลุ่ม
-              พวกเขาอาจจะเข้ามาทำกิจกรรมจริงจัง เช่น ทำงานเงียบๆ
-              ประชุมงานออนไลน์ <br /> ฝึกทักษะบางอย่าง
-              หรือแค่มานั่งอ่านหนังสือเฉยๆ รอรับบุตรหลาน พูดคุยสัพเพเหระ
-              ซึ่งโดยมากแล้วจะมาแช่ตัวอยู่ในพื้นที่ค่อนข้างนานและต่อเนื่องในช่วงวันหยุดสุดสัปดาห์
+              อีกหนึ่งกลุ่มที่ใช้งานพื้นที่ทั้งแบบ
+              <br className="sm:hidden block" />
+              เดี่ยวและกลุ่ม พวกเขาอาจจะเข้า
+              <br className="sm:hidden block" />
+              มาทำกิจกรรมจริงจัง เช่น ทำงาน
+              <br className="sm:hidden block" />
+              เงียบๆ ประชุมงานออนไลน์ <br /> ฝึกทักษะบางอย่าง หรือแค่มานั่ง
+              <br className="sm:hidden block" />
+              อ่านหนังสือเฉยๆ รอรับบุตรหลาน <br className="sm:hidden block" />
+              พูดคุยสัพเพเหระ ซึ่งโดยมากแล้ว
+              <br className="sm:hidden block" />
+              จะมาแช่ตัวอยู่ในพื้นที่ค่อนข้าง
+              <br className="sm:hidden block" />
+              นานและต่อเนื่อง ในช่วงวันหยุด
+              <br className="sm:hidden block" />
+              สุดสัปดาห์
             </span>
           </div>
         </div>
@@ -425,16 +610,46 @@ const SubSectionOne = () => {
                   TK Park อุทยานการเรียนรู้
                 </p>
                 <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border border-[#D9D9D9]">
-                  พื้นที่นั่งทำงานเป็นพื้นที่ที่ดู <br />
-                  พื้นฐานที่สุด แต่ต้องอาศัยความละเอียดในการออกแบบ
-                  เพราะปัจจุบันพฤติกรรมในการทำงานนอกสถานที่ของผู้ใช้บริการเติบโตไปตามยุคสมัย
-                  เช่น บางกลุ่มอาจพกคอมพิวเตอร์ของตัวเองมา <br />
-                  ดังนั้นแทนที่จะจัดเตรียมอุปกรณ์อิเล็กทรอนิกส์ไว้บริการ
-                  หน่วยงานควรจัดพื้นที่และบรรยากาศให้เหมาะสมมากกว่า
-                  ตั้งแต่บรรยากาศสบายๆ แบบห้องสมุด <br />
-                  มีชีวิต
-                  ไปจนถึงห้องเงียบซึ่งเป็นพื้นที่ทำงานจริงจังของผู้ที่ต้องการความสงบ
-                  และใช้สมาธิในการทำงาน หรือการอ่านอย่าง <br />
+                  พื้นที่นั่งทำงานเป็นพื้นที่
+                  <br className="sm:hidden block" />
+                  ที่ดู
+                  <br className="hidden sm:block" />
+                  พื้นฐานที่สุด แต่ต้อง
+                  <br className="sm:hidden block" />
+                  อาศัยความละเอียดใน
+                  <br className="sm:hidden block" />
+                  การออกแบบ เพราะปัจจุบัน
+                  <br className="sm:hidden block" />
+                  พฤติกรรมในการทำงาน
+                  <br className="sm:hidden block" />
+                  นอกสถานที่ของผู้ใช้บริการ
+                  <br className="sm:hidden block" />
+                  เติบโตไปตามยุคสมัย เช่น <br className="sm:hidden block" />
+                  บางกลุ่มอาจพกคอมพิวเตอร์
+                  <br className="sm:hidden block" />
+                  ของตัวเองมา <br className="hidden sm:block" />
+                  ดังนั้นแทนที่
+                  <br className="sm:hidden block" />
+                  จะจัดเตรียมอุปกรณ์
+                  <br className="sm:hidden block" />
+                  อิเล็กทรอนิกส์ไว้บริการ <br className="sm:hidden block" />
+                  หน่วยงานควรจัดพื้นที่และ
+                  <br className="sm:hidden block" />
+                  บรรยากาศให้เหมาะสม
+                  <br className="sm:hidden block" />
+                  มากกว่า ตั้งแต่บรรยากาศ
+                  <br className="sm:hidden block" />
+                  สบายๆ แบบห้องสมุด
+                  <br className="hidden sm:block" />
+                  มีชีวิต ไปจนถึงห้องเงียบซึ่งเป็น
+                  <br className="sm:hidden block" />
+                  พื้นที่ทำงานจริงจังของ
+                  <br className="sm:hidden block" />
+                  ผู้ที่ต้องการความสงบ
+                  <br className="sm:hidden block" />
+                  และใช้สมาธิในการทำงาน <br className="sm:hidden block" />
+                  หรือการอ่านอย่าง
+                  <br className="hidden sm:block" />
                   เต็มที่
                 </p>
               </div>
@@ -443,14 +658,34 @@ const SubSectionOne = () => {
                   เครือข่าย TK Park
                 </p>
                 <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border-y border-r border-[#D9D9D9]">
-                  โครงการนี้เกิดจากการแก้ปัญหา ของวิถีชีวิตของคนระยอง เพราะ{" "}
-                  <br />
-                  ที่นี่มีนิคมอุตสาหกรรมและพนักงานจำนวนมาก ซึ่งทำงานเป็นกะ
+                  โครงการนี้เกิดจากการ
+                  <br className="sm:hidden block" />
+                  แก้ปัญหา ของวิถีชีวิตของ
+                  <br className="sm:hidden block" />
+                  คนระยอง เพราะ
+                  <br className="hidden sm:block" />
+                  ที่นี่มีนิคม
+                  <br className="sm:hidden block" />
+                  อุตสาหกรรมและพนักงาน
+                  <br className="sm:hidden block" />
+                  จำนวนมาก ซึ่งทำงานเป็นกะ <br className="sm:hidden block" />
                   ดังนั้นจึงไม่สะดวกที่จะ <br />
-                  เดินทางเข้าห้องสมุดในเวลาทำการ
-                  โครงการหนังสือมือถือจึงเป็นโครงการที่นำหนังสือเดินทางไปสู่มือของคนทำงานอย่างทั่วถึงมากขึ้นผ่านการยืม-คืน
-                  โดยห้องสมุดจะจัดกล่องหนังสือไปตั้งไว้ที่บริษัทครั้งละ 30-60
-                  เล่ม/2 เดือน
+                  เดินทางเข้าห้องสมุดในเวลา
+                  <br className="sm:hidden block" />
+                  ทำการ โครงการหนังสือ
+                  <br className="sm:hidden block" />
+                  มือถือจึงเป็นโครงการที่นำ
+                  <br className="sm:hidden block" />
+                  หนังสือเดินทางไปสู่มือของ
+                  <br className="sm:hidden block" />
+                  คนทำงานอย่างทั่วถึงมากขึ้น
+                  <br className="sm:hidden block" />
+                  ผ่านการยืม-คืน โดยห้องสมุด
+                  <br className="sm:hidden block" />
+                  จะจัดกล่องหนังสือไปตั้งไว้ที่
+                  <br className="sm:hidden block" />
+                  บริษัทครั้งละ 30-60 เล่ม/
+                  <br className="sm:hidden block" />2 เดือน
                 </p>
               </div>
             </div>
@@ -480,20 +715,32 @@ const SubSectionOne = () => {
               มีชุมชนที่ไหน มีผู้สูงอายุที่นั่น
               <br />
               <br />
-              พวกเขาพูดคุยพบปะสื่อสารกันที่ไหน
-              ที่นั่นคือห้องสมุดใกล้บ้านที่แทบจะเป็นบ้านหลังที่สอง
+              พวกเขาพูดคุยพบปะสื่อสารกัน
+              <br className="sm:hidden block" />
+              ที่ไหน ที่นั่นคือห้องสมุดใกล้บ้าน
+              <br className="sm:hidden block" />
+              ที่แทบจะเป็นบ้านหลังที่สอง <br className="sm:hidden block" />
               หรือสโมสรสูงวัยของคนบางคน
               <br />
               <br />
-              กลุ่มที่มาใช้บริการเป็นประจำจะรู้สึกเสมือนเป็น เจ้าของพื้นที่
+              กลุ่มที่มาใช้บริการเป็นประจำ
+              <br className="sm:hidden block" />
+              จะรู้สึกเสมือนเป็น เจ้าของพื้นที่{" "}
+              <br className="sm:hidden block" />
               พวกเขามักจะมาใช้บริการใน
               <br />
-              ช่วงสายจนถึงเที่ยงในช่วงวันธรรมดาและ
-              <br />
-              วันหยุด เราอาจจะเห็นคุณตาคุณยายที่ชอบอ่านหนังสือพิมพ์ นิตยสาร
+              ช่วงสายจนถึงเที่ยงในช่วง
+              <br className="sm:hidden block" />
+              วันธรรมดาและ
+              <br className="hidden sm:block" />
+              วันหยุด <br className="sm:hidden block" />
+              เราอาจจะเห็นคุณตาคุณยาย
+              <br className="sm:hidden block" />
+              ที่ชอบอ่านหนังสือพิมพ์ นิตยสาร <br className="sm:hidden block" />
               หรือทำกิจกรรม
-              <br />
-              เพื่อฝึกทักษะ เช่น เล่นหมากกระดาน เต้นรำ
+              <br className="hidden sm:block" />
+              เพื่อฝึกทักษะ <br className="sm:hidden block" />
+              เช่น เล่นหมากกระดาน เต้นรำ
             </span>
           </div>
         </div>
@@ -514,8 +761,15 @@ const SubSectionOne = () => {
                   TK Park อุทยานการเรียนรู้
                 </p>
                 <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border border-[#D9D9D9]">
-                  ดิจิทัล ไกด์ (Digital Guide) กิจกรรมฝึกทักษะดิจิทัลพื้นฐาน
-                  เพื่อชีวิตประจำวันหรือกิจกรรมยามว่างที่ใช้วิธีการสอนผ่านไลน์กลุ่ม
+                  ดิจิทัล ไกด์ (Digital Guide){" "}
+                  <br className="sm:hidden block" />
+                  กิจกรรมฝึกทักษะดิจิทัล
+                  <br className="sm:hidden block" />
+                  พื้นฐาน เพื่อชีวิตประจำวัน
+                  <br className="sm:hidden block" />
+                  หรือกิจกรรมยามว่างที่ใช้
+                  <br className="sm:hidden block" />
+                  วิธีการสอนผ่านไลน์กลุ่ม
                 </p>
               </div>
               <div className="flex-1">
@@ -523,10 +777,18 @@ const SubSectionOne = () => {
                   เครือข่าย TK Park
                 </p>
                 <p className="font-th desktop-s6-th-400 text-tk-black py-2.5 px-3.5 bg-yellow-700 border-y border-r border-[#D9D9D9]">
-                  กิจกรรมส่งเสริมการเรียนรู้ของ <br />
-                  ผู้สูงอายุ ศูนย์การเรียนรู้ ฉะเชิงเทรา
-                  ผู้สูงวัยจะได้ทั้งเรียนรู้และเสริมสุขภาพ เช่น เต้นลีลาศ KCC
-                  สูงวัยโอเกะ หรือโรงเรียน <br />
+                  กิจกรรมส่งเสริมการเรียนรู้
+                  <br className="sm:hidden block" />
+                  ของ
+                  <br className="hidden sm:block" />
+                  ผู้สูงอายุ ศูนย์การเรียนรู้ <br className="sm:hidden block" />
+                  ฉะเชิงเทรา ผู้สูงวัยจะได้
+                  <br className="sm:hidden block" />
+                  ทั้งเรียนรู้และเสริมสุขภาพ <br className="sm:hidden block" />
+                  เช่น เต้นลีลาศ KCC สูงวัย
+                  <br className="sm:hidden block" />
+                  โอเกะ หรือโรงเรียน
+                  <br className="hidden sm:block" />
                   ผู้สูงอายุ
                 </p>
               </div>

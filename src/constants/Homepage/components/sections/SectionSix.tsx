@@ -182,8 +182,12 @@ function QuoteSection() {
         <p className="font-th desktop-s5-th-700 leading-normal">
           การเปิดบริการ
           <br />
-          คือการส่งมอบพื้นที่แห่งการเรียนรู้ให้ชุมชน <br />
-          และเปิดโอกาสให้การเรียนรู้เติบโตไปพร้อมกับผู้คน
+          คือการส่งมอบพื้นที่
+          <br className="sm:hidden block" />
+          แห่งการเรียนรู้ให้ชุมชน <br />
+          และเปิดโอกาสให้การเรียนรู้
+          <br className="sm:hidden block" />
+          เติบโตไปพร้อมกับผู้คน
         </p>
       </blockquote>
     </div>

@@ -32,7 +32,7 @@ const ParkCardModal = ({
       className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-white/50 p-5 md:p-10"
       role="dialog"
       aria-modal="true"
-      aria-label={park.title}
+      aria-label={park.title as string}
       onClick={onClose}
     >
       <div

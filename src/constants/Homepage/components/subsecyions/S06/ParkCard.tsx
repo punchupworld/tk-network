@@ -35,7 +35,7 @@ export type ParkImage = {
 
 export type ParkCardProps = {
   color: string;
-  title: string;
+  title: ReactNode;
   locationName: string;
   images: ParkImage[];
   highlights: ReactNode[];
@@ -196,7 +196,7 @@ const ParkCard = ({
                 className="h-auto w-full"
                 aria-hidden="true"
               />
-              <h2 className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s7-s8-th-700 md:desktop-s6-th-700 text-white">
+              <h2 className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s7-th-700 md:desktop-s6-th-700 text-white">
                 {locationName}
               </h2>
             </div>

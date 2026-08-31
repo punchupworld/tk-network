@@ -93,9 +93,7 @@ export const ActivityCell = ({
   return (
     <div className="col-span-1">
       <div className={boxClassName}>
-        <p
-          className={`font-th mobile-s7-s8-th-400 md:desktop-s7-th-400 text-center ${textClassName}`}
-        >
+        <p className={`font-th desktop-s7-th-400 text-center ${textClassName}`}>
           {children}
         </p>
       </div>
@@ -128,14 +126,14 @@ const ActivityCard = ({
     <div className="relative flex w-full flex-col items-start" id={id}>
       <CoverTri color={color}>
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2">
-          <div className="relative flex w-20 items-center justify-center sm:w-27.5">
+          <div className="relative flex w-25 items-center justify-center sm:w-27.5">
             <T12
               fill="#ffffff"
               stroke="#ffffff"
               className="h-auto w-full"
               aria-hidden="true"
             />
-            <h2 className="absolute inset-0 flex items-center justify-center text-center font-th mobile-s7-s8-th-700 md:desktop-s6-th-700 text-tk-red">
+            <h2 className="absolute inset-0 flex items-center justify-center text-center font-th desktop-s7-th-700 md:desktop-s6-th-700 text-tk-red">
               {title}
             </h2>
           </div>
