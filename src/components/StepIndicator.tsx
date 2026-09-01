@@ -152,6 +152,31 @@ function topicTooltipItems(topicId: string) {
   return label ? [{ id: topicId, label }] : [];
 }
 
+function canScrollRight(el: HTMLElement) {
+  return el.scrollWidth - el.clientWidth - el.scrollLeft > 4;
+}
+
+function ScrollRightChevron() {
+  return (
+    <svg
+      width="8"
+      height="14"
+      viewBox="0 0 8 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M1.5 1.5L6.5 7L1.5 12.5"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function HoverArrow() {
   return (
     <svg
@@ -275,6 +300,7 @@ function StepIndicator({
   } | null>(null);
   const scrollerRef = useRef<HTMLDivElement>(null);
   const hideTimer = useRef<number>(0);
+  const [showScrollHint, setShowScrollHint] = useState(false);
 
   const goTo = (id: string) => {
     onNavigate?.();
@@ -293,6 +319,25 @@ function StepIndicator({
   };
 
   useEffect(() => () => window.clearTimeout(hideTimer.current), []);
+
+  useEffect(() => {
+    const el = scrollerRef.current;
+    if (!el) return;
+
+    const update = () => setShowScrollHint(canScrollRight(el));
+    update();
+    el.addEventListener("scroll", update, { passive: true });
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    if (el.firstElementChild) ro.observe(el.firstElementChild);
+    window.addEventListener("resize", update);
+
+    return () => {
+      el.removeEventListener("scroll", update);
+      ro.disconnect();
+      window.removeEventListener("resize", update);
+    };
+  }, []);
 
   useEffect(() => {
     const isInView = (id: string) => {
@@ -519,6 +564,16 @@ function StepIndicator({
           })}
         </ol>
       </div>
+      {showScrollHint ? (
+        <div
+          className="pointer-events-none absolute inset-y-0 right-0 z-10 flex w-10 items-center justify-end rounded-r-full bg-linear-to-l from-red-50 from-40% to-transparent pr-2.5"
+          aria-hidden="true"
+        >
+          <span className="text-tk-red">
+            <ScrollRightChevron />
+          </span>
+        </div>
+      ) : null}
       {hovered ? (
         <IndicatorTooltip
           anchor={hovered.el}

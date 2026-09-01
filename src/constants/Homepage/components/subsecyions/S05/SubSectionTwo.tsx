@@ -98,11 +98,13 @@ const jobRoles: JobRole[] = [
             ดูแลข้อมูลสารสนเทศของห้องสมุด <br className="sm:hidden block" />
             เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้
             <br className="sm:hidden block" />
-            วิเคราะห์และจัดหาหนังสือ
+            วิเคราะห์และจัดหาหนังสือให้
             <br className="sm:hidden block" />
-            ให้สอดคล้องกับ
-            <br />
-            ความต้องการของผู้ใช้บริการ
+            สอดคล้องกับ
+            <br className="hidden sm:block" />
+            ความต้องการของ
+            <br className="sm:hidden block" />
+            ผู้ใช้บริการ
           </>,
         ],
       },
@@ -163,9 +165,13 @@ const jobRoles: JobRole[] = [
             ดูแลข้อมูลสารสนเทศของห้องสมุด <br className="sm:hidden block" />
             เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้
             <br className="sm:hidden block" />
-            วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับ
-            <br />
-            ความต้องการของผู้ใช้บริการ
+            วิเคราะห์และจัดหาหนังสือให้
+            <br className="sm:hidden block" />
+            สอดคล้องกับ
+            <br className="hidden sm:block" />
+            ความต้องการของ
+            <br className="sm:hidden block" />
+            ผู้ใช้บริการ
           </>,
         ],
       },
@@ -202,9 +208,13 @@ const jobRoles: JobRole[] = [
             ดูแลข้อมูลสารสนเทศของห้องสมุด <br className="sm:hidden block" />
             เช่น สถิติผู้เข้าใช้บริการ เพื่อนำไปใช้
             <br className="sm:hidden block" />
-            วิเคราะห์และจัดหาหนังสือให้สอดคล้องกับ
-            <br />
-            ความต้องการของผู้ใช้บริการ
+            วิเคราะห์และจัดหาหนังสือให้
+            <br className="sm:hidden block" />
+            สอดคล้องกับ
+            <br className="hidden sm:block" />
+            ความต้องการของ
+            <br className="sm:hidden block" />
+            ผู้ใช้บริการ
           </>,
           <>
             แก้ปัญหาระบบการจัดการเบื้องต้น
@@ -390,17 +400,16 @@ const SubSectionTwo = () => {
           <br className="sm:hidden block" />
           คือบุคลากรผู้เปรียบเสมือน
           <br className="sm:hidden block" />
-          สะพานเชื่อมผู้คนในท้องถิ่นกับ
+          สะพานเชื่อมผู้คนในท้องถิ่น
           <br className="sm:hidden block" />
-          พื้นที่การเรียนรู้
-          <br />
-          ห้องสมุดไม่ใช่แค่พื้นที่เชิงกายภาพ
+          กับพื้นที่การเรียนรู้
+          <br className="hidden sm:block" />
+          ห้องสมุดไม่ใช่
           <br className="sm:hidden block" />
-          อีกต่อไป แต่เป็นสถานที่ใน
+          แค่พื้นที่เชิงกายภาพ อีกต่อไป <br className="sm:hidden block" />
+          แต่เป็นสถานที่ในการแลกเปลี่ยน
           <br className="sm:hidden block" />
-          การแลกเปลี่ยนองค์ความรู้
-          <br className="sm:hidden block" />
-          ในชุมชนอย่างยั่งยืน
+          องค์ความรู้ ในชุมชนอย่างยั่งยืน
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
           บุคลากรของห้องสมุดจึงไม่ใช่
@@ -517,16 +526,19 @@ const SubSectionTwo = () => {
               <br className="sm:hidden block" />
               จะต้องเข้าใจการทำงานหน้าบ้าน
               <br className="sm:hidden block" />
-              และหลังบ้าน โดย <br />
-              งานหน้าบ้านคือการรู้ขอบเขตงาน
+              และหลังบ้าน โดย
+              <br className="hidden sm:block" />
+              งานหน้าบ้านคือ
               <br className="sm:hidden block" />
-              ประจำวันและต้องเตรียมวางแผน
+              การรู้ขอบเขตงานประจำวันและ
               <br className="sm:hidden block" />
-              งานประจำปี ซึ่งเป็นการวางแผน
+              ต้องเตรียมวางแผนงานประจำปี
               <br className="sm:hidden block" />
-              ภาพรวมของงานด้านบริการ
+              ซึ่งเป็นการวางแผนภาพรวม
               <br className="sm:hidden block" />
-              ทั้งหมดที่จะเกิดขึ้น เจ้าหน้าที่ต้อง
+              ของงานด้านบริการทั้งหมด
+              <br className="sm:hidden block" />
+              ที่จะเกิดขึ้น เจ้าหน้าที่ต้อง
               <br className="sm:hidden block" />
               วางแผนจัดหาสื่อเรียนรู้จำพวก
               <br className="sm:hidden block" />
@@ -537,8 +549,12 @@ const SubSectionTwo = () => {
               เช่น 3 ครั้ง/ปี รวมถึงวางแผน
               <br className="sm:hidden block" />
               การจัดกิจกรรมทั้งปี เช่น <br className="sm:hidden block" />
-              การเรียนเชิญวิทยากรจากข้างนอก <br />
-              จัดกิจกรรมโดยกำหนดตีมรายสัปดาห์ เป็นต้น
+              การเรียนเชิญวิทยากรจาก
+              <br className="sm:hidden block" />
+              ข้างนอก <br className="hidden sm:block" />
+              จัดกิจกรรมโดยกำหนด
+              <br className="sm:hidden block" />
+              ตีมรายสัปดาห์ เป็นต้น
             </p>
             <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
               ส่วนระบบจัดการหลังบ้าน

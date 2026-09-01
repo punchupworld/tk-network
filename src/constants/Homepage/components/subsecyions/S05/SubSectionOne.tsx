@@ -193,9 +193,13 @@ const SubSectionOne = () => {
             </div>
             <div className="py-2.5 px-[14px] border border-tk-black">
               <p className="font-th desktop-s6-th-400 text-tk-black">
-                สำรวจอัตราค่าสมาชิกของเครือข่าย
-                <br />
-                ในพื้นที่ใกล้เคียง
+                สำรวจอัตราค่าสมาชิก
+                <br className="sm:hidden block" />
+                ของเครือข่าย
+                <br className="hidden sm:block" />
+                ในพื้นที่
+                <br className="sm:hidden block" />
+                ใกล้เคียง
               </p>
             </div>
           </div>

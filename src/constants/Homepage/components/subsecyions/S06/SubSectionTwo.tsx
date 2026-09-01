@@ -106,10 +106,15 @@ const SubSectionTwo = () => {
                 textClassName="text-tk-black"
                 boxClassName="border-y border-white flex flex-col items-center py-2 h-full"
               >
-                ควรเป็นพื้นที่ <br />
-                ที่คนนอกสามารถมองเห็นกิจกรรมที่เกิดขึ้นด้านใน
+                ควรเป็นพื้นที่
+                <br className="hidden sm:block" />
+                ที่คนนอก
                 <br className="sm:hidden block" />
-                เพื่อกระตุ้นความสนใจในการเรียนรู้การ แสดงออก
+                สามารถมองเห็นกิจกรรมที่เกิดขึ้นด้านใน
+                <br className="sm:hidden block" />
+                เพื่อกระตุ้นความสนใจ
+                <br className="sm:hidden block" />
+                ในการเรียนรู้การ แสดงออก
               </ActivityCell>
               <ActivityCell
                 textClassName="text-tk-black"

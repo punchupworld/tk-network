@@ -146,17 +146,29 @@ const SubSectionOne = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          งบประมาณเป็นหนึ่งในปัจจัยสำคัญที่มีผลต่อการสร้างพื้นที่การเรียนรู้{" "}
-          <br />
-          หน่วยงานจึงต้องบริหารจัดการงบประมาณอย่างมีประสิทธิภาพ
-          และควรพึ่งพาแหล่งงบประมาณจากหลากหลายที่มา เช่น{" "}
+          งบประมาณเป็นหนึ่งในปัจจัยสำคัญที่มีผล
           <br className="sm:hidden block" />
-          หน่วยงานต้นสังกัด เงินบริจาคจากภาคเอกชน ค่าบำรุงห้องสมุดจากสมาชิก
-          และรายได้อื่นๆ เช่น การเขียนโครงการขอทุนสนับสนุน
-          นอกจากนั้นผู้บริหารของพื้นที่การเรียนรู้ควรยึดหลักความรับผิดชอบต่อสังคมในภาคธุรกิจ
-          (CSR) โดยแสวงหาความร่วมมือจากภาคเอกชนในการสนับสนุน
+          ต่อการสร้างพื้นที่การเรียนรู้ <br className="hidden sm:block" />
+          หน่วยงานจึงต้อง
           <br className="sm:hidden block" />
-          ด้านเงินทุน
+          บริหารจัดการงบประมาณอย่างมีประสิทธิภาพ
+          <br className="sm:hidden block" />
+          และควรพึ่งพาแหล่งงบประมาณจาก
+          <br className="sm:hidden block" />
+          หลากหลายที่มา เช่น หน่วยงานต้นสังกัด{" "}
+          <br className="sm:hidden block" />
+          เงินบริจาคจากภาคเอกชน ค่าบำรุงห้องสมุด
+          <br className="sm:hidden block" />
+          จากสมาชิก และรายได้อื่นๆ เช่น การเขียน
+          <br className="sm:hidden block" />
+          โครงการขอทุนสนับสนุน นอกจากนั้นผู้บริหาร
+          <br className="sm:hidden block" />
+          ของพื้นที่การเรียนรู้ควรยึดหลัก
+          <br className="sm:hidden block" />
+          ความรับผิดชอบต่อสังคมในภาคธุรกิจ (CSR)
+          โดยแสวงหาความร่วมมือจากภาคเอกชนใน
+          <br className="sm:hidden block" />
+          การสนับสนุน ด้านเงินทุน
         </p>
 
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
@@ -386,12 +398,17 @@ const SubSectionOne = () => {
         </div>
         <div className="p-10 border-2 border-white bg-pink-100 flex flex-col gap-2.5">
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            งบประมาณที่ต้องจัดสรรและบริหารจัดการประจำปีตลอดระยะเวลาการเปิดให้บริการ
-            จำแนกได้เป็นงบสำหรับ <br />
-            การจ้างบุคลากร การจัดกิจกรรม การจัดซื้อทรัพยากรสารสนเทศเพิ่มเติม
-            รวมทั้ง <br />
-            ค่าสาธารณูปโภคต่างๆ เช่น ค่าน้ำประปา{" "}
-            <br className="hidden sm:block" /> ค่าไฟฟ้า
+            งบประมาณที่ต้องจัดสรรและบริหารจัดการ
+            <br className="sm:hidden block" />
+            ประจำปีตลอดระยะเวลาการเปิดให้บริการ{" "}
+            <br className="sm:hidden block" />
+            จำแนกได้เป็นงบสำหรับ <br className="hidden sm:block" />
+            การจ้างบุคลากร <br className="sm:hidden block" />
+            การจัดกิจกรรม การจัดซื้อทรัพยากร
+            <br className="sm:hidden block" />
+            สารสนเทศเพิ่มเติม รวมทั้ง <br />
+            ค่าสาธารณูปโภคต่างๆ เช่น <br className="sm:hidden block" />
+            ค่าน้ำประปา <br className="hidden sm:block" /> ค่าไฟฟ้า
           </p>
         </div>
       </div>

@@ -195,7 +195,9 @@ const HoverCell = ({
     <div
       className={`group relative flex items-center justify-center bg-blue-200 p-10 h-75 ${className}`}
     >
-      <p className="font-th desktop-s5-th-700 text-white">{title}</p>
+      <p className="font-th desktop-s5-th-700 text-white text-center">
+        {title}
+      </p>
       {open ? null : (
         <button
           type="button"
@@ -414,8 +416,12 @@ const HoverSpaceGrid = () => {
             title="ห้องเงียบ"
             description={
               <>
-                พื้นที่สงบสำหรับ <br />
-                ผู้ที่ต้องการใช้สมาธิ <br />
+                พื้นที่สงบสำหรับ
+                <br className="hidden sm:block" />
+                ผู้ที่ต้องการ
+                <br className="sm:hidden block" />
+                ใช้สมาธิ
+                <br className="hidden sm:block" />
                 ในการอ่านและค้นคว้า <br className="sm:hidden block" />
                 ข้อมูลความรู้จากหนังสืออ้างอิง
               </>
@@ -437,12 +443,22 @@ const HoverSpaceGrid = () => {
             title="Mind Room"
             description={
               <>
-                จุดนัดพบเพื่อจุดประกายและแลกเปลี่ยนความคิดเห็นของ
-                <br />
-                คนรุ่นใหม่ที่สนใจการเรียนรู้เฉพาะทางด้านต่างๆ
-                <br />
-                ตามแนวทางเศรษฐกิจสร้างสรรค์ เช่น สถาปัตยกรรม <br />
-                ศิลปะการแสดง แฟชัน ภาพยนตร์ ดนตรี
+                จุดนัดพบเพื่อจุดประกาย
+                <br className="sm:hidden block" />
+                และแลกเปลี่ยนความคิดเห็น
+                <br className="sm:hidden block" />
+                ของ
+                <br className="hidden sm:block" />
+                คนรุ่นใหม่ที่สนใจการเรียนรู้
+                <br className="sm:hidden block" />
+                เฉพาะทางด้านต่างๆ
+                <br className="hidden sm:block" />
+                ตามแนวทาง
+                <br className="sm:hidden block" />
+                เศรษฐกิจสร้างสรรค์ เช่น <br className="sm:hidden block" />
+                สถาปัตยกรรม <br className="hidden sm:block" />
+                ศิลปะการแสดง <br className="sm:hidden block" />
+                แฟชัน ภาพยนตร์ ดนตรี
               </>
             }
             image={BOX_IMAGE_4}
@@ -498,14 +514,21 @@ const HoverSpaceGrid = () => {
             title="ห้องสมุดดนตรี"
             description={
               <>
-                พื้นที่ที่มีทั้งหนังสือ แท็ปเล็ต {/* <br /> */}
+                พื้นที่ที่มีทั้งหนังสือ แท็ปเล็ต <br />
                 ห้องสมุดดนตรี TK และ
                 {/* <br /> */}
-                เครื่องดนตรีให้ลองสัมผัส {/* <br /> */} ผู้ใช้งาน
-                สามารถค้นคว้าข้อมูลเกี่ยวกับดนตรีจากทุกมุมโลก และ
+                เครื่อง
+                <br className="sm:hidden block" />
+                ดนตรีให้ลองสัมผัส {/* <br /> */} ผู้ใช้งาน
+                <br className="sm:hidden block" />
+                สามารถค้นคว้าข้อมูลเกี่ยวกับ
+                <br className="sm:hidden block" />
+                ดนตรีจากทุกมุมโลก และ
                 {/* <br /> */}
-                ที่สำคัญคือสามารถ ร้อง เล่น ฟัง
-                {/* <br /> */}
+                ที่สำคัญ
+                <br className="sm:hidden block" />
+                คือสามารถ ร้อง เล่น ฟัง
+                <br />
                 ในพื้นที่นี้ได้
               </>
             }
@@ -531,11 +554,18 @@ const HoverSpaceGrid = () => {
             title="ห้องฉายภาพยนตร์"
             description={
               <>
-                พื้นที่สำหรับการฉายภาพยนตร์คุณภาพหลากหลายประเภท
+                พื้นที่สำหรับการฉายภาพยนตร์
+                <br className="sm:hidden block" />
+                คุณภาพหลากหลายประเภท
                 <br />
-                ทั้งภาพยนตร์สั้น แอนิเมชันทั้งไทยและต่างประเทศ รวมถึง
-                <br />
-                ฉายผลงานสร้างสรรค์ของเยาวชนรุ่นใหม่ พร้อมการ
+                ทั้งภาพยนตร์สั้น แอนิเมชัน
+                <br className="sm:hidden block" />
+                ทั้งไทยและต่างประเทศ <br className="sm:hidden block" />
+                รวมถึง
+                <br className="hidden sm:block" />
+                ฉายผลงานสร้างสรรค์
+                <br className="sm:hidden block" />
+                ของเยาวชนรุ่นใหม่ พร้อมการ
                 <br className="sm:hidden block" />
                 แลกเปลี่ยนเรียนรู้กับวิทยากร
               </>
@@ -685,10 +715,15 @@ const HoverSpaceGrid = () => {
               <>
                 สามารถรองรับผู้ใช้บริการ
                 <br />
-                ทุกกลุ่ม (Universal Design)
-                โดยคำนึงถึงผู้ที่มีข้อจำกัดด้านการเคลื่อนไหวหรือการรับรู้ เช่น
+                ทุกกลุ่ม (Universal Design) <br className="sm:hidden block" />
+                โดยคำนึงถึงผู้ที่มีข้อจำกัดด้าน
+                <br className="sm:hidden block" />
+                การเคลื่อนไหวหรือการรับรู้ เช่น{" "}
+                <br className="sm:hidden block" />
                 ผู้ใช้รถเข็น ผู้พิการทางสายตา <br />
-                ผู้พิการทางการได้ยิน ผู้สูงอายุ และครอบครัวที่มีเด็กเล็ก
+                ผู้พิการทางการได้ยิน ผู้สูงอายุ{" "}
+                <br className="sm:hidden block" />
+                และครอบครัวที่มีเด็กเล็ก
               </>,
               <>
                 หากอาคารมีหลายชั้น <br />
@@ -730,12 +765,21 @@ const HoverSpaceGrid = () => {
                 ออกแบบห้องที่มีฟังก์ชันที่
                 <br />
                 ตอบโจทย์การใช้งาน
-                <br />
-                ของคนในพื้นที่ เช่น
-                <br />
-                พื้นที่การเรียนรู้ในสามจังหวัดชายแดนภาคใต้มีห้องละหมาดไว้บริการผู้ใช้บริการที่เป็นมุสลิม
-                ซึ่งเป็นประชากรส่วนใหญ่ใน
-                <br />
+                <br className="hidden sm:block" />
+                ของคนใน
+                <br className="sm:hidden block" />
+                พื้นที่ เช่น
+                <br className="hidden sm:block" />
+                พื้นที่การเรียนรู้ใน
+                <br className="sm:hidden block" />
+                สามจังหวัดชายแดนภาคใต้
+                <br className="sm:hidden block" />
+                มีห้องละหมาดไว้บริการผู้ใช้
+                <br className="sm:hidden block" />
+                บริการที่เป็นมุสลิม ซึ่งเป็น
+                <br className="sm:hidden block" />
+                ประชากรส่วนใหญ่ใน
+                <br className="hidden sm:block" />
                 พื้นที่
               </>,
             ]}

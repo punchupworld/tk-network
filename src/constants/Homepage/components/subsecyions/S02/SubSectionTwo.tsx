@@ -291,9 +291,13 @@ const SubSectionTwo = () => {
             </div>
             <div className="bg-white border border-yellow-700">
               <div className="px-[14px] py-2.5 font-th desktop-s6-th-400 text-tk-red">
-                แอปพลิเคชันห้องสมุดดิจิทัลของ TK Park ที่รวบรวม
+                แอปพลิเคชันห้องสมุดดิจิทัล
+                <br className="sm:hidden block" />
+                ของ TK Park ที่รวบรวม
                 <br />
-                อีบุ๊ก อีแม็กกาซีน หนังสือเสียง หรือแม้กระทั่ง
+                อีบุ๊ก อีแม็กกาซีน หนังสือ
+                <br className="sm:hidden block" />
+                เสียง หรือแม้กระทั่ง
                 <br />
                 คอร์สออนไลน์ไว้ในที่เดียว
               </div>
@@ -484,7 +488,8 @@ const SubSectionTwo = () => {
                 <br className="sm:hidden block" />
                 จากอุทยาน
                 <br className="hidden sm:block" />
-                การเรียนรู้ TK Park ชั้น 8 ศูนย์การค้า
+                การเรียนรู้ <br className="sm:hidden block" />
+                TK Park ชั้น 8 ศูนย์การค้า
                 <br className="sm:hidden block" />
                 เซ็นทรัลเวิลด์ <br className="hidden sm:block" />
                 ซึ่งเป็นพื้นที่
@@ -495,9 +500,11 @@ const SubSectionTwo = () => {
                 <br className="sm:hidden block" />
                 ของเจ้าหน้าที่ผู้มี
                 <br className="sm:hidden block" />
-                ประสบการณ์ เพื่อให้บริการผู้ใช้งานได้อย่างตรงจุด{" "}
+                ประสบการณ์ เพื่อให้บริการ
                 <br className="sm:hidden block" />
-                รวมถึงการบริหารจัดการ พื้นที่การเรียนรู้ และปัญหา
+                ผู้ใช้งานได้อย่างตรงจุด <br className="sm:hidden block" />
+                รวมถึงการบริหารจัดการ <br className="sm:hidden block" />
+                พื้นที่การเรียนรู้ และปัญหา
                 <br className="sm:hidden block" />
                 เฉพาะหน้าต่างๆ
               </p>

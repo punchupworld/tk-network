@@ -91,7 +91,7 @@ const PLAYSPACE_MAP_OVERLAY =
 
 const PlayspaceMapLabel = ({ hidden = false }: { hidden?: boolean }) => (
   <div
-    className={`ml-[8%] mt-[15%] w-[28.333%] max-[400px]:mt-[48%] md:mt-[3%] ${
+    className={`ml-[8%] mt-[25%] w-[28.333%] max-[399px]:mt-[40%] min-[400px]:max-[400px]:mt-[48%] md:mt-[3%] ${
       hidden ? "invisible" : ""
     }`}
     aria-hidden={hidden}
@@ -436,12 +436,13 @@ const SubSectionThree = () => {
                 <br className="sm:hidden block" />
                 ให้มาพบกัน จนกลายเป็นชุมชน
                 <br className="sm:hidden block" />
-                การเรียนรู้ที่มีชีวิต <br className="sm:hidden block" />
-                และเป็นต้นแบบ
-                <br />
-                ของการพัฒนาพื้นที่เรียนรู้
+                การเรียนรู้ที่มีชีวิต และเป็น
                 <br className="sm:hidden block" />
-                ในอนาคต
+                ต้นแบบ
+                <br className="hidden sm:block" />
+                ของการพัฒนาพื้นที่
+                <br className="sm:hidden block" />
+                เรียนรู้ในอนาคต
               </p>
             </div>
           </div>

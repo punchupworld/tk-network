@@ -202,11 +202,19 @@ const SubSectionOne = () => {
             อย่างไม่มีที่สิ้นสุด
           </p>
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
-            ตลอดระยะเวลาที่ผ่านมา TK Park <br />
-            ร่วมงานกับทั้งหน่วยงานรัฐและ <br />
-            องค์กรไม่แสวงผลกำไร ตั้งแต่ <br />
-            องค์การบริหารส่วนจังหวัด องค์การบริหารส่วนตำบล เทศบาลตำบล{" "}
+            ตลอดระยะเวลาที่ผ่านมา <br className="sm:hidden block" />
+            TK Park <br className="hidden sm:block" />
+            ร่วมงานกับทั้ง
             <br className="sm:hidden block" />
+            หน่วยงานรัฐและ <br className="hidden sm:block" />
+            องค์กรไม่แสวง
+            <br className="sm:hidden block" />
+            ผลกำไร ตั้งแต่ <br className="hidden sm:block" />
+            องค์การบริหาร
+            <br className="sm:hidden block" />
+            ส่วนจังหวัด องค์การบริหาร
+            <br className="sm:hidden block" />
+            ส่วนตำบล เทศบาลตำบล <br className="sm:hidden block" />
             เมือง นคร กระทรวง กรม <br className="sm:hidden block" />
             หน่วยงานด้านการศึกษา <br className="sm:hidden block" />
             มูลนิธิ สหกรณ์ และสมาคม
@@ -222,13 +230,16 @@ const SubSectionOne = () => {
             <br className="sm:hidden block" />
             เป้าหมายหลัก สนับสนุน
             <br className="sm:hidden block" />
-            การเรียนรู้นอกห้องเรียนในรูปแบบต่างๆ{" "}
-            <br className="hidden sm:block" />
+            การเรียนรู้นอกห้องเรียน
+            <br className="sm:hidden block" />
+            ในรูปแบบต่างๆ <br className="hidden sm:block" />
             หรือนำข้อมูล
             <br className="sm:hidden block" />
             ของพื้นที่การเรียนรู้ไป
-            <br />
-            เป็นส่วนหนึ่งของแผนการทำ CSR
+            <br className="hidden sm:block" />
+            เป็น
+            <br className="sm:hidden block" />
+            ส่วนหนึ่งของแผนการทำ CSR
             <br className="sm:hidden block" /> ของบริษัท
           </p>
         </div>
@@ -327,8 +338,10 @@ const SubSectionOne = () => {
               <br className="sm:hidden block" />
               ริมน้ำ มีขนาดกว้างขวางและ
               <br className="sm:hidden block" />
-              สวยงาม เข้าถึงง่าย เหมาะกับ <br />
-              การจัดกิจกรรมหลากหลายรูปแบบ <br />
+              สวยงาม เข้าถึงง่าย เหมาะกับ <br className="hidden sm:block" />
+              การ
+              <br className="sm:hidden block" />
+              จัดกิจกรรมหลากหลายรูปแบบ <br />
               เพราะอาร์ฮุสให้ความสำคัญกับ
               <br className="sm:hidden block" />
               ความรู้ วัฒนธรรม และการรวม
@@ -510,8 +523,11 @@ const SubSectionOne = () => {
                 รถส่วนตัวและสาธารณะ
               </p>
               <p className="border-x border-t border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black">
-                อยู่ใกล้ระบบขนส่งสาธารณะและ พื้นที่การเรียนรู้อื่นๆ
-                เดินด้วยเท้าไม่เกิน 400-500 เมตรจาก <br />
+                อยู่ใกล้ระบบขนส่งสาธารณะและ <br className="sm:hidden block" />
+                พื้นที่การเรียนรู้อื่นๆ เดินด้วยเท้า
+                <br className="sm:hidden block" />
+                ไม่เกิน 400-500 เมตรจาก
+                <br />
                 จุดจอดรถ
               </p>
               <p className="border-x border-t md:border-b border-tk-black px-[14px] py-[10px] font-th desktop-s6-th-400 text-tk-black">
@@ -630,17 +646,22 @@ const SubSectionOne = () => {
           </div>
           <div className="p-10 border-2 border-white bg-orange-300 flex flex-col gap-2.5">
             <p className="font-th desktop-s6-th-400 text-tk-black">
-              หนังสือและสื่อที่หลากหลาย <br className="sm:hidden block" />
-              ทำให้เกิด <br className="hidden sm:block" />
-              การเรียนรู้ที่หลายหลากตามความสนใจของ
+              หนังสือและสื่อที่หลากหลายทำให้
+              <br className="sm:hidden block" />
+              เกิด
               <br className="hidden sm:block" />
-              ผู้ใช้บริการ เนื่องจากหนังสือและสื่อ
+              การเรียนรู้ที่หลายหลาก
+              <br className="sm:hidden block" />
+              ตามความสนใจของ
+              <br className="hidden sm:block" />
+              ผู้ใช้บริการ <br className="sm:hidden block" />
+              เนื่องจากหนังสือและสื่อ
               <br className="sm:hidden block" />
               เป็นตัวกลางสำคัญที่หน่วยงาน
               <br className="sm:hidden block" />
               สามารถจัดหมวดหมู่เพื่อสร้าง
               <br className="sm:hidden block" />
-              การเรียนรู้โดยไม่ตั้งใจ และ <br />
+              การเรียนรู้โดยไม่ตั้งใจและ <br />
               สอดแทรกไปกับการทำกิจกรรม
               <br className="sm:hidden block" />
               รูปแบบ

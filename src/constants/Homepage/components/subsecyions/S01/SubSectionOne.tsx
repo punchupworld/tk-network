@@ -19,7 +19,7 @@ const SubSectionOne = () => {
         </p>
       </div>
       <div
-        className="flex w-full flex-col gap-5 p-10 bg-[#FEE6A6] border-2 border-white sm:items-start items-center"
+        className="flex w-full flex-col gap-5 p-10 bg-[#FEE6A6] border-2 border-white items-start"
         id="subsubtopic1"
       >
         <p className="text-tk-black desktop-s6-th-400">
@@ -106,7 +106,9 @@ const SubSectionOne = () => {
                 <br className="hidden sm:block" />
                 การเรียนรู้ให้เหมาะสม
                 <br className="sm:hidden block" />
-                กับบริบทและความต้องการของพื้นที่
+                กับบริบทและความต้องการ
+                <br className="sm:hidden block" />
+                ของพื้นที่
               </p>
               <p className="border-b border-tk-black p-5 font-th desktop-s6-th-400 leading-normal last:border-b-0">
                 ยกระดับ สร้างอนาคต

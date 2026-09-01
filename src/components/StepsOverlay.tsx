@@ -84,6 +84,32 @@ function scrollToId(id: string) {
   });
 }
 
+function canScrollRight(el: HTMLElement) {
+  return el.scrollWidth - el.clientWidth - el.scrollLeft > 4;
+}
+
+function ScrollRightChevron({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      width="12"
+      height="20"
+      viewBox="0 0 12 20"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      aria-hidden="true"
+    >
+      <path
+        d="M2 2L10 10L2 18"
+        stroke="currentColor"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 function Chevron() {
   return (
     <svg
@@ -522,7 +548,9 @@ const StepsOverlay = ({
   const [scale, setScale] = useState(1);
   const [stuck, setStuck] = useState(false);
   const [stickyTop, setStickyTop] = useState(0);
+  const [showScrollHint, setShowScrollHint] = useState(false);
   const indicatorAnchorRef = useRef<HTMLDivElement>(null);
+  const scrollerRef = useRef<HTMLDivElement>(null);
   const isScroll = fit === "scroll";
 
   useEffect(() => {
@@ -545,6 +573,30 @@ const StepsOverlay = ({
     window.addEventListener("resize", updateScale);
 
     return () => window.removeEventListener("resize", updateScale);
+  }, [isScroll]);
+
+  useEffect(() => {
+    if (!isScroll) {
+      setShowScrollHint(false);
+      return;
+    }
+
+    const el = scrollerRef.current;
+    if (!el) return;
+
+    const update = () => setShowScrollHint(canScrollRight(el));
+    update();
+    el.addEventListener("scroll", update, { passive: true });
+    const ro = new ResizeObserver(update);
+    ro.observe(el);
+    if (el.firstElementChild) ro.observe(el.firstElementChild);
+    window.addEventListener("resize", update);
+
+    return () => {
+      el.removeEventListener("scroll", update);
+      ro.disconnect();
+      window.removeEventListener("resize", update);
+    };
   }, [isScroll]);
 
   useEffect(() => {
@@ -607,18 +659,22 @@ const StepsOverlay = ({
               document.body,
             )
           : null}
-        <div className={isScroll ? "w-full overflow-x-auto" : ""}>
+        <div className={isScroll ? "relative w-full" : ""}>
           <div
-            className={`relative shrink-0 ${isScroll ? "mx-auto min-w-[1200px]" : ""}`}
-            style={{
-              width: MAP_WIDTH * scale,
-              height: MAP_HEIGHT * scale,
-            }}
+            ref={isScroll ? scrollerRef : undefined}
+            className={isScroll ? "w-full overflow-x-auto" : ""}
           >
             <div
-              className="absolute left-0 top-0 flex h-[546px] w-[1216px] origin-top-left"
-              style={{ transform: `scale(${scale * DESIGN_SCALE})` }}
+              className={`relative shrink-0 ${isScroll ? "mx-auto min-w-[1200px]" : ""}`}
+              style={{
+                width: MAP_WIDTH * scale,
+                height: MAP_HEIGHT * scale,
+              }}
             >
+              <div
+                className="absolute left-0 top-0 flex h-[546px] w-[1216px] origin-top-left"
+                style={{ transform: `scale(${scale * DESIGN_SCALE})` }}
+              >
               <StepColumn
                 width={162}
                 href="#section1"
@@ -872,7 +928,18 @@ const StepsOverlay = ({
 
               <WaveShape className="pointer-events-none absolute left-[118px] top-[81px] z-[5]" />
             </div>
+            </div>
           </div>
+          {isScroll && showScrollHint ? (
+            <div
+              className="pointer-events-none absolute inset-y-0 right-0 z-30 flex w-14 items-center justify-end bg-linear-to-l from-white/90 from-30% to-transparent pr-2 sm:w-16 sm:pr-3"
+              aria-hidden="true"
+            >
+              <span className="flex size-9 items-center justify-center rounded-full bg-white text-tk-red shadow-sm sm:size-10">
+                <ScrollRightChevron />
+              </span>
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

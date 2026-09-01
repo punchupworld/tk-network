@@ -88,15 +88,22 @@ const TK_PARK_ITEMS = [
     หนังสือและสื่อการเรียนรู้ <br />
     ตามงบประมาณรายปี
   </>,
-  "ระบบบริหารห้องสมุด อัตโนมัติและระบบสมาชิก",
   <>
-    กิจกรรมส่งเสริมการอ่าน กิจกรรมร่วมกับ TK Park
+    ระบบบริหารห้องสมุดอัตโนมัติ
+    <br className="sm:hidden block" />
+    และระบบสมาชิก
+  </>,
+  <>
+    กิจกรรมส่งเสริมการอ่าน <br className="sm:hidden block" />
+    กิจกรรมร่วมกับ TK Park
     <br className="sm:hidden block" /> ที่กรุงเทพฯ และเครือข่าย
   </>,
   <>
     ประชาสัมพันธ์กิจกรรม
-    <br />
-    ทั้งทางช่องทางออนไลน์และ ออฟไลน์
+    <br className="hidden sm:block" />
+    ทั้ง ทาง
+    <br className="sm:hidden block" />
+    ช่องทางออนไลน์และ ออฟไลน์
   </>,
   "ติดตามประเมินผลเครือข่าย",
 ];
@@ -147,7 +154,7 @@ const SubSectionOne = () => {
           การเข้าร่วม
         </p>
       </div>
-      <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
+      <div className="flex w-full flex-col items-start justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
           ถึงแม้แต่ละเครือข่ายจะพัฒนา
           <br className="sm:hidden block" />
@@ -438,8 +445,7 @@ const SubSectionOne = () => {
             <br className="hidden sm:block" />
             เครือข่ายที่อาจจะมี
             <br className="sm:hidden block" />
-            พื้นที่การเรียนรู้เดิม
-            <br className="hidden sm:block" />
+            พื้นที่การเรียนรู้เดิม <br className="hidden sm:block" />
             (หรืออยู่
             <br className="sm:hidden block" />
             ภายใต้หน่วยงานอื่น) ไม่ได้ใช้

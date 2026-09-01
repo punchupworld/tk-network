@@ -66,7 +66,8 @@ const SubSectionTwo = () => {
           <br />
           เพื่อตอบโจทย์ความต้องการ
           <br className="sm:hidden block" />
-          ของผู้ใช้งานในพื้นที่เป็นหลัก ดังนั้นการเกิดขึ้นของห้องสมุด
+          ของผู้ใช้งานในพื้นที่เป็นหลัก <br className="sm:hidden block" />
+          ดังนั้นการเกิดขึ้นของห้องสมุด
           <br className="sm:hidden block" />
           มีชีวิต คือการเปลี่ยนภาพของ
           <br className="sm:hidden block" />

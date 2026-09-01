@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   title,
   description,
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: "/tk-network/favicon.png",
+    shortcut: "/tk-network/favicon.png",
+    apple: "/tk-network/favicon.png",
   },
   openGraph: {
     type: "website",

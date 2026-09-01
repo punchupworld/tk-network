@@ -42,16 +42,21 @@ const IntroSection = () => {
       <section className="flex flex-col items-center justify-center max-w-[600px] mx-auto w-full gap-25 mt-25">
         <div className="flex w-full flex-col items-start justify-center gap-5 p-10 bg-[#FFE150] border-2 border-white">
           <span className="text-tk-black desktop-s6-th-400 ">
-            หน่วยงานที่ต้องการออกแบบและสร้างพื้นที่การเรียนรู้ที่มีชีวิตในจังหวัด
-            <br className="md:hidden block" />
-            ของตนเอง สามารถใช้คู่มือนี้ <br className="md:hidden block" />
-            เป็นแนวทางในการสร้างสรรค์ <br className="md:hidden block" />
-            พื้นที่การเรียนรู้สำหรับคนทุกเพศ <br className="md:hidden block" />
-            ทุกวัย โดยเฉพาะเด็กและเยาวชน <br className="md:hidden block" />{" "}
-            ให้พวกเขาได้เข้ามาเรียนรู้ <br />
-            เล่นสนุก และทดลองนวัตกรรมใหม่ๆ โดยมี TK Park
-            ซึ่งเป็นองค์กรที่มีประสบการณ์ในการพัฒนาพื้นที่เรียนรู้
-            <br className="md:hidden block" />
+            หน่วยงานที่ต้องการออกแบบและสร้าง
+            <br className="sm:hidden block" />
+            พื้นที่การเรียนรู้ที่มีชีวิตในจังหวัด
+            <br className="sm:hidden block" />
+            ของตนเอง สามารถใช้คู่มือนี้ <br className="sm:hidden block" />
+            เป็นแนวทางในการสร้างสรรค์ <br className="sm:hidden block" />
+            พื้นที่การเรียนรู้สำหรับคนทุกเพศ <br className="sm:hidden block" />
+            ทุกวัย โดยเฉพาะเด็กและเยาวชน <br className="sm:hidden block" />{" "}
+            ให้พวกเขาได้เข้ามาเรียนรู้ <br className="hidden sm:block" />
+            เล่นสนุก <br className="sm:hidden block" />
+            และทดลองนวัตกรรมใหม่ๆ โดยมี <br className="sm:hidden block" />
+            TK Park ซึ่งเป็นองค์กรที่มี
+            <br className="sm:hidden block" />
+            ประสบการณ์ในการพัฒนาพื้นที่เรียนรู้
+            <br className="sm:hidden block" />
             เป็นพันธมิตรในการออกแบบ
           </span>
         </div>
@@ -59,7 +64,8 @@ const IntroSection = () => {
           <CoverCap color="#F5333F" />
           <div className="flex w-full flex-col items-center justify-center gap-2.5 border-x-2 border-white bg-[#F5333F] p-10 text-white h-[272px]">
             <h2 className="font-th desktop-s4-th-700 leading-[1.35]">
-              เครือข่าย TK คือใคร
+              เครือข่าย TK <br className="sm:hidden block" />
+              คือใคร
             </h2>
           </div>
           <div className="flex w-full items-center justify-center">
@@ -126,7 +132,7 @@ const IntroSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex w-full flex-col sm:items-start items-center justify-center gap-5 p-10 bg-[#FEE6A6] border-2 border-white">
+        <div className="flex w-full flex-col items-start  justify-center gap-5 p-10 bg-[#FEE6A6] border-2 border-white">
           <span className="text-tk-black desktop-s6-th-400">
             <span className="font-th desktop-s6-th-700">เครือข่าย TK Park</span>{" "}
             คือกลุ่มหน่วยงาน

@@ -76,18 +76,18 @@ const SubSectionOne = () => {
           <br className="sm:hidden block" />
           ระหว่างที่ลูกกำลังใช้พื้นที่ <br className="sm:hidden block" />
           กลุ่มเด็กเล็กอยากเข้ากิจกรรม
-          <br />
-          เล่านิทานเด็ก กลุ่มนักเรียน
+          <br className="hidden sm:block" />
+          เล่า
           <br className="sm:hidden block" />
-          นักศึกษาอาจจะอยากใช้ห้องประชุม
+          นิทานเด็ก กลุ่มนักเรียน นักศึกษา
           <br className="sm:hidden block" />
-          ทำงาน คุยเล่นเรื่องซีรีส์ดัง <br className="sm:hidden block" />
-          อ่านไปงีบไป ติวหนังสือสอบ <br className="sm:hidden block" />
-          กลุ่มผู้ใหญ่และผู้สูงอายุอาจจะ
+          อาจจะอยากใช้ห้องประชุม ทำงาน <br className="sm:hidden block" />
+          คุยเล่นเรื่องซีรีส์ดัง อ่านไปงีบไป <br className="sm:hidden block" />
+          ติวหนังสือสอบ กลุ่มผู้ใหญ่และ
           <br className="sm:hidden block" />
-          อยากคุยเข้มสภากาแฟ หรือ
+          ผู้สูงอายุอาจจะอยากคุยเข้ม
           <br className="sm:hidden block" />
-          ออกกำลังกาย
+          สภากาแฟ หรือ ออกกำลังกาย
         </p>
         <p className="font-th desktop-s6-th-400 text-tk-black">
           การศึกษาข้อมูลภาคสนามของ <br className="sm:hidden block" />
@@ -265,9 +265,9 @@ const SubSectionOne = () => {
               <br className="sm:hidden block" />
               เสริมทักษะ ปีนป่ายในพื้นที่ที่
               <br />
-              ถูกออกแบบไว้ พ่อแม่อาจจะร่วมทำ
+              ถูกออกแบบไว้ พ่อแม่อาจจะร่วม
               <br className="sm:hidden block" />
-              กิจกรรมด้วยหรืออ่านหนังสือ <br className="sm:hidden block" />
+              ทำกิจกรรมด้วยหรืออ่านหนังสือ <br className="sm:hidden block" />
               เล่นโทรศัพท์อยู่ใกล้ๆ
             </span>
           </div>
@@ -308,8 +308,8 @@ const SubSectionOne = () => {
               <br className="sm:hidden block" />
               ของเล่นที่ประกอบด้วยฐาน
               <br className="sm:hidden block" />
-              พร้อมเสา 4 ต้น พุ่มไม้ 10 พุ่ม <br className="sm:hidden block" />
-              เพื่อ
+              พร้อมเสา 4 ต้น พุ่มไม้ 10 <br className="sm:hidden block" />
+              พุ่ม เพื่อ
               <br className="hidden sm:block" />
               ฝึกนับเลขและ
               <br className="sm:hidden block" />

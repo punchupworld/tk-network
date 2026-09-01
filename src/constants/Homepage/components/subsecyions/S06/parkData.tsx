@@ -163,9 +163,9 @@ export const PARK_CARDS: ParkCardProps[] = [
         เข้ากับองค์ความรู้ร่วมสมัย <br className="sm:hidden block" />
         ความเข้มแข็งของ <br className="hidden sm:block" /> TK Park ปัตตานี
         <br className="sm:hidden block" />
-        คือการสร้างการมีส่วนร่วมจากคน
+        คือการสร้างการมีส่วนร่วมจากคนใน
         <br className="sm:hidden block" />
-        ในพื้นที่ ตั้งแต่ <br className="hidden sm:block" />
+        พื้นที่ ตั้งแต่ <br className="hidden sm:block" />
         การร่วมออกแบบกิจกรรม
         <br className="sm:hidden block" />
         และการพัฒนาเนื้อหา ไปจนถึงการสร้าง
