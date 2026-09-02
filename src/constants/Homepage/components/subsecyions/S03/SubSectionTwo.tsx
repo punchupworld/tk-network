@@ -127,7 +127,7 @@ const FACILITIES = [
     title: "ชั้นวางรองเท้า",
     tips: [
       <>
-        คำนึงถึงจุดถอดรองเท้าที่เพียงพอ <br className="sm:hidden block" />
+        คำนึงถึงจุดถอดรองเท้าที่เพียงพอ <br className="hidden sm:block" />
         ไม่เกะกะบริเวณทางเข้าหลัก
       </>,
     ],
@@ -136,24 +136,24 @@ const FACILITIES = [
     title: "จุดบริการฝากสัมภาระ",
     tips: [
       <>
-        คำนึงถึงจุดฝากของ <br />
+        คำนึงถึงจุดฝากของ <br className="hidden sm:block" />
         หรือตู้ล็อกเกอร์ที่มีพื้นที่ เพียงพอสำหรับพื้นที่การ
         เรียนรู้ที่ตั้งกฎว่า
-        <br />
+        <br className="hidden sm:block" />
         ไม่อนุญาตให้นำสัมภาระ เข้าไปเพื่อปกป้อง
-        <br />
+        <br className="hidden sm:block" />
         ทรัพย์สินของพื้นที่
       </>,
       <>
         อาจจัดหาเจ้าหน้าที่
-        <br />
+        <br className="hidden sm:block" />
         เพื่อช่วยอำนวยสะดวก
       </>,
       <>
         คำนึงถึงผู้ใช้บริการที่มีสัมภาระปริมาณมาก
-        <br />
+        <br className="hidden sm:block" />
         สำหรับพื้นที่การเรียนรู้
-        <br />
+        <br className="hidden sm:block" />
         ที่อนุญาตให้นำสัมภาระเข้าพื้นที่ได้
       </>,
     ],
@@ -163,7 +163,7 @@ const FACILITIES = [
     tips: [
       <>
         ควรมีจุดวางคืนหนังสืออย่างเป็นที่เป็นทางและเป็นระเบียบ
-        <br />
+        <br className="hidden sm:block" />
         เพื่อที่เจ้าหน้าที่จะได้นำหนังสือไปจัดเข้าชั้นวางได้ง่าย
       </>,
     ],
@@ -174,7 +174,7 @@ const FACILITIES = [
       "ลดการสัมผัสระหว่าง บุคคล",
       <>
         ผู้ใช้บริการไม่ต้องรอ
-        <br />
+        <br className="hidden sm:block" />
         เจ้าหน้าที่
       </>,
       "แบ่งเบาภาระงานของ บรรณารักษ์หรือผู้ดูแล ห้องสมุด",
@@ -188,13 +188,14 @@ const FACILITIES = [
     title: "เครื่องบริการอัตโนมัติ",
     tips: [
       <>
-        ให้บริการสมัครและต่ออายุสมาชิกผ่านแอปพลิเคชัน <br />
+        ให้บริการสมัครและต่ออายุสมาชิกผ่านแอปพลิเคชัน{" "}
+        <br className="hidden sm:block" />
         My TK
       </>,
       "สามารถชำระ บริการหรือเติมเงินเข้าบัญชีสมาชิกได้",
       <>
         สามารถออกบัตร เข้าใช้บริการ
-        <br />
+        <br className="hidden sm:block" />
         รายวันโดยไม่ต้องติดต่อเจ้าหน้าที่
       </>,
       "ลดภาระเจ้าหน้าที่เคาน์เตอร์บริการ",
@@ -267,16 +268,36 @@ const FacilityRow = ({ title, tips }: { title: string; tips: ReactNode[] }) => {
           open ? "block" : "hidden"
         }`}
       >
-        <div className="flex justify-between items-start gap-2.5 md:flex-row flex-col">
-          {tips.map((tip, index) => (
-            <p
-              key={index}
-              className="font-th desktop-s6-th-400 text-tk-black flex-1"
-            >
-              {tip}
+        {tips.length > 1 ? (
+          <>
+            <ul className="flex list-disc flex-col gap-1 pl-5 md:hidden">
+              {tips.map((tip, index) => (
+                <li
+                  key={index}
+                  className="font-th desktop-s6-th-400 text-tk-black"
+                >
+                  {tip}
+                </li>
+              ))}
+            </ul>
+            <div className="hidden md:flex justify-between items-start gap-2.5">
+              {tips.map((tip, index) => (
+                <p
+                  key={index}
+                  className="font-th desktop-s6-th-400 text-tk-black flex-1"
+                >
+                  {tip}
+                </p>
+              ))}
+            </div>
+          </>
+        ) : (
+          <div className="flex justify-between items-start gap-2.5">
+            <p className="font-th desktop-s6-th-400 text-tk-black flex-1">
+              {tips[0]}
             </p>
-          ))}
-        </div>
+          </div>
+        )}
       </div>
       <button
         type="button"

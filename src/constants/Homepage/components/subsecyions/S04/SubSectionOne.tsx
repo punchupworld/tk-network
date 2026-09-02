@@ -146,29 +146,35 @@ const SubSectionOne = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-center gap-5 p-10 border-2 border-white bg-[#FEE6A6]">
         <p className="font-th desktop-s6-th-400 text-tk-black">
-          งบประมาณเป็นหนึ่งในปัจจัยสำคัญที่มีผล
+          งบประมาณเป็นหนึ่งในปัจจัย
           <br className="sm:hidden block" />
-          ต่อการสร้างพื้นที่การเรียนรู้ <br className="hidden sm:block" />
+          สำคัญที่มีผล ต่อการสร้างพื้นที่
+          <br className="sm:hidden block" />
+          การเรียนรู้ <br className="hidden sm:block" />
           หน่วยงานจึงต้อง
           <br className="sm:hidden block" />
-          บริหารจัดการงบประมาณอย่างมีประสิทธิภาพ
+          บริหารจัดการงบประมาณอย่าง
           <br className="sm:hidden block" />
-          และควรพึ่งพาแหล่งงบประมาณจาก
+          มีประสิทธิภาพ และควรพึ่งพา
           <br className="sm:hidden block" />
-          หลากหลายที่มา เช่น หน่วยงานต้นสังกัด{" "}
+          แหล่งงบประมาณจาก
           <br className="sm:hidden block" />
-          เงินบริจาคจากภาคเอกชน ค่าบำรุงห้องสมุด
+          หลากหลายที่มา เช่น หน่วยงาน
           <br className="sm:hidden block" />
-          จากสมาชิก และรายได้อื่นๆ เช่น การเขียน
+          ต้นสังกัด เงินบริจาคจาก
           <br className="sm:hidden block" />
-          โครงการขอทุนสนับสนุน นอกจากนั้นผู้บริหาร
+          ภาคเอกชน ค่าบำรุงห้องสมุด
           <br className="sm:hidden block" />
-          ของพื้นที่การเรียนรู้ควรยึดหลัก
+          จากสมาชิก และรายได้อื่นๆ เช่น <br className="sm:hidden block" />
+          การเขียนโครงการขอทุนสนับสนุน <br className="sm:hidden block" />
+          นอกจากนั้นผู้บริหารของพื้นที่
           <br className="sm:hidden block" />
-          ความรับผิดชอบต่อสังคมในภาคธุรกิจ (CSR)
-          โดยแสวงหาความร่วมมือจากภาคเอกชนใน
+          การเรียนรู้ควรยึดหลักความ
           <br className="sm:hidden block" />
-          การสนับสนุน ด้านเงินทุน
+          รับผิดชอบต่อสังคมในภาคธุรกิจ (CSR) โดยแสวงหาความร่วมมือ
+          <br className="sm:hidden block" />
+          จากภาคเอกชนในการสนับสนุน <br className="sm:hidden block" />
+          ด้านเงินทุน
         </p>
 
         <div className="flex flex-col gap-2.5 justify-end items-end w-full">
