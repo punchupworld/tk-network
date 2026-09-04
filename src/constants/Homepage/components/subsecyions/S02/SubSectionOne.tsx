@@ -394,7 +394,9 @@ const SubSectionOne = () => {
             <br className="sm:hidden block" />
             สนุกขึ้น แผนนี้เหมาะกับเครือข่าย
             <br className="sm:hidden block" />
-            ที่ต้องการยกระดับห้องสมุดหรือ
+            ที่ต้องการ
+            <br className="hidden sm:block" />
+            ยกระดับห้องสมุดหรือ
             <br className="sm:hidden block" />
             พื้นที่การเรียนรู้ในชุมชนและ
             <br className="sm:hidden block" />

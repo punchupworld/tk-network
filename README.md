@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TK Book
 
-## Getting Started
+Interactive handbook for [TK Park](https://www.tkpark.or.th/) community learning-space design.
 
-First, run the development server:
+**ร่วมสร้างพื้นที่การเรียนรู้ที่ใช่...สำหรับทุกชุมชน**
+
+คู่มือการออกแบบพื้นที่การเรียนรู้สำหรับชุมชน — TK Park พร้อมเป็นพันธมิตรในการออกแบบ พัฒนา และยกระดับแหล่งเรียนรู้ให้เป็นพื้นที่ที่ผู้คนทุกวัยอยากเข้ามาเรียนรู้ สร้างสรรค์ และเติบโตไปด้วยกัน
+
+Static Next.js site. Long-scroll page with intro, six join-network steps, and outro. Nav overlay jumps to topics and subtopics.
+
+## Six steps
+
+1. ทำความรู้จัก — Get to Know
+2. ตกลงแนวทางความร่วมมือ
+3. ออกแบบพื้นที่และบริการ
+4. ก่อสร้างพื้นที่
+5. เตรียมความพร้อม
+6. เปิดบริการ — The Opening
+
+## Stack
+
+- Next.js 16 (App Router, `output: "export"`)
+- React 19
+- Tailwind CSS 4
+- TypeScript
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Script          | What it does                                              |
+| --------------- | --------------------------------------------------------- |
+| `pnpm dev`      | Dev server                                                |
+| `pnpm build`    | Static export to `out/`                                   |
+| `pnpm zip:prod` | Domain-root build, zip `out/` as `tk-book-production.zip` |
+| `pnpm lint`     | ESLint                                                    |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deploy
 
-## Learn More
+Build is a static export (`out/`). Two paths:
 
-To learn more about Next.js, take a look at the following resources:
+**Domain root (customer zip)** — no base path:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+pnpm zip:prod
+NEXT_PUBLIC_SITE_URL=https://customer-domain.com npm run zip:prod
+BASE_PATH=/handbook NEXT_PUBLIC_SITE_URL=https://customer-domain.com/handbook npm run zip:prod
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Produces `tk-book-production.zip`. Serve the zip contents at `/`.
 
-## Deploy on Vercel
+**Subfolder** — set `BASE_PATH`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+BASE_PATH=/handbook pnpm build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**GitHub Pages** — CI sets `GITHUB_PAGES=true`. Base path becomes `/<repo>` (from `GITHUB_REPOSITORY`, fallback `tk-network`). Optional `NEXT_PUBLIC_SITE_URL` for Open Graph / metadata.
+
+`asset()` in `src/lib/asset.ts` prefixes public paths with `NEXT_PUBLIC_BASE_PATH` so images work under a subfolder.
+
+## Layout
+
+```
+src/app/                 routes + layout (nav, cookie consent)
+src/constants/Homepage/  intro + 6 sections + outro
+src/constants/topicItems.ts
+src/components/          Navbar, StepsOverlay, cookie consent
+src/lib/asset.ts         base-path-aware public URLs
+public/                  images, favicon, OG.png
+```

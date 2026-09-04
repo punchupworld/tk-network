@@ -172,7 +172,8 @@ export const PARK_CARDS: ParkCardProps[] = [
         <br className="sm:hidden block" />
         เครือข่ายความร่วมมือกับสถานศึกษา
         <br className="sm:hidden block" />
-        และหน่วยงานต่างๆ พื้นที่แห่งนี้
+        และหน่วยงานต่างๆ <br className="hidden sm:block" />
+        พื้นที่แห่งนี้
         <br className="sm:hidden block" />
         จึงเติบโตไปพร้อมกับชุมชนอย่างแท้จริง
       </>,
@@ -299,9 +300,11 @@ export const PARK_CARDS: ParkCardProps[] = [
         การศึกษา การพัฒนาทักษะอาชีพ <br className="sm:hidden block" />
         การสร้างสรรค์นวัตกรรม ไปจนถึง
         <br className="sm:hidden block" />
-        การเรียนรู้เพื่อยกระดับคุณภาพชีวิต <br className="sm:hidden block" />
+        การเรียนรู้
+        <br className="hidden sm:block" />
+        เพื่อยกระดับคุณภาพชีวิต <br className="sm:hidden block" />
         ทั้งยังส่งเสริมทักษะแห่งอนาคต
-        <br className="sm:hidden block" />
+        <br />
         ที่สอดคล้องกับการเปลี่ยนแปลง
         <br className="sm:hidden block" />
         ของสังคมและเศรษฐกิจ

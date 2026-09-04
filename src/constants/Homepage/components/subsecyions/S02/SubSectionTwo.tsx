@@ -429,7 +429,7 @@ const SubSectionTwo = () => {
                 และสร้างการมีส่วนร่วม
                 <br className="sm:hidden block" />
                 กับทุกภาคส่วนในพื้นที่ <br className="sm:hidden block" />
-                ทั้งภาครัฐ ภาคเอกชน <br className="sm:hidden block" />
+                ทั้งภาครัฐ ภาคเอกชน <br />
                 ภาคประชาสังคม สถานศึกษา <br className="sm:hidden block" />
                 และชุมชน
               </p>

@@ -94,14 +94,13 @@ const SubSectionOne = () => {
           <br className="sm:hidden block" />
           หลากหลาย เครือข่ายต้องเข้าใจ
           <br className="sm:hidden block" />
-          ผู้ใช้อย่างถ่องแท้ และจัด
-          <br className="hidden sm:block" />
-          ระบบ
+          ผู้ใช้อย่างถ่องแท้ <br className="hidden sm:block" />
+          และจัดระบบ
           <br className="sm:hidden block" />
           การบริหารที่มีประสิทธิภาพ ควบคู่
           <br className="sm:hidden block" />
           ไปกับการเลือกสรรแนวทาง
-          <br className="sm:hidden block" />
+          <br />
           ที่เหมาะสมกับศักยภาพของตน
         </p>
 
@@ -187,7 +186,9 @@ const SubSectionOne = () => {
           <p className="font-th desktop-s6-th-400 text-tk-black text-balance">
             ไม่ว่าหน่วยงานลักษณะไหน
             <br className="sm:hidden block" />
-            ก็สามารถเข้าร่วมเครือข่าย <br className="sm:hidden block" />
+            ก็สามารถ
+            <br className="hidden sm:block" />
+            เข้าร่วมเครือข่าย <br className="sm:hidden block" />
             TK Park ได้ ตราบใดที่สนใจและ
             <br className="sm:hidden block" />
             ต้องการสร้างพื้นที่การเรียนรู้
@@ -229,7 +230,7 @@ const SubSectionOne = () => {
             การเรียนรู้ซึ่งเป็น
             <br className="sm:hidden block" />
             เป้าหมายหลัก สนับสนุน
-            <br className="sm:hidden block" />
+            <br />
             การเรียนรู้นอกห้องเรียน
             <br className="sm:hidden block" />
             ในรูปแบบต่างๆ <br className="hidden sm:block" />
@@ -659,14 +660,15 @@ const SubSectionOne = () => {
               <br className="sm:hidden block" />
               เป็นตัวกลางสำคัญที่หน่วยงาน
               <br className="sm:hidden block" />
-              สามารถจัดหมวดหมู่เพื่อสร้าง
-              <br className="sm:hidden block" />
-              การเรียนรู้โดยไม่ตั้งใจและ <br />
-              สอดแทรกไปกับการทำกิจกรรม
-              <br className="sm:hidden block" />
-              รูปแบบ
+              สามารถ
               <br className="hidden sm:block" />
-              ต่างๆ ได้
+              จัดหมวดหมู่เพื่อสร้าง
+              <br className="sm:hidden block" />
+              การเรียนรู้โดยไม่ตั้งใจและ
+              <br className="sm:hidden block" />
+              สอดแทรกไปกับการทำกิจกรรม
+              <br />
+              รูปแบบต่างๆ ได้
             </p>
           </div>
         </div>

@@ -19,6 +19,7 @@
 
 # production
 /build
+/tk-book-production.zip
 
 # misc
 .DS_Store

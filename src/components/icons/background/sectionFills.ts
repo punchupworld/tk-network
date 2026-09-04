@@ -33,6 +33,7 @@ export type BackgroundShapeId =
   | "section1Orange"
   | "section1Grey"
   | "section1Red"
+  | "section1Yellow"
   // Shared SVG shapes
   | "Vector 188"
   | "Vector 189"
@@ -177,6 +178,7 @@ export const BACKGROUND_SECTION_FILLS: Record<
     section1Orange: "#FFFFFF",
     section1Grey: "#FFFFFF",
     section1Red: "#FFFFFF",
+    section1Yellow: "#FFFFFF",
 
     // Topic 1
     T01Yellow: "#FFFFFF",
@@ -313,6 +315,7 @@ export const BACKGROUND_SECTION_FILLS: Record<
     section1Orange: "#FFBAA1",
     section1Grey: "#CFBFBE",
     section1Red: "#FF4C15",
+    section1Yellow: "#FFE150",
 
     // Topic 1
     T01Yellow: "#FFE150",
@@ -456,6 +459,7 @@ export const BACKGROUND_SECTION_FILLS: Record<
     section1Orange: "#FFBAA1",
     section1Grey: "#CFBFBE",
     section1Red: "#FF4C15",
+    section1Yellow: "#FFE150",
 
     // Topic 1
     T01Yellow: "#FFE150",
@@ -602,6 +606,7 @@ export const BACKGROUND_SUBTOPIC_FILLS: Record<
     section1Orange: "#FFFFFF",
     section1Grey: "#FFFFFF",
     section1Red: "#FFFFFF",
+    section1Yellow: "#FFFFFF",
 
     // Topic 1
     T01Yellow: "#FFE150",
@@ -634,6 +639,7 @@ export const BACKGROUND_SUBTOPIC_FILLS: Record<
     section1Orange: "#FFFFFF",
     section1Grey: "#FFFFFF",
     section1Red: "#FFFFFF",
+    section1Yellow: "#FFFFFF",
 
     // Topic 1 is muted in subtopic 2
     T01Yellow: "#FFFFFF",

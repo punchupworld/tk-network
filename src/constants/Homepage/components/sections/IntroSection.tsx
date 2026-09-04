@@ -99,8 +99,11 @@ const IntroSection = () => {
               <br className="sm:hidden block" />
               หน่วยงานท้องถิ่น ภาครัฐ ภาคการศึกษา
               <br className="sm:hidden block" /> และภาคเอกชน
-              เพื่อพัฒนาแหล่งเรียนรู้ <br className="sm:hidden block" />
-              ให้เป็นพื้นที่สร้างสรรค์ที่ตอบโจทย์
+              เพื่อพัฒนาแหล่งเรียนรู้
+              <br className="sm:hidden block" />
+              ให้เป็น
+              <br className="hidden sm:block" />
+              พื้นที่สร้างสรรค์ที่ตอบโจทย์
               <br className="sm:hidden block" />
               คนทุกวัย พร้อมส่งเสริมการเรียนรู้
               <br className="sm:hidden block" />
@@ -171,10 +174,8 @@ const IntroSection = () => {
             ต้องเกิดจากบุคลากรคนเก่งในพื้นที่ <br className="sm:hidden block" />
             และสร้างโดยใช้หลักคิด “ผู้ใช้
             <br className="sm:hidden block" />
-            เป็นศูนย์กลาง” (User-centered) <br className="sm:hidden block" />
-            ให้ท้องถิ่นมี
-            <br className="hidden sm:block" />
-            ส่วนร่วมให้มากที่สุด
+            เป็นศูนย์กลาง” (User-centered) <br />
+            ให้ท้องถิ่นมีส่วนร่วมให้มากที่สุด
           </p>
         </div>
         <div className="flex w-full flex-col sm:items-start items-center justify-center gap-5 p-10 bg-blue-200 border-2 border-white">
@@ -190,11 +191,15 @@ const IntroSection = () => {
             <br className="sm:hidden block" />
             ทั่วประเทศ เพื่อให้หน่วยงานสามารถ
             <br className="sm:hidden block" />
-            พัฒนาแหล่งเรียนรู้ที่เหมาะ กับบริบท
+            พัฒนาแหล่งเรียนรู้
+            <br className="hidden sm:block" />
+            ที่เหมาะกับบริบท
             <br className="sm:hidden block" />
             ของพื้นที่ และเติบโตเป็นศูนย์กลาง
             <br className="sm:hidden block" />
-            การเรียนรู้ของชุมชนได้อย่างยั่งยืน
+            การเรียนรู้
+            <br className="hidden sm:block" />
+            ของชุมชนได้อย่างยั่งยืน
           </span>
         </div>
         <div className="bg-red-50 rounded-[40px] border-2 border-white h-[432px] mt-25 w-full flex items-center justify-center">

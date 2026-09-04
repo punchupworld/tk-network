@@ -74,10 +74,12 @@ function SectionCover() {
                 ศึกษาข้อมูลรอบด้าน
                 <br className="sm:hidden block" />
                 เกี่ยวกับพื้นที่ เช่น <br className="sm:hidden block" />
-                ยุทธศาสตร์จังหวัด <br className="sm:hidden block" />
+                ยุทธศาสตร์จังหวัด <br />
                 แผนพัฒนาภาค <br className="sm:hidden block" />
-                หรือแผนพัฒนาท้องถิ่น
-                <br className="sm:hidden block" />
+                หรือ
+                <br className="hidden sm:block" />
+                แผนพัฒนาท้องถิ่น
+                <br />
                 ในระยะ 3-5 ปี
               </p>
             </div>

@@ -1,6 +1,10 @@
 import type { FillMuteIllustrationProps } from "./fillMuteIllustrationTypes";
 
-export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
+export function S06({
+  shapeFill,
+  section6Stroke,
+  section6OldStroke,
+}: FillMuteIllustrationProps) {
   return (
     <g id="S06">
       <g id="S06_2">
@@ -122,7 +126,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_77"
           d="M1722.91 221.396H1675.73C1675.17 221.396 1674.73 221.844 1674.73 222.396V278.141C1674.73 278.694 1675.17 279.141 1675.73 279.141H1722.91C1723.46 279.141 1723.91 278.694 1723.91 278.141V222.396C1723.91 221.844 1723.46 221.396 1722.91 221.396Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Highlight")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -155,7 +159,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_81"
           d="M1699.32 232.299C1705.02 232.299 1709.63 227.682 1709.63 221.986C1709.63 216.291 1705.02 211.674 1699.32 211.674C1693.62 211.674 1689.01 216.291 1689.01 221.986C1689.01 227.682 1693.62 232.299 1699.32 232.299Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Pink")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -164,7 +168,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_82"
           d="M1759.79 255.012H1712.61C1712.06 255.012 1711.61 255.459 1711.61 256.012V311.757C1711.61 312.309 1712.06 312.757 1712.61 312.757H1759.79C1760.35 312.757 1760.79 312.309 1760.79 311.757V256.012C1760.79 255.459 1760.35 255.012 1759.79 255.012Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Highlight")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -198,7 +202,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_86"
           d="M1740.51 271.641H1721.99C1720.33 271.641 1718.98 272.987 1718.98 274.647V277.341C1718.98 279.001 1720.33 280.347 1721.99 280.347H1740.51C1742.17 280.347 1743.52 279.001 1743.52 277.341V274.647C1743.52 272.987 1742.17 271.641 1740.51 271.641Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Pink")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -207,7 +211,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_87"
           d="M1748.8 299.247C1749.16 298.479 1750.25 298.479 1750.61 299.247L1750.69 299.413C1750.89 299.843 1751.37 300.072 1751.83 299.961L1752.01 299.918C1752.83 299.72 1753.51 300.574 1753.14 301.334L1753.06 301.499C1752.85 301.924 1752.96 302.439 1753.34 302.731L1753.48 302.841C1754.15 303.363 1753.9 304.428 1753.07 304.607L1752.9 304.645C1752.43 304.745 1752.1 305.159 1752.11 305.634L1752.11 305.813C1752.12 306.662 1751.13 307.136 1750.47 306.598L1750.34 306.487C1749.97 306.185 1749.44 306.185 1749.07 306.487L1748.94 306.597C1748.28 307.136 1747.29 306.662 1747.3 305.813L1747.31 305.634C1747.31 305.159 1746.98 304.745 1746.52 304.645L1746.34 304.608C1745.51 304.429 1745.27 303.362 1745.94 302.841L1746.08 302.731C1746.46 302.439 1746.57 301.924 1746.36 301.498L1746.28 301.336C1745.91 300.576 1746.59 299.721 1747.41 299.92L1747.58 299.961C1748.04 300.072 1748.52 299.843 1748.72 299.413L1748.8 299.247Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Yellow")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -216,7 +220,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_88"
           d="M1849.08 213.734H1801.89C1801.34 213.734 1800.89 214.182 1800.89 214.734V270.479C1800.89 271.031 1801.34 271.479 1801.89 271.479H1849.08C1849.63 271.479 1850.08 271.031 1850.08 270.479V214.734C1850.08 214.182 1849.63 213.734 1849.08 213.734Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Highlight")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -241,7 +245,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_91"
           d="M1825.47 224.46C1827.27 224.46 1828.73 223.002 1828.73 221.203C1828.73 219.405 1827.27 217.947 1825.47 217.947C1823.67 217.947 1822.21 219.405 1822.21 221.203C1822.21 223.002 1823.67 224.46 1825.47 224.46Z"
-          fill={section6Stroke}
+          fill={section6OldStroke}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -258,7 +262,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_93"
           d="M1726.09 403.685C1726.09 404.238 1725.64 404.685 1725.09 404.685H1691.34C1691.05 404.685 1690.78 404.559 1690.59 404.338L1677.15 388.758C1676.99 388.576 1676.91 388.344 1676.91 388.105V347.932C1676.91 347.379 1677.35 346.932 1677.91 346.932H1725.09C1725.64 346.932 1726.09 347.379 1726.09 347.932V403.685Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Highlight")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -291,7 +295,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_97"
           d="M1690.92 402C1690.92 402.926 1689.77 403.355 1689.16 402.654L1676.95 388.528C1676.92 388.495 1676.91 388.452 1676.91 388.409C1676.91 388.308 1676.99 388.227 1677.09 388.227H1689.92C1690.47 388.227 1690.92 388.674 1690.92 389.227V402Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Highlight")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -300,7 +304,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_98"
           d="M1710.21 343.104H1691.59C1691.04 343.104 1690.59 343.551 1690.59 344.104V349.178C1690.59 349.73 1691.04 350.178 1691.59 350.178H1710.21C1710.77 350.178 1711.21 349.73 1711.21 349.178V344.104C1711.21 343.551 1710.77 343.104 1710.21 343.104Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Yellow")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -309,7 +313,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_99"
           d="M1799.01 415.268H1751.83C1751.28 415.268 1750.83 415.715 1750.83 416.268V472.012C1750.83 472.565 1751.28 473.012 1751.83 473.012H1799.01C1799.57 473.012 1800.01 472.565 1800.01 472.012V416.268C1800.01 415.715 1799.57 415.268 1799.01 415.268Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Highlight")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -342,7 +346,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_103"
           d="M1784.44 411.439H1765.81C1765.26 411.439 1764.81 411.887 1764.81 412.439V417.514C1764.81 418.066 1765.26 418.514 1765.81 418.514H1784.44C1784.99 418.514 1785.44 418.066 1785.44 417.514V412.439C1785.44 411.887 1784.99 411.439 1784.44 411.439Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Yellow")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -351,7 +355,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_104"
           d="M1841.46 333.785C1841.46 333.792 1841.45 333.795 1841.45 333.791C1838.99 331.882 1834.77 331.662 1828.88 333.132C1818.78 335.661 1795.75 349.269 1778.02 362.847C1777.84 362.986 1777.72 363.183 1777.66 363.404C1777.45 364.23 1777.17 365.097 1776.84 366.005C1771.62 380.064 1760.4 390.314 1754.98 391.198C1754.67 391.251 1754.38 391.269 1754.11 391.269C1752.56 391.269 1751.68 390.502 1751.27 389.993C1749.72 388.066 1750.82 385.238 1751.19 384.311C1753.95 377.293 1764.24 368.038 1773.4 360.83C1773.61 360.664 1773.75 360.423 1773.77 360.155C1773.85 358.886 1773.62 357.984 1773.04 357.557C1770.56 355.719 1760.26 358.449 1747.39 368.351C1738.15 375.455 1721.54 386.602 1717.69 389.163C1717.24 389.465 1716.65 389.335 1716.34 388.881L1715.01 386.864C1714.7 386.408 1714.82 385.804 1715.27 385.5C1719.11 382.938 1735.59 371.882 1744.71 364.863C1755.84 356.308 1769.72 349.644 1775.65 354.015C1776.38 354.556 1776.95 355.211 1777.37 355.98C1777.7 356.605 1778.53 356.896 1779.1 356.474C1781.42 354.753 1783.51 353.259 1785.18 352.106C1801.97 340.375 1819.09 331.035 1827.81 328.858C1834.65 327.146 1839.75 327.436 1843.35 329.751C1843.81 330.05 1843.89 330.683 1843.55 331.118L1841.46 333.781C1841.46 333.782 1841.46 333.784 1841.46 333.785ZM1768.8 372.529C1769.36 371.609 1768.31 370.767 1767.51 371.485C1761.32 377.013 1756.78 382.11 1755.28 385.916C1755.16 386.233 1755.46 386.512 1755.76 386.356C1758.77 384.795 1764.37 379.835 1768.8 372.529Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Yellow")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"
@@ -360,7 +364,7 @@ export function S06({ shapeFill, section6Stroke }: FillMuteIllustrationProps) {
         <path
           id="Vector_105"
           d="M1859.17 294.989C1865.69 290.047 1869.51 284.102 1867.69 281.71C1865.88 279.319 1859.13 281.387 1852.6 286.329C1846.08 291.271 1842.26 297.216 1844.07 299.608C1845.89 301.999 1852.64 299.931 1859.17 294.989Z"
-          fill={shapeFill("section6Base")}
+          fill={shapeFill("section6Blue")}
           stroke={section6Stroke}
           strokeWidth={2}
           strokeLinecap="round"

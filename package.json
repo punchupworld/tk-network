@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "zip:prod": "rm -f tk-book-production.zip && GITHUB_PAGES= BASE_PATH= next build && cd out && zip -r ../tk-book-production.zip .",
     "start": "next start",
     "lint": "eslint"
   },
