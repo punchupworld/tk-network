@@ -21,17 +21,28 @@ const title = "ร่วมสร้างพื้นที่การเร�
 const description =
   "คู่มือการออกแบบพื้นที่การเรียนรู้สำหรับชุมชน TK Park พร้อมเป็นพันธมิตรในการออกแบบ พัฒนาและยกระดับแหล่งเรียนรู้ให้เป็นพื้นที่ที่ผู้คนทุกวัยอยากเข้ามาเรียนรู้สร้างสรรค์ และเติบโตไปด้วยกัน";
 
+function resolveSiteUrl(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  const trimmed = value.trim();
+  if (!trimmed) return undefined;
+  return /^https?:\/\//i.test(trimmed) ? trimmed : `https://${trimmed}`;
+}
+
+const siteUrl = resolveSiteUrl(
+  process.env.NEXT_PUBLIC_SITE_URL ??
+    (process.env.GITHUB_PAGES === "true"
+      ? "https://punchupworld.github.io/tk-network"
+      : undefined),
+);
+
 export const metadata: Metadata = {
-  metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ??
-      "https://punchupworld.github.io/tk-network",
-  ),
+  ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
   title,
   description,
   icons: {
-    icon: "/tk-network/favicon.png",
-    shortcut: "/tk-network/favicon.png",
-    apple: "/tk-network/favicon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
   openGraph: {
     type: "website",
