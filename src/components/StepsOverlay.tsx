@@ -628,7 +628,7 @@ const StepsOverlay = ({
   const indicator = (
     <div
       ref={stickyIndicator ? indicatorAnchorRef : undefined}
-      className={`w-full max-w-[1200px] ${stuck ? "invisible" : ""} ${onNavigate ? "cursor-pointer" : ""}`}
+      className={`w-full max-w-[1200px] px-2.5 ${stuck ? "invisible" : ""} ${onNavigate ? "cursor-pointer" : ""}`}
       onClick={onNavigate}
     >
       <StepIndicator showStepsOverlay={true} onNavigate={onNavigate} />
@@ -675,259 +675,259 @@ const StepsOverlay = ({
                 className="absolute left-0 top-0 flex h-[546px] w-[1216px] origin-top-left"
                 style={{ transform: `scale(${scale * DESIGN_SCALE})` }}
               >
-              <StepColumn
-                width={162}
-                href="#section1"
-                onNavigate={onNavigate}
-                title={<>ทำความรู้จัก</>}
-                className="bg-[#FDF1BD] hover:after:border-white"
-              >
-                <BudgetTabShape className="pointer-events-none absolute left-[26px] top-[64px]" />
-                <div className="absolute inset-x-0 top-[210px] h-[336px]">
-                  <TopicBubble
-                    icon={T02}
-                    className="left-[-3px] top-0"
-                    items={TOPIC_ITEMS.t02}
-                    onNavigate={onNavigate}
-                    menuStyle="plain"
-                  >
-                    ก้าวแรกสู่
-                    <br />
-                    ห้องสมุดมีชีวิต
-                  </TopicBubble>
-                  <TopicBubble
-                    icon={T01}
-                    className="bottom-0 left-[-3px]"
-                    items={TOPIC_ITEMS.t01}
-                    onNavigate={onNavigate}
-                  >
-                    แนวคิด
-                    <br />
-                    ห้องสมุดมีชีวิต
-                  </TopicBubble>
-                </div>
-              </StepColumn>
-
-              <StepColumn
-                width={168}
-                href="#section2"
-                onNavigate={onNavigate}
-                title={
-                  <>
-                    ตกลงแนวทาง
-                    <br />
-                    ความร่วมมือ
-                  </>
-                }
-                className="bg-[#FEE6A6] hover:after:border-white"
-              >
-                <div className="absolute inset-x-0 top-[210px] h-[336px]">
-                  <TopicBubble
-                    icon={T03}
-                    className="left-1/2 top-0 -translate-x-1/2"
-                    items={TOPIC_ITEMS.t03}
-                    onNavigate={onNavigate}
-                  >
-                    รูปแบบของ
-                    <br />
-                    การเข้าร่วม
-                  </TopicBubble>
-                  <TopicBubble
-                    icon={T04}
-                    className="bottom-0 left-1/2 -translate-x-1/2"
-                    items={TOPIC_ITEMS.t04}
-                    onNavigate={onNavigate}
-                    menuStyle="plain"
-                  >
-                    สิทธิประโยชน์
-                    <br />
-                    ของเครือข่าย
-                  </TopicBubble>
-                </div>
-              </StepColumn>
-
-              <StepColumn
-                width={219}
-                href="#section3"
-                onNavigate={onNavigate}
-                title="ออกแบบพื้นที่และบริการ"
-                className="bg-[#FDF1BD] hover:after:border-white"
-              >
-                <div className="absolute inset-x-0 top-[42px] h-[504px]">
-                  <TopicBubble
-                    icon={T06}
-                    className="left-[51px] top-[1px]"
-                    items={TOPIC_ITEMS.t06}
-                    onNavigate={onNavigate}
-                  >
-                    หลักการ
-                    <br />
-                    ออกแบบพื้นที่
-                  </TopicBubble>
-                  <TopicBubble
-                    icon={T05}
-                    className="left-[51px] top-[169px]"
-                    items={TOPIC_ITEMS.t05}
-                    onNavigate={onNavigate}
-                  >
-                    แนวทาง
-                    <br />
-                    การบริหาร
-                    <br />
-                    จัดการ
-                    <br />
-                    พื้นที่เรียนรู้
-                  </TopicBubble>
-                  <TopicBubble
-                    icon={T07}
-                    className="left-0 top-[336px]"
-                    items={TOPIC_ITEMS.t07}
-                    onNavigate={onNavigate}
-                  >
-                    ตัวอย่างสร้าง
-                    <br />
-                    แรงบันดาลใจ
-                  </TopicBubble>
-                </div>
-              </StepColumn>
-
-              <StepColumn
-                width={86}
-                href="#section4"
-                onNavigate={onNavigate}
-                overflowVisible
-                title={
-                  <>
-                    ก่อสร้าง
-                    <br />
-                    พื้นที่
-                  </>
-                }
-                className="bg-[#FEE6A6] hover:after:border-white"
-              >
-                <div className="absolute inset-x-0 top-[79px] h-[467px]">
-                  <div className="absolute left-[-41px] top-[299px] z-30 h-[168px] w-[127px] overflow-hidden rounded-br-[20px]">
+                <StepColumn
+                  width={162}
+                  href="#section1"
+                  onNavigate={onNavigate}
+                  title={<>ทำความรู้จัก</>}
+                  className="bg-[#FDF1BD] hover:after:border-white"
+                >
+                  <BudgetTabShape className="pointer-events-none absolute left-[26px] top-[64px]" />
+                  <div className="absolute inset-x-0 top-[210px] h-[336px]">
                     <TopicBubble
-                      icon={T08}
-                      className="bottom-0 left-0"
-                      items={TOPIC_ITEMS.t08}
+                      icon={T02}
+                      className="left-[-3px] top-0"
+                      items={TOPIC_ITEMS.t02}
+                      onNavigate={onNavigate}
+                      menuStyle="plain"
+                    >
+                      ก้าวแรกสู่
+                      <br />
+                      ห้องสมุดมีชีวิต
+                    </TopicBubble>
+                    <TopicBubble
+                      icon={T01}
+                      className="bottom-0 left-[-3px]"
+                      items={TOPIC_ITEMS.t01}
+                      onNavigate={onNavigate}
+                    >
+                      แนวคิด
+                      <br />
+                      ห้องสมุดมีชีวิต
+                    </TopicBubble>
+                  </div>
+                </StepColumn>
+
+                <StepColumn
+                  width={168}
+                  href="#section2"
+                  onNavigate={onNavigate}
+                  title={
+                    <>
+                      ตกลงแนวทาง
+                      <br />
+                      ความร่วมมือ
+                    </>
+                  }
+                  className="bg-[#FEE6A6] hover:after:border-white"
+                >
+                  <div className="absolute inset-x-0 top-[210px] h-[336px]">
+                    <TopicBubble
+                      icon={T03}
+                      className="left-1/2 top-0 -translate-x-1/2"
+                      items={TOPIC_ITEMS.t03}
+                      onNavigate={onNavigate}
+                    >
+                      รูปแบบของ
+                      <br />
+                      การเข้าร่วม
+                    </TopicBubble>
+                    <TopicBubble
+                      icon={T04}
+                      className="bottom-0 left-1/2 -translate-x-1/2"
+                      items={TOPIC_ITEMS.t04}
+                      onNavigate={onNavigate}
+                      menuStyle="plain"
+                    >
+                      สิทธิประโยชน์
+                      <br />
+                      ของเครือข่าย
+                    </TopicBubble>
+                  </div>
+                </StepColumn>
+
+                <StepColumn
+                  width={219}
+                  href="#section3"
+                  onNavigate={onNavigate}
+                  title="ออกแบบพื้นที่และบริการ"
+                  className="bg-[#FDF1BD] hover:after:border-white"
+                >
+                  <div className="absolute inset-x-0 top-[42px] h-[504px]">
+                    <TopicBubble
+                      icon={T06}
+                      className="left-[51px] top-[1px]"
+                      items={TOPIC_ITEMS.t06}
+                      onNavigate={onNavigate}
+                    >
+                      หลักการ
+                      <br />
+                      ออกแบบพื้นที่
+                    </TopicBubble>
+                    <TopicBubble
+                      icon={T05}
+                      className="left-[51px] top-[169px]"
+                      items={TOPIC_ITEMS.t05}
                       onNavigate={onNavigate}
                     >
                       แนวทาง
                       <br />
-                      การจัดสรร
+                      การบริหาร
                       <br />
-                      งบประมาณ
+                      จัดการ
+                      <br />
+                      พื้นที่เรียนรู้
+                    </TopicBubble>
+                    <TopicBubble
+                      icon={T07}
+                      className="left-0 top-[336px]"
+                      items={TOPIC_ITEMS.t07}
+                      onNavigate={onNavigate}
+                    >
+                      ตัวอย่างสร้าง
+                      <br />
+                      แรงบันดาลใจ
                     </TopicBubble>
                   </div>
-                </div>
-              </StepColumn>
+                </StepColumn>
 
-              <StepColumn
-                width={235}
-                href="#section5"
-                onNavigate={onNavigate}
-                title={<>เตรียมความพร้อม</>}
-                className="bg-[#FDF1BD] hover:after:border-white"
-              >
-                <TreeShape className="pointer-events-none absolute left-[15px] top-[106px]" />
-                <div className="absolute inset-x-0 top-[209px] h-[337px]">
-                  <TopicBubble
-                    icon={T09}
-                    className="left-[-25px] top-0"
-                    items={TOPIC_ITEMS.t09}
-                    onNavigate={onNavigate}
-                  >
-                    นโยบายและ
-                    <br />
-                    ข้อตกลง
-                    <br />
-                    การใช้พื้นที่
-                  </TopicBubble>
-                  <TopicBubble
-                    icon={T10}
-                    className="left-[calc(50%+0.5px)] top-[169px] -translate-x-1/2"
-                    items={TOPIC_ITEMS.t10}
-                    onNavigate={onNavigate}
-                  >
-                    หลักการบริหาร
-                    <br />
-                    บุคลากร
-                  </TopicBubble>
-                </div>
-              </StepColumn>
-
-              <StepColumn
-                width={346}
-                href="#section6"
-                onNavigate={onNavigate}
-                title={<>เปิดบริการ</>}
-                className="bg-[#FEE6A6] hover:after:border-white"
-              >
-                <div className="absolute inset-x-0 top-[125px] h-[421px]">
-                  <Image
-                    src={groupAsset}
-                    alt=""
-                    width={81}
-                    height={238}
-                    className="absolute left-[230.52px] top-[190px] h-[237.999px] w-[80.9209px]"
-                    aria-hidden="true"
-                  />
-                  <TopicBubble
-                    icon={T11}
-                    className="bottom-0 left-1/2 -translate-x-1/2"
-                    items={TOPIC_ITEMS.t11}
-                    onNavigate={onNavigate}
-                  >
-                    รูปแบบบริการ
-                    <br />
-                    ตามกลุ่มเป้าหมาย
-                  </TopicBubble>
-                  <TopicBubble
-                    icon={T13}
-                    className="left-[-19px] top-[87px]"
-                    items={TOPIC_ITEMS.t13}
-                    onNavigate={onNavigate}
-                  >
-                    ตัวอย่าง
-                    <br />
-                    พื้นที่การเรียนรู้
-                  </TopicBubble>
-                  <TopicBubble
-                    icon={T12}
-                    className="left-[178px] top-0"
-                    items={TOPIC_ITEMS.t12}
-                    onNavigate={onNavigate}
-                  >
-                    แนะนำ
-                    <br />
-                    กิจกรรม
-                  </TopicBubble>
-                  <Image
-                    src={ellipseAsset}
-                    alt=""
-                    width={32}
-                    height={32}
-                    className="absolute left-[60px] top-[14px]"
-                    aria-hidden="true"
-                  />
-                  <div className="absolute left-[53.77px] top-[10px] flex h-[39.727px] w-[47.313px] items-center justify-center">
-                    <div className="flex-none rotate-[-36.61deg]">
-                      <Image
-                        src={rotatedEllipseAsset}
-                        alt=""
-                        width={50}
-                        height={13}
-                        className="block h-[12.733px] w-[49.48px]"
-                        aria-hidden="true"
-                      />
+                <StepColumn
+                  width={86}
+                  href="#section4"
+                  onNavigate={onNavigate}
+                  overflowVisible
+                  title={
+                    <>
+                      ก่อสร้าง
+                      <br />
+                      พื้นที่
+                    </>
+                  }
+                  className="bg-[#FEE6A6] hover:after:border-white"
+                >
+                  <div className="absolute inset-x-0 top-[79px] h-[467px]">
+                    <div className="absolute left-[-41px] top-[299px] z-30 h-[168px] w-[127px] overflow-hidden rounded-br-[20px]">
+                      <TopicBubble
+                        icon={T08}
+                        className="bottom-0 left-0"
+                        items={TOPIC_ITEMS.t08}
+                        onNavigate={onNavigate}
+                      >
+                        แนวทาง
+                        <br />
+                        การจัดสรร
+                        <br />
+                        งบประมาณ
+                      </TopicBubble>
                     </div>
                   </div>
-                </div>
-              </StepColumn>
+                </StepColumn>
 
-              <WaveShape className="pointer-events-none absolute left-[118px] top-[81px] z-[5]" />
-            </div>
+                <StepColumn
+                  width={235}
+                  href="#section5"
+                  onNavigate={onNavigate}
+                  title={<>เตรียมความพร้อม</>}
+                  className="bg-[#FDF1BD] hover:after:border-white"
+                >
+                  <TreeShape className="pointer-events-none absolute left-[15px] top-[106px]" />
+                  <div className="absolute inset-x-0 top-[209px] h-[337px]">
+                    <TopicBubble
+                      icon={T09}
+                      className="left-[-25px] top-0"
+                      items={TOPIC_ITEMS.t09}
+                      onNavigate={onNavigate}
+                    >
+                      นโยบายและ
+                      <br />
+                      ข้อตกลง
+                      <br />
+                      การใช้พื้นที่
+                    </TopicBubble>
+                    <TopicBubble
+                      icon={T10}
+                      className="left-[calc(50%+0.5px)] top-[169px] -translate-x-1/2"
+                      items={TOPIC_ITEMS.t10}
+                      onNavigate={onNavigate}
+                    >
+                      หลักการบริหาร
+                      <br />
+                      บุคลากร
+                    </TopicBubble>
+                  </div>
+                </StepColumn>
+
+                <StepColumn
+                  width={346}
+                  href="#section6"
+                  onNavigate={onNavigate}
+                  title={<>เปิดบริการ</>}
+                  className="bg-[#FEE6A6] hover:after:border-white"
+                >
+                  <div className="absolute inset-x-0 top-[125px] h-[421px]">
+                    <Image
+                      src={groupAsset}
+                      alt=""
+                      width={81}
+                      height={238}
+                      className="absolute left-[230.52px] top-[190px] h-[237.999px] w-[80.9209px]"
+                      aria-hidden="true"
+                    />
+                    <TopicBubble
+                      icon={T11}
+                      className="bottom-0 left-1/2 -translate-x-1/2"
+                      items={TOPIC_ITEMS.t11}
+                      onNavigate={onNavigate}
+                    >
+                      รูปแบบบริการ
+                      <br />
+                      ตามกลุ่มเป้าหมาย
+                    </TopicBubble>
+                    <TopicBubble
+                      icon={T13}
+                      className="left-[-19px] top-[87px]"
+                      items={TOPIC_ITEMS.t13}
+                      onNavigate={onNavigate}
+                    >
+                      ตัวอย่าง
+                      <br />
+                      พื้นที่การเรียนรู้
+                    </TopicBubble>
+                    <TopicBubble
+                      icon={T12}
+                      className="left-[178px] top-0"
+                      items={TOPIC_ITEMS.t12}
+                      onNavigate={onNavigate}
+                    >
+                      แนะนำ
+                      <br />
+                      กิจกรรม
+                    </TopicBubble>
+                    <Image
+                      src={ellipseAsset}
+                      alt=""
+                      width={32}
+                      height={32}
+                      className="absolute left-[60px] top-[14px]"
+                      aria-hidden="true"
+                    />
+                    <div className="absolute left-[53.77px] top-[10px] flex h-[39.727px] w-[47.313px] items-center justify-center">
+                      <div className="flex-none rotate-[-36.61deg]">
+                        <Image
+                          src={rotatedEllipseAsset}
+                          alt=""
+                          width={50}
+                          height={13}
+                          className="block h-[12.733px] w-[49.48px]"
+                          aria-hidden="true"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </StepColumn>
+
+                <WaveShape className="pointer-events-none absolute left-[118px] top-[81px] z-[5]" />
+              </div>
             </div>
           </div>
           {isScroll && showScrollHint ? (
