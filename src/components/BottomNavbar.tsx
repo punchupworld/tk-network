@@ -4,7 +4,7 @@ import HoverPanel from "@/src/components/HoverPanel";
 const BottomNavbar = () => {
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-[40px] z-30">
-      <div className="mx-auto flex w-full max-w-[1200px] justify-end px-2.5 lg:px-0">
+      <div className="mx-auto flex w-full max-w-[1200px] justify-end px-2.5 xl:px-0">
         <div className="group/nav pointer-events-auto relative">
           <HoverPanel
             placement="top"

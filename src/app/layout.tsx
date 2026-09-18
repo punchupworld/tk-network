@@ -49,6 +49,7 @@ export const metadata: Metadata = {
     locale: "th_TH",
     title,
     description,
+    url: siteUrl,
     images: [
       {
         url: "/OG.png",

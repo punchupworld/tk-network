@@ -97,7 +97,7 @@ const Navbar = () => {
   return (
     <div
       data-site-navbar
-      className="sticky top-10 z-30 max-w-[1200px] mx-auto w-full lg:px-0 px-2.5"
+      className="sticky top-10 z-30 max-w-[1200px] mx-auto w-full xl:px-0 px-2.5"
     >
       <nav ref={navRef} className="relative z-40 flex items-center font-th">
         {navItems.map((item) => {

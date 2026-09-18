@@ -649,7 +649,7 @@ const StepsOverlay = ({
         {stuck
           ? createPortal(
               <div
-                className="pointer-events-none fixed left-1/2 z-[25] w-full max-w-[1200px] -translate-x-1/2 px-2.5 lg:px-0"
+                className="pointer-events-none fixed left-1/2 z-[25] w-full max-w-[1200px] -translate-x-1/2 px-2.5 xl:px-0"
                 style={{ top: stickyTop }}
               >
                 <div className="pointer-events-auto">
@@ -659,13 +659,13 @@ const StepsOverlay = ({
               document.body,
             )
           : null}
-        <div className={isScroll ? "relative w-full" : ""}>
+        <div className={isScroll ? "relative w-full " : ""}>
           <div
             ref={isScroll ? scrollerRef : undefined}
             className={isScroll ? "w-full overflow-x-auto" : ""}
           >
             <div
-              className={`relative shrink-0 ${isScroll ? "mx-auto min-w-[1200px]" : ""}`}
+              className={`relative shrink-0 ${isScroll ? "mx-auto min-w-[1200px] px-2.5" : ""}`}
               style={{
                 width: MAP_WIDTH * scale,
                 height: MAP_HEIGHT * scale,

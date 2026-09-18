@@ -335,7 +335,7 @@ const jobRoles: JobRole[] = [
 
 const JobRoleTooltip = ({ role }: { role: JobRole }) => {
   return (
-    <div className="pointer-events-none invisible absolute md:right-0 left-0 top-full z-50 mt-2.5 w-[calc(100vw-6rem)] max-w-[540px] opacity-0 transition-opacity duration-200 group-hover/job:visible group-hover/job:opacity-100 group-focus-within/job:visible group-focus-within/job:opacity-100">
+    <div className="pointer-events-none invisible absolute md:right-0 left-1/2 -translate-x-1/2 top-full z-50 mt-2.5 w-[calc(100vw-6rem)] max-w-[540px] opacity-0 transition-opacity duration-200 group-hover/job:visible group-hover/job:opacity-100 group-focus-within/job:visible group-focus-within/job:opacity-100">
       <div className="flex flex-col gap-2.5 bg-green-500 p-4 shadow-lg">
         <p className="w-fit rounded-[5px] border border-white px-2.5 py-1 font-th desktop-s7-th-700 text-white text-nowrap">
           {role.label}
