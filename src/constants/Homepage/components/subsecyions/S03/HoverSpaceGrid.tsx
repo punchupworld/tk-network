@@ -85,7 +85,7 @@ const BOX_IMAGE_3 = {
 };
 
 const BOX_IMAGE_4 = {
-  src: asset("/img/s03/hover/box-4.png"),
+  src: asset("/img/s03/hover/box-4.JPG"),
   alt: "Mind Room",
   height: 100,
 };

@@ -310,7 +310,7 @@ const SubSectionThree = () => {
             <b>
               ประสบการณ์ในการสร้าง
               <br className="sm:hidden block" />
-              ห้องสมุดกว่า 10 ปีของ <br className="sm:hidden block" />
+              ห้องสมุดกว่า 20 ปีของ <br className="sm:hidden block" />
               TK Park
             </b>
             <br />

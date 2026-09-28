@@ -4,12 +4,28 @@ import { T03 } from "@/src/components/icons/topics";
 import Image from "next/image";
 import { asset } from "@/src/lib/asset";
 import outroSectionImage from "@/public/images/homepage/outro-section-image.png";
-
 const OutroSection = () => {
   return (
     <div className="relative z-10 max-w-[1200px] mx-auto w-full ">
       <section className="relative mx-auto w-full" id="outro-section">
-        <div className="h-screen" />
+        <div className="relative h-screen">
+          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+            <div className="flex h-16 w-16 items-center justify-center border-2 border-white bg-[#5B73ED] shadow-[4px_4px_0_0_#1D252C]">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="3"
+                strokeLinecap="square"
+                aria-hidden="true"
+              >
+                <path d="M5 9l7 7 7-7" />
+              </svg>
+            </div>
+          </div>
+        </div>
 
         <div className="mx-auto w-full max-w-[600px]">
           <div className="relative flex w-full flex-col items-start">
