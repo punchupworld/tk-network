@@ -240,7 +240,24 @@ const SectionFour = () => {
       className="relative z-10 mx-auto min-h-screen w-full max-w-300"
       id="section5"
     >
-      <div className="h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]" />
+      <div className="relative h-[calc(100vh-60px)] md:h-[calc(100vh-100px)]">
+        <div className="absolute md:bottom-10 bottom-30 left-1/2 -translate-x-1/2 animate-bounce">
+          <div className="flex h-16 w-16 items-center justify-center border-2 border-white bg-[#5B73ED] shadow-[4px_4px_0_0_#1D252C]">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              strokeWidth="3"
+              strokeLinecap="square"
+              aria-hidden="true"
+            >
+              <path d="M5 9l7 7 7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
       <div className="flex min-h-screen items-center justify-center px-4 py-10 flex-col gap-25">
         <SectionCover />
         <QuoteSection />

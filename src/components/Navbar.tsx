@@ -37,11 +37,19 @@ const navItems: NavItem[] = [
   },
 ];
 
+export const CLOSE_STEPS_OVERLAY_EVENT = "steps-overlay:close";
+
 const Navbar = () => {
   const [active, setActive] = useState<string>(navItems[0].id);
   const [showStepsOverlay, setShowStepsOverlay] = useState(false);
   const [overlayTop, setOverlayTop] = useState(0);
   const navRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const close = () => setShowStepsOverlay(false);
+    window.addEventListener(CLOSE_STEPS_OVERLAY_EVENT, close);
+    return () => window.removeEventListener(CLOSE_STEPS_OVERLAY_EVENT, close);
+  }, []);
 
   useEffect(() => {
     document.body.style.overflow = showStepsOverlay ? "hidden" : "";

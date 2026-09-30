@@ -1,7 +1,14 @@
+"use client";
+
 import React from "react";
 import HoverPanel from "@/src/components/HoverPanel";
+import { CLOSE_STEPS_OVERLAY_EVENT } from "@/src/components/Navbar";
 
 const BottomNavbar = () => {
+  const closeStepsOverlay = () => {
+    window.dispatchEvent(new Event(CLOSE_STEPS_OVERLAY_EVENT));
+  };
+
   return (
     <div className="pointer-events-none fixed inset-x-0 bottom-[40px] z-30">
       <div className="mx-auto flex w-full max-w-[1200px] justify-end px-2.5 xl:px-0">
@@ -20,9 +27,11 @@ const BottomNavbar = () => {
             }
             ctaLabel="อ่านเพิ่มเติม"
             ctaHref="#outro-section"
+            onCtaClick={closeStepsOverlay}
           />
           <a
             href="#outro-section"
+            onClick={closeStepsOverlay}
             className="flex items-center rounded-full bg-white px-5 py-1.5 font-th desktop-s6-th-700 whitespace-nowrap hover:text-tk-red text-red-100"
           >
             ร่วมเป็นเครือข่าย
