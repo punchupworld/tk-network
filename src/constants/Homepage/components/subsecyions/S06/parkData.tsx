@@ -50,7 +50,7 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        TK Park ยะลาเป็นมากกว่าห้องสมุด
+        อุทยานการเรียนรู้ยะลาเป็นมากกว่าห้องสมุด
         <br className="sm:hidden block" />
         หรือสถานที่จัดกิจกรรม แต่เป็น
         <br className="sm:hidden block" />
@@ -65,7 +65,7 @@ export const PARK_CARDS: ParkCardProps[] = [
       <>
         ท่ามกลางบริบทเฉพาะของ
         <br className="sm:hidden block" />
-        จังหวัดชายแดนภาคใต้ TK Park ยะลา <br />
+        จังหวัดชายแดนภาคใต้ อุทยานการเรียนรู้ยะลา <br />
         พัฒนากิจกรรมการเรียนรู้
         <br className="sm:hidden block" />
         อย่างต่อเนื่อง ไม่ว่าจะเป็นการมอบสื่อ
@@ -86,7 +86,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         อย่างแท้จริง
       </>,
     ],
-    host: "TK Park ยะลา",
+    host: "อุทยานการเรียนรู้ยะลา",
     location: "จังหวัดยะลา",
   },
   {
@@ -138,7 +138,8 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        TK Park ปัตตานีเปิดโอกาสให้เด็ก <br className="sm:hidden block" />
+        อุทยานการเรียนรู้ปัตตานีเปิดโอกาสให้เด็ก{" "}
+        <br className="sm:hidden block" />
         เยาวชน และประชาชนทุกกลุ่มเข้าถึง
         <br className="sm:hidden block" />
         พื้นที่การเรียนรู้คุณภาพและกิจกรรม
@@ -161,7 +162,8 @@ export const PARK_CARDS: ParkCardProps[] = [
         เรียนรู้ที่เชื่อมโยงภูมิปัญญาท้องถิ่น
         <br className="sm:hidden block" />
         เข้ากับองค์ความรู้ร่วมสมัย <br className="sm:hidden block" />
-        ความเข้มแข็งของ <br className="hidden sm:block" /> TK Park ปัตตานี
+        ความเข้มแข็งของ <br className="hidden sm:block" />{" "}
+        อุทยานการเรียนรู้ปัตตานี
         <br className="sm:hidden block" />
         คือการสร้างการมีส่วนร่วมจากคนใน
         <br className="sm:hidden block" />
@@ -178,7 +180,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         จึงเติบโตไปพร้อมกับชุมชนอย่างแท้จริง
       </>,
     ],
-    host: "TK Park ปัตตานี",
+    host: "อุทยานการเรียนรู้ปัตตานี",
     location: "จังหวัดปัตตานี",
   },
   {
@@ -223,7 +225,7 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        TK Park พะเยาเป็นศูนย์กลางการ
+        อุทยานการเรียนรู้พะเยาเป็นศูนย์กลางการ
         <br className="sm:hidden block" />
         เรียนรู้ที่เชื่อมโยงผู้คน ชุมชน และ
         <br className="sm:hidden block" />
@@ -238,7 +240,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         องค์กรปกครองส่วนท้องถิ่น <br className="sm:hidden block" />
         สถานศึกษา และภาคีเครือข่ายต่างๆ <br className="sm:hidden block" />
         ร่วมมือกันทำงานอย่างเข้มแข็ง <br className="sm:hidden block" />
-        ส่งผลให้ TK Park พะเยามีบทบาท
+        ส่งผลให้ อุทยานการเรียนรู้พะเยามีบทบาท
         <br className="sm:hidden block" />
         สำคัญในการสนับสนุนการพัฒนาเมือง
         <br className="sm:hidden block" />
@@ -249,7 +251,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         ให้เกิดขึ้นในชีวิตประจำวันของประชาชน
       </>,
     ],
-    host: "TK Park พะเยา",
+    host: "อุทยานการเรียนรู้พะเยา",
     location: "จังหวัดพะเยา",
   },
   {
@@ -289,7 +291,7 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        TK Park นครราชสีมามีบทบาทสำคัญ
+        อุทยานการเรียนรู้นครราชสีมามีบทบาทสำคัญ
         <br className="sm:hidden block" />
         ในฐานะศูนย์กลางการเรียนรู้ของ
         <br />
@@ -322,7 +324,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         ของเมือง
       </>,
       <>
-        TK Park นครราชสีมาจึงทำหน้าที่
+        อุทยานการเรียนรู้นครราชสีมาจึงทำหน้าที่
         <br className="sm:hidden block" />
         เป็นศูนย์กลางในการเชื่อมโยง
         <br className="sm:hidden block" />
@@ -342,7 +344,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         ตลอดชีวิตของภูมิภาค
       </>,
     ],
-    host: "TK Park นครราชสีมา",
+    host: "อุทยานการเรียนรู้นครราชสีมา",
     location: "จังหวัดนครราชสีมา",
   },
 ];

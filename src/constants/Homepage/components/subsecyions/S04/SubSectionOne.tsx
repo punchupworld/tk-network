@@ -354,8 +354,8 @@ const SubSectionOne = () => {
                     <br className="sm:hidden block" />
                     ระบบห้องสมุด
                     <br className="sm:hidden block" />
-                    อัตโนมัติ (Walai <br className="sm:hidden block" />
-                    Autolib)
+                    อัตโนมัติ (TK <br className="sm:hidden block" />
+                    Lib)
                   </p>
                 </div>
                 <div className="text-center max-w-full text-balance md:max-w-38.75">
