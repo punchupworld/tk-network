@@ -50,7 +50,9 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        อุทยานการเรียนรู้ยะลาเป็นมากกว่าห้องสมุด
+        อุทยานการเรียนรู้ยะลา
+        <br className="sm:hidden block" />
+        เป็นมากกว่าห้องสมุด
         <br className="sm:hidden block" />
         หรือสถานที่จัดกิจกรรม แต่เป็น
         <br className="sm:hidden block" />
@@ -138,8 +140,9 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        อุทยานการเรียนรู้ปัตตานีเปิดโอกาสให้เด็ก{" "}
+        อุทยานการเรียนรู้ปัตตานี
         <br className="sm:hidden block" />
+        เปิดโอกาสให้เด็ก <br className="sm:hidden block" />
         เยาวชน และประชาชนทุกกลุ่มเข้าถึง
         <br className="sm:hidden block" />
         พื้นที่การเรียนรู้คุณภาพและกิจกรรม
@@ -225,9 +228,11 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        อุทยานการเรียนรู้พะเยาเป็นศูนย์กลางการ
+        อุทยานการเรียนรู้พะเยา
         <br className="sm:hidden block" />
-        เรียนรู้ที่เชื่อมโยงผู้คน ชุมชน และ
+        เป็นศูนย์กลางการเรียนรู้
+        <br className="sm:hidden block" />
+        ที่เชื่อมโยงผู้คน ชุมชน และ
         <br className="sm:hidden block" />
         ภูมิปัญญาท้องถิ่นเข้าด้วยกัน โดยเปิด
         <br className="sm:hidden block" />
@@ -291,10 +296,12 @@ export const PARK_CARDS: ParkCardProps[] = [
     ],
     descriptions: [
       <>
-        อุทยานการเรียนรู้นครราชสีมามีบทบาทสำคัญ
+        อุทยานการเรียนรู้นครราชสีมา
+        <br className="sm:hidden block" />
+        มีบทบาทสำคัญ
         <br className="sm:hidden block" />
         ในฐานะศูนย์กลางการเรียนรู้ของ
-        <br />
+        {/* <br /> */}
         ภาคตะวันออกเฉียงเหนือ โดยรองรับ
         <br className="sm:hidden block" />
         การเรียนรู้ที่หลากหลาย ตั้งแต่
