@@ -67,7 +67,8 @@ export const PARK_CARDS: ParkCardProps[] = [
       <>
         ท่ามกลางบริบทเฉพาะของ
         <br className="sm:hidden block" />
-        จังหวัดชายแดนภาคใต้ อุทยานการเรียนรู้ยะลา <br />
+        จังหวัดชายแดนภาคใต้ <br className="sm:hidden block" />
+        อุทยานการเรียนรู้ยะลา <br />
         พัฒนากิจกรรมการเรียนรู้
         <br className="sm:hidden block" />
         อย่างต่อเนื่อง ไม่ว่าจะเป็นการมอบสื่อ
@@ -142,8 +143,8 @@ export const PARK_CARDS: ParkCardProps[] = [
       <>
         อุทยานการเรียนรู้ปัตตานี
         <br className="sm:hidden block" />
-        เปิดโอกาสให้เด็ก <br className="sm:hidden block" />
-        เยาวชน และประชาชนทุกกลุ่มเข้าถึง
+        เปิดโอกาสให้เด็ก เยาวชน <br className="sm:hidden block" />
+        และประชาชนทุกกลุ่มเข้าถึง
         <br className="sm:hidden block" />
         พื้นที่การเรียนรู้คุณภาพและกิจกรรม
         <br className="sm:hidden block" />
@@ -165,8 +166,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         เรียนรู้ที่เชื่อมโยงภูมิปัญญาท้องถิ่น
         <br className="sm:hidden block" />
         เข้ากับองค์ความรู้ร่วมสมัย <br className="sm:hidden block" />
-        ความเข้มแข็งของ <br className="hidden sm:block" />{" "}
-        อุทยานการเรียนรู้ปัตตานี
+        ความเข้มแข็งของ <br /> อุทยานการเรียนรู้ปัตตานี
         <br className="sm:hidden block" />
         คือการสร้างการมีส่วนร่วมจากคนใน
         <br className="sm:hidden block" />
@@ -298,15 +298,14 @@ export const PARK_CARDS: ParkCardProps[] = [
       <>
         อุทยานการเรียนรู้นครราชสีมา
         <br className="sm:hidden block" />
-        มีบทบาทสำคัญ
+        มีบทบาทสำคัญ ในฐานะศูนย์กลาง
         <br className="sm:hidden block" />
-        ในฐานะศูนย์กลางการเรียนรู้ของ
+        การเรียนรู้ของ
         {/* <br /> */}
-        ภาคตะวันออกเฉียงเหนือ โดยรองรับ
+        ภาคตะวันออกเฉียงเหนือ โดยรองรับการเรียนรู้ที่หลากหลาย{" "}
         <br className="sm:hidden block" />
-        การเรียนรู้ที่หลากหลาย ตั้งแต่
-        <br className="sm:hidden block" />
-        การศึกษา การพัฒนาทักษะอาชีพ <br className="sm:hidden block" />
+        ตั้งแต่ การศึกษา <br className="sm:hidden block" />
+        การพัฒนาทักษะอาชีพ <br className="sm:hidden block" />
         การสร้างสรรค์นวัตกรรม ไปจนถึง
         <br className="sm:hidden block" />
         การเรียนรู้
