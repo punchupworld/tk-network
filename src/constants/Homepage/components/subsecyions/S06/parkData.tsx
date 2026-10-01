@@ -250,8 +250,7 @@ export const PARK_CARDS: ParkCardProps[] = [
         สำคัญในการสนับสนุนการพัฒนาเมือง
         <br className="sm:hidden block" />
         แห่งการเรียนรู้ (Learning City) <br className="sm:hidden block" />
-        และสร้างวัฒนธรรม <br className="hidden sm:block" />
-        การเรียนรู้
+        และสร้างวัฒนธรรม การเรียนรู้
         <br className="sm:hidden block" />
         ให้เกิดขึ้นในชีวิตประจำวันของประชาชน
       </>,
